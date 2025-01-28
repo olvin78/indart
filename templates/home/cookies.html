@@ -1,0 +1,92 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>POLÍTICAS DE COOKIES | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <!-- Título principal -->
+  <div class="text-center mb-5">
+    <h1 class="display-5 texto-azul-indart fw-bold">Política de Cookies</h1>
+    <p class="text-muted">Obtenga más información sobre cómo utilizamos las cookies y cómo afectan su experiencia en nuestro sitio web.</p>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="card shadow-lg border-0">
+    <div class="card-body p-4">
+      <!-- Sobre esta política -->
+      <div class="mb-5">
+        <h2 class="h5 texto-azul-indart fw-bold">
+          <i class="bi bi-info-circle"></i> Sobre esta Política de Cookies
+        </h2>
+        <p>Esta Política de cookies explica qué son las cookies y cómo las usamos, los tipos de cookies que utilizamos, la información que recopilamos utilizando cookies y cómo se utiliza esa información, además de cómo controlar las preferencias de las cookies.</p>
+        <p>Para obtener más información sobre cómo utilizamos, almacenamos y mantenemos seguros sus datos personales, consulte nuestra <a class="text-success" href="{% url 'home_app:politica_de_privacidad' %}">Política de privacidad</a>.</p>
+        <p>Su consentimiento se aplica al dominio: <strong>indart3d.com</strong></p>
+        <p><strong>Tu estado actual:</strong> Consentimiento aceptado. <a href="#" class="texto-azul-indart">Gestiona tu consentimiento.</a></p>
+      </div>
+
+      <!-- ¿Qué son las cookies? -->
+      <div class="mb-5">
+        <h2 class="h5 texto-azul-indart fw-bold">
+          <i class="bi bi-cookie"></i> ¿Qué son las cookies?
+        </h2>
+        <p>Las cookies son pequeños archivos de texto que se utilizan para almacenar pequeñas piezas de información. Estas cookies nos ayudan a hacer que el sitio web funcione correctamente, hacerlo más seguro, proporcionar una mejor experiencia de usuario, y entender cómo funciona el sitio web y analizar qué funciona y dónde necesita mejoras.</p>
+      </div>
+
+      <!-- ¿Cómo utilizamos las cookies? -->
+      <div class="mb-5">
+        <h2 class="h5 texto-azul-indart fw-bold">
+          <i class="bi bi-gear"></i> ¿Cómo utilizamos las cookies?
+        </h2>
+        <p>Nuestro sitio web utiliza cookies propias y de terceros para varios fines:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Las cookies propias son necesarias para que el sitio web funcione correctamente y no recopilan datos de identificación personal.</li>
+          <li class="list-group-item">Las cookies de terceros se utilizan para comprender cómo funciona el sitio web, cómo interactúa con nuestro sitio web, proporcionar anuncios relevantes, y mejorar la experiencia del usuario.</li>
+        </ul>
+      </div>
+
+      <!-- Tipos de cookies -->
+      <div class="mb-5">
+        <h2 class="h5 texto-azul-indart fw-bold">
+          <i class="bi bi-box-seam"></i> ¿Qué tipo de cookies utilizamos?
+        </h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Necesarias:</strong> Permiten la plena funcionalidad del sitio, como iniciar sesión y realizar pagos de forma segura.
+          </li>
+          <li class="list-group-item">
+            <strong>Estadísticas:</strong> Almacenan información como el número de visitantes, páginas visitadas y fuentes de tráfico.
+          </li>
+          <li class="list-group-item">
+            <strong>Marketing:</strong> Personalizan anuncios y permiten rastrear la eficiencia de las campañas publicitarias.
+          </li>
+          <li class="list-group-item">
+            <strong>Funcionales:</strong> Habilitan funciones no esenciales como incrustar videos o compartir contenido en redes sociales.
+          </li>
+          <li class="list-group-item">
+            <strong>Preferencias:</strong> Almacenan configuraciones como el idioma preferido para mejorar su experiencia.
+          </li>
+        </ul>
+      </div>
+
+      <!-- ¿Cómo establecer preferencias? -->
+      <div class="mb-5">
+        <h2 class="h5 texto-azul-indart fw-bold">
+          <i class="bi bi-sliders"></i> ¿Cómo puedo establecer la preferencia de cookies?
+        </h2>
+        <p>Puede cambiar sus preferencias en cualquier momento haciendo clic en la pestaña «Elegir cookies» en su pantalla. Esto mostrará el aviso de consentimiento para modificar sus preferencias o retirar su consentimiento por completo.</p>
+        <p>También puede configurar su navegador para bloquear o eliminar cookies. Para obtener más información sobre cómo administrar cookies, visite:</p>
+        <ul>
+          <li><a href="https://www.wikipedia.org/" target="_blank" class="texto-azul-indart">wikipedia.org</a></li>
+          <li><a href="https://www.allaboutcookies.org/" target="_blank" class="texto-azul-indart">allaboutcookies.org</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

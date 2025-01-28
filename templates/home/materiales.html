@@ -1,0 +1,313 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>NX_MODULAR | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+
+<div class="container my-5">
+    <h3 class="text-center mb-4">Filamento</h3>
+    <div class="row justify-content-between align-items-center mb-3">
+        <div class="col-auto">
+            <label for="" class="text-muted">HOME/FILAMENTO</label>
+            <p class="text-muted">Showing 1–10 of 25 results</p>
+        </div>
+        <div class="col-auto">
+            <select class="form-select" aria-label="Sort by">
+                <option value="popularity">Sort by popularity</option>
+                <option value="rating">Sort by average rating</option>
+                <option value="latest">Sort by latest</option>
+                <option value="low-high">Sort by price: low to high</option>
+                <option value="high-low">Sort by price: high to low</option>
+            </select>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Galería de productos -->
+    <div class="row g-4">
+        <div class="col-md-3 col-6">
+           <a style="text-decoration: none;" href="#"><div class="card">
+                <img src="{% static 'img/materiales/pla-3d850.jpg' %}" class="card-img-top" alt="Producto 1">
+                <div class="card-body text-center">
+                    <h6 class="card-title">PLA 3D850</h6>
+                </div>
+            </div></a>
+        </div>
+        
+        <div class="col-md-3 col-6">
+            <a style="text-decoration: none;" href="#"><div class="card">
+                <img src="{% static 'img/materiales/Filaflex 60A.png' %}" class="card-img-top" alt="Producto 1">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Filaflex 60A</h6>
+                </div>
+            </div></a>
+        </div>
+            
+        <div class="col-md-3 col-6">
+           <a style="text-decoration: none;" href="#"><div class="card">
+                <img src="{% static 'img/materiales/Filaflex 70A.png' %}" class="card-img-top" alt="Producto 1">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Filaflex 70A</h6>
+                </div>
+            </div></a>
+        </div>
+        
+        <div class="col-md-3 col-6">
+           <a style="text-decoration: none;" href="#"><div class="card">
+                <img src="{% static 'img/materiales/Filaflex 95A.png' %}" class="card-img-top" alt="Producto 1">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Filaflex 95A</h6>
+                </div>
+            </div></a>
+        </div>
+        
+        <div class="col-md-3 col-6">
+            <a style="text-decoration: none;" href="#">
+                <div class="card">
+                    <img src="{% static 'img/materiales/innovatefil-tpu-hardness.jpg' %}" class="card-img-top" alt="INNOVATEFIL TPU HARDNESS+">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">INNOVATEFIL TPU HARDNESS+</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class="col-md-3 col-6">
+            <a style="text-decoration: none;" href="#">
+                <div class="card">
+                    <img src="{% static 'img/materiales/innovatefil-polycarbonate.jpg' %}" class="card-img-top" alt="INNOVATEFIL POLYCARBONATE">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">INNOVATEFIL POLYCARBONATE</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class="col-md-3 col-6">
+            <a style="text-decoration: none;" href="#">
+                <div class="card">
+                    <img src="{% static 'img/materiales/nylstrong-filamento.jpg' %}" class="card-img-top" alt="INNOVATEFIL NYLSTRONG">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">INNOVATEFIL NYLSTRONG</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+        <div class="col-md-3 col-6">
+            <a style="text-decoration: none;" href="#">
+                <div class="card">
+                    <img src="{% static 'img/materiales/flex-filamento.jpg' %}" class="card-img-top" alt="FLEX 93A">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">FLEX 93A</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--numero 9 -->
+        <div class="col-md-3 col-6">
+            <a style="text-decoration: none;" href="#">
+                <div class="card">
+                    <img src="{% static 'img/materiales/flex-98a-300x300.jpg' %}" class="card-img-top" alt="FLEX 98A">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">FLEX 98A</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+            <!--numero 10 -->
+            <div class="col-md-3 col-6">
+                <a style="text-decoration: none;" href="#">
+                    <div class="card">
+                        <img src="{% static 'img/materiales/fp-fireproof-300x300.jpg' %}" class="card-img-top" alt="ABS FIREPROOF">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">ABS FIREPROOF</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--numero 11 -->
+            <div class="col-md-3 col-6">
+                <a style="text-decoration: none;" href="#">
+                    <div class="card">
+                        <img src="{% static 'img/materiales/wood-filamento-1-300x300.jpg' %}" class="card-img-top" alt="INNOVATEFIL PETG CF">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">INNOVATEFIL® PETG CF</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--numero 12 -->
+            <div class="col-md-3 col-6">
+                <a style="text-decoration: none;" href="#">
+                    <div class="card">
+                        <img src="{% static 'img/materiales/wood-filamento-300x300.jpg' %}" class="card-img-top" alt="WOOD">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">WOOD</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--numero 13 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/pla_3d870-300x300.jpg' %}" class="card-img-top" alt="PLA 3D870">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">PLA 3D870</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--numero 14 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/pla-3d850.jpg' %}" class="card-img-top" alt="INNOVATEFIL ABS FP">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">INNOVATEFIL® ABS FP</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--numero 15 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/medical-300x300.jpg' %}" class="card-img-top" alt="INNOVATEFIL ABS MEDICAL">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">INNOVATEFIL® ABS MEDICAL</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--numero 16 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/boun-filamento-300x300.jpg' %}" class="card-img-top" alt="BOUN">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">BOUN</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--numero 17 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/asa-filamento-300x300.jpg' %}" class="card-img-top" alt="ASA">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">ASA</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--numero 18 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/abs-filamento-300x300.jpg' %}" class="card-img-top" alt="ABS">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">ABS</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--numero 19 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/hips-filamento-300x300.jpg' %}" class="card-img-top" alt="HIPS">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">HIPS</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!--numero 20 -->
+                <div class="col-md-3 col-6">
+                    <a style="text-decoration: none;" href="#">
+                        <div class="card">
+                            <img src="{% static 'img/materiales/r-pet-300x300.jpg' %}" class="card-img-top" alt="PET">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">PET</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!--numero 21 -->
+
+                    <div class="col-md-3 col-6">
+                        <a style="text-decoration: none;" href="#">
+                            <div class="card">
+                                <img src="{% static 'img/materiales/petg-filamento-300x300.jpg' %}" class="card-img-top" alt="PETG">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">PETG</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-md-3 col-6">
+                        <a style="text-decoration: none;" href="#">
+                            <div class="card">
+                                <img src="{% static 'img/materiales/pva-filamento-300x300.jpg' %}" class="card-img-top" alt="PVA">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">PVA</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-md-3 col-6">
+                        <a style="text-decoration: none;" href="#">
+                            <div class="card">
+                                <img src="{% static 'img/materiales/glace-filamento-300x300.jpg' %}" class="card-img-top" alt="GLACE">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">GLACE</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-md-3 col-6">
+                        <a style="text-decoration: none;" href="#">
+                            <div class="card">
+                                <img src="{% static 'img/materiales/pp-filamento-300x300.jpg' %}" class="card-img-top" alt="INNOVATEFIL PP">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">INNOVATEFIL® PP</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-md-3 col-6">
+                        <a style="text-decoration: none;" href="#">
+                            <div class="card">
+                                <img src="{% static 'img/materiales/pla-filamento-300x300.jpg' %}" class="card-img-top" alt="PLA">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">PLA</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+{% endblock %}

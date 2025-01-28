@@ -1,0 +1,65 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>BF_MODULAR | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+<div class="container text-center">
+    <div class="row">
+        <!-- Espaciadores en los lados (solo en escritorio) -->
+        <div class="col-lg-2 d-none d-lg-block"></div>
+
+        <!-- Contenido principal -->
+        <div class="col-lg-8 col-md-12">
+            <div class="container">
+                <!-- Título -->
+                <div class="row">
+                    <div class="text-start">
+                        <h1 class="text-center mt-5">{{ datos.title }}</h1>
+                    </div>
+                </div>
+
+                <!-- Fecha, autor e imagen -->
+                <div class="row">
+                    <div class="col-12 mt-5 mb-3">
+                        <p class="text-muted text-end">
+                            {{ datos.date_time|date:"Y/m/d" }} | {{ datos.author }}
+                        </p>
+                        <!-- Imagen -->
+                        <img src="{{ datos.image.url }}" 
+                             class="img-fluid rounded shadow" 
+                             alt="Lo siento, ¡no se ha podido cargar la imagen!" 
+                             style="max-height: 500px; object-fit: cover;">
+                    </div>
+                </div>
+
+                <!-- Contenido del artículo -->
+                <div class="row" style="text-align:justify;">
+                    <div class="col-12">
+                        <p>{{ datos.content|safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Espaciadores en los lados (solo en escritorio) -->
+        <div class="col-lg-2 d-none d-lg-block"></div>
+    </div>
+</div>
+
+
+
+
+
+  
+{% endblock %}

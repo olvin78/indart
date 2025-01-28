@@ -1,0 +1,97 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Realizar pedido | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal del formulario
+==================================================-->
+<section class="container my-5 py-5">
+    <div class="row align-items-center">
+        <!-- Sección de la imagen -->
+        <div class="col-md-6 position-relative text-center">
+            <h6>Me encargaré de poner a mi equipo en contacto <br> lo más pronto.</h6>
+            <div
+                id="dynamic-image"
+                style="
+                    width: 100%;
+                    height: 400px;
+                    background-image: url('{% static "img/processed-image.png" %}');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transition: transform 0.5s ease;
+                    animation: float 1s infinite;
+                ">
+            </div>
+            <!-- Línea de gradiente vertical -->
+            <div
+                style="
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 4px;
+                    height: 100%;
+                    background: linear-gradient(to bottom, #1e7f86, #d9dee2);
+                ">
+            </div>
+        </div>
+
+        <!-- Sección del formulario -->
+        <div class="col-md-6">
+            <h3 class="fw-bold text-center mb-4">Hacer Pedido</h3>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control rounded-pill shadow-sm" placeholder="Escriba su Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control rounded-pill shadow-sm" placeholder="Escriba su Correo" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control rounded-pill shadow-sm" placeholder="Nombre de la Empresa">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control rounded shadow-sm" rows="4" placeholder="Escriba el Mensaje" required></textarea>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="politicaPrivacidad">
+                    <label class="form-check-label" for="politicaPrivacidad">
+                        He leído y acepto la <a href="#" class="texto-azul-indart text-decoration-underline">política de privacidad</a>
+                    </label>
+                </div>
+                 <!-- Botón de envío -->
+                <div class="text-center">
+                    <button type="submit" id="send-button" class="btn fondo-azul-indart rounded-pill shadow-sm px-5">
+                        Envia Pedido →
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Animación de flotación */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    /* Efecto hover con zoom y rotación */
+    #dynamic-image:hover {
+        transform: scale(1.08) rotate(3deg);
+    }
+</style>
+
+{% endblock %}

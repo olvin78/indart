@@ -1,0 +1,2 @@
+Azul: #4BB5C1
+Gris footer: #808A8A

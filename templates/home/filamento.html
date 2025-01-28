@@ -1,0 +1,55 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>FILAMENTO | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+
+<div class="container my-5">
+    <h3 class="text-center mb-4">FILAMENTO</h3>
+    <div class="row justify-content-between align-items-center mb-3">
+        <div class="col-auto">
+            <label for="" class="text-muted">HOME/FILAMENTO</label>
+            <p class="text-muted">Showing 1–10 of 25 results</p>
+        </div>
+
+        <div class="col-auto">
+            <select class="form-select" aria-label="Sort by">
+                <option value="popularity">Sort by popularity</option>
+                <option value="rating">Sort by average rating</option>
+                <option value="latest">Sort by latest</option>
+                <option value="low-high">Sort by price: low to high</option>
+                <option value="high-low">Sort by price: high to low</option>
+            </select>
+        </div>
+        <hr>
+    </div>
+
+    <!--==============================================
+                Duet producto numero 1s
+    =================================================-->
+{% for dato in datos %}
+    <div class="row g-4">
+        <div class="col-md-3 col-6">
+           <a style="text-decoration: none;" href="{% url 'home_app:filamento_detail' dato.id %}"><div class="card border-0">
+                <img src="{{ dato.image }}" class="card-img-top w-100" alt="Producto 1">
+                <div class="card-body text-center">
+                    <h6 class="card-title texto-azul-indart">{{ dato.name }}</h6>
+                </div>
+            </div></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

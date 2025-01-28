@@ -1,0 +1,72 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>MINI_PRO | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+    <div class="container py-5">
+        <!-- Título principal -->
+        <h2 class="text-center fw-bold texto-azul-indart">Impresora 3D Tumaker Mini Pro</h2>
+        <div class="row align-items-center g-5">
+            <!-- Imagen de la impresora -->
+            <div class="col-lg-6 text-center py-5">
+                <img src="{% static 'img/minipro/miniProHr-costado-980x552.png' %}" class="img-fluid rounded shadow" alt="Tumaker Mini Pro Costado">
+            </div>
+            <!-- Texto dividido -->
+            <div class="col-lg-6">
+                <h3 class="fw-bold texto-azul-indart">Características</h3>
+                <p class="text-muted mb-4">
+                    La impresora 3D <strong>Tumaker Mini Pro</strong> con cabezal intercambiable es una realidad. Esta impresora cuenta con la <strong>fiabilidad y robustez</strong> características de la marca Tumaker. Con la Mini Pro se consiguen alcanzar las mejores prestaciones para ámbitos profesionales, pero en el <strong>tamaño más reducido de la gama Tumaker</strong>.
+                </p>
+                <p class="text-muted">
+                    La posibilidad de trabajar el sector industrial con una máquina de tamaño muy inferior al resto de la competencia, la hace muy manejable y fácil de manipular. Estas características la convierten en una máquina perfecta para iniciarse en el mundo de la fabricación aditiva.
+                </p>
+            </div>
+        </div>
+    
+        <div class="row align-items-center g-5 mt-5">
+            <!-- Texto dividido -->
+            <div class="col-lg-6">
+                <h3 class="fw-bold texto-azul-indart">Versatilidad y Tecnología</h3>
+                <p class="text-muted mb-4">
+                    Sólo con la impresión 3D con pellets podrás <strong>trabajar con todos aquellos materiales que no existen en forma de filamento</strong>. Con esta impresora, podrás también utilizar el <strong>cabezal Direct Drive HR</strong> para trabajar la extrusión de filamento y poder aprovechar las dos tecnologías con un único equipo.
+                </p>
+            </div>
+            <!-- Imagen de la impresora -->
+            <div class="col-lg-6 text-center">
+                <img src="{% static 'img/minipro/miniProHr-frente.png' %}" class="img-fluid rounded shadow" alt="Tumaker Mini Pro Frente">
+            </div>
+        </div>
+
+    <!-- Tercera sección: Video -->
+    <div class="text-center py-5">
+        <h3 class="fw-bold mb-4 texto-azul-indart">Explora la Mini Pro en acción</h3>
+        <div class="ratio ratio-16x9">
+            <iframe 
+                src="https://www.youtube.com/embed/m7lzw6i_tpU?si=79O6CnHDDggb4LzW" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+{% endblock %}

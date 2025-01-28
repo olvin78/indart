@@ -1,0 +1,327 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>NX_MODULAR | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+
+
+<div class="container py-5">
+    <!-- Primera Sección -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold texto-azul-indart">AutoScan-T42 3D</h1>
+    </div>
+    <div class="row align-items-center">
+        <!-- Video -->
+        <div class="col-lg-6">
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Yw7CJgydcEA?si=GTr7XUqAiqhDBYuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- Texto -->
+        <div class="col-lg-6 p-4">
+            <h3 class="fw-bold texto-azul-indart">Sistema AutoScan-T42 3D</h3>
+            <p>
+                El sistema automatizado AutoScan-T42 3D es una nueva actualización para la inspección automática inteligente. Está diseñado especialmente para el control de calidad automatizado en los talleres, facilitando a las empresas alcanzar la coincidencia óptima entre costo y eficiencia.
+            </p>
+            <p>
+                El AutoScan-T42 conduce el escaneado no destructivo sin adjuntar marcadores. Su conexión perfecta con la línea de producción contribuye considerablemente a reducir el volumen del trabajo. La calidad de fabricación del grado militar cuenta con fuerte anti-interferencia y alta adaptación al entorno de taller complejo y hostil.
+            </p>
+        </div>
+    </div>
+<!--============================================
+        segunda seccion "línea de producción"
+===============================================-->
+
+    <!-- Segunda Sección -->
+    <div class="row align-items-center py-5 d-none d-lg-flex">
+        <!-- Texto -->
+        <div class="col-lg-6">
+            <h3 class="fw-bold texto-azul-indart">Funciona perfectamente con línea de producción</h3>
+            <p>
+                Basado en el seguimiento óptico automático e integrado perfectamente en la línea de producción, está diseñado para la inspección por lotes online y mejora en gran medida la eficiencia iterativa del proceso de producción.
+            </p>
+        </div>
+        <!-- Imagen -->
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/autoscant42-1.jpg' %}" alt="Línea de producción" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!--============================================
+        segunda seccion duplicada adaptada para moviles "línea de producción"
+===============================================-->
+
+    <!-- Segunda Sección -->
+    <div class="row align-items-center py-5 d-flex d-lg-none">
+        <!-- Imagen -->
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/autoscant42-1.jpg' %}" alt="Línea de producción" class="img-fluid rounded">
+        </div>
+        <!-- Texto -->
+        <div class="col-lg-6">
+            <h3 class="fw-bold texto-azul-indart">Funciona perfectamente con línea de producción</h3>
+            <p>
+                Basado en el seguimiento óptico automático e integrado perfectamente en la línea de producción, está diseñado para la inspección por lotes online y mejora en gran medida la eficiencia iterativa del proceso de producción.
+            </p>
+        </div>
+    </div>
+
+
+<!--============================================
+        tercera seccion "línea de producción"
+===============================================-->
+
+    <div class="row align-items-center py-5">
+        <div class="col-lg-6 text-center order-lg-1">
+            <img src="{% static 'img/autoscant42-2.jpg' %}" class="img-fluid" alt="Múltiples configuraciones">
+        </div>
+        <div class="col-lg-6 order-lg-2">
+            <h3 class="fw-bold texto-azul-indart">Múltiples configuraciones</h3>
+            <p class="text-muted">
+                En combinación con el escáner de mano 3D, CMM portátil, sistema de fotogrametría MSCAN, plataformas giratorias y rieles-guía, realizando simultáneo seguimiento óptico y escaneado y soluciones personalizadas.
+            </p>
+        </div>
+    </div>
+
+<!--============================================
+       cuarta seccion "línea de producción"
+===============================================-->
+    <div class="row align-items-center py-5 d-none d-lg-flex">
+        <div class="col-lg-6 order-lg-2 text-center">
+            <img src="{% static 'img/autoscant42-3.jpg' %}" class="img-fluid" alt="Acelerar la inspección precisa">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <h3 class="fw-bold texto-azul-indart">Acelerar la inspección precisa</h3>
+            <p class="text-muted">
+                Adoptando láser azul y tecnologías de seguimiento simultáneo, alcanza hasta 1,900,000 mediciones/s y una precisión de 0,025 mm. La fabricación automatizada eficiente y flexible puede lograrse sin verse afectada por factores externos.
+            </p>
+        </div>
+    </div>
+
+    <!--============================================
+       cuarta seccion duplicada adaptada para moviles "línea de producción"
+===============================================-->
+<div class="row align-items-center py-5 d-flex d-lg-none">
+    <div class="col-lg-6 order-lg-1">
+        <h3 class="fw-bold texto-azul-indart">Acelerar la inspección precisa</h3>
+        <p class="text-muted">
+            Adoptando láser azul y tecnologías de seguimiento simultáneo, alcanza hasta 1,900,000 mediciones/s y una precisión de 0,025 mm. La fabricación automatizada eficiente y flexible puede lograrse sin verse afectada por factores externos.
+        </p>
+    </div>
+    <div class="col-lg-6 order-lg-2 text-center">
+        <img src="{% static 'img/autoscant42-3.jpg' %}" class="img-fluid" alt="Acelerar la inspección precisa">
+    </div>
+</div>
+
+   <!--============================================
+        quinta seccion "línea de producción"
+===============================================-->
+    <div class="row align-items-center py-5 d-none d-lg-flex">
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/autoscan-t42-4.jpg' %}" class="img-fluid" alt="Calidad de grado militar">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="fw-bold texto-azul-indart">Calidad de grado militar</h3>
+            <p class="text-muted">
+                El diseño del grado militar presenta una adaptabilidad excelente en entornos hostiles industriales sin ser insensible a la temperatura, la vibración, el polvo, etc.
+            </p>
+            <h5 class="fw-bold texto-azul-indart">Operación Simple</h5>
+            <p class="text-muted">
+                Gracias al arranque con un clic, programación offline y generación automática de inspección, los usuarios operen y completan la medición fácilmente sin importar su experiencia.
+            </p>
+        </div>
+    </div>
+
+       <!--============================================
+        quinta seccion duplicada y adaptada para moviles "línea de producción"
+    ===============================================-->
+    <div class="row align-items-center py-5 d-flex d-lg-none">
+        <div class="col-lg-6">
+            <h3 class="fw-bold texto-azul-indart">Calidad de grado militar</h3>
+            <p class="text-muted">
+                El diseño del grado militar presenta una adaptabilidad excelente en entornos hostiles industriales sin ser insensible a la temperatura, la vibración, el polvo, etc.
+            </p>
+            <h5 class="fw-bold texto-azul-indart">Operación Simple</h5>
+            <p class="text-muted">
+                Gracias al arranque con un clic, programación offline y generación automática de inspección, los usuarios operen y completan la medición fácilmente sin importar su experiencia.
+            </p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/autoscan-t42-4.jpg' %}" class="img-fluid" alt="Calidad de grado militar">
+        </div>
+    </div>
+</div>
+<!--=======================================================
+               seccino de caracteristicas
+===========================================================-->
+<div class="container my-5 d-none d-md-block">
+    <h3 class="text-center mb-4">Características</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th scope="row">Tipo</th>
+                    <td>AutoScan-T42</td>
+                </tr>
+                <tr>
+                    <th scope="row">Modo de escaneo</th>
+                    <td>
+                        <p>Escaneado ultrarrápido: 17 cruces láser azules</p>
+                        <p>Modo hiperfino B: 7 líneas láser azules paralelas</p>
+                        <p>Exploración de agujeros profundos: 1 línea láser azul adicional</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Líneas láser en total</th>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <th scope="row">Precisión</th>
+                    <td>Hasta 0.025 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tasa de medición</th>
+                    <td>Hasta 1,900,000 mediciones/s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Área de escaneo</th>
+                    <td>Hasta 310 mm × 350 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Clase láser</th>
+                    <td>CLASS II (eye-safe)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Resolución</th>
+                    <td>0.020 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Precisión volumétrica</th>
+                    <td>
+                        <p>10.4 m³: 0.064 mm</p>
+                        <p>18.0 m³: 0.078 mm</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Precisión volumétrica (Con el sistema de fotogrametría MSCAN-L15)</th>
+                    <td>0.044 mm + 0.015 mm/m</td>
+                </tr>
+                <tr>
+                    <th scope="row">Part size range (recommended)</th>
+                    <td>200 - 6000 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Distancia de separación</th>
+                    <td>300 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Profundidad de campo</th>
+                    <td>400 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Formatos de salida</th>
+                    <td>.stl, .ply, .obj, .igs, .wrl, .xyz, .dae, .fbx, .ma, .asc or customized</td>
+                </tr>
+                <tr>
+                    <th scope="row">Rango de temperatura de funcionamiento</th>
+                    <td>-10°C - 40°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">Modo de interfaz</th>
+                    <td>USB 3.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Patentes</th>
+                    <td>
+                        CN204329903U, CN104501740B, CN104166608B, CN204988183U, CN204854833U, CN204944431U, CN204902788U,
+                        CN105068384B, CN105046648B, CN204902784U, CN204963812U, CN204902785U, CN204902790U, CN104603845B,
+                        CN209978785U, CN209263911U, CN106500627B, CN106500628B, CN206120303U, CN21121089U, US10309770B2,
+                        KR102098608B1, EP3392831A4
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="d-block d-md-none py-5">
+    <div class="accordion" id="accordionCaracteristicas">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingT42">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseT42" aria-expanded="true" aria-controls="collapseT42">
+                    AutoScan-T42
+                </button>
+            </h2>
+            <div id="collapseT42" class="accordion-collapse collapse show" aria-labelledby="headingT42" data-bs-parent="#accordionCaracteristicas">
+                <div class="accordion-body">
+                    <p><strong>Tipo:</strong> AutoScan-T42</p>
+                    <p><strong>Modo de escaneo:</strong></p>
+                    <ul>
+                        <li>Escaneado ultrarrápido: 17 cruces láser azules</li>
+                        <li>Modo hiperfino B: 7 líneas láser azules paralelas</li>
+                        <li>Exploración de agujeros profundos: 1 línea láser azul adicional</li>
+                    </ul>
+                    <p><strong>Líneas láser en total:</strong> 42</p>
+                    <p><strong>Precisión:</strong> Hasta 0.025 mm</p>
+                    <p><strong>Tasa de medición:</strong> Hasta 1,900,000 mediciones/s</p>
+                    <p><strong>Área de escaneo:</strong> Hasta 310 mm × 350 mm</p>
+                    <p><strong>Clase láser:</strong> CLASS II (eye-safe)</p>
+                    <p><strong>Resolución:</strong> 0.020 mm</p>
+                    <p><strong>Precisión volumétrica:</strong></p>
+                    <ul>
+                        <li>10.4 m³: 0.064 mm</li>
+                        <li>18.0 m³: 0.078 mm</li>
+                    </ul>
+                    <p><strong>Precisión volumétrica (Con el sistema de fotogrametría MSCAN-L15):</strong> 0.044 mm + 0.015 mm/m</p>
+                    <p><strong>Part size range (recommended):</strong> 200 - 6000 mm</p>
+                    <p><strong>Distancia de separación:</strong> 300 mm</p>
+                    <p><strong>Profundidad de campo:</strong> 400 mm</p>
+                    <p><strong>Formatos de salida:</strong> .stl, .ply, .obj, .igs, .wrl, .xyz, .dae, .fbx, .ma, .asc or customized</p>
+                    <p><strong>Rango de temperatura de funcionamiento:</strong> -10°C - 40°C</p>
+                    <p><strong>Modo de interfaz:</strong> USB 3.0</p>
+                    <p><strong>Patentes:</strong></p>
+                    <ul>
+                        <li>CN204329903U</li>
+                        <li>CN104501740B</li>
+                        <li>CN104166608B</li>
+                        <li>CN204988183U</li>
+                        <li>CN204854833U</li>
+                        <li>CN204944431U</li>
+                        <li>CN204902788U</li>
+                        <li>CN105068384B</li>
+                        <li>CN105046648B</li>
+                        <li>CN204902784U</li>
+                        <li>CN204963812U</li>
+                        <li>CN204902785U</li>
+                        <li>CN204902790U</li>
+                        <li>CN104603845B</li>
+                        <li>CN209978785U</li>
+                        <li>CN209263911U</li>
+                        <li>CN106500627B</li>
+                        <li>CN106500628B</li>
+                        <li>CN206120303U</li>
+                        <li>CN21121089U</li>
+                        <li>US10309770B2</li>
+                        <li>KR102098608B1</li>
+                        <li>EP3392831A4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

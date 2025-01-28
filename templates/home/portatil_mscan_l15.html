@@ -1,0 +1,215 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Galería | Indart3D</title>
+<!-- Lightbox2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
+<style>
+  /* Estilo base para la galería */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  /* Imagen en estado normal */
+  .gallery-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Imagen al hacer hover (sin transición) */
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.2); /* Ampliar imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Añadir sombra */
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+  <h1 class="fw-bold mb-4" style="color: #4B4B4B;text-align: center;">MSCAN L15</h1>
+  <div class="row align-items-center py-5">
+    <!-- Video -->
+    <div class="col-md-6 text-center">
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.youtube.com/embed/14hOV6pc4IU?si=Lo6nlC2vhv0obMvj" 
+          title="YouTube video player" 
+          allowfullscreen 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          class="rounded shadow">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Contenido textual -->
+    <div class="col-md-6">
+      <h3 class="texto-azul-indart fw-bold mb-3">Mediciones de gran precisión</h3>
+      <p class="text-muted">
+        El sistema de fotogrametría MSCAN-L15 está diseñado para proporcionar mediciones de gran precisión en piezas de trabajo de gran escala. 
+        Con un área de disparo de gran tamaño y un campo de amplia profundidad, MSCAN-L15 proporciona precisión volumétrica de ±0.015 mm/m para 
+        piezas de gran escala y partes de 2 m hasta 10 m.
+      </p>
+      <p class="text-muted">
+        Compatible con dispositivos de inspección 3D, el MSCAN-L15 puede llevar a cabo mediciones más estrictas con todos los requerimientos de precisión. 
+        El excepcional modo HDR proporciona una fuerte adaptabilidad al ambiente. Gracias a su diseño ergonómico, es totalmente portátil y puede usarse 
+        fácilmente por largos períodos de tiempo.
+      </p>
+      <p class="text-muted">
+        El MSCAN-L15 garantiza soluciones 3D precisas, eficientes y fáciles de utilizar para la inspección 3D, desarrollo de producto, control de calidad, etc.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sección para dispositivos de escritorio -->
+<div class="row align-items-center py-5 d-none d-md-flex">
+  <!-- Contenido textual -->
+  <div class="col-md-6">
+    <h3 class="texto-azul-indart fw-bold mb-3">Mediciones de gran precisión</h3>
+    <p class="text-muted">
+      El sistema de fotogrametría MSCAN-L15 está diseñado para proporcionar mediciones de gran precisión en piezas de trabajo de gran escala. 
+      Con un área de disparo de gran tamaño y un campo de amplia profundidad, MSCAN-L15 proporciona precisión volumétrica de ±0.015 mm/m para 
+      proyectos de gran escala y partes de 2 m hasta 10 m.
+    </p>
+    <p class="text-muted">
+      Compatible con dispositivos de inspección 3D, el MSCAN-L15 puede llevar a cabo mediciones más estrictas con todos los requerimientos de precisión. 
+      El excepcional modo HDR proporciona una fuerte adaptabilidad al ambiente. Gracias a su diseño ergonómico, es totalmente portátil y puede sostenerse 
+      por largos períodos de tiempo.
+    </p>
+    <p class="text-muted">
+      El MSCAN-L15 garantiza soluciones 3D precisas, eficientes y fáciles de utilizar para la inspección 3D, desarrollo de producto, control de calidad, etc.
+    </p>
+  </div>
+
+  <!-- Imagen -->
+  <div class="col-md-6 text-center">
+    <img src="{% static 'img/scaner_portatil/Captura-mscanl15-7.jpg' %}" alt="MSCAN L15" class="img-fluid rounded shadow">
+  </div>
+</div>
+
+<!-- Sección para dispositivos móviles -->
+<div class="row align-items-center py-5 d-md-none">
+  <!-- Imagen -->
+  <div class="col-12 text-center mb-4">
+    <img src="{% static 'img/scaner_portatil/Captura-mscanl15-7.jpg' %}" alt="MSCAN L15" class="img-fluid rounded shadow">
+  </div>
+
+  <!-- Contenido textual -->
+  <div class="col-12">
+    <h3 class="texto-azul-indart fw-bold mb-3">Mediciones de gran precisión</h3>
+    <p class="text-muted">
+      El sistema de fotogrametría MSCAN-L15 está diseñado para proporcionar mediciones de gran precisión en piezas de trabajo de gran escala. 
+      Con un área de disparo de gran tamaño y un campo de amplia profundidad, MSCAN-L15 proporciona precisión volumétrica de ±0.015 mm/m para 
+      proyectos de gran escala y partes de 2 m hasta 10 m.
+    </p>
+    <p class="text-muted">
+      Compatible con dispositivos de inspección 3D, el MSCAN-L15 puede llevar a cabo mediciones más estrictas con todos los requerimientos de precisión. 
+      El excepcional modo HDR proporciona una fuerte adaptabilidad al ambiente. Gracias a su diseño ergonómico, es totalmente portátil y puede sostenerse 
+      por largos períodos de tiempo.
+    </p>
+    <p class="text-muted">
+      El MSCAN-L15 garantiza soluciones 3D precisas, eficientes y fáciles de utilizar para la inspección 3D, desarrollo de producto, control de calidad, etc.
+    </p>
+  </div>
+</div>
+
+
+  <!-- Título principal -->
+  <div class="text-center mb-4 py-5">
+    <h2 class="texto-azul-indart fw-bold">Galería</h2>
+    <p class="text-muted">Descubre algunos de nuestros proyectos recientes y destacados.</p>
+  </div>
+
+  <!-- Galería -->
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <a href="{% static 'img/scaner_portatil/Captura-mscanl15-1.png' %}" data-lightbox="gallery" data-title="Descripción de la imagen 1">
+          <img src="{% static 'img/scaner_portatil/Captura-mscanl15-1.png' %}" class="img-fluid rounded shadow gallery-img">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <a href="{% static 'img/scaner_portatil/Captura-mscanl15-2.png' %}" data-lightbox="gallery" data-title="Descripción de la imagen 2">
+          <img src="{% static 'img/scaner_portatil/Captura-mscanl15-2.png' %}" class="img-fluid rounded shadow gallery-img">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <a href="{% static 'img/scaner_portatil/Captura-mscanl15-3png' %}" data-lightbox="gallery" data-title="Descripción de la imagen 3">
+          <img src="{% static 'img/scaner_portatil/Captura-mscanl15-3png' %}" class="img-fluid rounded shadow gallery-img">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <a href="{% static 'img/scaner_portatil/Captura-mscanl15-4.png' %}" data-lightbox="gallery" data-title="Descripción de la imagen 4">
+          <img src="{% static 'img/scaner_portatil/Captura-mscanl15-4.png' %}" class="img-fluid rounded shadow gallery-img">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <a href="{% static 'img/scaner_portatil/Captura-mscanl15-5.png' %}" data-lightbox="gallery" data-title="Descripción de la imagen 5">
+          <img src="{% static 'img/scaner_portatil/Captura-mscanl15-5.png' %}" class="img-fluid rounded shadow gallery-img">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <a href="{% static 'img/scaner_portatil/Captura-mscanl15-6.png' %}" data-lightbox="gallery" data-title="Descripción de la imagen 6">
+          <img src="{% static 'img/scaner_portatil/Captura-mscanl15-6.png' %}" class="img-fluid rounded shadow gallery-img">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Carrusel pequeño y centrado -->
+<div class="container d-flex justify-content-center my-4 py-5">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 700px;">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <a href="{% static 'doc/MSCAN-L15-ESP.pdf' %}" target="_blank">
+                  <img src="{% static 'img/scaner_portatil/Captura-mscanl15-carousel-1.png' %}" class="d-block w-100" alt="Tabla de especificaciones del escáner 3D iReal M3 con detalles técnicos y características principales">
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="{% static 'doc/MSCAN-L15-ESP.pdf' %}" target="_blank">
+                  <img src="{% static 'img/scaner_portatil/Captura-mscanl15-carousel-2.png' %}" class="d-block w-100" alt="Escáner 3D iReal M3 con diseño ergonómico y tecnología avanzada para digitalización precisa">
+              </a>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</div>
+
+
+
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+<script>
+  // Configuración personalizada de Lightbox2
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true, // Navegación circular
+    'fadeDuration': 200 // Duración del efecto de transición
+  });
+</script>
+{% endblock %}

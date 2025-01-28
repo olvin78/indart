@@ -1,0 +1,187 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>Contacto | Indart3D</title>
+<!-- Leaflet.js y CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+crossorigin=""/>
+
+<!--enlaces del carousel-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+<div style="background: linear-gradient(to right, #4bb5c1 50%, #ffffff);">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <!-- Columna de texto -->
+            <div class="col-md-6 px-5 text-white">
+                <h2 class="display-4">Contacta con nosotros</h2>
+                <p class="mt-3 fs-5">
+                   <b>Puedes ponerte en contacto con nosotros para lo que necesites:</b>
+                </p>
+                <ul class="fs-5">
+                    <li>¿Quieres hacer un pedido o pedir un presupuesto?</li>
+                    <li>¿Dudas técnicas?</li>
+                    <li>¿Quieres proponernos una idea o sugerencia?</li>
+                    <li>¿Quieres enviarnos tu currículum o demostrarnos tu talento?</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            <!-- Columna del formulario -->
+            <div class="col-md-6 px-5">
+                <div class="p-4 rounded" style="background-color: #4bb5c1; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-white">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label text-white">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="politicaPrivacidad">
+                            <label class="form-check-label text-white" for="politicaPrivacidad">
+                                He leído y acepto la <a href="#" class="text-white text-decoration-underline">política de privacidad</a>
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn bg-light w-auto px-4">Enviar comentario</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+
+        <!-- Tarjeta Teléfono -->
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card text-center shadow" style="background: linear-gradient(to bottom, #FFD54F, #FFF9C4); border-radius: 15px;min-height: 20vh;">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <img src="{% static 'img/iconos/phone_23732.webp' %}" alt="Teléfono" style="width: 50px;">
+                    </div>
+                    <h5 class="card-title">Teléfono</h5>
+                    <p class="card-text">+34 943 943 855</p>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta Dirección -->
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card text-center shadow" style="background: linear-gradient(to bottom, #FFD54F, #FFF9C4); border-radius: 15px;min-height: 20vh;">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <img src="{% static 'img/iconos/18315446.png' %}" alt="Dirección" style="width: 50px;">
+                    </div>
+                    <h5 class="card-title">Dirección</h5>
+                    <p class="card-text">Calle Gabiria, 88<br>20305 Irun, Gipuzkoa</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta Email -->
+        <div class="col-md-4 col-12 mb-3">
+            <div class="card text-center shadow" style="background: linear-gradient(to bottom, #FFD54F, #FFF9C4); border-radius: 15px;min-height: 20vh;">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <img src="{% static 'img/iconos/mail_23797.webp' %}" alt="Email" style="width: 50px;">
+                    </div>
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text">info@indart3d.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--===============================================
+            leaflet mapas
+===================================================-->
+<div class="container my-5 py-5">
+    <div class="row align-items-center">
+        <!-- Información -->
+        <div class="col-md-6">
+            <h2 class="mb-4 texto-azul-indart">Visítanos</h2>
+            <p>Si necesitas soporte presencial, o simplemente quieres ver dónde fabricamos y desarrollamos nuestros productos, puedes visitarnos, estamos en:</p>
+            <p><strong>Calle Gabiria, 88, 20305 Irun, Gipuzkoa</strong></p>
+        </div>
+
+        <!-- Mapa Leaflet -->
+        <div class="col-md-6">
+            <div id="map" style="height: 400px; width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></div>
+        </div>
+    </div>
+</div>
+
+
+<!--=====================================================
+            este es el ultimo apartado de la seccion 
+=========================================================-->
+<div class="" style="background: linear-gradient(to right, #4bb5c1 40%, #ffffff);">
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start" style="padding-top: 150px; padding-bottom: 150px;">
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold" style="font-size: 2.5rem;">
+                    No es <span style="color: #d52d3e;">tarde</span>, tampoco <span style="color: #f3c938;">temprano</span>. Es el <span style="color: #8a959d;">momento</span>.
+                </h2>
+                <div class="mt-4 mb-4">
+                   <!-- <a href="#contacto" class="btn btn-primary" style="background: #4bb5c1; border:1px solid grey; padding: 10px 20px; border-radius: 5px;">
+                        CONTACTA CON NOSOTROS
+                    </a>-->
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="col-md-6">
+                <img src="{% static 'img/logo/logo-indart-removebg-preview.png' %}" alt="Indart 3D Logo" class="img-fluid" style="max-width: 250px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Leaflet.js y CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+    // Inicializar el mapa
+    var map = L.map('map').setView([43.3371, -1.7945], 15); // Coordenadas aproximadas para Irun, Gipuzkoa
+
+    // Cargar mosaicos (tiles) del mapa
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: ''
+    }).addTo(map);
+
+    // Añadir un marcador
+    L.marker([43.3371, -1.7945]).addTo(map)
+        .bindPopup('<b>Indart 3D</b><br>Calle Gabiria, 88, 20305 Irun, Gipuzkoa')
+        .openPopup();
+</script>
+
+
+{% endblock %}

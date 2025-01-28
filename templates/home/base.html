@@ -1,0 +1,602 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>"Indart 3D: Innovación en Impresión, Escaneado y Tecnología 3D de Vanguardia"</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+<style>
+  .scaled-video {
+      transform: scale(1.5); /* Ajusta el valor para cambiar el tamaño del contenido */
+      transform-origin: top; /* Escala desde el centro del video */
+  }
+</style>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+        @font-face {
+            font-family: 'MiFuentePersonalizada';
+            src: url('{% static "font/Nasalization-Rg.otf" %}') format('opentype');
+        }
+
+        body {
+            font-family: 'MiFuentePersonalizada', sans-serif;
+        }
+
+        .fondo-azul-indart{
+            background-color: #4BB5C1;
+        }
+        .texto-azul-indart{
+            color: #4BB5C1;
+        }
+        .bg-black {
+            background-color: #000;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .curved-background {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #fff;
+            border-radius: 50% / 20%;
+            transform: translateY(50%);
+        }
+
+
+        .dropdown-menu li {
+        position: relative;
+
+        }
+        .dropdown-menu .dropdown-submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+        }
+        .dropdown-menu .dropdown-submenu-left {
+        right: 100%;
+        left: auto;
+        }
+        .dropdown-menu > li:hover > .dropdown-submenu {
+        display: block;
+        }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbars.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+   
+    <div class="container">
+
+    <!-- Primero: visible en lg y tamaños superiores -->
+    <div class="row p-2 d-none d-lg-flex">
+        <div class="d-flex justify-content-between w-100">
+            <!-- Contenedor para 'uno' y 'dos' alineados a la izquierda -->
+            <div class="d-flex">
+                <label class="me-3 texto-azul-indart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill texto-azul-indart" viewBox="0 0 16 16">
+      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+    </svg>info@indart3d.com
+                </label>
+                <label class="texto-azul-indart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+    </svg>+34 943 943 855
+                </label>
+            </div>
+            <!-- Contenedor para 'tres' y 'cuatro' alineados a la derecha -->
+            <div class="d-flex">
+                <label class="me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram texto-azul-indart" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
+                </label>
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin texto-azul-indart" viewBox="0 0 16 16">
+      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+
+<!-- Segundo: visible en md, sm y xs -->
+<div class="row p-3 d-flex d-lg-none">
+    <div class="d-flex justify-content-between w-100">
+        <!-- Contenedor para 'uno' y 'dos' alineados a la izquierda -->
+        <div class="d-flex">
+            <label class="me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+              </svg>
+              </label>
+              <label>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+            </label>
+        </div>
+        <!-- Contenedor para 'tres' y 'cuatro' alineados a la derecha -->
+        <div class="d-flex">
+            <label class="me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+            </label>
+            <label>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<hr class="m-0 p-0 text-secondary">
+  <main>
+    <nav class="navbar navbar-expand-lg rounded" aria-label="Thirteenth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand col-lg-3 me-0" href="{% url 'home_app:home' %}"><img style="width:150px;" src="{% static 'img/logo/logo-indart.png' %}"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <ul class="navbar-nav col-lg-9 justify-content-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Tumaker</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'home_app:nx_modular' %}">NX MODULAR</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:bf_modular' %}">BF MODULAR</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:mini_pro' %}">MINI PRO</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:mini_pro' %}">ALIMENTADOR DE PELLET</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'home_app:nx_modular' %}" data-bs-toggle="dropdown" aria-expanded="false">Escaner 3D</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Escáner<br> Automatizado &raquo;
+                </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:autoscan-k-3d' %}">AutoScan-k 3D</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:autoscan-t42' %}">AutoScan-T42 3D</a>
+                  </li>
+                </ul>
+              </li>
+
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  Escáner a Color &raquo;
+                </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:Ireal_it3d' %}">IT3D</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:scantech_ireal_m3' %}">iReal M3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:Ireal_ze' %}">iReal ZE</a>
+                  </li>
+                </ul>
+              </li>
+
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  Escáner potátil &raquo;
+                </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:home' %}">Simscan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:home' %}">KSCAN 20</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:mscan_l15' %}">MSCAN L15</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:home' %}">Kscan Magic</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{% url 'home_app:home' %}">TrackScan P42</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap  texto-azul-indart" href="{% url 'home_app:blog_list' %}">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Material</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'home_app:pellet' %}">Pellet</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:filamento' %}">Filamento</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="{% url 'home_app:servicios' %}">Servicios 3D</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="{% url 'home_app:duet3D' %}">Duet 3D</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Soporte</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Soporte Técnico</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Manual y Configuración</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home_app:contacto' %}">Contacto</a></li>
+                  <!-- Hazitek como desplegable -->
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Subvenciones &raquo;
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="{% url 'home_app:hazitek_2024' %}">2024</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'home_app:hazitek_2023' %}">2023</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'home_app:hazitek_2022' %}">2022</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'home_app:hazitek_2021' %}">2021</a>
+                      </li>
+                    </ul>
+                  </li>
+             
+                  <li><a class="dropdown-item" href="{% url 'home_app:sobre_nosotros' %}">Quiénes somos</a></li>
+              </ul>
+          </li>
+          
+            <button type="button" class="btn btn-sm fondo-azul-indart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              IndartBot
+            </button>
+          </ul>
+          <!--<div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <button class="btn btn-primary">Button</button>
+          </div>-->
+        </div>
+      </div>
+    </nav>
+  </main>
+
+    </div>
+</header>
+
+
+
+{% block content %}
+{% endblock %}
+<footer style="background-color: #222;">
+<!-- Row 3: Contenido principal del footer dividido en 4 partes -->
+<div class="container">
+     <!-- Logo principal centrado -->
+     <div class="row pt-5 text-center">
+      <div class="col-12">
+        <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="Logo Principal" class="img-fluid mb-3" style="max-width: 150px;">
+        <p class="text-white">Innovación y Desarrollo 3D</p>
+      </div>
+    </div>
+    <hr class="text-white">
+  <!-- Row con las cuatro columnas -->
+  <div class="row py-5 text-white text-center text-md-start">
+    <!-- Columna 1: Creadores de Tumaker -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="mb-4 texto-azul-indart">Creadores de</h5>
+      <img src="{% static 'img/logo/Logo-tumaker-white-trasparente.png.webp' %}" alt="Logo Secundario" class="img-fluid mb-2" style="max-width: 150px;">
+      <p class="text-muted">Web creada por Indart3D</p>
+    </div>
+
+   <!-- Columna 2: Contacto -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="fw-bold mb-3 text-uppercase texto-azul-indart">Contacto</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <i class="bi bi-telephone-fill text-primary me-2"></i>
+          <span class="text-white">+34 943 943 855</span>
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-envelope-fill text-primary me-2"></i>
+          <span class="text-white">info@indart3d.com</span>
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+          <span class="text-white">Calle Gabiria, 88<br>20305 Irun, Gipuzkoa</span>
+        </li>
+      </ul>
+      <div class="mt-3">
+        <a href="{% url 'home_app:contacto' %}"><button style="width:200px;" class="btn fondo-azul-indart rounded-4 text-white px-4 py-2">Contactar</button></a>
+      </div>
+    </div>
+
+
+    <!-- Columna 3: Horario general -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="fw-bold mb-2 text-uppercase texto-azul-indart">Horario</h5>
+      <p class="text-white mb-2">Lunes - Jueves: 8:30 a 13:30 y 14:30 a 17:30</p>
+      <p class="text-white mb-2">Viernes: 8:00 a 15:00</p>
+    </div>
+
+    <!-- Columna 4: Horario de Verano -->
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h5 class="fw-bold  mb-2 text-uppercase texto-azul-indart">Horario de Verano</h5>
+      <p class="text-white">Lunes - Viernes: 8:00 a 14:30</p>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="{% url 'home_app:aviso_legal' %}" class="text-white text-decoration-none me-2"><b>Aviso legal</b></a>
+      <span class="text-white">|</span>
+      <a href="{% url 'home_app:cookies' %}" class="text-white text-decoration-none ms-2"><b>Cookies</b></a>
+      <span class="text-white">|</span>
+      <a href="{% url 'home_app:politica_de_privacidad' %}" class="text-white text-decoration-none mx-2"><b>Políticas de Privacidad</b></a>
+    </div>
+    <hr class="text-white mt-4">
+    <div class="text-center"><p class="mb-0">© Copyright <strong>Company</strong>. All Rights Reserved</p></div>
+  </div>
+</div>
+
+
+</footer>
+
+<!--codigo html para el assistente vistual-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- Icono del bot -->
+      <video class="w-50 mx-auto d-block mt-3 scaled-video" autoplay loop muted playsinline>
+        <source src="{% static 'media/minibootIndart.mp4' %}" type="video/mp4">
+      </video>
+    
+    
+
+      <!-- Encabezado del modal -->
+      <div class="modal-header text-center w-100">
+        <h5 class="modal-title text-center w-100" id="exampleModalLabel">indartBot!</h5>
+      </div>
+
+      <!-- Contenedor del chat -->
+      <div id="chat-container" class="bg-white px-3 py-2" style="max-height: 40vh; overflow-y: auto;">
+        <div id="chat-box" style="min-height: 20vh;">
+          <!-- Los mensajes del chat se mostrarán aquí -->
+        </div>
+      </div>
+
+      <!-- Zona de entrada fija -->
+      <div id="input-container" class="px-3 py-2 bg-light">
+        <form id="message-form" method="post">
+          <input type="text" id="user-message" class="form-control mb-2" placeholder="¿Cómo Puedo Ayudarte?">
+          <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+          <button type="button" id="send-button" class="btn fondo-azul-indart w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+<!-- estaes la prueba para agregar el assistente bvirtual a indart-->
+<!--OpenAI-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+      // Función para enviar mensaje
+      function sendMessage() {
+          let userMessage = $('#user-message').val();
+          if (userMessage.trim() !== '') {
+              // Limpiar el chat-box antes de agregar nuevos mensajes
+              $('#chat-box').empty();
+
+              $('#chat-box').append(`<p class="user-message"><strong>Tú:</strong> ${userMessage}</p>`);
+              $('#user-message').val('');
+
+              // Desplazarse automáticamente al final del chat
+              $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+
+              $.ajax({
+                  type: 'POST',
+                  url: '/assistant/api/get_response/',
+                  data: {
+                      'message': userMessage,
+                      'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+                  },
+                  success: function (response) {
+                      if (response.reply) {
+                          $('#chat-box').append(`<p class="bot-message"><strong>Bot:</strong> ${response.reply}</p>`);
+                          $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+                      } else {
+                          $('#chat-box').append('<p class="bot-message"><strong>Error:</strong> Algo salió mal.</p>');
+                      }
+                  },
+                  error: function () {
+                      $('#chat-box').append('<p class="bot-message"><strong>Error:</strong> No se pudo conectar con el servidor.</p>');
+                  }
+              });
+          }
+      }
+
+      // Enviar mensaje al hacer clic en el botón
+      $('#send-button').click(function () {
+          sendMessage();
+      });
+
+      // Enviar mensaje al presionar Enter
+      $('#user-message').keypress(function (e) {
+          if (e.which === 13) {
+              e.preventDefault();
+              sendMessage();
+          }
+      });
+  });
+</script>
+
+<!--Para openai mantere el scrol del modal-->
+<script>
+    // Función para desplazarse automáticamente al final del chat
+    function scrollToBottom() {
+    const chatContainer = document.getElementById('chat-container');
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    // Desplazar al final al abrir el modal
+    const modal = document.getElementById('exampleModal');
+    modal.addEventListener('shown.bs.modal', function () {
+    scrollToBottom();
+    });
+
+    // Desplazar al final al enviar un mensaje
+    document.getElementById('send-button').addEventListener('click', function () {
+    setTimeout(scrollToBottom, 100); // Espera un momento para asegurar que el mensaje ya se agregó
+    });
+</script>
+
+
+
+</html>

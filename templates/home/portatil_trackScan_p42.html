@@ -1,0 +1,246 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>TRACKSCAN P42 | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+
+<div class="container py-5">
+  <!-- Título principal -->
+  <div class="text-center mb-4">
+    <h1 class="fw-bold" style="color: #4B4B4B;">TrackScan p42</h1>
+  </div>
+
+  <!-- Subtítulo y contenido -->
+  <div class="text-center py-5">
+    <h3 class="texto-azul-indart fw-bold mb-3">TrackScan-P Sistema de medición óptica 3D</h3>
+    <p class="text-muted" style="text-align: left;">
+      Diseñado con medición de seguimiento óptico inteligente y cámaras de alta resolución, TrackScan-P puede medir con precisión las piezas sin tener que pegar objetivos de referencia. Este sistema óptico de medición 3D, que consta de un escáner 3D portátil y un rastreador óptico E-Track, es idóneo para escanear en 3D objetos de gran tamaño. 
+      Puede aplicarse ampliamente para el control de calidad, el desarrollo de productos, la ingeniería inversa, etc., en sectores como el aeroespacial, la automoción, el transporte ferroviario y el molde.
+    </p>
+    <p class="text-muted" style="text-align: left;">
+      Al combinarlo con módulos adicionales, puede permitir aplicaciones ampliables. Puede emparejarse con un módulo de luz auxiliar para inspeccionar círculos, ranuras y agujeros mecanizados de piezas de estampación. Con un T-Probe portátil, realiza mediciones de contacto precisas de bordes, círculos y ranuras. Cuando se monta en un brazo robótico, es una opción óptima para la inspección 3D inteligente y automatizada.
+    </p>
+  </div>
+</div>
+
+<div class="container py-5">
+  <!-- Primera sección: Imágenes con descripciones -->
+  <div class="row text-center mb-5">
+    <div class="col-md-3">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 80px; height: 80px;">
+          <img src="{% static 'img/iconos/prohibido.png' %}" alt="Escaneo 3D sin objetivos" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Escaneo 3D sin objetivos</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 80px; height: 80px;">
+          <img src="{% static 'img/iconos/velocimetro.png' %}" alt="Medición ultrarrápida" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Medición ultrarrápida</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 80px; height: 80px;">
+          <img src="{% static 'img/iconos/modelado-3d.png' %}" alt="Detección de bordes" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Detección de bordes</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 80px; height: 80px;">
+          <img src="{% static 'img/iconos/inalambrico.png' %}" alt="Volumen de medición ampliable" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Volumen de medición ampliable</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <!-- Primera sección -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="{% static 'img/trackscanp42/TrackScan-P-img-4-1.jpg-copia1.jpg' %}" alt="Detección precisa de los bordes" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h3 class="texto-azul-indart fw-bold">Detección precisa de los bordes</h3>
+      <p class="text-muted">
+        TrackScan cuenta con una función destacada de detección instantánea de bordes. Los usuarios pueden inspeccionar los círculos, 
+        las ranuras y los agujeros mecanizados de las piezas de estampación en varios acabados en el sitio sin tener que importar 
+        los modelos CAD originales.
+      </p>
+      <p class="text-muted">
+        La detección eficaz de los bordes es posible gracias a su medición del valor de gris y al módulo de luz auxiliar opcional. 
+        Las buenas mediciones están garantizadas al ofrecer posiciones y diámetros de agujeros precisos y repetibles.
+      </p>
+    </div>
+  </div>
+
+  <!-- Segunda sección -->
+  <div class="row align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="{% static 'img/trackscanp42/TrackScan-P-img2.jpg2_.jpg' %}" alt="Sin rival-rápido y detallista" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h3 class="texto-azul-indart fw-bold">Sin rival-rápido y detallista</h3>
+      <p class="text-muted">
+        Al cambiar libremente entre varios modos de trabajo, el TrackScan se adapta a diferentes situaciones de exploración con 
+        una precisión de hasta 0,025 mm y una velocidad de medición ultrarrápida de hasta 2.600.000 mediciones/s. 
+        Sus 7 líneas láser azules paralelas tienen un buen rendimiento para captar detalles.
+      </p>
+      <p class="text-muted">
+        Una sola línea láser azul tiene como objetivo recoger datos 3D de agujeros profundos y zonas de difícil acceso de forma eficiente.
+      </p>
+    </div>
+  </div>
+    <!-- Primera sección -->
+    <div class="row align-items-center mb-5 py-5">
+      <div class="col-md-6">
+        <img src="{% static 'img/trackscanp42/Captura-3.png' %}" alt="Seguimiento óptico para una exploración 3D instantánea" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h3 class="texto-azul-indart fw-bold">Seguimiento óptico para una exploración 3D instantánea</h3>
+        <p class="text-muted">
+          El seguimiento óptico del sistema TrackScan-P 3D permite a los usuarios empezar a escanear al instante sin tener que pegar los objetivos, lo que mejora significativamente la eficiencia y disminuye los costes.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Segunda sección -->
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2">
+        <img src="{% static 'img/trackscanp42/Capturatras4.png' %}" alt="Gran adaptabilidad" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 order-md-1">
+        <h3 class="texto-azul-indart fw-bold">Gran adaptabilidad</h3>
+        <p class="text-muted">
+          Fabricado con materiales de calidad aeroespacial, es robusto y fiable. También cuenta con una gran capacidad antinterferente para funcionar sin problemas independientemente de las vibraciones o las variaciones térmicas. Gracias a su avanzado algoritmo, TrackScan es robusto en la captura de datos 3D de superficies reflectantes y oscuras.
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="container py-5">
+  <!-- Título -->
+  <h2 class="texto-azul-indart fw-bold text-center mb-4">Características</h2>
+
+  <!-- Tabla en escritorio -->
+  <div class="table-responsive d-none d-md-block">
+    <table class="table table-bordered text-center">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Tipo</th>
+          <th scope="col">TrackScan-P550</th>
+          <th scope="col">TrackScan-P542</th>
+          <th scope="col">TrackScan-P42</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Modo de escaneo</td>
+          <td>Escaneado ultrarrápido<br>21 cruces láser azules</td>
+          <td>Escaneado ultrarrápido<br>17 cruces láser azules</td>
+          <td>Exploración hiperfina<br>1 línea láser azul</td>
+        </tr>
+        <tr>
+          <td>Precisión(1)</td>
+          <td>Hasta 0,025 mm</td>
+          <td>Hasta 0,025 mm</td>
+          <td>Hasta 0,025 mm</td>
+        </tr>
+        <tr>
+          <td>Tasa de medición</td>
+          <td>Hasta 2.600.000 mediciones/s</td>
+          <td>Hasta 2.200.000 mediciones/s</td>
+          <td>Hasta 1.900.000 mediciones/s</td>
+        </tr>
+        <tr>
+          <td>Área de escaneo</td>
+          <td colspan="3">Hasta 500 mm × 600 mm</td>
+        </tr>
+        <tr>
+          <td>Clase láser</td>
+          <td colspan="3">ClaseⅡ (seguro para los ojos)</td>
+        </tr>
+        <tr>
+          <td>Resolución</td>
+          <td colspan="3">Hasta 0,020 mm</td>
+        </tr>
+        <tr>
+          <td>Precisión volumétrica(2)</td>
+          <td>10.4 m³<br>0.060 mm<br>18.0 m³<br>0.075 mm</td>
+          <td>10.4 m³<br>0.064 mm<br>18.0 m³<br>0.078 mm</td>
+          <td>10.4 m³<br>0.064 mm<br>18.0 m³<br>0.078 mm</td>
+        </tr>
+        <tr>
+          <td>Formatos de salida</td>
+          <td colspan="3">.stl, .ply, .obj, .igs, wrl, .xyz, .dae, .fbx, .ma, .asc o personalizado</td>
+        </tr>
+        <tr>
+          <td>Certificación</td>
+          <td>CE, UL</td>
+          <td>CE, UL</td>
+          <td>/</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tarjetas para dispositivos móviles -->
+  <div class="d-block d-md-none">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title fw-bold texto-azul-indart">TrackScan-P550</h5>
+        <p><strong>Modo de escaneo:</strong> Escaneado ultrarrápido, 21 cruces láser azules</p>
+        <p><strong>Precisión:</strong> Hasta 0,025 mm</p>
+        <p><strong>Tasa de medición:</strong> Hasta 2.600.000 mediciones/s</p>
+        <p><strong>Área de escaneo:</strong> Hasta 500 mm × 600 mm</p>
+        <p><strong>Resolución:</strong> Hasta 0,020 mm</p>
+        <p><strong>Certificación:</strong> CE, UL</p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title fw-bold texto-azul-indart">TrackScan-P542</h5>
+        <p><strong>Modo de escaneo:</strong> Escaneado ultrarrápido, 17 cruces láser azules</p>
+        <p><strong>Precisión:</strong> Hasta 0,025 mm</p>
+        <p><strong>Tasa de medición:</strong> Hasta 2.200.000 mediciones/s</p>
+        <p><strong>Área de escaneo:</strong> Hasta 500 mm × 600 mm</p>
+        <p><strong>Resolución:</strong> Hasta 0,020 mm</p>
+        <p><strong>Certificación:</strong> CE, UL</p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title fw-bold texto-azul-indart">TrackScan-P42</h5>
+        <p><strong>Modo de escaneo:</strong> Exploración hiperfina, 1 línea láser azul</p>
+        <p><strong>Precisión:</strong> Hasta 0,025 mm</p>
+        <p><strong>Tasa de medición:</strong> Hasta 1.900.000 mediciones/s</p>
+        <p><strong>Área de escaneo:</strong> Hasta 500 mm × 600 mm</p>
+        <p><strong>Resolución:</strong> Hasta 0,020 mm</p>
+        <p><strong>Certificación:</strong> /</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+{% endblock %}

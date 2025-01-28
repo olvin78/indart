@@ -1,0 +1,222 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>BF_MODULAR | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+<div class="bg-light">
+    <section class="container py-5">
+        <!-- Título del producto -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">iReal 2E</h1>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="row align-items-center">
+            <!-- Video de YouTube -->
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M5CY_721JFY?si=iUEN0giiac_uWtlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <div class="col-md-6">
+                <h2 class="fw-bold texto-azul-indart">Experiencia de escaneo 3D cómoda y segura</h2>
+                <p>
+                    El Escáner color 3D iReal 2E maximiza el rendimiento en profundidad de campo, áreas de escaneo, algoritmos, reproducción de textura y detección de detalles; especialmente diseñado para objetos medianos o grandes y escaneo corporal 3D.
+                </p>
+                <p>
+                    iReal 2E posee tecnología de luz infrarroja estructurada VCSEL para brindarle una experiencia de escaneo 3D cómoda y segura. Sin la necesidad de adjuntar ningún marcador, se puede obtener una captura rápida de la textura y de la geometría. 
+                    Los modos de alineamiento mixtos proporcionan una solución para cada necesidad de escaneo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <!-- Primera sección: Escaneo eficiente -->
+        <div class="row align-items-center mb-5">
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold texto-azul-indart">Escaneo eficiente</h2>
+                <p>
+                    Con la ventaja de las últimas funciones de algoritmos, un software fácil de usar, 
+                    un diseño ergonómico de larga duración y portátil, iReal 2E brinda la solución para la medición eficiente 
+                    y exacta de las texturas 3D de color.
+                </p>
+            </div>
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/ireal-ze/iReal1.jpg' %}" class="img-fluid rounded" alt="Persona escaneando un automóvil utilizando el escáner iReal 2E">
+            </div>
+        </div>
+
+        <!-- Segunda sección: Trabajar sin complicaciones -->
+        <div class="row align-items-center">
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/ireal-ze/iReal2.jpg' %}" class="img-fluid rounded" alt="Escaneo de un objeto industrial con el escáner iReal 2E conectado a una laptop">
+            </div>
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold texto-azul-indart">Trabajar sin complicaciones</h2>
+                <p>
+                    Escaneo 3D flexible y uniforme de objetos medianos o grandes gracias a su área de escaneo 
+                    de 580 mm x 550 mm y su profundidad de campo de 720 mm.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <!-- Primera sección: Experiencia 3D de luz invisible -->
+        <div class="row align-items-center mb-5">
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold texto-azul-indart">Experiencia 3D de luz invisible</h2>
+                <p>
+                    La luz estructurada VCSEL de infrarrojos le brinda una experiencia de escaneo 3D cómoda y segura, 
+                    ya que elimina el problema de las luces resplandecientes y de la dificultad del escaneo de cabello.
+                </p>
+            </div>
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/ireal-ze/iReal3.jpg' %}" class="img-fluid rounded" alt="Persona utilizando el escáner iReal 2E para escanear un modelo humano">
+            </div>
+        </div>
+
+        <!-- Segunda sección: Captura de textura ultra HD y recopilación rápida -->
+        <div class="row align-items-center">
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static '/img/ireal-ze/iReal4.jpg' %}" class="img-fluid rounded" alt="Escáner iReal 2E capturando texturas detalladas en una superficie tallada">
+            </div>
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold texto-azul-indart">Captura de textura ultra HD</h2>
+                <p>
+                    Con su reproducción de color HD, iReal 2E proporciona una experiencia visual de captura de textura en varios campos.
+                </p>
+                <h2 class="fw-bold mt-4 texto-azul-indart">Recopilación de datos ultra rápida</h2>
+                <p>
+                    Al utilizar el sensor 3D de último modelo, iReal 2E proporciona una recopilación de datos eficiente con un volumen y medidas/s de 1.500.000 puntos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <!-- Título de la sección -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Características</h2>
+            <p class="text-muted">Conoce las especificaciones más destacadas del escáner iReal 2E</p>
+        </div>
+    
+        <div class="row align-items-center">
+            <!-- Imagen del escáner -->
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+                <img src="{% static 'img/ireal-ze/iReal6.jpg' %}" class="img-fluid rounded shadow" alt="Escáner iReal 2E en detalle">
+            </div>
+            <!-- Lista de características -->
+            <div class="col-md-7">
+                <h3 class="fw-bold texto-azul-indart mb-3">Especificaciones Técnicas</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Escaneado:</strong> Luz Infrarroja Estructurada
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Modos de Escaneo:</strong> Manual
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Precisión (Single Point):</strong> 0.10 mm
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Precisión Volumétrica:</strong> Hasta 0.30 mm/m
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Resolución:</strong> 0.20 mm – 3 mm
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Distancia de Trabajo:</strong> 300 mm – 600 mm
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Área de Escaneado:</strong> 580 mm x 550 mm
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Velocidad de Trabajo:</strong> 15 fps
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Formatos de Exportación:</strong> OBJ, STL, PLY, ASC, SK
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        <strong>Requisitos Mínimos:</strong>
+                        <ul class="ps-4">
+                            <li>Tarjeta gráfica: Nvidia GTX 1060 o superior</li>
+                            <li>Memoria de video: 4 GB</li>
+                            <li>Procesador: Intel Core i7 o superior</li>
+                            <li>RAM: 32 GB</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- Carrusel pequeño y centrado -->
+<div class="container d-flex justify-content-center my-4 py-5">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 700px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{% static 'doc/iReal-2E-ESP.pdf' %}" target="_blank">
+                    <img src="{% static 'img/ireal-ze/Captura1-carousel.png' %}" class="d-block w-100" alt="Tabla de especificaciones del escáner 3D iReal M3 con detalles técnicos y características principales">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'doc/iReal-2E-ESP.pdf' %}" target="_blank">
+                    <img src="{% static 'img/ireal-ze/Captura2-carousel.png' %}" class="d-block w-100" alt="Escaneo 3D del cuerpo humano con luz dual utilizando el escáner iReal M3">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>    
+    
+    
+    
+</div>
+
+
+
+
+
+
+
+  
+{% endblock %}

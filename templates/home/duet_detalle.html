@@ -1,0 +1,85 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>DUET | Indart3D</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row py-5">
+        <!-- Imagen principal con efecto de zoom -->
+        <div 
+            class="col-md-6" 
+            style="
+                background-image: url('{{ datos.image1.url }}'); 
+                background-size: 95%; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                height: 450px; 
+                overflow: hidden; 
+                transition: background-size 0.3s ease;"
+            onmouseover="this.style.backgroundSize='105%';" 
+            onmouseout="this.style.backgroundSize='95%';"
+        ></div>
+
+        <!-- Información del producto -->
+        <div class="col-md-6 definicion">
+            <h1>{{ datos.name }}</h1>
+            <hr>
+            <h3>Categoría :</h3>
+            <br>
+            <h3>Otro Ángulo:</h3>
+            <div class="miniaturas d-flex gap-2">
+                <a href="#">
+                    {% if datos.image2 %}
+                    <img class="img-thumbnail" src="{{ datos.image2.url }}" alt="Camiseta Roja">
+                    {% endif %}
+                </a>
+                <a href="#">
+                    {% if datos.image3 %}
+                    <img class="img-thumbnail" src="{{ datos.image3.url }}" alt="Camiseta Verde">
+                    {% endif %}
+                </a>
+                <a href="#">
+                    {% if datos.image4 %}
+                    <img class="img-thumbnail" src="{{ datos.image4.url }}" alt="Camiseta Amarilla">
+                    {% endif %}
+                </a>
+                <a href="#">
+                    {% if datos.image5%}
+                    <img class="img-thumbnail" src="{{ datos.image5.url }}" alt="Camiseta Negra">
+                    {% endif %}
+                </a>
+            </div>          
+    </div>
+</div>
+
+<div class="container description-section py-5">
+    <h2 style="text-align: center;">Descripción</h2>
+    <!-- Campo de descripción del modelo -->
+    <p>{{ datos.description }}</p>
+
+    <!-- Características -->
+    <h3 class="mt-4">Características</h3>
+    <ul class="features-list">
+        <li><strong>Procesador:</strong> Potente microcontrolador Atmel ATSAME70 de 32 bits: ARM Cortex-M7 funcionando a hasta 300MHz.</li>
+        <li><strong>Expansión:</strong> BUS CAN-FD para conectar múltiples placas de expansión y herramientas.</li>
+        <li><strong>Conectividad:</strong> Bus SPI dedicado a una computadora de placa única (SBC) o conexión por Ethernet.</li>
+        <li><strong>Soporte para controladores externos:</strong> 6 puertos con salidas de paso/dirección/habilitación.</li>
+        <li><strong>Salidas de alta corriente:</strong> 3 salidas de alta corriente (hasta 6A cada una).</li>
+        <li><strong>Salidas de corriente media:</strong> 6 salidas de corriente media para ventiladores PWM y dispositivos similares.</li>
+        <li><strong>Medición de temperatura:</strong> 4 entradas para termistores PT1000, compatibles con placas de alta temperatura.</li>
+        <li><strong>Entradas/Salidas:</strong> 9 conectores IO con señal de salida de 3.3V.</li>
+        <li><strong>Monitoreo de potencia:</strong> Monitoreo del voltaje VIN para fallos de energía.</li>
+        <li><strong>Firmware:</strong> Ejecuta RepRapFirmware 3.4 o posterior.</li>
+    </ul>
+
+    <!-- Link de documentación -->
+    <a href="https://link-to-documentation.com" target="_blank" class="documentation-link">
+        Ver documentación completa del hardware
+    </a>
+</div>
+</div>
+{% endblock %}

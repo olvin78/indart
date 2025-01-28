@@ -1,0 +1,406 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>Landing | Indart3D</title>
+<style>
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <video class="m-0 p-0 w-100" style="height: 100vh; object-fit: cover;" loop autoplay playsinline muted>
+            <source type="video/mp4" src="{% static 'media/INDART3D_PELLETS_VIDEO.mp4' %}"/>
+        </video>
+    </div>
+</div>
+
+<!--===============================================
+            container principal
+==================================================-->
+<div class="container-fluid fondo-azul-indart">
+    <div class="row align-items-center py-5">
+        <!-- Espaciado lateral izquierdo -->
+        <div class="col-lg-3 col-md-1 d-none d-md-block"></div>
+
+        <!-- Sección de texto -->
+        <div class="col-lg-3 col-md-5 p-5">
+            <label class="text-white fs-0">{% trans 'BIENVENIDOS' %}</label>
+            <h1 class="text-white fw-bold">Indart 3D</h1>
+            <p class="text-white">
+                Somos Indart3D, una cooperativa impulsada por jóvenes emprendedores que se dedica al diseño, fabricación y venta de impresoras 3D de última generación.
+            </p>
+            <button class="btn btn-light texto-azul-indart fw-bold">NUESTROS PRODUCTOS</button>
+        </div>
+
+        <!-- Imagen de portada -->
+        <div class="col-lg-6 col-md-6">
+            <img class="img-fluid w-100" src="{% static 'img/FOTO-1Portada.png' %}" alt="Portada Indart 3D">
+        </div>
+    </div>
+</div>
+
+<!--====================================================
+        sefunda seccion despues de el video de portada
+=======================================================-->
+
+<div class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="row g-4 text-center py-5">
+            <!-- Tarjeta 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white">
+                    <img src="{% static 'img/BF-Pellet-Pellet3.png' %}" alt="Icono 1" class="mb-3" style="width: 250px; height: 150px;padding-left: 50px;">
+                    <h5 class="fw-bold">Impresoras 3D</h5>
+                    <p class="text-muted">Diseñamos y fabricamos impresoras 3D con la última tecnología del mercado.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white">
+                    <img src="{% static 'img/Pellets-03-scaled.jpg' %}" alt="Icono 2" class="mb-3" style="width: 180px; height: 150px;">
+                    <h5 class="fw-bold">Materiales</h5>
+                    <p class="text-muted">Disponemos de los materiales necesarios para que tu experiencia de impresión sea la mejor.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white">
+                    <img src="{% static 'img/ServiciodeImpresion.png' %}" alt="Icono 3" class="mb-3" style="width: 150px; height: 140px;">
+                    <h5 class="fw-bold">Servicios 3D</h5>
+                    <p class="text-muted">Imprimimos, escaneamos e impartimos formación a medida. Lo que necesites cuando lo necesites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--====================================================
+        Apartado  sobre Mision y vision
+======================================================-->
+
+
+<div class="container py-5">
+    <!-- Título -->
+    <div class="row h-5 texto-azul-indart py-5 text-center">
+        <h2 class="fw-bold">MISIÓN & VISIÓN</h2>
+    </div>
+
+    <!-- Contenido -->
+    <div class="row mb-5 align-items-center">
+        <!-- Columna de texto -->
+        <div class="col-lg-6 col-md-12">
+            <h1 class="h1 fw-bold">Cambiando el futuro de las impresoras</h1><br>
+            <p class="h6">
+                La impresión 3D está cambiando el mundo industrial. Dedicamos parte de nuestro trabajo a investigación 
+                y desarrollo para cubrir las necesidades que las industrias 4.0 están demandando.
+            </p>
+        </div>
+        <!-- Columna de imagen -->
+        <div class="col-lg-6 col-md-12 text-center">
+            <img class="img-fluid w-75" src="{% static 'img/Pellet783x805.png' %}" alt="Impresoras 3D">
+        </div>
+    </div>
+</div>
+<!--=====================================================
+        seccion o apartado de servicios
+=========================================================-->
+<div class="" style="background-color: #f9f9f9;">
+    <div class="container py-5">
+        <div class="row py-5">
+            <!-- Tarjeta 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center border-2 shadow-lg h-100">
+                    <img class="card-img-top mx-auto mt-3" src="{% static 'img/Impresion-3D.png' %}" alt="Servicio de impresión" style="width: 80%; height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Servicio de impresión</h5>
+                        <p class="card-text flex-grow-1">¿Quieres enviarnos un diseño y descubrir el potencial y beneficio de nuestra tecnología para tu empresa? Necesitas un prototipo, un regalo personalizado, una maqueta…</p>
+                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center border-2 shadow-lg h-100">
+                    <img class="card-img-top mx-auto mt-3" src="{% static 'img/Escaner-3D.png' %}" alt="Servicio de escaneado" style="width: 80%; height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Servicio de escaneado</h5>
+                        <p class="card-text flex-grow-1">¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro servicio de escaneado te ayudaremos a replicarlo cuando lo necesites.</p>
+                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center border-2 shadow-lg h-100">
+                    <img class="card-img-top mx-auto mt-3" src="{% static 'img/Formacion-3D.png' %}" alt="Formación 3D" style="width: 80%; height: 250px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Formación 3D</h5>
+                        <p class="card-text flex-grow-1">¿Quieres aprender sobre la fabricación aditiva? Podemos ofrecer cursos a medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a lo que necesites.</p>
+                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--=====================================================
+        seccion o apartado de Formacion
+=========================================================-->
+
+<div class="container py-5">
+    <div class="row align-items-center py-5 g-4">
+        <!-- Columna de imagen -->
+        <div class="col-lg-6 col-md-12 text-center">
+            <img class="img-fluid w-75 rounded shadow" src="{% static 'img/FOTO-6Portada.png' %}" alt="Portada">
+        </div>
+
+        <!-- Columna de texto -->
+        <div class="col-lg-6 col-md-12">
+            <div class="text-start">
+                <h2 class="fw-bold texto-azul-indart">Formación</h2>
+                <h1 class="h1 fw-bold mb-4">Forma parte de la<br>industria 4.0</h1>
+                <p class="h6 mb-4">
+                    La innovación forma parte de nuestra filosofía. El desarrollo continuo también. Son los dos pilares
+                    de la nueva era en tecnología que estamos viviendo y de la que somos parte. Y la formación es la base.
+                    En INDART 3D tenemos una amplia experiencia en este campo. Pide presupuesto sin compromiso para recibir
+                    la formación que va a impulsar tu empresa.
+                </p>
+                <div class="d-flex justify-content-center py-3">
+                    <a href="#" class="btn fondo-azul-indart rounded-3 text-white px-4 py-2 text-uppercase">
+                        Cursos & Talleres
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--=====================================================================
+                    apartado de servicios
+======================================================================-->
+
+<div class="container-fluid py-5" style="background-color: #f9f9f9;">
+    <!-- Encabezado -->
+    <div class="text-center">
+        <h2 class="fw-bold texto-azul-indart">Servicios</h2>
+        <h1 class="display-5 fw-bold">¿Qué podemos hacer por ti?</h1>
+    </div>
+
+    <!-- Sección de tarjetas de servicios -->
+    <div class="container py-4">
+        <div class="row g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow text-center p-3">
+                    <div class="card-body">
+                        <img src="{% static 'img/servicios/3d-printing.png' %}" alt="Impresiones 3D" class="mb-3" style="width: 60px;">
+                        <h5 class="card-title fw-bold">Impresiones 3D</h5>
+                        <p class="card-text">Imprimimos utilizando los mejores materiales y tecnología de última generación para que el resultado sea de la máxima calidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow text-center p-3">
+                    <div class="card-body">
+                        <img src="{% static 'img/servicios/scan.png' %}" alt="Escaneado 3D" class="mb-3" style="width: 60px;">
+                        <h5 class="card-title fw-bold">Escaneado 3D</h5>
+                        <p class="card-text">Escanear una pieza ya no es un problema. Realizamos escaneados de las piezas que necesites, utilizando un proceso de alta resolución.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow text-center p-3">
+                    <div class="card-body">
+                        <img src="{% static 'img/servicios/problem.png' %}" alt="Investigación y Desarrollo" class="mb-3" style="width: 60px;">
+                        <h5 class="card-title fw-bold">Investigación & Desarrollo</h5>
+                        <p class="card-text">Colaboramos y realizamos proyectos de I+D. Si necesitas probar nuevos materiales o piezas, nosotros podemos hacerlo por ti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow text-center p-3">
+                    <div class="card-body">
+                        <img src="{% static 'img/servicios/3d-printing(1).png' %}" alt="Impresoras a medida" class="mb-3" style="width: 60px;">
+                        <h5 class="card-title fw-bold">Impresoras a medida</h5>
+                        <p class="card-text">Fabricamos impresoras con las especificaciones que necesites. Contamos con amplia experiencia en el mercado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow text-center p-3">
+                    <div class="card-body">
+                        <img src="{% static 'img/servicios/training.png' %}" alt="Formación 3D" class="mb-3" style="width: 60px;">
+                        <h5 class="card-title fw-bold">Formación en Hardware & Software</h5>
+                        <p class="card-text">Ofrecemos cursos a medida, para todos los niveles, sobre el software de impresión 3D. Nuestros técnicos te ayudarán encantados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow text-center p-3">
+                    <div class="card-body">
+                        <img src="{% static 'img/servicios/customer-satisfaction.png' %}" alt="Servicio Postventa" class="mb-3" style="width: 60px;">
+                        <h5 class="card-title fw-bold">Excelencia en el servicio postventa</h5>
+                        <p class="card-text">Proporcionamos soporte durante todo el proceso: asesoramiento inicial hasta resolución de incidencias con la impresora 3D.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--===========================================================
+        Apartado para la seccion de investigación y desarrollo 
+===============================================================-->
+<div class="container py-5 text-center">
+    <!-- Título con decoración -->
+    <h2 class="fw-bold mb-3 position-relative d-inline-block">
+        Investigación & Desarrollo
+        <span class="position-absolute start-50 translate-middle-x" style="height: 4px; background-color: #4bb5c1; width: 80%; bottom: -10px;"></span>
+    </h2>
+    <p class="h5 text-muted mb-4">Colaboramos en proyectos para la industria del mañana</p>
+
+    <!-- Contenido principal -->
+    <div class="row justify-content-center py-5">
+        <div class="col-lg-8 col-md-10">
+            <p class="text-muted mb-4">
+                En Indart3D ofrecemos nuestra experiencia en <span class="fw-bold texto-azul-indart">Investigación y Desarrollo</span> para crear soluciones innovadoras en impresión 3D. Ayudamos a empresas a optimizar sus procesos y a incorporar tecnología avanzada.
+            </p>
+            <p class="text-muted mb-4">
+                Si necesitas materiales específicos o estás buscando una impresora personalizada para satisfacer tus necesidades industriales, nosotros podemos ayudarte a explorar todas las posibilidades: tamaño, cabezales, extrusión y más.
+            </p>
+            <p class="text-muted mb-4">
+                Nuestro equipo de expertos está listo para trabajar contigo en el desarrollo de soluciones a medida. Juntos, podemos avanzar hacia un futuro más eficiente y tecnológico.
+            </p>
+        </div>
+    </div>
+    <!-- Botón de contacto -->
+    <div class="mb-5">
+        <a href="#" class="btn fondo-azul-indart px-5 py-3 rounded-pill fw-bold">Contáctanos</a>
+    </div>
+</div>
+
+<!--===============================================
+    Sección para el apartado de  icex-next
+===================================================-->
+<div class="" style="background-color: rgba(95, 206, 206, 0.4);">
+    <!-- Título principal -->
+    <div class="text-center pt-5">
+      <h2 class="fw-bold">ICEX-NEXT</h2>
+      <p class="text-muted"><b>INDART3D S.COOP. ha participado en el Programa de Iniciación a la Exportación ICEX-Next y ha contado con el apoyo de ICEX, así como con la cofinanciación de Fondos europeos FEDER.</b></p>
+    </div>
+  
+    <!-- Contenido principal -->
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center">
+        <!-- Imagen centrada -->
+        <div class="col-lg-6 col-md-8 col-10 text-center">
+          <img src="{% static 'img/logo/ICEX-NEXT.png' %}" alt="ICEX-NEXT Logo" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+  
+      <!-- Texto explicativo -->
+      <div class="row justify-content-center pt-4">
+        <div class="col-lg-8 text-center">
+          <p class="text-muted"><b>Habiendo contribuido según la medida de los mismos, al crecimiento económico de esta empresa, su región y de España en su conjunto.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!--===============================================
+    Sección de álbum
+===================================================-->
+<div class="" style="background-color: #f9f9f9;">
+    <!-- Título de la sección -->
+    <div class="text-center pt-5">
+        <h2 class="fw-bold">Últimas publicaciones.</h2>
+        <p class="text-muted">¿Quieres estar al día con nuestras últimas publicaciones?</p>
+    </div>
+    <!-- Tarjetas de publicaciones -->
+    <div class="container py-5">
+        <div class="row g-4 py-5">
+            {% for dato in datos|slice:"-3:" %}
+            <!-- Tarjeta -->
+            <div class="col-lg-4 col-md-6">
+                <a style="text-decoration: none;" href="{% url 'home_app:blog_detail' dato.id %}">
+                    <div class="card h-100 border-3" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                        <img src="{{ dato.image }}" class="card-img-top" alt="Publicación 1" style="height: 250px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                        <div class="card-body">
+                            <small class="texto-azul-indart d-block fw-bold mb-2">{{ dato.category }}</small>
+                            <h5 class="card-title fw-bold">{{ dato.title }}</h5>
+                            <p class="card-text text-muted">{{ dato.summary|safe }}</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 d-flex align-items-center pb-4">
+                            <img src="{{ dato.avatar }}" alt="Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                            <div>
+                                <small class="d-block text-muted">{{ dato.author }}</small>
+                                <small class="text-muted">{{ dato.date_time }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+
+</div>
+
+<!--==========================================================
+        apartado para una frase poderosa
+==============================================================-->
+<div class="position-relative" style="background-image: url('{% static "img/fondo-taller-scaled.jpg" %}'); background-size: cover; background-position: center; height: 75vh; overflow: hidden;">
+    <!-- Capa semitransparente -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+    <!-- Contenedor principal centrado -->
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center" style="z-index: 2; position: relative;">
+        <!-- Texto principal -->
+        <h2 class="text-white fw-bold display-5 mb-4">
+            No es <span class="text-danger">tarde</span>, tampoco <span class="text-warning">temprano</span>.
+            <br>
+            <span class="text-white">Es el momento.</span>
+        </h2>
+
+        <!-- Botón de llamada a la acción -->
+        <a href="#" class="btn text-white" style="background-color: #6ec1e4; border-radius: 50px; padding: 10px 30px; font-size: 1.2rem;">
+            Contacta con nosotros
+        </a>
+    </div>
+
+    <!-- Franja decorativa superior -->
+    <div class="position-absolute top-0 start-0 w-100" style="height: 10px; background-color: #6ec1e4; z-index: 3;"></div>
+
+    <!-- Franja decorativa inferior -->
+    <div class="position-absolute bottom-0 start-0 w-100" style="height: 10px; background-color: #6ec1e4; z-index: 3;"></div>
+</div>
+
+
+{% endblock %}

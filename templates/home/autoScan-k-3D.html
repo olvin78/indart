@@ -1,0 +1,173 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>NX_MODULAR | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+
+<div class="container py-5">
+    <h2 class="text-center fw-bold mb-5 texto-azul-indart">AutoScan-K 3D</h2>
+    <div class="row align-items-center py-5">
+        <!-- Video -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sJ40hyMjCHQ?si=fB5mLCis6agqmjeV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Texto descriptivo -->
+        <div class="col-lg-6 p-5">
+            <h3 class="fw-bold texto-azul-indart">Sistema AutoScan-K 3D</h3>
+            <p class="text-muted">
+                La serie AutoScan-K es un sistema de inspección 3D automático, que permite realizar la inspección sin contacto y no destructiva, aprovechando la tecnología de visión de máquina. Puede llevar a cabo eficazmente el escaneo e inspección por lotes en línea mientras garantiza una precisión ultra alta.
+            </p>
+            <p class="text-muted">
+                Con operación constante por 24 horas, el sistema AutoScan-K 3D ayuda a las empresas a reducir los costos de fabricación, acelerar el lanzamiento al mercado e incrementar el retorno de inversión.
+            </p>
+            <p class="text-muted">
+                Equipado con múltiples modos de trabajo, el sistema AutoScan-K 3D puede adaptarse a la medición en varias escenas industriales. Además, controla con precisión los movimientos del robot basados en algoritmos avanzados, realizando la inspección eficiente y automática.
+            </p>
+        </div>
+    </div>
+
+
+
+<!--============================================
+        segunda seccion "inspeccion"
+===============================================-->
+
+
+    <div class="row align-items-center py-5 d-none d-lg-flex">
+        <!-- Texto descriptivo -->
+        <div class="col-lg-6 p-5">
+            <h3 class="fw-bold texto-azul-indart">Inspección automática durante todo el proceso</h3>
+            <p class="text-muted">
+                El AutoScan-K puede llevar a cabo automáticamente, sin la intervención humana, el escaneado e inspección en 3D por lotes para la comparación de datos y generar informes de inspección después de configurar rutas de escaneado y procesos de medición para diferentes productos.
+            </p>
+        </div>
+
+        <!-- Imagen -->
+        <div class="col-lg-6">
+            <img src="{% static 'img/inspeccionk.jpg' %}" alt="Inspección automática" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+<!--============================================
+        segunda seccion duplicada para adapatarce
+        a moviles "inspeccion"
+===============================================-->
+
+
+<div class="row align-items-center py-5 d-flex d-lg-none">
+    <!-- Imagen -->
+    <div class="col-lg-6">
+        <img src="{% static 'img/inspeccionk.jpg' %}" alt="Inspección automática" class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Texto descriptivo -->
+    <div class="col-lg-6 p-5">
+        <h3 class="fw-bold texto-azul-indart">Inspección automática durante todo el proceso</h3>
+        <p class="text-muted">
+            El AutoScan-K puede llevar a cabo automáticamente, sin la intervención humana, el escaneado e inspección en 3D por lotes para la comparación de datos y generar informes de inspección después de configurar rutas de escaneado y procesos de medición para diferentes productos.
+        </p>
+    </div>
+
+</div>
+
+
+<!--=================================================
+        tercera seccion  "Operacion personalizada"
+====================================================-->
+
+
+    <div class="row align-items-center py-5">
+        <!-- Imagen -->
+        <div class="col-lg-6">
+            <img src="{% static 'img/inspeccionk2.jpg' %}" alt="Operación personalizada" class="img-fluid rounded">
+        </div>
+        <!-- Texto -->
+        <div class="col-lg-6 p-5">
+            <h2 class="fw-bold texto-azul-indart">Operación personalizada</h2>
+            <p class="text-muted">
+                Se ofrecen múltiples modos de medición de acuerdo con las características de diferentes piezas. Para satisfacer los diferentes requisitos de inspección, las piezas se pueden sujetar desde múltiples ángulos para configurar las rutas de inspección.
+            </p>
+        </div>
+    </div>
+
+
+<!--=================================================
+        cuarta seccion  "NTD seguro y confiable"
+====================================================-->
+
+    <div class="row align-items-center py-5 d-none d-lg-flex">
+        <!-- Texto -->
+        <div class="col-lg-6 p-5">
+            <h2 class="fw-bold texto-azul-indart">NDT seguro y confiable</h2>
+            <p class="text-muted">
+                El AutoScan-K logra realmente la prueba inteligente sin contacto y no destructiva basada en la tecnología de medición óptica automatizada, que es segura, confiable y aplicable a diferentes entornos de taller. Sus mesas giratorias inteligentes industriales hacen posible la inspección eficiente sin ángulos ciegos.
+            </p>
+        </div>
+        <!-- Imagen -->
+        <div class="col-lg-6">
+            <img src="{% static 'img/ntd-seguroyconfiable.jpg' %}" alt="NDT seguro y confiable" class="img-fluid rounded">
+        </div>
+    </div>
+
+
+    <!--=================================================
+        cuarta seccion duplicada para adapatar a moviles
+         "NTD seguro y confiable"
+====================================================-->
+
+<div class="row align-items-center py-5 d-flex d-lg-none">
+    <!-- Imagen -->
+    <div class="col-lg-6">
+        <img src="{% static 'img/ntd-seguroyconfiable.jpg' %}" alt="NDT seguro y confiable" class="img-fluid rounded">
+    </div>
+    <!-- Texto -->
+    <div class="col-lg-6 p-5">
+        <h2 class="fw-bold texto-azul-indart">NDT seguro y confiable</h2>
+        <p class="text-muted">
+            El AutoScan-K logra realmente la prueba inteligente sin contacto y no destructiva basada en la tecnología de medición óptica automatizada, que es segura, confiable y aplicable a diferentes entornos de taller. Sus mesas giratorias inteligentes industriales hacen posible la inspección eficiente sin ángulos ciegos.
+        </p>
+    </div>
+</div>
+
+
+
+<!--=================================================
+        quinta seccion  "Medicion precisa"
+====================================================-->
+
+
+    <div class="row align-items-center py-5">
+        <!-- Imagen -->
+        <div class="col-lg-6 ">
+            <img src="{% static 'img/inspeccionk2.jpg' %}" alt="Operación personalizada" class="img-fluid rounded">
+        </div>
+        <!-- Texto -->
+        <div class="col-lg-6 p-5">
+            <h2 class="fw-bold texto-azul-indart">Medición precisa y efectiva</h2>
+            <p class="text-muted">El AutoScan-K puede inspeccionar piezas de diferentes tamaños y pesos y las hechas de diferentes materiales. Puede generar hasta 45 líneas láser para el escaneado de datos de alta densidad, con la velocidad de hasta 1,650,000 por segundo. Permite una inspección precisa 3D en ambiente hostil industrial con resolución de hasta 0,010 mm y precisión de hasta 0,030 mm/m.
+            </p>
+            <p>
+                <b>Desarrollo Secundario</b>El desarrollo secundario permite a los operadores controlar el sistema llamando a la interfaz SDK.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

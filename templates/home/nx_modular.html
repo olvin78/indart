@@ -1,0 +1,617 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>NX_MODULAR | Indart3D</title>
+
+<style>
+    table {
+        font-size: 14px;
+        border-collapse: collapse;
+    }
+    table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+        text-align: center;
+    }
+    table th, table td {
+        border: 1px solid #dee2e6;
+        padding: 10px;
+        vertical-align: middle;
+    }
+    table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    table tbody tr:hover {
+        background-color: #e9ecef;
+    }
+    @media (max-width: 768px) {
+        table {
+            font-size: 12px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+
+<section class="py-5 text-center text-white" style="background: linear-gradient(180deg, #3b3d49, #323441);">
+  <div class="container">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                  <h1 class="fw-bold">Sequi ea ut et est quaerat</h1>
+                  <p class="mb-4">
+                      Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. 
+                      Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus 
+                      deleniti vel. Minus et tempore modi architecto.
+                  </p>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                  <h1 class="fw-bold">Lorem ipsum dolor sit amet</h1>
+                  <p class="mb-4">
+                      Consequatur, aspernatur sint quam nesciunt officia. Recusandae alias quod repellendus. Fugit minus 
+                      temporibus molestias ipsum totam.
+                  </p>
+              </div>
+          </div>
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+</section>
+<!--====================================================
+        seccion sobre el producto
+========================================================-->
+<section class="py-5 bg-light">
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">NX_MODULAR</h2>
+      <p class="text-muted">(Pellets / Filamento)​<br>
+        Innovación y versatilidad en impresión 3D</p>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="row align-items-center mt-5 position-relative">
+      <!-- Imagen principal: Impresora -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 position-relative">
+        <div class="position-relative d-flex justify-content-center">
+          <!-- Imagen de la impresora -->
+          <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Impresora NX Modular" class="img-fluid rounded">
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="col-lg-6 col-md-12">
+        <h3 class="fw-bold texto-azul-indart">Impresora 3D NX Modular</h3>
+        <p class="text-muted">
+          La impresora 3D modular NX de Indart3D marca un nuevo estándar en fabricación aditiva.
+          Su diseño modular con cabezales intercambiables permite configurarla con uno o dos
+          extrusores, ya sea para trabajar con pellets o filamento, brindando máxima flexibilidad. Cada
+          equipo está diseñado para alojar dos cabezales que pueden ser configurados a medida con
+          la ayuda de nuestros especialistas, asegurando una solución óptima para cada proyecto.
+        </p>
+        <p class="text-muted mb-0">Con un área de trabajo de 300 x 300 x 250 mm, la NX Modular combina un volumen de
+          impresión ideal con un enfoque adaptable, ofreciendo a empresas y profesionales la
+          herramienta perfecta para aplicaciones avanzadas, desde prototipado hasta producción de
+          piezas funcionales. Su diseño cerrado con filtros integrados garantiza un entorno de trabajo
+          seguro, limpio y eficiente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--====================================================
+        Seccion de la definicion mas grande del producto
+  ========================================================-->
+
+  <section class="py-5 bg-white">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <!-- Texto -->
+         <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-md-12">
+          <h2 class="fw-bold texto-azul-indart mb-4">
+            Extrusor de Pellets: Versatilidad y Alto Rendimiento en Fabricación Aditiva
+          </h2>
+          <p class="text-muted mb-3">
+            El extrusor de pellets Modular de Indart3D redefine la impresión 3D al permitir trabajar
+            directamente con materia prima en forma de pellets, una solución que amplía las
+            posibilidades técnicas y creativas en fabricación aditiva. Este sistema avanzado es capaz de
+            procesar una amplia variedad de polímeros, incluidos materiales reciclados y compuestos
+            de alto rendimiento, ofreciendo a los usuarios profesionales una herramienta potente y
+            adaptable para abordar proyectos complejos.
+          </p>
+          <p class="text-muted mb-3">
+            Gracias a su capacidad para manejar geometrías exigentes y materiales técnicos, el
+            extrusor de pellets es ideal para aplicaciones que van desde el desarrollo de prototipos
+            hasta la producción de piezas funcionales para sectores como la industria, el diseño de
+            productos y la investigación avanzada. Su diseño optimizado garantiza una extrusión
+            consistente y precisa, incluso con materiales de mayor viscosidad, lo que lo convierte en
+            una opción destacada para proyectos de gran escala y alta demanda.
+          </p>
+          <p class="text-muted mb-3">
+            Además, este sistema aprovecha la simplicidad de los pellets para incrementar la eficiencia
+            del proceso de impresión, eliminando pasos intermedios y ofreciendo mayor control sobre
+            las propiedades finales del material. Su enfoque técnico no solo abre nuevas oportunidades
+            en la impresión 3D, sino que también promueve una fabricación más sostenible y
+            personalizada.
+          </p>
+          
+        </div>
+        <!-- Imagen -->
+        <div class="col-lg-4 col-md-12 text-center">
+          <img src="{% static 'img/nx_modular/NX_Diagonal_SinFondo_1.png' %}" alt="Imagen representativa" class="img-fluid">
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--====================================================
+        seccion sobre las caracteristicas del producto
+  =======================================================-->
+ 
+  <section class="py-5 position-relative" style="background: url('{% static "img/nx_modular/material-3d-pellet.webp" %}') no-repeat center center/cover; background-attachment: fixed;">
+    <!-- Capa negra superpuesta -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+    
+    <div class="container position-relative" style="z-index: 2;">
+      <!-- Encabezado -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold texto-azul-indart text-white">Características clave del extrusor de pellets:</h2>
+        <p class="text-white">Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets.</p>
+      </div>
+  
+      <!-- Contenido principal -->
+      <div class="row g-4 align-items-center">
+        <!-- Columna derecha: Imagen (móviles primero) -->
+        <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
+          <div style="max-width: 90%; height: auto; text-align: center;">
+            <img src="{% static 'img/nx_modular/Impresora-3D-tumakaer-nx-modular-cabezal-pellets-1.png' %}" alt="Imagen del extrusor de pellets"
+              class="img-fluid rounded shadow" style="width: 100%; max-height: 450px; object-fit: contain;">
+          </div>
+        </div>
+  
+        <!-- Columna izquierda: Características -->
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="row g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-6">
+              <div class="p-4 shadow rounded bg-white">
+                <div class="mb-3">
+                  <i class="bi bi-activity text-primary fs-1"></i>
+                </div>
+                <h5 class="fw-bold texto-azul-indart">Tamaño</h5>
+                <p class="text-muted mb-0">Tamaño de pellet recomendado: 3-5 mm de diámetro.</p>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6">
+              <div class="p-4 shadow rounded bg-white">
+                <div class="mb-3">
+                  <i class="bi bi-broadcast text-primary fs-1"></i>
+                </div>
+                <h5 class="fw-bold texto-azul-indart">Compatibilidad</h5>
+                <p class="text-muted mb-0">Compatible con el Alimentador de Pellets para un flujo constante y uniforme.</p>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 3 -->
+            <div class="col-md-6">
+              <div class="p-4 shadow rounded bg-white">
+                <div class="mb-3">
+                  <i class="bi bi-thermometer-half text-primary fs-1"></i>
+                </div>
+                <h5 class="fw-bold texto-azul-indart">Temperatura</h5>
+                <p class="text-muted mb-0">Temperatura máxima del cabezal: hasta 300 ºC, ideal para materiales técnicos.</p>
+              </div>
+            </div>
+  
+            <!-- Tarjeta 4 -->
+            <div class="col-md-6">
+              <div class="p-4 shadow rounded bg-white">
+                <div class="mb-3">
+                  <i class="bi bi-tools text-primary fs-1"></i>
+                </div>
+                <h5 class="fw-bold texto-azul-indart">Boquillas ajustables</h5>
+                <p class="text-muted mb-0">
+                  Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm | 5.0 mm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--==============================================================
+            esta es la seccion para  el extrusor de filamento
+==================================================================-->
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center position-relative">
+      <!-- Imagen principal -->
+      <div class="col-lg-4 col-md-5 text-center mb-4 mb-md-0 position-relative">
+        <!-- Imagen grande -->
+        <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Extrusor de Filamento" class="img-fluid">
+        <!-- Imagen superpuesta -->
+        <img src="{% static 'img/nx_modular/Hemera_V2.png' %}" alt="Extrusor Pequeño" 
+          class="position-absolute img-fluid"
+          style="width: 300px; bottom: -60px; left: 50%; transform: translateX(-50%); z-index: 2;">
+      </div>
+
+      <!-- Texto -->
+      <div class="col-lg-8 col-md-7 py-3">
+        <h2 class="fw-bold mb-4 texto-azul-indart">Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle</h2>
+        <p class="text-muted">
+          El cabezal Direct Drive HR de filamento de Indart3D está diseñado para usuarios que valoran la precisión y versatilidad en sus proyectos. 
+          Ideal para una amplia gama de materiales, este sistema permite trabajar con filamentos optimizados para diferentes aplicaciones, desde piezas resistentes hasta componentes flexibles.
+        </p>
+        <p class="text-muted">
+          Gracias a su diseño robusto y su fiabilidad operativa, este cabezal es perfecto para entornos industriales, educativos y creativos, ofreciendo resultados consistentes y de alta calidad.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--================================================================
+            seccion para  caractaristicas de filamento
+====================================================================-->
+<section class="py-5" style="background: url('{% static "img/nx_modular/background-filament.webp" %}') no-repeat center center/cover; background-attachment: fixed;">
+  <div class="container">
+    <!-- Contenido principal -->
+    <div class="row g-4 align-items-center">
+      <!-- Columna derecha: Características (móviles primero) -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="text-center text-lg-start">
+          <h2 class="fw-bold texto-azul-indart">Características clave del extrusor de filamento Direct Drive HR:</h2>
+          <p class="text-muted">Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Tarjeta 1 -->
+          <div class="col-md-6">
+            <div class="p-4 shadow rounded bg-white">
+              <div class="mb-3">
+                <i class="bi bi-archive text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">Compatibilidad</h5>
+              <p class="text-muted mb-0">Compatible con bobinas de hasta 8 kg, ideal para proyectos grandes.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="col-md-6">
+            <div class="p-4 shadow rounded bg-white">
+              <div class="mb-3">
+                <i class="bi bi-droplet text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">Materiales soportados</h5>
+              <p class="text-muted mb-0">ABS, ASA, NYLON, PET-G, PLA, PP, TPU Hardness, entre otros.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="col-md-6">
+            <div class="p-4 shadow rounded bg-white">
+              <div class="mb-3">
+                <i class="bi bi-thermometer-half text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">Temperatura</h5>
+              <p class="text-muted mb-0">Temperatura máxima: 300 ºC, ideal para materiales avanzados.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div class="col-md-6">
+            <div class="p-4 shadow rounded bg-white">
+              <div class="mb-3">
+                <i class="bi bi-tools text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-bold">Boquillas intercambiables</h5>
+              <p class="text-muted mb-0">
+                Boquillas compatibles: 0.15 mm | 0.25 mm | 0.4 mm (incluida) | 0.6 mm | 0.8 mm.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna izquierda: Imagen -->
+      <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
+        <div style="max-width: 90%; height: auto; text-align: center;">
+          <img src="{% static 'img/nx_modular/Hemera_V2.png' %}" alt="Imagen del extrusor de filamento"
+            class="img-fluid rounded shadow" style="width: 100%; max-height: 400px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--===============================================================
+                 apartado de solucion profesional
+===================================================================-->
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold texto-azul-indart">Solución Profesional y Accesible</h2>
+      <p class="text-muted">Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos de impresión 3D.</p>
+    </div>
+
+    <!-- Contenido -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <p class="text-muted mb-4">
+          La NX Modular no solo es una impresora versátil, sino que también está diseñada para facilitar el trabajo diario. Su área de impresión y estructura robusta garantizan estabilidad y precisión. Con opciones de conectividad como <strong>Wi-Fi, Ethernet y Micro SD</strong>, es sencilla de usar y se adapta a cualquier flujo de trabajo.
+        </p>
+        <p class="text-muted mb-4">
+          Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 dB</strong>) y pantalla táctil de <strong>7”</strong> hacen de esta impresora una opción ideal para quienes buscan eficiencia, seguridad y comodidad. Compatible con los principales softwares de corte (<strong>Simplify 3D, CURA, SuperSlicer</strong>) y formatos de archivo (<strong>STL, OBJ, Gcode</strong>), la NX Modular es una herramienta indispensable para quienes buscan calidad y adaptabilidad en impresión 3D.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================================================
+                Esta es la sección de la tabla en el footer 
+===================================================================-->
+<div class="container my-5">
+    <h3 class="text-center texto-azul-indart mb-4">Características</h3>
+    <div class="table-responsive d-none d-md-block">
+        <table class="table table-bordered text-center">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">Especificación</th>
+                    <th scope="col">NX Modular</th>
+                    <th scope="col">NX Modular (Pellet)</th>
+                    <th scope="col">NX Modular Dual</th>
+                    <th scope="col">NX Modular Dual (Pellet - Direct Drive HR)</th>
+                    <th scope="col">NX Modular Dual (Pellet - Pellet)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Número de cabezales</th>
+                    <td>1 (Direct Drive HR)</td>
+                    <td>2 (Pellets)</td>
+                    <td>3 (Direct Drive HR – Direct Drive HR)</td>
+                    <td>4 (Direct Drive HR – Pellets)</td>
+                    <td>5 (Pellets – Pellets)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Boquillas compatibles</th>
+                    <td>0.15, 0.25, 0.4, 0.6, 0.8 mm</td>
+                    <td>0.4, 0.6, 0.8, 2.0, 4.0, 5.0 mm</td>
+                    <td>0.15, 0.25, 0.4, 0.6, 0.8 mm</td>
+                    <td>Filamento: 0.15_0.8 mm Pellet: 0.4_5.0 mm</td>
+                    <td>0.4, 0.6, 0.8, 2.0, 4.0, 5.0 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Boquillas incluidas</th>
+                    <td>0.4 mm</td>
+                    <td>0.8 mm</td>
+                    <td>0.4 mm (2 uds)</td>
+                    <td>0.4 mm Pellet: 0.8 mm</td>
+                    <td>0.8 mm (2 uds)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Materiales</th>
+                    <td>ABS, ASA, NYLON, PET-G, PLA, PP, TPU</td>
+                    <td>Pellets (Circular de 3-5 mm)</td>
+                    <td>ABS, ASA, NYLON, PET-G, PLA, PP, TPU</td>
+                    <td>Pellets y filamentos</td>
+                    <td>Pellets (Circular de 3-5 mm)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Área de trabajo</th>
+                    <td>300 x 300 x 250 mm</td>
+                    <td>300 x 300 x 250 mm</td>
+                    <td>300 x 300 x 250 mm</td>
+                    <td>300 x 300 x 250 mm</td>
+                    <td>300 x 300 x 250 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Peso de la impresora</th>
+                    <td>56 kg</td>
+                    <td>56 kg</td>
+                    <td>56 kg</td>
+                    <td>56 kg</td>
+                    <td>56 kg</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dimensiones de la impresora</th>
+                    <td>840 x 635 x 805 mm</td>
+                    <td>840 x 635 x 805 mm</td>
+                    <td>840 x 635 x 805 mm</td>
+                    <td>840 x 635 x 805 mm</td>
+                    <td>840 x 635 x 805 mm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Temperatura de la cama caliente</th>
+                    <td>Hasta 100 °C</td>
+                    <td>Hasta 100 °C</td>
+                    <td>Hasta 100 °C</td>
+                    <td>Hasta 100 °C</td>
+                    <td>Hasta 100 °C</td>
+                </tr>
+                <tr>
+                    <th scope="row">Temperatura del cabezal</th>
+                    <td>Hasta 300 °C</td>
+                    <td>Hasta 300 °C</td>
+                    <td>Hasta 300 °C</td>
+                    <td>Hasta 300 °C</td>
+                    <td>Hasta 300 °C</td>
+                </tr>
+                <tr>
+                    <th scope="row">Calibración</th>
+                    <td>Automática</td>
+                    <td>Automática</td>
+                    <td>Automática</td>
+                    <td>Automática</td>
+                    <td>Automática</td>
+                </tr>
+                <tr>
+                    <th scope="row">Estructura</th>
+                    <td>Cerrada con filtros</td>
+                    <td>Cerrada con filtros</td>
+                    <td>Cerrada con filtros</td>
+                    <td>Cerrada con filtros</td>
+                    <td>Cerrada con filtros</td>
+                </tr>
+                <tr>
+                    <th scope="row">Conectividad</th>
+                    <td>Wi-Fi, Ethernet, Micro SD</td>
+                    <td>Wi-Fi, Ethernet, Micro SD</td>
+                    <td>Wi-Fi, Ethernet, Micro SD</td>
+                    <td>Wi-Fi, Ethernet, Micro SD</td>
+                    <td>Wi-Fi, Ethernet, Micro SD</td>
+                </tr>
+                <tr>
+                    <th scope="row">Emisión de ruido</th>
+                    <td>44 dB (40 dB con la puerta cerrada)</td>
+                    <td>44 dB (40 dB con la puerta cerrada)</td>
+                    <td>44 dB (40 dB con la puerta cerrada)</td>
+                    <td>44 dB (40 dB con la puerta cerrada)</td>
+                    <td>44 dB (40 dB con la puerta cerrada)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pantalla</th>
+                    <td>7" táctil a color</td>
+                    <td>7" táctil a color</td>
+                    <td>7" táctil a color</td>
+                    <td>7" táctil a color</td>
+                    <td>7" táctil a color</td>
+                </tr>
+                <tr>
+                    <th scope="row">Software compatible</th>
+                    <td>MacOS, Windows, Linux</td>
+                    <td>MacOS, Windows, Linux</td>
+                    <td>MacOS, Windows, Linux</td>
+                    <td>MacOS, Windows, Linux</td>
+                    <td>MacOS, Windows, Linux</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nivel de potencia</th>
+                    <td>120W, 600W, 1350W</td>
+                    <td>120W, 600W, 1350W</td>
+                    <td>120W, 600W, 1350W</td>
+                    <td>120W, 600W, 1350W</td>
+                    <td>120W, 600W, 1350W</td>
+                </tr>
+                <tr>
+                    <th scope="row">Software de corte compatible</th>
+                    <td>Simplify 3D, CURA, SuperSlicer</td>
+                    <td>Simplify 3D, CURA, SuperSlicer</td>
+                    <td>Simplify 3D, CURA, SuperSlicer</td>
+                    <td>Simplify 3D, CURA, SuperSlicer</td>
+                    <td>Simplify 3D, CURA, SuperSlicer</td>
+                </tr>
+                <tr>
+                    <th scope="row">Formato de archivos</th>
+                    <td>STL, OBJ, Gcode</td>
+                    <td>STL, OBJ, Gcode</td>
+                    <td>STL, OBJ, Gcode</td>
+                    <td>STL, OBJ, Gcode</td>
+                    <td>STL, OBJ, Gcode</td>
+                </tr>
+                <tr>
+                    <th scope="row">Garantía</th>
+                    <td>1 año</td>
+                    <td>1 año</td>
+                    <td>1 año</td>
+                    <td>1 año</td>
+                    <td>1 año</td>
+                </tr>
+                <tr>
+                    <th scope="row">Peso del paquete</th>
+                    <td>114 kg</td>
+                    <td>114 kg</td>
+                    <td>114 kg</td>
+                    <td>114 kg</td>
+                    <td>114 kg</td>
+                </tr>
+                <tr>
+                    <th scope="row texto">Dimensiones del paquete</th>
+                    <td>953 x 800 x 957 mm</td>
+                    <td>953 x 800 x 957 mm</td>
+                    <td>953 x 800 x 957 mm</td>
+                    <td>953 x 800 x 957 mm</td>
+                    <td>953 x 800 x 957 mm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Versión móvil -->
+    <div class="d-block d-md-none">
+        <div class="accordion" id="accordionCaracteristicas">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        NX 300 Modular
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionCaracteristicas">
+                    <div class="accordion-body">
+                        <p><strong>Número de cabezales:</strong></p>
+                        <ul>
+                            <li><strong>NX Modular:</strong> 1 (Direct Drive HR)</li>
+                            <li><strong>NX Modular (Pellet):</strong> 2 (Pellets)</li>
+                            <li><strong>NX Modular Dual:</strong> 3 (Direct Drive HR – Direct Drive HR)</li>
+                            <li><strong>NX Modular Dual (Pellet - Direct Drive HR):</strong> 4 (Direct Drive HR – Pellets)</li>
+                            <li><strong>NX Modular Dual (Pellet - Pellet):</strong> 5 (Pellets – Pellets)</li>
+                        </ul>
+                        <br>
+                        <p><strong>Boquillas compatibles:</strong> 0.15, 0.25, 0.4, 0.6, 0.8 mm</p>
+                        <p><strong>Boquillas incluidas:</strong> 0.4 mm</p>
+                        <p><strong>Materiales:</strong> ABS, ASA, NYLON, PET-G, PLA, PP, TPU</p>
+                        <p><strong>Área de trabajo:</strong> 300 x 300 x 250 mm</p>
+                        <p><strong>Peso de la impresora:</strong> 56 kg</p>
+                        <p><strong>Dimensiones:</strong> 840 x 635 x 805 mm</p>
+                        <p><strong>Temperatura de la cama caliente:</strong> Hasta 100 °C</p>
+                        <p><strong>Temperatura del cabezal:</strong> Hasta 300 °C</p>
+                        <p><strong>Calibración:</strong> Automática</p>
+                        <p><strong>Estructura:</strong> Cerrada con filtros</p>
+                        <p><strong>Conectividad:</strong> Wi-Fi, Ethernet, Micro SD</p>
+                        <p><strong>Emisión de ruido:</strong> 44 dB (40 dB con la puerta cerrada)</p>
+                        <p><strong>Pantalla:</strong> 7" táctil a color</p>
+                        <p><strong>Software compatible:</strong> MacOS, Windows, Linux</p>
+                        <p><strong>Nivel de potencia:</strong> 120W, 600W, 1350W</p>
+                        <p><strong>Software de corte compatible:</strong> Simplify 3D, CURA, SuperSlicer</p>
+                        <p><strong>Formato de archivos:</strong> STL, OBJ, Gcode</p>
+                        <p><strong>Garantía:</strong> 1 año</p>
+                        <p><strong>Peso del paquete:</strong> 114 kg</p>
+                        <p><strong>Dimensiones del paquete:</strong> 953 x 800 x 957 mm</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite el mismo bloque de acordeón para los demás modelos -->
+        </div>
+    </div>
+</div>
+
+
+  
+{% endblock %}

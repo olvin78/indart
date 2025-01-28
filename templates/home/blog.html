@@ -1,0 +1,62 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% load i18n %}
+{% block head %}
+<title>Landing | Indart3D</title>
+<style>
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+<div class="bg-light">
+<div class="container py-5">
+    <div class="row">
+        {% for dato in datos %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a class="text-decoration-none" href="{% url 'home_app:blog_detail' dato.id %}">
+                <div class="card h-100 shadow-lg border-0">
+                <!-- Imagen de la publicación -->
+                <img src="{{ dato.image.url }}" class="card-img-top rounded-top" alt="Lo siento, ¡no se a podido cargar la imagen!" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <!-- Categoría -->
+                    <small class="d-block fw-bold text-muted mb-2">{{ dato.category }}</small>
+                    <!-- Título -->
+                    <h5 class="card-title texto-azul-indart fw-bold">{{ dato.title }}</h5>
+                    <!-- Resumen -->
+                    <p class="card-text text-muted">{{ dato.summary }}</p>
+                </div>
+                <div class="card-footer bg-white border-0 d-flex align-items-center">
+                    <!-- Avatar -->
+                    <img src="{{ dato.avatar.url }}" 
+                         alt="Avatar de {{ dato.author }}" 
+                         class="rounded-circle me-2" 
+                         style="width: 40px; height: 40px;">
+                    <div>
+                        <!-- Autor y Fecha -->
+                        <small class="d-block text-muted">{{ dato.author }}</small>
+                        <small class="text-muted">{{ dato.date_time|date:"j \\d\\e F \\d\\e Y \\a \\l\\a\\s H:i" }}</small>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+{% endblock %}

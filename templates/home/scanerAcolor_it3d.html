@@ -1,0 +1,375 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>BF_MODULAR | Indart3D</title>
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--=============================================
+        Contenido principal
+==================================================-->
+
+<div class="bg-light">
+    <section class="container py-5">
+        <!-- Título IT3D -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">IT3D</h1>
+        </div>
+
+        <!-- Título principal -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">¡El escaneo 3D de alta calidad ya está al alcance de todos!</h2>
+            <p class="text-muted">Obtén modelos 3D precisos en casa, en el colegio, en la oficina, en el centro cultural...</p>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="row align-items-center">
+            <!-- Texto y lista -->
+            <div class="col-md-6 mb-4">
+                <h3 class="fw-bold">Modelos 3D de alta calidad</h3>
+                <ul class="list-unstyled">
+                    <li>• Precisión de hasta 0,05 mm</li>
+                    <li>• Resolución 3D de hasta 0,13 mm</li>
+                    <li>• Captura de textura</li>
+                    <li>• Escaneo 3D de objetos de 3 cm a 1,2 m</li>
+                </ul>
+            </div>
+
+            <!-- Video de YouTube -->
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xN-ANLl4h64?si=6jDY4D9TPSEBIEFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <!-- Primera Sección: Rápido y sencillo -->
+        <div class="row align-items-center mb-5">
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/IT3d/it3d1-980x650-1.png' %}" class="img-fluid" alt="Kit de escaneo IT3D">
+            </div>
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Rápido y sencillo</h2>
+                <ul class="list-unstyled">
+                    <li>• 5 minutos para preparar el escaneo</li>
+                    <li>• Plug and play</li>
+                    <li>• Calibración automática</li>
+                    <li>• Escaneo con un solo clic</li>
+                    <li>• Interfaz de usuario fácil e intuitiva</li>
+                    <li>• Alimentación por USB</li>
+                    <li>• Solo 1 kg de peso</li>
+                    <li>• Incluye maletín de protección</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Segunda Sección: Tres modos de escaneo -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Tres modos de escaneo</h2>
+        </div>
+
+        <div class="row text-center">
+            <!-- Primer modo -->
+            <div class="col-md-4 mb-4">
+                <img src="{% static 'img/IT3d/it3d2-980x654-2.jpg' %}" class="img-fluid mb-3" alt="Escaneo en mesa giratoria">
+                <h5 class="fw-bold">Escaneo en una mesa giratoria</h5>
+                <p>Escaneo 3D de un objeto en la plataforma giratoria. Cuando se gira un objeto, sus fragmentos de modelo se combinan automáticamente.</p>
+            </div>
+
+            <!-- Segundo modo -->
+            <div class="col-md-4 mb-4">
+                <img src="{% static 'img/IT3d/it3d3-980x654-3.jpg' %}" class="img-fluid mb-3" alt="Escaneo con marcadores">
+                <h5 class="fw-bold">Escaneo con marcadores</h5>
+                <p>La alineación automática de los fragmentos del modelo se consigue con dianas aplicadas a la superficie del objeto. Admite un sistema de fotogrametría externo.</p>
+            </div>
+
+            <!-- Tercer modo -->
+            <div class="col-md-4 mb-4">
+                <img src="{% static 'img/IT3d/it3d4-980x654-4.png' %}" class="img-fluid mb-3" alt="Escaneo por geometría">
+                <h5 class="fw-bold">Escaneo por geometría</h5>
+                <p>Se utiliza para la digitalización de objetos difíciles de escanear de otra manera, como en exposiciones de museos. Captura detalles complejos y combina automáticamente los fragmentos.</p>
+            </div>
+
+
+        <!-- Primera Sección: Una amplia gama de capacidades de procesamiento -->
+        <div class="row align-items-center mb-5 d-none d-lg-flex">
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/IT3d/it3d5-980x551-5.jpg' %}" class="img-fluid" alt="Capacidades de procesamiento">
+            </div>
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Una amplia gama de capacidades de procesamiento</h2>
+                <ul class="list-unstyled">
+                    <li>• Alineación automática y manual con dianas y sin dianas</li>
+                    <li>• Relleno de agujeros</li>
+                    <li>• Suavizado de superficies de objetos</li>
+                    <li>• Reducción del número de triángulos</li>
+                    <li>• Corrección de los defectos de la malla</li>
+                    <li>• Eliminación automática de pequeñas variaciones y ruido</li>
+                    <li>• Otras funciones profesionales del software IT3D SCAN ScanCenter NG</li>
+                </ul>
+            </div>
+        </div>
+<!--============================================================================
+            esta es una seccion duplucada y adaptada para moviles
+================================================================================-->
+
+        <!-- Primera Sección: Una amplia gama de capacidades de procesamiento -->
+        <div class="row align-items-center mb-5 d-flex d-lg-none">
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Una amplia gama de capacidades de procesamiento</h2>
+                <ul class="list-unstyled">
+                    <li>• Alineación automática y manual con dianas y sin dianas</li>
+                    <li>• Relleno de agujeros</li>
+                    <li>• Suavizado de superficies de objetos</li>
+                    <li>• Reducción del número de triángulos</li>
+                    <li>• Corrección de los defectos de la malla</li>
+                    <li>• Eliminación automática de pequeñas variaciones y ruido</li>
+                    <li>• Otras funciones profesionales del software IT3D SCAN ScanCenter NG</li>
+                </ul>
+            </div>
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/IT3d/it3d5-980x551-5.jpg' %}" class="img-fluid" alt="Capacidades de procesamiento">
+            </div>
+        </div>
+
+        <!-- Segunda Sección: Compatible con cualquier impresora 3D -->
+        <div class="row align-items-center mb-5">
+            
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Compatible con cualquier impresora 3D</h2>
+                <ul class="list-unstyled">
+                    <li>• Fácil exportación de datos para la impresión 3D</li>
+                    <li>• Ajuste del sistema de coordenadas para la impresión 3D</li>
+                    <li>• Construcción automática de mallas con relleno de agujeros</li>
+                    <li>• Modelos texturizados listos para la impresión 3D</li>
+                </ul>
+                <p>
+                    Exporta tu modelo 3D a otro software para su posterior procesamiento.
+                    IT3D SCAN ScanCenter NG permite exportar modelos 3D en los formatos más populares: STL, OBJ, PLY.
+                </p>
+            </div>
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/IT3d/it3d-66.png' %}" class="img-fluid" alt="Compatible con impresoras 3D">
+            </div>
+        </div>
+
+
+        <!-- Tercera Sección: Escáner 3D homologado -->
+        <div class="row align-items-center">
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img src="{% static 'img/IT3d/it3d7-980x893-7.png' %}" class="img-fluid" alt="Escáner 3D homologado">
+            </div>
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Escáner 3D Homologado por el Ministerio de Educación y Formación Profesional</h2>
+                <p>
+                    IT3D SCAN ONE es considerado por el gobierno de España como la mejor solución para el sector educativo. 
+                    El escáner 3D forma parte del proyecto Aula del Futuro desarrollado por el INTEF. 
+                    Esta iniciativa busca impulsar la educación presente y futura sobre una base de tecnologías actualizadas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <h3 class="text-center mb-4">Características</h3>
+    
+        <!-- Tabla para pantallas grandes -->
+        <div class="table-responsive d-none d-md-block">
+            <table class="table table-bordered text-center">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">Especificación</th>
+                        <th scope="col">Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Tecnología de escaneo</th>
+                        <td>Luz estructurada</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tamaño del FOV, mm</th>
+                        <td>220 x 170 x 150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Distancia de trabajo, m</th>
+                        <td>0.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Precisión, mm hasta</th>
+                        <td>0.05</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Resolución 3D, mm hasta</th>
+                        <td>0.13</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tamaño del objeto</th>
+                        <td>Desde 3 cm hasta 1.2 m</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Capacidad para capturar texturas</th>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Resolución de la cámara</th>
+                        <td>2 MP</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Modos de alineación</th>
+                        <td>Por marcadores, por geometría</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Formatos de malla 3D</th>
+                        <td>STL, OBJ, PLY, WRL, ASCII</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fuente de alimentación para el escáner</th>
+                        <td>USB</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Requisitos mínimos del ordenador</th>
+                        <td>Intel Core i5/i7, 1.8 GHz, 8 GB, HDMI, USB 3.0, USB 2.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sistema operativo soportado</th>
+                        <td>Windows 7/8/10 64bit</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mesa giratoria</th>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Diámetro de la mesa giratoria</th>
+                        <td>20 cm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Capacidad de carga máxima</th>
+                        <td>20 kg / 44 lb</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dimensiones de la caja</th>
+                        <td>400 x 330 x 170 mm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Peso</th>
+                        <td>1 kg / 2.2 lb</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Peso del paquete completo</th>
+                        <td>5.5 kg / 12.1 lb</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Certificados</th>
+                        <td>CE</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Garantía</th>
+                        <td>1 año</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Acordeón para pantallas pequeñas -->
+        <div class="d-block d-md-none">
+            <div class="accordion" id="accordionCaracteristicas">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCaracteristicas">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaracteristicas" aria-expanded="true" aria-controls="collapseCaracteristicas">
+                            Características
+                        </button>
+                    </h2>
+                    <div id="collapseCaracteristicas" class="accordion-collapse collapse show" aria-labelledby="headingCaracteristicas" data-bs-parent="#accordionCaracteristicas">
+                        <div class="accordion-body">
+                            <p><strong>Tecnología de escaneo:</strong> Luz estructurada</p>
+                            <p><strong>Tamaño del FOV, mm:</strong> 220 x 170 x 150</p>
+                            <p><strong>Distancia de trabajo, m:</strong> 0.3</p>
+                            <p><strong>Precisión, mm hasta:</strong> 0.05</p>
+                            <p><strong>Resolución 3D, mm hasta:</strong> 0.13</p>
+                            <p><strong>Tamaño del objeto:</strong> Desde 3 cm hasta 1.2 m</p>
+                            <p><strong>Capacidad para capturar texturas:</strong> Sí</p>
+                            <p><strong>Resolución de la cámara:</strong> 2 MP</p>
+                            <p><strong>Modos de alineación:</strong> Por marcadores, por geometría</p>
+                            <p><strong>Formatos de malla 3D:</strong> STL, OBJ, PLY, WRL, ASCII</p>
+                            <p><strong>Fuente de alimentación para el escáner:</strong> USB</p>
+                            <p><strong>Requisitos mínimos del ordenador:</strong> Intel Core i5/i7, 1.8 GHz, 8 GB, HDMI, USB 3.0, USB 2.0</p>
+                            <p><strong>Sistema operativo soportado:</strong> Windows 7/8/10 64bit</p>
+                            <p><strong>Mesa giratoria:</strong> Sí</p>
+                            <p><strong>Diámetro de la mesa giratoria:</strong> 20 cm</p>
+                            <p><strong>Capacidad de carga máxima:</strong> 20 kg / 44 lb</p>
+                            <p><strong>Dimensiones de la caja:</strong> 400 x 330 x 170 mm</p>
+                            <p><strong>Peso:</strong> 1 kg / 2.2 lb</p>
+                            <p><strong>Peso del paquete completo:</strong> 5.5 kg / 12.1 lb</p>
+                            <p><strong>Certificados:</strong> CE</p>
+                            <p><strong>Garantía:</strong> 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carrusel pequeño y centrado -->
+<div class="container d-flex justify-content-center my-4 py-5">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 600px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{% static 'doc/IT3D-SCAN-ONE-es.pdf' %}" target="_blank">
+                    <img src="{% static 'img/IT3d/Captura-carousel-1.png' %}" class="d-block w-100" alt="Vista detallada de las especificaciones técnicas del escáner 3D IT3D Scan ONE">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'doc/IT3D-SCAN-ONE-es.pdf' %}" target="_blank">
+                    <img src="{% static 'img/IT3d/Captura-carousel-2.png' %}" class="d-block w-100" alt="Presentación del diseño compacto y ergonómico del escáner 3D IT3D Scan ONE">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'doc/IT3D-SCAN-ONE-es.pdf' %}" target="_blank">
+                    <img src="{% static 'img/IT3d/Captura-carpusel-3.png' %}" class="d-block w-100" alt="Ejemplo de escaneo 3D realizado con el IT3D Scan ONE, mostrando precisión y detalle">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'doc/IT3D-SCAN-ONE-es.pdf' %}" target="_blank">
+                    <img src="{% static 'img/IT3d/Captura-carousel-4.png' %}" class="d-block w-100" alt="Escaneo 3D de objetos industriales utilizando el escáner IT3D Scan ONE">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{% static 'doc/IT3D-SCAN-ONE-es.pdf' %}" target="_blank">
+                    <img src="{% static 'img/IT3d/Captura-carousel-5.png' %}" class="d-block w-100" alt="Aplicaciones del escáner IT3D Scan ONE en digitalización profesional de alta calidad">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+</div>
+
+
+  
+{% endblock %}
