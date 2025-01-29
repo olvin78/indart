@@ -3,6 +3,7 @@ from django.http import JsonResponse
 import openai
 from django.conf import settings
 import os
+from decouple import config
 
 
 
@@ -14,6 +15,8 @@ def chat_view(request):
 
 def load_instructions():
     instructions_path = os.path.join(settings.BASE_DIR, 'applications','assistant','indications','instructions.txt')
+    
+
     try:
         with open(instructions_path, 'r', encoding='utf-8') as file:
             return file.read()
@@ -23,9 +26,13 @@ def load_instructions():
 def get_bot_response(request):
     if request.method == 'POST':
         user_message = request.POST.get('message', '')
-        openai.api_key = ''
 
-        # Carga las instrucciones desde el archivo
+        # Configura la clave de API de OpenAI desde settings
+        openai.api_key = settings.OPENAI_API_KEY
+        print("holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+        print(openai.api_key)
+
+        # Carga las instrucciones desde el archivo o función
         instructions = load_instructions()
         print("Instrucciones enviadas al modelo:", instructions)
 
