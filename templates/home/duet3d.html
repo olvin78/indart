@@ -44,7 +44,7 @@
            <a style="text-decoration: none;" href="{% url 'home_app:duet_articulo' dato.id %}">
             <div class="card">
                 <!-- Mostrar image1 o imagen predeterminada -->
-                <img src="{{ dato.image1.url }}" class="card-img-top w-100 py-5" alt="Imagen de {{ datos.name }}">
+                <img src="{{ dato.image1.url }}" class="card-img-top w-100 py-5" alt="Imagen de {{ dato.name }}">
                 <div class="card-body text-center">
                     <h6 class="card-title">{{ dato.name }}</h6>
                 </div>
