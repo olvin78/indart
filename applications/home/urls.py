@@ -214,4 +214,11 @@ urlpatterns = [
         views.SoporteDetailView.as_view(),
         name='soporte_detail',
     ),
+
+
+    path('soporte_manual',
+        views.Soporte_manualView.as_view(),
+        name='soporte_manual',
+    ),
+
 ]

@@ -11,16 +11,58 @@
 
 {% block content %}
 
+<div class="container my-5">
+    <div class="row align-items-center">
+        <!-- Sección de la imagen o video -->
+        <div class="col-md-6 text-center">
+            {% if datos.urlyoutube %}
+                <!-- Video de YouTube embebido -->
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/{{ datos.urlyoutube|slice:'-11:' }}" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            
+            {% elif datos.video_file %}
+                <!-- Video local -->
+                <video controls class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+                    <source src="{{ datos.video_file.url }}" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            
+            {% elif datos.image %}
+                <!-- Imagen alternativa -->
+                <img src="{{ datos.image.url }}" alt="Imagen alternativa" class="img-fluid rounded shadow">
+            
+            {% else %}
+                <div class="text-center text-muted">
+                    <p>No hay contenido disponible.</p>
+                </div>
+            {% endif %}
+        </div>
+        
 
+        <!-- Sección de la descripción -->
+        <div class="col-md-6 pt-3">
+            <h1 class="fw-bold texto-azul-indart">{{ datos.name }}</h1>
+            <hr>
+            <h3 class="text-muted text-center">{{ datos.name }} {{ datos.tipo_soporte }}</h3>
+            <br>
+            <h4 class="text-muted">DESCRIPCIÓN</h4>
+            <br>
+            <div class="d-flex gap-2 pb-5">
+                <h5>{{ datos.description }}</h5>
+            </div>
 
-
-{{ datos.name }}
-
-
-
-
-
-
+            <button class="btn fondo-azul-indart btn-lg mt-4 w-100">SIGUIENTE 
+                <img style="height: 20px;" src="{% static 'img/iconos/galon-derecho.png' %}" alt="">
+            </button>
+            <button class="btn fondo-azul-indart btn-lg mt-4 w-100">🛒 IMPRIMIR</button>
+        </div>
+    </div>
+</div>
 
 
 

@@ -221,3 +221,7 @@ class ContactFormView(FormView):
         )
 
         return super().form_valid(form)
+
+
+class Soporte_manualView(TemplateView):
+    template_name="home/soporte_manual_configuracion.html"

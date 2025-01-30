@@ -18,7 +18,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
                     <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                    <img src="{% static 'img/logo/Interfaz-web-foto-1-300x109.png' %}" 
                         alt="Imagen Tarjeta 1" 
                         class="card-img-top" 
                         style="height: 200px; object-fit: cover; width: 100%;">
@@ -46,10 +46,10 @@
                             <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
                                 <ol class="list-unstyled mt-3">
                                     {% for dato in Manejo_de_impresoras %}
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
+                                    <a style="text-decoration: none; color: #4198ad;"  href="{% url 'home_app:soporte_detail' dato.id %}">
                                         <li class="d-flex align-items-center">
                                             <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            {{ dato.name }}
+                                           {{ dato.number }}. {{ dato.name }}
                                         </li>
                                     </a>
                                     {% endfor %}
@@ -67,13 +67,24 @@
             <!--fin tarjeta 1-->
 
             <!-- Tarjeta 2 -->
+            <!-- Tarjeta con dos imágenes en la parte superior -->
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
-                    <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
-                        alt="Imagen Tarjeta 1" 
-                        class="card-img-top" 
-                        style="height: 200px; object-fit: cover; width: 100%;">
+                    <!-- Sección superior con dos imágenes -->
+                    <div class="row no-gutters">
+                        <div class="col-6">
+                            <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                                alt="Imagen Izquierda" 
+                                class="img-fluid" 
+                                style="height: 200px; object-fit: cover; width: 100%;">
+                        </div>
+                        <div class="col-6">
+                            <img src="{% static 'img/logo/Super-Slicer-9-removebg-preview.png' %}" 
+                                alt="Imagen Derecha" 
+                                class="img-fluid" 
+                                style="height: 100px; object-fit: cover; width: 100%;margin-top: 50px;">
+                        </div>
+                    </div>
                     
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
@@ -85,26 +96,30 @@
                             <h5 class="text-center text-muted mt-5">SIMPLIFY-3D</h5>
                             <ol class="list-unstyled mt-3">
                                 {% for dato in Simpify %}
-                                <a style="text-decoration: none; color: #4198ad;" href="">
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        {{ dato.name }}
+                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" 
+                                            alt="Icono" 
+                                            style="width: 30px; height: 30px; margin-right: 10px;">
+                                            {{ dato.number }}. {{ dato.name }}
                                     </li>
                                 </a>
                                 {% endfor %}
                             </ol>
                             
                             <h5 class="text-center text-muted mt-5">SUPER SLICER</h5>
-                                <ol class="list-unstyled mt-3">
-                                    {% for dato in Super_slicer %}
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            {{ dato.name }}
-                                        </li>
-                                    </a>
-                                    {% endfor %}
-                                </ol>
+                            <ol class="list-unstyled mt-3">
+                                {% for dato in Super_slicer %}
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
+                                    <li class="d-flex align-items-center mb-2">
+                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" 
+                                            alt="Icono" 
+                                            style="width: 30px; height: 30px; margin-right: 10px;">
+                                            {{ dato.number }}. {{ dato.name }}
+                                    </li>
+                                </a>
+                                {% endfor %}
+                            </ol>
                         </div>
                         
                         <!-- Botones -->
@@ -114,13 +129,14 @@
                     </div>
                 </div>
             </div>
-            <!--fin tarjeta dos-->
+            <!-- Fin tarjeta con dos imágenes -->
+            
 
             <!-- Tarjeta 3 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
                     <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                    <img src="{% static 'img/logo/NXProIzq-2.png' %}" 
                         alt="Imagen Tarjeta 1" 
                         class="card-img-top" 
                         style="height: 200px; object-fit: cover; width: 100%;">
@@ -128,92 +144,21 @@
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
                         <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
-                        <p class="text-muted text-center">GAMA PRO</p>
+                        <p class="text-muted text-center">CABEZAL DART</p>
                         
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            {% for dato in Cabezal_DART %}
-                            <h5 class="text-center text-muted mt-5">{{  dato.name }}</h5>
-                            {% endfor %}
+                            <h5 class="text-center text-muted mt-5">CABEZAL DART</h5>
                             <ol class="list-unstyled mt-3">
-                                <a style="text-decoration: none; color: #4198ad;" href="">
+                                {% for dato in Cabezal_DART %}
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
                                         <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        1. Cómo conectar la impresora a una red WiFi
+                                        {{ dato.number }}. {{ dato.name }}
                                     </li>
                                 </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center mb-2">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        2. Cómo utilizar la interfaz web
-                                    </li>
-                                </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        3. Avisos interfaz web
-                                    </li>
-                                </a>
+                                {% endfor %}
                             </ol>
-                            
-                            <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
-                                <ol class="list-unstyled mt-3">
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            1. Calibración manual eje Z
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            2.  Calibración digital eje Z 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            3.  Calibración offset dual 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            4.  Calibración altura cabezales 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            5.  Cambio de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            6. A Fin de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            7.  Extruir y retraer manualmente 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width:30px; height: 30px; margin-right: 10px;">
-                                            8.  Seleccionar cabezal 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            9.  Set materials parameters 
-                                        </li>
-                                    </a>
-                                </ol>
-                            
                         </div>
                         
                         <!-- Botones -->
@@ -223,13 +168,13 @@
                     </div>
                 </div>
             </div>
-            <!--fin tarjeta tre-->
+            <!--fin tarjeta tres-->
 
             <!-- Tarjeta 4 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
                     <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                    <img src="{% static 'img/logo/BW-4.png' %}" 
                         alt="Imagen Tarjeta 1" 
                         class="card-img-top" 
                         style="height: 200px; object-fit: cover; width: 100%;">
@@ -237,92 +182,20 @@
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
                         <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
-                        <p class="text-muted text-center">GAMA PRO</p>
-                        
+                        <p class="text-muted text-center">CABEZAL DD HR</p>
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            {% for dato in Cabezal_DD_HR %}
-                            <h5 class="text-center text-muted mt-5">{{  dato.name }}</h5>
-                            {% endfor %}
+                            <h5 class="text-center text-muted mt-5">CABEZAL DD HR</h5>
                             <ol class="list-unstyled mt-3">
-                                <a style="text-decoration: none; color: #4198ad;" href="">
+                                {% for dato in Cabezal_DD_HR %}
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
                                         <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        1. Cómo conectar la impresora a una red WiFi
+                                        {{ dato.number }}. {{  dato.name }}
                                     </li>
                                 </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center mb-2">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        2. Cómo utilizar la interfaz web
-                                    </li>
-                                </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        3. Avisos interfaz web
-                                    </li>
-                                </a>
+                                {% endfor %}
                             </ol>
-                            
-                            <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
-                                <ol class="list-unstyled mt-3">
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            1. Calibración manual eje Z
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            2.  Calibración digital eje Z 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            3.  Calibración offset dual 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            4.  Calibración altura cabezales 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            5.  Cambio de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            6. A Fin de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            7.  Extruir y retraer manualmente 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width:30px; height: 30px; margin-right: 10px;">
-                                            8.  Seleccionar cabezal 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            9.  Set materials parameters 
-                                        </li>
-                                    </a>
-                                </ol>
-                            
                         </div>
                         
                         <!-- Botones -->
@@ -338,7 +211,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
                     <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                    <img src="{% static 'img/logo/Blue-1-XS-5.png' %}" 
                         alt="Imagen Tarjeta 1" 
                         class="card-img-top" 
                         style="height: 200px; object-fit: cover; width: 100%;">
@@ -346,94 +219,22 @@
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
                         <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
-                        <p class="text-muted text-center">GAMA PRO</p>
+                        <p class="text-muted text-center">CABEZAL PELLET</p>
                         
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            {% for dato in Cabezal_Pellet %}
-                            <h5 class="text-center text-muted mt-5">{{  dato.name }}</h5>
-                            {% endfor %}
+                            <h5 class="text-center text-muted mt-5">CABEZAL PELLET</h5>
                             <ol class="list-unstyled mt-3">
-                                <a style="text-decoration: none; color: #4198ad;" href="">
+                                {% for dato in Cabezal_Pellet %}
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
                                         <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        1. Cómo conectar la impresora a una red WiFi
+                                        {{ dato.number }}. {{  dato.name }}
                                     </li>
                                 </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center mb-2">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        2. Cómo utilizar la interfaz web
-                                    </li>
-                                </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        3. Avisos interfaz web
-                                    </li>
-                                </a>
+                                {% endfor %}
                             </ol>
-                            
-                            <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
-                                <ol class="list-unstyled mt-3">
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            1. Calibración manual eje Z
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            2.  Calibración digital eje Z 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            3.  Calibración offset dual 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            4.  Calibración altura cabezales 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            5.  Cambio de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            6. A Fin de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            7.  Extruir y retraer manualmente 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width:30px; height: 30px; margin-right: 10px;">
-                                            8.  Seleccionar cabezal 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            9.  Set materials parameters 
-                                        </li>
-                                    </a>
-                                </ol>
-                            
                         </div>
-                        
                         <!-- Botones -->
                         <div class="text-center mt-3">
                             <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
@@ -447,7 +248,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
                     <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                    <img src="{% static 'img/logo/PL-6.png' %}" 
                         alt="Imagen Tarjeta 1" 
                         class="card-img-top" 
                         style="height: 200px; object-fit: cover; width: 100%;">
@@ -455,92 +256,21 @@
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
                         <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
-                        <p class="text-muted text-center">GAMA PRO</p>
+                        <p class="text-muted text-center">Mantenimiento</p>
                         
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            {% for dato in Mantenimiento %}
-                            <h5 class="text-center text-muted mt-5">{{  dato.name }}</h5>
-                            {% endfor %}
+                            <h5 class="text-center text-muted mt-5">MANTENIMIENTO</h5>
                             <ol class="list-unstyled mt-3">
-                                <a style="text-decoration: none; color: #4198ad;" href="">
+                                {% for dato in Mantenimiento %}
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
                                         <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        1. Cómo conectar la impresora a una red WiFi
+                                        {{ dato.number }}. {{  dato.name }}
                                     </li>
                                 </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center mb-2">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        2. Cómo utilizar la interfaz web
-                                    </li>
-                                </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        3. Avisos interfaz web
-                                    </li>
-                                </a>
+                                {% endfor %}
                             </ol>
-                            
-                            <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
-                                <ol class="list-unstyled mt-3">
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            1. Calibración manual eje Z
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            2.  Calibración digital eje Z 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            3.  Calibración offset dual 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            4.  Calibración altura cabezales 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            5.  Cambio de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            6. A Fin de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            7.  Extruir y retraer manualmente 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width:30px; height: 30px; margin-right: 10px;">
-                                            8.  Seleccionar cabezal 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            9.  Set materials parameters 
-                                        </li>
-                                    </a>
-                                </ol>
-                            
                         </div>
                         
                         <!-- Botones -->
@@ -556,7 +286,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-lg" style="border-radius: 15px; overflow: hidden;">
                     <!-- Imagen completa superior con ajuste -->
-                    <img src="{% static 'img/soporte_tecnico/image copy 2.png' %}" 
+                    <img src="{% static 'img/logo/logo-indart-removebg-preview.png' %}" 
                         alt="Imagen Tarjeta 1" 
                         class="card-img-top" 
                         style="height: 200px; object-fit: cover; width: 100%;">
@@ -564,94 +294,22 @@
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
                         <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
-                        <p class="text-muted text-center">GAMA PRO</p>
+                        <p class="text-muted text-center">FIRMWARE</p>
                         
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            {% for dato in Firmware %}
-                            <h5 class="text-center text-muted mt-5">{{  dato.name }}</h5>
-                            {% endfor %}
+                            <h5 class="text-center text-muted mt-5">FIRMWARE</h5>
                             <ol class="list-unstyled mt-3">
-                                <a style="text-decoration: none; color: #4198ad;" href="">
+                                {% for dato in Firmware %}
+                                <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
                                         <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        1. Cómo conectar la impresora a una red WiFi
+                                        {{ dato.number }}. {{  dato.name }}
                                     </li>
                                 </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center mb-2">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        2. Cómo utilizar la interfaz web
-                                    </li>
-                                </a>
-                                <a style="text-decoration: none; color: #4198ad;"  href="">
-                                    <li class="d-flex align-items-center">
-                                        <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                        3. Avisos interfaz web
-                                    </li>
-                                </a>
+                                {% endfor %}
                             </ol>
-                            
-                            <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
-                                <ol class="list-unstyled mt-3">
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            1. Calibración manual eje Z
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center mb-2">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            2.  Calibración digital eje Z 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            3.  Calibración offset dual 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            4.  Calibración altura cabezales 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            5.  Cambio de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            6. A Fin de filamento 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            7.  Extruir y retraer manualmente 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width:30px; height: 30px; margin-right: 10px;">
-                                            8.  Seleccionar cabezal 
-                                        </li>
-                                    </a>
-                                    <a style="text-decoration: none; color: #4198ad;"  href="">
-                                        <li class="d-flex align-items-center">
-                                            <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
-                                            9.  Set materials parameters 
-                                        </li>
-                                    </a>
-                                </ol>
-                            
                         </div>
-                        
                         <!-- Botones -->
                         <div class="text-center mt-3">
                             <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>

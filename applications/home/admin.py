@@ -17,7 +17,7 @@ admin.site.register(Material,MaterialAdmin )
 
 # material your model here.
 class DuetAdmin(admin.ModelAdmin):
-    list_display = ("name", "summary", "content")
+    list_display = ("name","id","summary","content")
 
 admin.site.register(Duet, DuetAdmin)
 

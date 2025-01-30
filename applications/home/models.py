@@ -96,6 +96,8 @@ class Soporte(models.Model):
     video_file = models.FileField(upload_to='media/soporte/videos/', null=True, blank=True, verbose_name="Video")  # Carpeta 'videos/' en MEDIA_ROOT
     tipo_soporte = models.CharField(choices=TIPO_CHOICES, max_length=30, verbose_name="Tipo")
     description = models.TextField(max_length=255, blank=True, null=True, verbose_name="Descripción")
+    urlyoutube = models.URLField(max_length=255,blank=True,null=True,verbose_name="URL de video de YouTube"
+    )
 
     def __str__(self):
         """Devuelve el nombre como representación en cadena."""
