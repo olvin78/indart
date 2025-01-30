@@ -1,0 +1,743 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>MATERIALES VALIDADOSs | Indart3D</title>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Sección de Materiales -->
+<section style="background-image: url('{% static "img/logo/pellet_fondo.png" %}'); background-size: cover; background-position: center; color: white; padding: 60px 0;height:400px;">
+    <div class="container text-center">
+        <!-- Encabezado -->
+        <h2 class="py-5" style="font-size: 2.5rem; font-weight: bold;">Materiales</h2>
+    </div>
+</section>
+
+<!-- Sección de Propiedades -->
+<section style="background: white; color: black; padding: 40px 0;">
+    <div class="container text-center">
+        <div class="row justify-content-center align-items-center">
+            <!-- Reciclable -->
+            <div class="col-md-4 col-12 mb-4 text-center py-3">
+                <img src="{% static 'img/iconos/reciclable.png.webp' %}" alt="Reciclable" class="img-fluid mb-3" style="max-width: 80px;">
+                <h6>Reciclable</h6>
+            </div>
+            <!-- Biodegradable -->
+            <div class="col-md-4 col-12 mb-4 text-center py-3">
+                <img src="{% static 'img/logo/reciclaje.png' %}" alt="Biodegradable" class="img-fluid mb-3" style="max-width: 80px;">
+                <h6>Biodegradable</h6>
+            </div>
+            <!-- Aprobada por la FDA -->
+            <div class="col-md-4 col-12 mb-4 text-center py-3">
+                <img src="{% static 'img/iconos/fda.png.webp' %}" alt="Aprobada por la FDA" class="img-fluid mb-3" style="max-width: 80px;">
+                <h6>Aprobada por la FDA</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--====================================================================
+                seccion de la tabla de materiales validados
+========================================================================-->
+
+<!-- Tabla de Materiales Validados -->
+<section style="background: white; color: black; padding: 40px 0;">
+    <div class="container">
+        <h2 class="text-center mb-4">Materiales validados</h2>
+
+
+
+        <!--seccion de colores en la aprte de los materiales validados -->
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
+            <!-- Metal -->
+            <div style="display: flex; align-items: center;">
+                <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(138, 138, 138); border: 1px solid #ddd;"></span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">Metal</span>
+            </div>
+            <!-- Polymer -->
+            <div style="display: flex; align-items: center;">
+                <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">Polymer</span>
+            </div>
+            <!-- Functionalised Polymer -->
+            <div style="display: flex; align-items: center;">
+                <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: pink; border: 1px solid #ddd;"></span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">Functionalised Polymer</span>
+            </div>
+            <!-- Elastomer Polymer -->
+            <div style="display: flex; align-items: center;">
+                <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: yellow; border: 1px solid #ddd;"></span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">Elastomer Polymer</span>
+            </div>
+            <!-- Ceramic -->
+            <div style="display: flex; align-items: center;">
+                <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightgreen; border: 1px solid #ddd;"></span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">Ceramic</span>
+            </div>
+        </div>
+
+        <!-- fin de la seccion de matetiales validados -->
+
+
+        <!-- Tabla para dispositivos grandes -->
+        <div class="table-responsive d-none d-md-block">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th class="text-center">Color</th>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">Material</th>
+                        <th class="text-center">Category</th>
+                        <th class="text-center">Sub-Category</th>
+                        <th class="text-center">Validated</th>
+                        <th class="text-center">Commercially Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: rgb(138, 138, 138); border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> Inox 316L</td>
+                        <td>Metal</td>
+                        <td>Alloy</td>
+                        <td>√</td>
+                        <td>Catamold 316</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> ABS</td>
+                        <td>Polymer</td>
+                        <td>Commodity Polymer</td>
+                        <td>√</td>
+                        <td>Smart Materials</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PLA</td>
+                        <td>Polymer</td>
+                        <td>Biocompatible Polymer</td>
+                        <td>√</td>
+                        <td>Smart Materials</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:  lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PLA</td>
+                        <td>Polymer</td>
+                        <td>Biocompatible Polymer</td>
+                        <td>√</td>
+                        <td>Sigma-Aldrich/Merck</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PCL</td>
+                        <td>Polymer</td>
+                        <td>Biocompatible Polymer</td>
+                        <td>√</td>
+                        <td>Sigma-Aldrich/Merck</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PC</td>
+                        <td>Polymer</td>
+                        <td>Engineering Polymer</td>
+                        <td>√</td>
+                        <td>Makrolon® Rx1805 - Covestro</td>
+                        <td>prueba error</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> LDPE</td>
+                        <td>Polymer</td>
+                        <td>Commodity Polymer</td>
+                        <td>√</td>
+                        <td>LARP PE A3001</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PEKK</td>
+                        <td>Polymer</td>
+                        <td>High Temperature Polymer</td>
+                        <td>√</td>
+                        <td>ARKEMA KEPSTAN 6000</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PP</td>
+                        <td>Polymer</td>
+                        <td>Commodity Polymer</td>
+                        <td>√</td>
+                        <td>Braskem FL105DP</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PP</td>
+                        <td>Polymer</td>
+                        <td>Commodity Polymer</td>
+                        <td>√</td>
+                        <td>PPC 7712</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>                        
+                        <td><span class="dot"></span> PP</td>
+                        <td>Polymer</td>
+                        <td>Commodity Polymer</td>
+                        <td>√</td>
+                        <td>PPR 7220</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> PEI</td>
+                        <td>Polymer</td>
+                        <td>High Temperature Polymer</td>
+                        <td>√</td>
+                        <td>Ultem</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> Nylon</td>
+                        <td>Polymer</td>
+                        <td>Polyamide</td>
+                        <td>√</td>
+                        <td>Perflex Flexynylon</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightpink; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PA6 + 30% GF</td>
+                        <td>Functionalised Polymer</td>
+                        <td>Functionalised Polyamide</td>
+                        <td>√</td>
+                        <td>Grilon BK-360</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightpink; border: 1px solid #ddd;"></span>
+                        </td>                        
+                        <td><span class="dot"></span> PA6 + CF</td>
+                        <td>Functionalised Polymer</td>
+                        <td>Functionalised Polyamide</td>
+                        <td>√</td>
+                        <td>AKROMID® B3 ICF 30 9 AM black (7451)</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightpink; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PA6 + 60% Mo</td>
+                        <td>Functionalised Polymer</td>
+                        <td>Functionalised Polyamide</td>
+                        <td>√</td>
+                        <td>No</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightpink; border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> PC + PBT</td>
+                        <td>Functionalised Polymer</td>
+                        <td>Engineering Polymer</td>
+                        <td>√</td>
+                        <td>VALOX 357X</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightpink; border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> PC + PBT</td>
+                        <td>Functionalised Polymer</td>
+                        <td>Engineering Polymer</td>
+                        <td>√</td>
+                        <td>VALOX 357U</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightpink; border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> PP + 30% CF</td>
+                        <td>Functionalised Polymer</td>
+                        <td>Engineering Polymer</td>
+                        <td>√</td>
+                        <td>Braskem FL900DP-CF</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> SEBS Sh70A</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+
+                        <td><span class="dot"></span> SEBS Sh85A</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+                        
+                        <td><span class="dot"></span> SEBS Sh25A</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>                        
+                        <td><span class="dot"></span> SEBS Sh25A + 50% CB</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> SEBS Sh50A + 50% CB</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE + TIMCAL</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> SEBS Sh70A + 50% CB</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> SEBS Sh50A</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Elastomer Styrene</td>
+                        <td>√</td>
+                        <td>Kraiburg TPE</td>
+                        <td>prueba error</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> TPU Sh98A</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Polyurethane</td>
+                        <td>√</td>
+                        <td>Bayer - Desmopan DP 3059D</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(209, 142, 41); border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> TPU Sh52A</td>
+                        <td>Elastomer Polymer</td>
+                        <td>Thermoplastic Polyurethane</td>
+                        <td>√</td>
+                        <td>APILON™ 52 TPU</td>
+                        <td>prueba error</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(50, 148, 50); border: 1px solid #ddd;"></span>
+                        </td>
+                        <td><span class="dot"></span> Al2O3</td>
+                        <td>Ceramic</td>
+                        <td>Inorganic Material</td>
+                        <td>√</td>
+                        <td>No</td>
+                        <td>prueba error</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Vista para dispositivos móviles -->
+        <div class="d-md-none">
+            <!-- Tarjeta 1 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid grey;">Inox 316L</h5>
+                    <p><strong>Category:</strong> Metal</p>
+                    <p><strong>Sub-Category:</strong> Alloy</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Catamold 316</p>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightblue;">ABS</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Commodity Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Smart Materials</p>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightblue;">PLA</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Biocompatible Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Smart Materials</p>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightblue;">PLA</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Biocompatible Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Sigma-Aldrich/Merck</p>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightblue;">PCL</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Biocompatible Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Sigma-Aldrich/Merck</p>
+                </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightblue;">PC</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Engineering Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Makrolon® Rx1805 - Covestro</p>
+                </div>
+            </div>
+           <!-- Tarjeta 7 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightblue;">LDPE</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Commodity Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> LARP PE A3001</p>
+                </div>
+            </div>
+            <!-- Tarjeta 8 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightblue;">PEKK</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> High Temperature Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> ARKEMA KEPSTAN 6000</p>
+                </div>
+            </div>
+            <!-- Tarjeta 9 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightblue;">PP</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Commodity Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Braskem FL105DP</p>
+                </div>
+            </div>
+            <!-- Tarjeta 10 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightblue;">PP</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Commodity Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> PPC 7712</p>
+                </div>
+            </div>
+            <!-- Tarjeta 11 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightblue;">PP</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Commodity Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> PPR 7220</p>
+                </div>
+            </div>
+            <!-- Tarjeta 12 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightblue;">PEI</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> High Temperature Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Ultem</p>
+                </div>
+            </div>
+            <!-- Tarjeta 13 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightblue;">Nylon</h5>
+                    <p><strong>Category:</strong> Polymer</p>
+                    <p><strong>Sub-Category:</strong> Polyamide</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Perflex Flexynylon</p>
+                </div>
+            </div>
+            <!-- Tarjeta 14 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightpink;">PA6 + 30% GF</h5>
+                    <p><strong>Category:</strong> Functionalised Polymer</p>
+                    <p><strong>Sub-Category:</strong> Functionalised Polyamide</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Grilon BK-360</p>
+                </div>
+            </div>
+            <!-- Tarjeta 15 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightpink;">PA6 + CF</h5>
+                    <p><strong>Category:</strong> Functionalised Polymer</p>
+                    <p><strong>Sub-Category:</strong> Functionalised Polyamide</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> AKROMID® B3 ICF 30 9 AM black (7451)</p>
+                </div>
+            </div>
+            <!-- Tarjeta 16 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightpink;">PA6 + 60% Mo</h5>
+                    <p><strong>Category:</strong> Functionalised Polymer</p>
+                    <p><strong>Sub-Category:</strong> Functionalised Polyamide</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> No</p>
+                </div>
+            </div>
+            <!-- Tarjeta 17 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightpink;">PC + PBT</h5>
+                    <p><strong>Category:</strong> Functionalised Polymer</p>
+                    <p><strong>Sub-Category:</strong> Engineering Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> VALOX 357X</p>
+                </div>
+            </div>
+            <!-- Tarjeta 18 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightpink;">PC + PBT</h5>
+                    <p><strong>Category:</strong> Functionalised Polymer</p>
+                    <p><strong>Sub-Category:</strong> Engineering Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> VALOX 357U</p>
+                </div>
+            </div>
+            <!-- Tarjeta 19 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid lightpink;">PP + 30% CF</h5>
+                    <p><strong>Category:</strong> Functionalised Polymer</p>
+                    <p><strong>Sub-Category:</strong> Engineering Polymer</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Braskem FL900DP-CF</p>
+                </div>
+            </div>
+            <!-- Tarjeta 20 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3" style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh70A</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE</p>
+                </div>
+            </div>
+            <!-- Tarjeta 21 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh85A</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE</p>
+                </div>
+            </div>
+            <!-- Tarjeta 22 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh25A</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE</p>
+                </div>
+            </div>
+            <!-- Tarjeta 23 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh25A + 50% CB</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE</p>
+                </div>
+            </div>
+            <!-- Tarjeta 24 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh50A + 50% CB</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE + TIMCAL</p>
+                </div>
+            </div>
+            <!-- Tarjeta 25 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh70A + 50% CB</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE</p>
+                </div>
+            </div>
+            <!-- Tarjeta 26 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">SEBS Sh50A</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Elastomer Styrene</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Kraiburg TPE</p>
+                </div>
+            </div>
+            <!-- Tarjeta 27 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">TPU Sh98A</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Polyurethane</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> Bayer - Desmopan DP 3059D</p>
+                </div>
+            </div>
+            <!-- Tarjeta 28 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid rgb(235, 180, 29);">TPU Sh52A</h5>
+                    <p><strong>Category:</strong> Elastomer Polymer</p>
+                    <p><strong>Sub-Category:</strong> Thermoplastic Polyurethane</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> APILON™ 52 TPU</p>
+                </div>
+            </div>
+            <!-- Tarjeta 29 -->
+            <div class="card mb-3 shadow-lg" style="border: 4px double rgb(4, 104, 129);">
+                <div class="card-body">
+                    <h5 class="card-title text-center py-3"  style="border-bottom: 5px solid lightgreen;">Al2O3</h5>
+                    <p><strong>Category:</strong> Ceramic</p>
+                    <p><strong>Sub-Category:</strong> Inorganic Material</p>
+                    <p><strong>Validated:</strong> √</p>
+                    <p><strong>Commercially Available:</strong> No</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}

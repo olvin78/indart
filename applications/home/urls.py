@@ -78,7 +78,7 @@ urlpatterns = [
     ),
 
     path('contacto',
-        views.ContactoView.as_view(),
+        views.ContactFormView.as_view(),
         name='contacto',
     ),
 
@@ -188,4 +188,30 @@ urlpatterns = [
     path('duet/articulo/<int:pk>/',
          views.DuetDetailView.as_view(),
          name='duet_articulo'),
+
+    path('materiales_validados',
+        views.Materiales_validadosView.as_view(),
+        name='materiales_validados',
+    ),
+
+    path('servicio_validacion',
+        views.Servicio_validadacionView.as_view(),
+        name='servicio_validacion',
+    ),
+
+    path('alimentador_pellet',
+        views.Alimetador_pelletView.as_view(),
+        name='alimentador_pellet',
+    ),
+
+    path('soporte_tecnico',
+        views.Soporte_tecnicoView.as_view(),
+        name='soporte_tecnico',
+    ),
+
+
+    path('soporte_detail/<int:pk>/',
+        views.SoporteDetailView.as_view(),
+        name='soporte_detail',
+    ),
 ]

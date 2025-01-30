@@ -75,3 +75,28 @@ class Duet(models.Model):
         return self.content[:200]
 
 
+
+
+class Soporte(models.Model):
+    TIPO_CHOICES = [
+        ('Interfaz_Web', 'Interfaz_Web'),
+        ('Simpify', 'Simpify'),
+        ('Cabezal_DART', 'Cabezal_DART'),
+        ('Cabezal_DD_HR', 'Cabezal_DD_HR'),
+        ('Cabezal_Pellet', 'Cabezal_Pellet'),
+        ('Mantenimiento', 'Mantenimiento'),
+        ('Firmware', 'Firmware'),
+        ('Manejo_de_impresoras', 'Manejo_de_impresoras'),
+        ('Super_slicer', 'Super_slicer'),
+    ]
+
+    name = models.CharField(max_length=255, blank=True, null=True, verbose_name="Nombre")
+    number = models.CharField(max_length=255, blank=True, null=True, verbose_name="elija un número")
+    image = models.ImageField(upload_to='images/soporte', null=True, blank=True, verbose_name="Imagen")
+    video_file = models.FileField(upload_to='media/soporte/videos/', null=True, blank=True, verbose_name="Video")  # Carpeta 'videos/' en MEDIA_ROOT
+    tipo_soporte = models.CharField(choices=TIPO_CHOICES, max_length=30, verbose_name="Tipo")
+    description = models.TextField(max_length=255, blank=True, null=True, verbose_name="Descripción")
+
+    def __str__(self):
+        """Devuelve el nombre como representación en cadena."""
+        return self.name or "Sin Nombre"

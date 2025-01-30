@@ -276,7 +276,7 @@
                 <li><a class="dropdown-item" href="{% url 'home_app:nx_modular' %}">NX MODULAR</a></li>
                 <li><a class="dropdown-item" href="{% url 'home_app:bf_modular' %}">BF MODULAR</a></li>
                 <li><a class="dropdown-item" href="{% url 'home_app:mini_pro' %}">MINI PRO</a></li>
-                <li><a class="dropdown-item" href="{% url 'home_app:mini_pro' %}">ALIMENTADOR DE PELLET</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:alimentador_pellet' %}">ALIMENTADOR DE PELLET</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -347,10 +347,15 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'home_app:pellet' %}">Pellet</a></li>
                 <li><a class="dropdown-item" href="{% url 'home_app:filamento' %}">Filamento</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:materiales_validados' %}">Materiales validados</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="{% url 'home_app:servicios' %}">Servicios 3D</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Servicios 3D</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Servocios  &raquo;</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:servicio_validacion' %}">Servicio de Validación e <br> impresión 3D con Pellet  &raquo;</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link text-nowrap" href="{% url 'home_app:duet3D' %}">Duet 3D</a>
@@ -358,18 +363,18 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Soporte</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Soporte Técnico</a></li>
+                <li><a class="dropdown-item" href="{% url 'home_app:soporte_tecnico' %}">Soporte Técnico</a></li>
                 <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Manual y Configuración</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Nosotros' %}</a>
               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'home_app:contacto' %}">Contacto</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:contacto' %}">{% trans 'Contacto' %}</a></li>
                   <!-- Hazitek como desplegable -->
                   <li>
                     <a class="dropdown-item" href="#">
-                      Subvenciones &raquo;
+                      {% trans 'Subvenciones' %} &raquo;
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
                       <li>
@@ -390,16 +395,17 @@
                   <li><a class="dropdown-item" href="{% url 'home_app:sobre_nosotros' %}">Quiénes somos</a></li>
               </ul>
           </li>
+          <!-- boton para cambiar de idioma -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" 
-               style="text-transform:uppercase; background-color: #250f64; color:white; border-radius:25px;" 
+               style="text-transform:uppercase; background-color: #0f4c64; color:white; border-radius:50px; 
                href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ CURRENT_LANGUAGE }}
             </a>
             <ul class="dropdown-menu" style="z-index:500;">
                 {% for language in languages %}
                 <li>
-                    <a class="dropdown-item" style="text-transform:uppercase; color: #250f64;" 
+                    <a class="dropdown-item" style="text-transform:uppercase; color: #12beb5;" 
                        href="/{{ language.code }}/{{ request.get_full_path|slice:'4:' }}">
                         {{ language.code }}
                     </a>
@@ -408,9 +414,9 @@
             </ul>
         </li>
           
-            <button type="button" class="btn btn-sm fondo-azul-indart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!--<button type="button" class="btn btn-sm fondo-azul-indart" data-bs-toggle="modal" data-bs-target="#exampleModal">
               IndartBot
-            </button>
+            </button>-->
           </ul>
           <!--<div class="d-lg-flex col-lg-3 justify-content-lg-end">
             <button class="btn btn-primary">Button</button>

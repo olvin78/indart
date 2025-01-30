@@ -1,5 +1,9 @@
 from django.shortcuts import render
-from .models import Blog,Material,Duet
+from django.core.mail import send_mail
+from django.urls import reverse_lazy
+from .forms import ContactForm
+
+from .models import Blog,Material,Duet,Soporte
 from django.views.generic import (
     TemplateView,
     ListView,
@@ -8,6 +12,7 @@ from django.views.generic import (
     UpdateView,
     FormView
 )
+
 
 
 
@@ -144,3 +149,75 @@ class DuetDetailView(DetailView):
     model = Duet # Especifica el modelo Duet
     template_name = 'home/duet_detalle.html' # Define el template "articulo_completo.html"
     context_object_name = 'datos'
+
+
+class Materiales_validadosView(TemplateView):
+    template_name="home/materiales_validados.html"
+
+class Servicio_validadacionView(TemplateView):
+    template_name="home/servicio_validacion.html"
+
+class Alimetador_pelletView(TemplateView):
+    template_name="home/alimetador_de_pellet.html"
+
+
+
+class Soporte_tecnicoView(ListView):
+    model = Soporte  # Especifica el modelo correcto
+    template_name = "home/soporte_tecnico.html"  # Especifica la plantilla
+    context_object_name = 'datos'  # Nombre del contexto para la plantilla
+    def get_context_data(self, **kwargs):
+        # Llama al método original para obtener el contexto base
+        context = super().get_context_data(**kwargs)
+        
+        # Agrega los datos de otros modelos al contexto paa ver el mapa en el index
+        context['Interfaz_Web'] = Soporte.objects.filter(tipo_soporte='Interfaz_Web')
+        context['Simpify'] = Soporte.objects.filter(tipo_soporte='Simpify')
+        context['Cabezal_DART'] = Soporte.objects.filter(tipo_soporte='Cabezal_DART')
+        context['Cabezal_DD_HR'] = Soporte.objects.filter(tipo_soporte='Cabezal_DD_HR')
+        context['Cabezal_Pellet'] = Soporte.objects.filter(tipo_soporte='Cabezal_Pellet')
+        context['Mantenimiento'] = Soporte.objects.filter(tipo_soporte='Mantenimiento')
+        context['Firmware'] = Soporte.objects.filter(tipo_soporte='Firmware')
+        context['Manejo_de_impresoras'] = Soporte.objects.filter(tipo_soporte='Manejo_de_impresoras')
+        context['Super_slicer'] = Soporte.objects.filter(tipo_soporte='Super_slicer')
+
+        return context
+
+
+class SoporteDetailView(DetailView):
+    model = Soporte # Especifica el modelo Blog
+    template_name = 'home/soporte_tecnico_detail.html' # Define el template "articulo_completo.html"
+    context_object_name = 'datos'
+
+
+
+#esta es la vista para el formulario de conttacto
+class ContactFormView(FormView):
+    template_name = 'home/contacto.html'  # El template donde se renderiza el formulario
+    form_class = ContactForm  # El formulario que definiste
+    success_url = reverse_lazy('home_app:contacto')  # Redirección tras el envío exitoso
+
+    def form_valid(self, form):
+        # Extrae los datos del formulario
+        name = form.cleaned_data['name']
+        company = form.cleaned_data['company']
+        email = form.cleaned_data['email']
+        country = form.cleaned_data['country']
+        prefix = form.cleaned_data['prefix']
+        phone = form.cleaned_data['phone']
+        message = form.cleaned_data['message']
+        privacy_policy = form.cleaned_data['privacy_policy']
+
+        # Construye el mensaje
+        subject = f"Nuevo mensaje de contacto de {name}"
+        message_body = f"Nombre: {name}\nCorreo: {email}\n\nMensaje:\n{message}"
+
+        # Envía el correo
+        send_mail(
+            subject,
+            message_body,
+            'euskodev@gmail.com',  # Remitente (cambia esto por un correo válido)
+            ['euskodev@gmail.com'],  # Destinatarios
+        )
+
+        return super().form_valid(form)

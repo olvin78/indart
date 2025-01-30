@@ -42,29 +42,64 @@ crossorigin=""/>
             <!-- Columna del formulario -->
             <div class="col-md-6 px-5">
                 <div class="p-4 rounded" style="background-color: #4bb5c1; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label text-white">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    <form method="post" action="">
+                        {% csrf_token %}
+                    
+                        <!-- Nombre y Empresa -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label text-white">Nombre*</label>
+                                {{ form.name }}
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empresa" class="form-label text-white">Empresa</label>
+                                {{ form.company }}
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-white">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
+                    
+                        <!-- Email y País -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="email" class="form-label text-white">Email*</label>
+                                {{ form.email }}
+                            </div>
+                            <div class="col-md-6">
+                                <label for="pais" class="form-label text-white">País*</label>
+                                {{ form.country }}
+                            </div>
                         </div>
+                    
+                            <!-- Teléfono con Prefijo -->
                         <div class="mb-3">
-                            <label for="mensaje" class="form-label text-white">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
+                            <label for="telefono" class="form-label text-white">Teléfono*</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+</span>  <!-- Muestra siempre el "+" -->
+                                {{ form.prefix }}  <!-- Input para el prefijo editable -->
+                                {{ form.phone }}   <!-- Input para el número de teléfono -->
+                            </div>
                         </div>
+                    
+                        <!-- Mensaje -->
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label text-white">¿En qué te podemos ayudar?</label>
+                            {{ form.message }}
+                        </div>
+                    
+                        <!-- Política de privacidad -->
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="politicaPrivacidad">
+                            {{ form.privacy_policy }}
                             <label class="form-check-label text-white" for="politicaPrivacidad">
                                 He leído y acepto la <a href="#" class="text-white text-decoration-underline">política de privacidad</a>
+                                y el <a href="#" class="text-white text-decoration-underline">aviso legal</a>
                             </label>
                         </div>
+                    
+                        <!-- Botón Enviar -->
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn bg-light w-auto px-4">Enviar comentario</button>
-                        </div>                        
+                            <button type="submit" class="btn bg-light w-auto px-4">Enviar</button>
+                        </div>
                     </form>
+                    
                 </div>
             </div>
         </div>

@@ -1,0 +1,62 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>ALIMENTADOR DE PELLET | Indart3D</title>
+<style>
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Sección Alimentador Automático de Pellets -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Imagen representativa -->
+            <div class="col-md-6 text-center">
+                <img src="{% static 'img/servicios/alimentador_automatico.jpg' %}" alt="Alimentador Automático de Pellets" class="img-fluid rounded shadow">
+            </div>
+            <!-- Texto descriptivo -->
+            <div class="col-md-6">
+                <h3 class="texto-azul-indart">Alimentador Automático de Pellets</h3>
+                <p class="mb-4">
+                    Optimiza tu experiencia con la impresión 3D de gran formato. El Alimentador Automático de Pellets es el accesorio ideal para tu impresora 3D equipada con tecnología de pellets. Este sistema autónomo alimenta directamente la tolva del cabezal, eliminando la necesidad de realizar esta tarea de forma manual y permitiéndote centrarte en lo realmente importante: tus proyectos.
+                </p>
+                <p>
+                    Al combinar en una sola máquina la capacidad de trabajar con pellets y la automatización que ofrece este alimentador, se logra un equipo innovador que destaca en el sector de la fabricación aditiva.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Especificaciones del Alimentador -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="texto-azul-indart text-center mb-4">Características del Alimentador</h3>
+        <div class="row align-items-center">
+            <!-- Texto descriptivo -->
+            <div class="col-md-6">
+                <p class="mb-4">
+                    El dispositivo incluye un depósito de 40 cm de altura con capacidad para 7,06 dm³ de pellets, asegurando un suministro continuo. Además, incorpora un sensor de fin de material en la salida para gestionar automáticamente la reposición.
+                </p>
+                <p>
+                    También cuenta con sensores de temperatura y humedad en su base, que monitorizan estas variables para mantener las condiciones óptimas de funcionamiento.
+                </p>
+            </div>
+            <!-- Imagen representativa -->
+            <div class="col-md-6 text-center">
+                <img src="{% static 'img/servicios/deposito_pellets.jpg' %}" alt="Depósito de Pellets" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  
+{% endblock %}

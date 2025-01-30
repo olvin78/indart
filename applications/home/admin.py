@@ -1,5 +1,5 @@
 from django.contrib import admin
-from applications.home.models import ( Blog,Material,Duet)
+from applications.home.models import ( Blog,Material,Duet,Soporte)
 
 # Register your models here.
 
@@ -20,3 +20,9 @@ class DuetAdmin(admin.ModelAdmin):
     list_display = ("name", "summary", "content")
 
 admin.site.register(Duet, DuetAdmin)
+
+# material your model here.
+class SoporteAdmin(admin.ModelAdmin):
+    list_display = ("name","number", "image","tipo_soporte")
+
+admin.site.register(Soporte, SoporteAdmin)
