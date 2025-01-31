@@ -10,8 +10,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="author" content="">
+    <meta name="generator" content="">
     <title>"Indart 3D: Innovación en Impresión, Escaneado y Tecnología 3D de Vanguardia"</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
@@ -302,7 +302,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{% url 'home_app:nx_modular' %}" data-bs-toggle="dropdown" aria-expanded="false">Escaner 3D</a>
+                <a class="nav-link dropdown-toggle" href="{% url 'home_app:nx_modular' %}" data-bs-toggle="dropdown" aria-expanded="false">Escáner 3D</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
                   <a class="dropdown-item" href="#">
@@ -447,7 +447,6 @@
         </div>
       </nav>
     </main>
-
   </div>
 </header>
 
@@ -461,8 +460,8 @@
      <!-- Logo principal centrado -->
      <div class="row pt-5 text-center">
       <div class="col-12">
-        <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="Logo Principal" class="img-fluid mb-3" style="max-width: 150px;">
-        <p class="text-white">Innovación y Desarrollo 3D</p>
+        <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="Logo Principal" class="img-fluid mb-3" style="max-width: 150px;"><br>
+        <spam class="text-white text-center" style="font-family:MiFuentePersonalizada;">Innovación y Desarrollo 3D</spam>
       </div>
     </div>
     <hr class="text-white">
@@ -470,7 +469,7 @@
   <div class="row py-5 text-white text-center text-md-start">
     <!-- Columna 1: Creadores de Tumaker -->
     <div class="col-lg-3 col-md-6 mb-4">
-      <h5 class="mb-4 texto-azul-indart">Creadores de</h5>
+      <h5 class="mb-4 texto-azul-indart text-uppercase">Creadores de</h5>
       <img src="{% static 'img/logo/Logo-tumaker-white-trasparente.png.webp' %}" alt="Logo Secundario" class="img-fluid mb-2" style="max-width: 150px;">
       <p class="text-muted">Web creada por Indart3D</p>
     </div>
@@ -501,14 +500,14 @@
     <!-- Columna 3: Horario general -->
     <div class="col-lg-3 col-md-6 mb-4">
       <h5 class="fw-bold mb-2 text-uppercase texto-azul-indart">Horario</h5>
-      <p class="text-white mb-2">Lunes - Jueves: 8:30 a 13:30 y 14:30 a 17:30</p>
-      <p class="text-white mb-2">Viernes: 8:00 a 15:00</p>
+      <span class="text-white mb-2">Lunes - Jueves: 8:30 a 13:30 <br> y 14:30 a 17:30</span>
+      <span class="text-white mb-2">Viernes: 8:00 a 15:00</span>
     </div>
 
     <!-- Columna 4: Horario de Verano -->
     <div class="col-lg-3 col-md-6 mb-5">
       <h5 class="fw-bold  mb-2 text-uppercase texto-azul-indart">Horario de Verano</h5>
-      <p class="text-white">Lunes - Viernes: 8:00 a 14:30</p>
+      <span class="text-white">Lunes - Viernes: 8:00 a 14:30</span>
     </div>
 
     <div class="text-center mt-5">
@@ -519,7 +518,7 @@
       <a href="{% url 'home_app:politica_de_privacidad' %}" class="text-white text-decoration-none mx-2"><b>Políticas de Privacidad</b></a>
     </div>
     <hr class="text-white mt-4">
-    <div class="text-center"><p class="mb-0">© Copyright <strong>Company</strong>. All Rights Reserved</p></div>
+    <div class="text-center"><span class="mb-0">© Copyright <strong>Company</strong>. All Rights Reserved</span></div>
   </div>
 </div>
 
@@ -573,6 +572,7 @@
 <!-- estaes la prueba para agregar el assistente bvirtual a indart-->
 <!--OpenAI-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
   $(document).ready(function () {
       // Función para enviar mensaje

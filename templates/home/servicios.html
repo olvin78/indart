@@ -27,7 +27,7 @@
         </div>
         <!-- Imagen -->
         <div class="col-md-4 text-center">
-            <img src="{% static 'img/servicios/Impresora-Pellet-1.png' %}" alt="NX PRO Impresora" class="img-fluid" style="max-height: 400px;">
+            <img src="{% static 'img/servicios/BF_Modular_10-Photoroom.png' %}" alt="NX PRO Impresora" class="img-fluid" style="max-height: 400px;">
         </div>
         <div class="col-lg-2"></div>
     </div>
@@ -66,11 +66,11 @@
             <div class="card shadow-lg border-0">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Impresión 3D</h5>
-                    <img style="height: 70px;" src="{% static 'img/servicios/impresora-3d.png' %}" alt="">
+                    <img style="height: 70px; margin-bottom: 15px;" src="{% static 'img/servicios/impresora-3d.png' %}" alt="">
                     <p class="card-text text-muted">
                         Solicita la impresión de la pieza que necesites. El procedimiento es rápido y sencillo, al mejor precio.
                     </p>
-                    <button class="btn fondo-azul-indart">Imprimir</button>
+                    <button class="btn fondo-azul-indart boton">Imprimir</button>
                 </div>
             </div>
         </div>
@@ -79,11 +79,11 @@
             <div class="card shadow-lg border-0">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Escaneado 3D</h5>
-                    <img style="height: 70px;" src="{% static 'img/servicios/escaner-3d.png' %}" alt="">
+                    <img style="height: 70px; margin-bottom: 15px;" src="{% static 'img/servicios/escaner-3d.png' %}" alt="">
                     <p class="card-text text-muted">
                         Podemos escanear cualquier pieza para su diseño y tratamiento. Garantizamos resultados de alta calidad.
                     </p>
-                    <button class="btn fondo-azul-indart">Escanear</button>
+                    <button class="btn fondo-azul-indart boton">Escanear</button>
                 </div>
             </div>
         </div>
@@ -92,11 +92,11 @@
             <div class="card shadow-lg border-0">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">Formación 3D</h5>
-                    <img style="height: 70px;" style="height: 30px;" src="{% static 'img/servicios/formacion.png' %}" alt="">
+                    <img style="height: 70px; margin-bottom: 15px;" style="height: 30px;" src="{% static 'img/servicios/formacion.png' %}" alt="">
                     <p class="card-text text-muted">
                         Impartimos formación tanto a empresas como a particulares. Aprende con los mejores expertos.
                     </p>
-                    <button class="btn fondo-azul-indart">Formación</button>
+                    <button class="btn fondo-azul-indart boton">Formación</button>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
                     <span style="color: #F4A261;">temprano</span>. Es el 
                     <span style="color: #6D6875;">momento</span>.
                 </h2>
-                <a href="{% url 'home_app:contacto' %}" class="btn fondo-azul-indart mt-4 px-4 py-2 text-white" style="border: none;">
+                <a href="{% url 'home_app:contacto' %}" class="btn fondo-azul-indart mt-4 px-4 py-2 text-white boton" style="border: none;">
                     Contacta con Nosotros
                 </a>
             </div>
@@ -127,18 +127,33 @@
 
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleccionamos todos los botones y enlaces
+        let elementos = document.querySelectorAll(".boton, .enlace");
 
+        elementos.forEach(elemento => {
+            // Guardamos los estilos originales
+            let colorTextoOriginal = window.getComputedStyle(elemento).color;
+            let colorFondoOriginal = window.getComputedStyle(elemento).backgroundColor;
 
+            // Efecto hover (acercar y cambiar color)
+            elemento.addEventListener("mouseenter", function () {
+                elemento.style.backgroundColor = "#4bb5c1"; // Color en hover
+                elemento.style.color = "#ffffff"; // Mantiene el texto visible
+                elemento.style.transform = "scale(1.1)"; // Acercar un 10%
+                elemento.style.transition = "all 0.3s ease"; // Suaviza el efecto
+            });
 
-
-
-
-
-
-
-
-
-
+            // Cuando el mouse sale (alejar y volver al color original)
+            elemento.addEventListener("mouseleave", function () {
+                elemento.style.backgroundColor = colorFondoOriginal; // Regresa el fondo original
+                elemento.style.color = colorTextoOriginal; // Regresa el color original del texto
+                elemento.style.transform = "scale(1)"; // Vuelve a su tamaño normal
+            });
+        });
+    });
+</script>
 
 
 

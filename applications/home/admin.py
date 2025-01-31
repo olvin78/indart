@@ -23,6 +23,6 @@ admin.site.register(Duet, DuetAdmin)
 
 # material your model here.
 class SoporteAdmin(admin.ModelAdmin):
-    list_display = ("name","number", "image","tipo_soporte")
+    list_display = ("name","number","image","tipo_soporte")
 
 admin.site.register(Soporte, SoporteAdmin)

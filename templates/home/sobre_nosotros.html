@@ -16,7 +16,7 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="texto-azul-indart">Sobre Nosotros</h2>
-        <p class="text-muted">Descubre más sobre nuestra misión, visión y lo que hacemos en nuestra empresa.</p>
+        <span class="text-muted">Descubre más sobre nuestra misión, visión y lo que hacemos en nuestra empresa.</span>
       </div>
       <div class="row g-4">
         <!-- Video Izquierda -->
@@ -33,7 +33,7 @@
             <h4 class="mb-3 texto-azul-indart">Nuestra Historia</h4>
             <p class="text-muted">Indart 3D es una cooperativa fundada por dos jóvenes emprendedores, dedicada al diseño, fabricación y venta de impresoras 3D de última generación. Desde nuestros inicios en 2020 en Irún, hemos trabajado con universidades, centros de investigación y empresas de diversos sectores, incluyendo la medicina, textil y automotriz. Nuestra experiencia nos ha permitido ser pioneros en la introducción de tecnologías de fabricación aditiva, ofreciendo soluciones personalizadas y profesionales que nos diferencian en el mercado. </p>
             <div class="d-flex justify-content-center align-items-center">
-                <button class="btn fondo-azul-indart text-white" style="width:200px">Saber Más</button>
+                <button class="btn fondo-azul-indart text-white boton" style="width:200px">Saber Más</button>
             </div> 
           </div>
         </div>
@@ -49,7 +49,7 @@
                     <li>Ofrecer soluciones de impresión 3D personalizadas que impacten positivamente en la industria y la sociedad.</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button class="btn fondo-azul-indart text-white" style="width:200px">Saber Más</button>
+                    <button class="btn fondo-azul-indart text-white boton" style="width:200px">Saber Más</button>
                 </div> 
             </div>            
         </div>
@@ -84,7 +84,7 @@
                     <li>Ofrecer soluciones de impresión 3D personalizadas que impacten positivamente en la industria y la sociedad.</li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button class="btn fondo-azul-indart text-white" style="width:200px">Saber Más</button>
+                    <button class="btn fondo-azul-indart text-white boton" style="width:200px">Saber Más</button>
                 </div>                           
             </div>            
         </div>
@@ -92,14 +92,25 @@
     </div>
   </section>
   
-
+<!--===========================================================
+                seccion sobre lo que hacemos
+==============================================================-->
   <section class="py-5 bg-light">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="fw-bold texto-azul-indart">¿Qué Hacemos?</h2>
-            <p class="text-muted">Descubre quiénes y cómo estamos revolucionando la fabricación 3D.</p>
+            <span class="text-muted">Descubre quiénes y cómo estamos revolucionando la fabricación 3D.</span>
         </div>
         <div class="row align-items-center d-none d-lg-flex py-5">
+            <!-- Columna de imagen -->
+            <div class="col-lg-6 py-5">
+                <div class="position-relative">
+                    <img src="{% static 'img/servicios/BM_Gente_10.png' %}" class="img-fluid rounded shadow-lg" alt="Indart 3D">
+                    <div class="position-absolute top-50 start-50 translate-middle text-white p-3  shadow">
+                        <i class="bi bi-3d"></i>
+                    </div>
+                </div>
+            </div>
             <!-- Columna de texto -->
             <div class="col-lg-6 mb-4">
                 <h3 class="fw-bold texto-azul-indart">Fabricantes de Impresoras 3D</h3>
@@ -116,18 +127,10 @@
                     De igual manera, fuimos co-creadores de la primera impresora 3D profesional, diseñada y manufacturada en España. Tras la buena acogida que obtuvo y con el objetivo de cubrir la demanda de impresoras 3D de gran formato, participamos en el desarrollo de la impresora 3D BigFoot cuya irrupción en el mercado supuso un pequeño terremoto convirtiéndola en muy poco tiempo en la impresora 3D de gran formato más vendida en nuestro país.
                 </p>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button class="btn fondo-azul-indart text-white" style="width:200px">Saber Más</button>
+                    <button class="btn fondo-azul-indart text-white boton" style="width:200px">Saber Más</button>
                 </div> 
             </div>
-            <!-- Columna de imagen -->
-            <div class="col-lg-6">
-                <div class="position-relative">
-                    <img src="{% static 'img/sobre_nosotros/tumaker_ia.webp' %}" class="img-fluid rounded shadow-lg" alt="Indart 3D">
-                    <div class="position-absolute top-50 start-50 translate-middle bg-primary text-white p-3 rounded-circle shadow">
-                        <i class="bi bi-3d"></i>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
         <!--===================================================
@@ -135,9 +138,9 @@
         =======================================================-->
         <div class="row align-items-center d-flex d-lg-none">
             <!-- Columna de imagen -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 py-5">
                 <div class="position-relative">
-                    <img src="{% static 'img/sobre_nosotros/tumaker_ia.webp' %}" class="img-fluid rounded shadow-lg" alt="Indart 3D">
+                    <img src="{% static 'img/servicios/BM_Gente_10.png' %}" class="img-fluid rounded shadow-lg" alt="Indart 3D">
                     <div class="position-absolute top-50 start-50 translate-middle bg-primary text-white p-3 rounded-circle shadow">
                         <i class="bi bi-3d"></i>
                     </div>
@@ -165,7 +168,7 @@
         </div>
         <div class="text-center mt-5">
             <h3 class="fw-bold texto-azul-indart">Nuestros Valores Clave</h3>
-            <p class="text-muted">En Indart 3D, nos comprometemos a liderar la industria mediante la innovación, el compromiso y la calidad en cada proyecto.</p>
+            <span class="text-muted">En Indart 3D, nos comprometemos a liderar la industria mediante la innovación, el compromiso y la calidad en cada proyecto.</span>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 py-5">
             <!-- Feature 1 -->
@@ -203,6 +206,40 @@
     </div>
 </section>
 
+<!--=========================================================
+                seccion de servicios que ofrecemos
+=============================================================-->
+
+<section class="servicios py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+             <!-- Imagen -->
+             <div class="col-md-6">
+                <img src="ruta-de-la-imagen1.jpg" alt="Venta de impresoras marca Tumaker" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Texto -->
+            <div class="col-md-6">
+                <h2 class="mb-4 texto-azul-indart">Sevicios que Oferecemos</h2>
+                <p>Porque cada proyecto merece tecnología de vanguardia y soporte especializado..</p>
+                <ul>
+                    <li>Venta de Impresoras marca Tumaker.</li>
+                    <li>Servicio de mantenimiento.</li>
+                    <li>Venta de Filamentos y consumibles.</li>
+                    <li>Servicio de impresión 3D.</li>
+                    <li>Servicio de digitalización 3D.</li>
+                    <li>Formación.</li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+<!--==========================================================
+                seccion para la frase poderosa
+=============================================================-->
 <section class="py-5 text-center">
     <div class="container">
         <div class="row align-items-center py-5">
@@ -224,18 +261,33 @@
 
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleccionamos todos los botones y enlaces
+        let elementos = document.querySelectorAll(".boton, .enlace");
 
+        elementos.forEach(elemento => {
+            // Guardamos los estilos originales
+            let colorTextoOriginal = window.getComputedStyle(elemento).color;
+            let colorFondoOriginal = window.getComputedStyle(elemento).backgroundColor;
 
+            // Efecto hover (acercar y cambiar color)
+            elemento.addEventListener("mouseenter", function () {
+                elemento.style.backgroundColor = "#4bb5c1"; // Color en hover
+                elemento.style.color = "#ffffff"; // Mantiene el texto visible
+                elemento.style.transform = "scale(1.1)"; // Acercar un 10%
+                elemento.style.transition = "all 0.3s ease"; // Suaviza el efecto
+            });
 
-
-
-
-
-
-
-
-
-
+            // Cuando el mouse sale (alejar y volver al color original)
+            elemento.addEventListener("mouseleave", function () {
+                elemento.style.backgroundColor = colorFondoOriginal; // Regresa el fondo original
+                elemento.style.color = colorTextoOriginal; // Regresa el color original del texto
+                elemento.style.transform = "scale(1)"; // Vuelve a su tamaño normal
+            });
+        });
+    });
+</script>
 
 
 
