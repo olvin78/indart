@@ -26,16 +26,24 @@
 <div class="container-fluid fondo-azul-indart">
     <div class="row align-items-center py-5">
         <!-- Espaciado lateral izquierdo -->
-        <div class="col-lg-3 col-md-1 d-none d-md-block"></div>
+        <div class="col-lg-2 col-md-1 d-none d-md-block"></div>
 
         <!-- Sección de texto -->
-        <div class="col-lg-3 col-md-5 p-5">
-            <label class="text-white fs-0">{% trans 'BIENVENIDOS' %}</label>
-            <h1 class="text-white fw-bold">Indart 3D</h1>
-            <p class="text-white">
+        <div class="col-lg-4 col-md-5 p-5">
+            <label class="text-white fs-0"><b>{% trans 'BIENVENIDOS' %}</b></label>
+            <h1 class="text-white fw-bold"><b>Indart 3D</b></h1>
+            <p class="text-white"  style="font-family: barlow; text-align: justify;">
+                <b>
                 Somos Indart3D, una cooperativa impulsada por jóvenes emprendedores que se dedica al diseño, fabricación y venta de impresoras 3D de última generación.
+                </b>
             </p>
-            <button class="btn btn-light texto-azul-indart fw-bold">NUESTROS PRODUCTOS</button>
+            <button class="btn btn-light fw-bold" 
+            style="color:#4bb5c1; background:#fdfdfd; border:2px solid #4bb5c1; padding:10px 20px; transition:0.3s;"
+            onmouseover="this.style.background='#ffff'; this.style.color='#4bb5c1'; this.style.transform='scale(1.1)';"
+            onmouseout="this.style.background='#ffff'; this.style.color='#4bb5c1'; this.style.transform='scale(1)';">
+            NUESTROS PRODUCTOS
+        </button>
+        
         </div>
 
         <!-- Imagen de portada -->
@@ -55,7 +63,7 @@
             <!-- Tarjeta 1 -->
             <div class="col-lg-4 col-md-6">
                 <div class="p-4 border rounded shadow-sm h-100 bg-white">
-                    <img src="{% static 'img/BF-Pellet-Pellet3.png' %}" alt="Icono 1" class="mb-3" style="width: 250px; height: 150px;padding-left: 50px;">
+                    <img src="{% static 'img/bf_modular/BF_Modular_2.png' %}" alt="Icono 1" class="mb-3" style="width: 280px; height: 180px;">
                     <h5 class="fw-bold">Impresoras 3D</h5>
                     <p class="text-muted">Diseñamos y fabricamos impresoras 3D con la última tecnología del mercado.</p>
                 </div>
@@ -98,7 +106,7 @@
     <!-- Contenido -->
     <div class="row mb-5 align-items-center">
         <!-- Columna de texto -->
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12" style="text-align: justify;">
             <h1 class="h1 fw-bold">Cambiando el futuro de las impresoras</h1><br>
             <p class="h6">
                 La impresión 3D está cambiando el mundo industrial. Dedicamos parte de nuestro trabajo a investigación 
@@ -124,7 +132,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold">Servicio de impresión</h5>
                         <p class="card-text flex-grow-1">¿Quieres enviarnos un diseño y descubrir el potencial y beneficio de nuestra tecnología para tu empresa? Necesitas un prototipo, un regalo personalizado, una maqueta…</p>
-                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2">Más información</a>
+                        <a href="#" class="btn text-white fondo-azul-indart text-uppercase boton rounded-3 mt-2">Más información</a>
                     </div>
                 </div>
             </div>
@@ -136,7 +144,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold">Servicio de escaneado</h5>
                         <p class="card-text flex-grow-1">¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro servicio de escaneado te ayudaremos a replicarlo cuando lo necesites.</p>
-                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2">Más información</a>
+                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2 text-uppercase boton">Más información</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +156,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold">Formación 3D</h5>
                         <p class="card-text flex-grow-1">¿Quieres aprender sobre la fabricación aditiva? Podemos ofrecer cursos a medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a lo que necesites.</p>
-                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2">Más información</a>
+                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2 text-uppercase boton">Más información</a>
                     </div>
                 </div>
             </div>
@@ -173,14 +181,14 @@
             <div class="text-start">
                 <h2 class="fw-bold texto-azul-indart">Formación</h2>
                 <h1 class="h1 fw-bold mb-4">Forma parte de la<br>industria 4.0</h1>
-                <p class="h6 mb-4">
+                <p class="h6 mb-4" style="text-align: justify;">
                     La innovación forma parte de nuestra filosofía. El desarrollo continuo también. Son los dos pilares
                     de la nueva era en tecnología que estamos viviendo y de la que somos parte. Y la formación es la base.
                     En INDART 3D tenemos una amplia experiencia en este campo. Pide presupuesto sin compromiso para recibir
                     la formación que va a impulsar tu empresa.
                 </p>
                 <div class="d-flex justify-content-center py-3">
-                    <a href="#" class="btn fondo-azul-indart rounded-3 text-white px-4 py-2 text-uppercase">
+                    <a href="#" class="btn fondo-azul-indart rounded-3 text-white px-4 py-2 text-uppercase boton">
                         Cursos & Talleres
                     </a>
                 </div>
@@ -301,7 +309,7 @@
     </div>
     <!-- Botón de contacto -->
     <div class="mb-5">
-        <a href="#" class="btn fondo-azul-indart px-5 py-3 rounded-pill fw-bold">Contáctanos</a>
+        <a href="#" class="btn boton fondo-azul-indart py-3 rounded-pill fw-bold">Contáctanos</a>
     </div>
 </div>
 
@@ -390,7 +398,7 @@
         </h2>
 
         <!-- Botón de llamada a la acción -->
-        <a href="#" class="btn text-white" style="background-color: #6ec1e4; border-radius: 50px; padding: 10px 30px; font-size: 1.2rem;">
+        <a href="#" class="btn text-white boton" style="background-color: #6ec1e4; border-radius: 50px; padding: 10px 30px; font-size: 1.2rem;">
             Contacta con nosotros
         </a>
     </div>
@@ -401,6 +409,37 @@
     <!-- Franja decorativa inferior -->
     <div class="position-absolute bottom-0 start-0 w-100" style="height: 10px; background-color: #6ec1e4; z-index: 3;"></div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleccionamos todos los botones y enlaces
+        let elementos = document.querySelectorAll(".boton, .enlace");
+
+        elementos.forEach(elemento => {
+            // Guardamos los estilos originales
+            let colorTextoOriginal = window.getComputedStyle(elemento).color;
+            let colorFondoOriginal = window.getComputedStyle(elemento).backgroundColor;
+
+            // Efecto hover (acercar y cambiar color)
+            elemento.addEventListener("mouseenter", function () {
+                elemento.style.backgroundColor = "#4bb5c1"; // Color en hover
+                elemento.style.color = "#ffffff"; // Mantiene el texto visible
+                elemento.style.transform = "scale(1.1)"; // Acercar un 10%
+                elemento.style.transition = "all 0.3s ease"; // Suaviza el efecto
+            });
+
+            // Cuando el mouse sale (alejar y volver al color original)
+            elemento.addEventListener("mouseleave", function () {
+                elemento.style.backgroundColor = colorFondoOriginal; // Regresa el fondo original
+                elemento.style.color = colorTextoOriginal; // Regresa el color original del texto
+                elemento.style.transform = "scale(1)"; // Vuelve a su tamaño normal
+            });
+        });
+    });
+</script>
+
+
+
 
 
 {% endblock %}

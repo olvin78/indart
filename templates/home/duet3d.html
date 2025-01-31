@@ -38,25 +38,44 @@
     <!--==============================================
                 Duet producto numero 1s
     =================================================-->
-    <div class="row">
+    <div class="row g-4 py-5">
         {% for dato in datos %}
-        <div class="col-md-3 col-6">
-           <a style="text-decoration: none;" href="{% url 'home_app:duet_articulo' dato.id %}">
-            <div class="card">
-                <!-- Mostrar image1 o imagen predeterminada -->
-                 {% if dato.image1 %}
-                <img src="{{ dato.image1.url }}" class="card-img-top w-100 py-5" alt="Imagen de {{ dato.name }}">
-                {% endif %}
-                <div class="card-body text-center">
-                    <h6 class="card-title">{{ dato.name }}</h6>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a style="text-decoration: none;" href="{% url 'home_app:duet_articulo' dato.id %}">
+                <div class="card shadow-lg border-0 tarjeta-hover" 
+                     style="border-radius: 20px; overflow: hidden; border: 4px solid #6fd7f7; height: 400px;">
+                    <!-- Imagen con altura fija y diseño profesional -->
+                    {% if dato.image1 %}
+                    <img src="{{ dato.image1.url }}" 
+                         class="card-img-top img-fluid" 
+                         alt="Imagen de {{ dato.name }}" 
+                         style="height: 250px; object-fit: cover; border-bottom: 4px solid #34b5cc;">
+                    {% endif %}
+                    <div class="card-body text-center d-flex flex-column justify-content-center" style="background-color: #f5f8fa;">
+                        <h5 class="card-title fw-bold text-dark mb-2" style="font-size: 1.1rem;">{{ dato.name }}</h5>
+                    </div>
                 </div>
-            </div>
-          </a>
+            </a>
         </div>
         {% endfor %}
     </div>
     
     
-</div>
+</div>   
 
+
+
+<script>
+    // Agregar efecto hover a las tarjetas
+    document.querySelectorAll('.tarjeta-hover').forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'scale(1.05)';
+            card.style.boxShadow = '0px 10px 20px rgba(0, 0, 0, 0.3)';
+        });
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.1)';
+        });
+    });
+</script>
 {% endblock %}

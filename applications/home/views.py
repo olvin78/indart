@@ -185,9 +185,28 @@ class Soporte_tecnicoView(ListView):
 
 
 class SoporteDetailView(DetailView):
-    model = Soporte # Especifica el modelo Blog
-    template_name = 'home/soporte_tecnico_detail.html' # Define el template "articulo_completo.html"
+    model = Soporte
+    template_name = 'home/soporte_tecnico_detail.html'
     context_object_name = 'datos'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        # Convertir a entero para evitar errores
+        try:
+            numactual = int(self.object.number)
+            tipoactual = self.object.tipo_soporte
+            context['numero_siguiente'] = Soporte.objects.filter(tipo_soporte=tipoactual,number=str(numactual + 1)).first()
+        except ValueError:
+            context['numero_siguiente'] = None  # Si el campo no es un número, evitar errores
+        
+        try:
+            tipoactual = self.object.tipo_soporte
+            context['numero_primero'] = Soporte.objects.filter(tipo_soporte=tipoactual).first()
+        except ValueError:
+            context['numero_primero'] = None 
+        return context
+
 
 
 

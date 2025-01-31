@@ -55,11 +55,23 @@
             <div class="d-flex gap-2 pb-5">
                 <h5>{{ datos.description }}</h5>
             </div>
-
-            <button class="btn fondo-azul-indart btn-lg mt-4 w-100">SIGUIENTE 
-                <img style="height: 20px;" src="{% static 'img/iconos/galon-derecho.png' %}" alt="">
-            </button>
-            <button class="btn fondo-azul-indart btn-lg mt-4 w-100">🛒 IMPRIMIR</button>
+            {% if numero_siguiente %}
+            <a href="{% url 'home_app:soporte_detail' numero_siguiente.id %}">
+                <button class="btn fondo-azul-indart btn-lg mt-4 w-100">SIGUIENTE 
+                    <img style="height: 20px;" src="{% static 'img/iconos/galon-derecho.png' %}" alt="">
+                </button>
+            </a>
+            {% else %}
+            {% if numero_primero %}
+            <a href="{% url 'home_app:soporte_detail' numero_primero.id %}">
+                <button class="btn fondo-azul-indart btn-lg mt-4 w-100">INICIO
+                    <img style="height: 20px;" src="{% static 'img/iconos/galon-derecho.png' %}" alt="">
+                </button>
+            </a>
+            {% else %}
+            <p>NO HAY MÁS DOCUMENTOS PARA MOSTRAR, LO SIENTO:</p>
+            {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>
