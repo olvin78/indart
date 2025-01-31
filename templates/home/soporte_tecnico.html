@@ -33,12 +33,14 @@
                             <h5 class="text-center text-muted mt-5">INTERFAZ WEB</h5>
                             <ol class="list-unstyled mt-3">
                             {% for dato in Interfaz_Web %}
+                            {% if Interfaz_Web %}
                                 <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
                                     <li class="d-flex align-items-center mb-2">
                                         <img src="{% static 'img/iconos/1492616984-7-docs-document-file-data-google-suits_83406.ico' %}" alt="Icono" style="width: 30px; height: 30px; margin-right: 10px;">
                                         {{ dato.number }}. {{ dato.name }}
                                     </li>
                                 </a>
+                                {% endif %}
                                 {% endfor %}
                     
                             </ol>
