@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from django.urls import reverse_lazy
 from .forms import ContactForm
+from django.db.models import Q
 
 from .models import Blog,Material,Duet,Soporte
 from django.views.generic import (
@@ -85,6 +86,30 @@ class Duet3DView(ListView):
     template_name="home/duet3d.html"
     model = Duet
     context_object_name = 'datos'
+
+    def get_queryset(self):
+        """Filtra los datos si hay una búsqueda"""
+        queryset = Duet.objects.all()
+        search_query = self.request.GET.get('q')  # Obtener el parámetro de búsqueda
+
+        if search_query:
+            queryset = queryset.filter(Q(name__icontains=search_query) | Q(summary__icontains=search_query))
+
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        search_query = self.request.GET.get('q', '')
+
+        context["search_query"] = search_query  # Mantener el valor de búsqueda en el input
+        
+        # Si no hay resultados en la búsqueda, mostrar un mensaje
+        if search_query and not context["datos"]:  
+            context["no_results_message"] = f"Oops! No se encontraron resultados para '{search_query}'."
+
+        return context
+
+
 
 class PelletView(ListView):
     template_name="home/pellet.html"
