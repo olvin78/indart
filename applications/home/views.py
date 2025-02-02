@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.urls import reverse_lazy
-from .forms import ContactForm
+from .forms import ContactForm,Solicitud_impresionForm
 from django.db.models import Q
 
 from .models import Blog,Material,Duet,Soporte
@@ -269,3 +269,40 @@ class ContactFormView(FormView):
 
 class Soporte_manualView(TemplateView):
     template_name="home/soporte_manual_configuracion.html"
+
+
+#esta es la vista para el formulario para hacer un pedido de impresion
+class Solicitud_impresionFormView(FormView):
+    template_name = 'home/form_impresion.html'  # El template donde se renderiza el formulario
+    form_class = Solicitud_impresionForm  # El formulario que definiste
+    success_url = reverse_lazy('home_app:contacto')  # Redirección tras el envío exitoso
+
+    def form_valid(self, form):
+        # Extrae los datos del formulario
+        name = models.CharField("Nombre", max_length=255)
+        apellido = models.CharField("Apellido", max_length=255)
+        company = models.CharField("Empresa", max_length=255, blank=True, null=True)
+        email = models.EmailField("Email")
+        country = models.CharField("País", max_length=255)
+        prefix = models.CharField("Prefijo", max_length=5)
+        phone = models.CharField("Teléfono", max_length=15)
+        image = models.ImageField("Imagen", upload_to="impresiones/")
+        message = models.TextField("¿En qué te podemos ayudar?")
+        cantidad = models.CharField("Cantidad", max_length=15)
+        description = models.TextField("Descripción", max_length=1000)
+        privacy_policy = models.BooleanField("He leído y acepto la política de privacidad y el aviso legal")
+
+
+        # Construye el mensaje
+        subject = f"Nuevo mensaje de contacto de {name}"
+        message_body = f"Nombre: {name}\nCorreo: {email}\n\nMensaje:\n{message}"
+
+        # Envía el correo
+        send_mail(
+            subject,
+            message_body,
+            'euskodev@gmail.com',  # Remitente (cambia esto por un correo válido)
+            ['euskodev@gmail.com'],  # Destinatarios
+        )
+
+        return super().form_valid(form)

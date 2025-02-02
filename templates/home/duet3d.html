@@ -42,7 +42,7 @@
         <!-- Campo de búsqueda -->
         <div class="col-12 col-md-6 col-lg-4">
             <form method="GET" action="" class="position-relative" style="max-width: 450px;">
-                <!-- Contenedor del input con el icono -->
+                <!-- Input con espacio para el ícono -->
                 <input 
                     type="text" 
                     name="q" 
@@ -51,28 +51,26 @@
                     style="background-color: #f1f1f1; border: 1px solid #b6b5b5; height: 40px; padding-left: 20px; font-size: 16px;"
                     value="{{ search_query }}" 
                 >
-                <!-- Icono dentro del input -->
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                     width="16" 
-                     height="16" 
-                     fill="currentColor" 
-                     class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3" 
-                     viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001a1.007 1.007 0 0 0-.117.131l-3.85 3.85a1 1 0 0 0 1.415 1.414l3.85-3.85a1.007 1.007 0 0 0 .131-.117v-.001a6.5 6.5 0 0 0 1.397-1.397zm-5.56.854a5.5 5.5 0 1 1 7.779-7.779 5.5 5.5 0 0 1-7.779 7.779z"/>
-                </svg>
+                <!-- Ícono de lupa posicionado dentro del input -->
+                <img 
+                    src="{% static 'img/iconos/lupa_fum11um32eqb_512-Photoroom.png' %}" 
+                    alt="Lupa" 
+                    style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); height: 20px; pointer-events: none;"
+                >
             </form>
         </div>
 
+
         <!-- Selector de ordenamiento -->
-<div class="col-12 col-md-auto mt-3 mt-md-0">
-    <select class="form-select" aria-label="Sort by" style="border: 1px solid #949696;">
-        <option value="popularity">Sort by popularity</option>
-        <option value="rating">Sort by average rating</option>
-        <option value="latest">Sort by latest</option>
-        <option value="low-high">Sort by price: low to high</option>
-        <option value="high-low">Sort by price: high to low</option>
-    </select>
-</div>
+        <div class="col-12 col-md-auto mt-3 mt-md-0">
+            <select class="form-select" aria-label="Sort by" style="border: 1px solid #949696;">
+                <option value="popularity">Sort by popularity</option>
+                <option value="rating">Sort by average rating</option>
+                <option value="latest">Sort by latest</option>
+                <option value="low-high">Sort by price: low to high</option>
+                <option value="high-low">Sort by price: high to low</option>
+            </select>
+        </div>
 
     </div>
 
@@ -93,8 +91,23 @@
             </div>
         {% endif %}
 
-        <!-- Lista de productos -->
+       <!-- Lista de productos -->
         <div class="row g-4 py-5">
+            <style>
+                /* Efecto hover para las tarjetas */
+                .tarjeta-hover {
+                    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), 
+                                box-shadow 0.8s cubic-bezier(0.4, 0.0, 0.2, 1); /* Transición suave */
+                    transform: scale(1); /* Escala inicial */
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+                }
+
+                .tarjeta-hover:hover {
+                    transform: scale(1.07); /* Escala ligeramente mayor */
+                    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+                }
+            </style>
+
             {% for dato in datos %}
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                 <a style="text-decoration: none;" href="{% url 'home_app:duet_articulo' dato.id %}">
@@ -115,6 +128,7 @@
             </div>
             {% endfor %}
         </div>
+
     </div>   
 
 
@@ -124,7 +138,8 @@
     document.querySelectorAll('.tarjeta-hover').forEach(card => {
         card.addEventListener('mouseover', () => {
             card.style.transform = 'scale(1.05)';
-            card.style.boxShadow = '0px 10px 20px rgba(0, 0, 0, 0.3)';
+            card.style.boxShadow = '0px 10px 20px rgba(0, 0, 0, 0.3)'
+           
         });
         card.addEventListener('mouseout', () => {
             card.style.transform = 'scale(1)';

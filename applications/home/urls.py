@@ -221,4 +221,9 @@ urlpatterns = [
         name='soporte_manual',
     ),
 
+    path('pedido_impresion',
+        views.Solicitud_impresionFormView.as_view(),
+        name='pedido_impresion',
+    ),
+
 ]

@@ -1,13 +1,18 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="description" content="Indart3D es una plataforma innovadora que impulsa la digitalización de negocios en Nicaragua. Ofrecemos soluciones para impresoras 3D, desarrollo web, aplicaciones móviles y herramientas digitales avanzadas para optimizar procesos creativos y productivos.">
+    <meta name="author" content="Indart3D - Olvin Daniel Duarte">
+    <meta name="generator" content="Django, Python, JavaScript, HTML5, CSS3, Bootstrap, Leaflet, React, Expo, PostgreSQL, SQLite, Nginx, Gunicorn, GitHub">
+    
     <title>"Indart 3D: Innovación en Impresión, Escaneado y Tecnología 3D de Vanguardia"</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
@@ -15,18 +20,24 @@
     
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#712cf9">
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
 
+<style>
+  .scaled-video {
+      transform: scale(1.5); /* Ajusta el valor para cambiar el tamaño del contenido */
+      transform-origin: top; /* Escala desde el centro del video */
+  }
+</style>
 
     <style>
       .bd-placeholder-img {
@@ -139,6 +150,29 @@
             transform: translateY(50%);
         }
 
+
+        .dropdown-menu li {
+        position: relative;
+
+        }
+        .dropdown-menu .dropdown-submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+        }
+        .dropdown-menu .dropdown-submenu-left {
+        right: 100%;
+        left: auto;
+        }
+        .dropdown-menu > li:hover > .dropdown-submenu {
+        display: block;
+        }
+
+        p{
+          font-family: barlow!important;
+          text-align: justify!important;
+        }
     </style>
 
     
@@ -146,8 +180,8 @@
     <link href="navbars.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header>
+  <body style="padding-top:160px ;">
+    <header class="fixed-top bg-white">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -164,74 +198,54 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
+   
     <div class="container">
 
     <!-- Primero: visible en lg y tamaños superiores -->
-    <div class="row p-2 d-none d-lg-flex">
+    <div class="row p-3 d-none d-lg-flex">
         <div class="d-flex justify-content-between w-100">
             <!-- Contenedor para 'uno' y 'dos' alineados a la izquierda -->
             <div class="d-flex">
-                <label class="me-3 texto-azul-indart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill texto-azul-indart" viewBox="0 0 16 16">
-      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-    </svg>info@indart3d.com
-                </label>
-                <label class="texto-azul-indart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-    </svg>+34 943 943 855
-                </label>
-            </div>
-            <!-- Contenedor para 'tres' y 'cuatro' alineados a la derecha -->
+              <!-- Enlace para correo -->
+              <a href="mailto:info@indart3d.com" class="me-3 texto-azul-indart" style="text-decoration: none; color: #4bb5c1;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg> info@indart3d.com
+              </a>
+          
+              <!-- Enlace para teléfono -->
+              <a href="tel:+34943943855" class="texto-azul-indart" style="text-decoration: none; color: #4bb5c1;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg> +34 943 943 855
+              </a>
+          </div>
+          
+          
+            <!--  estos son los icons de las redes sociales -->
             <div class="d-flex">
-                <label class="me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram texto-azul-indart" viewBox="0 0 16 16">
-      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-    </svg>
+                
+              <label class="me-3">
+                <a href="https://www.instagram.com/indart3d/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram texto-azul-indart" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
                 </label>
+              
                 <label>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin texto-azul-indart" viewBox="0 0 16 16">
-      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-    </svg>
+                  <a href="https://www.linkedin.com/company/indart3d/posts/?feedView=all">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin texto-azul-indart" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+              </a>
                 </label>
             </div>
+            <!-- estos son los iconos de redes sociales -->
         </div>
     </div>
+<!--este es la primera seccion del menu la parte de correo y movi-->
+
 
 <!-- Segundo: visible en md, sm y xs -->
 <div class="row p-3 d-flex d-lg-none">
@@ -267,69 +281,174 @@
 
 
 <hr class="m-0 p-0 text-secondary">
-  <main>
-    <nav class="navbar navbar-expand-lg rounded" aria-label="Thirteenth navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand col-lg-3 me-0" href="#"><img style="width:150px;" src="{% static 'img/logo/logo-indart.png' %}"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-          <ul class="navbar-nav col-lg-9 justify-content-lg-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Tumaker</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">NX MODULAR</a></li>
-                <li><a class="dropdown-item" href="#">BF MODULAR</a></li>
-                <li><a class="dropdown-item" href="#">MINI PRO</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Escaner 3D</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Escáner a Color</a></li>
-                <li><a class="dropdown-item" href="#">Escáner Portátil</a></li>
-                <li><a class="dropdown-item" href="#">Escáner Automatizado</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Material</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Pellet</a></li>
-                <li><a class="dropdown-item" href="#">Filamento</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#">Servicios 3D</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#">Duet 3D</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Soporte</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Soporte Técnico</a></li>
-                <li><a class="dropdown-item" href="#">Manual y Configuración</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Contacto</a></li>
-                <li><a class="dropdown-item" href="#">Hazitek</a></li>
-                <li><a class="dropdown-item" href="#">Quiénes somos</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!--<div class="d-lg-flex col-lg-3 justify-content-lg-end">
-            <button class="btn btn-primary">Button</button>
-          </div>-->
-        </div>
-      </div>
-    </nav>
-  </main>
+<!--aca inicia el contenido y las opciones de el menu-->
+    <main>
+      <nav class="navbar navbar-expand-lg rounded" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand col-lg-3 me-0" href="{% url 'home_app:home' %}">
+            <img id="logoRebote" style="width:150px;" src="{% static 'img/logo/logo-indart.png' %}" alt="Logo">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <ul class="navbar-nav col-lg-9 justify-content-lg-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Tumaker</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home_app:nx_modular' %}">NX MODULAR</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:bf_modular' %}">BF MODULAR</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:mini_pro' %}">MINI PRO</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:alimentador_pellet' %}">ALIMENTADOR DE PELLET</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{% url 'home_app:nx_modular' %}" data-bs-toggle="dropdown" aria-expanded="false">Escáner 3D</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Escáner<br> Automatizado &raquo;
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:autoscan-k-3d' %}">AutoScan-k 3D</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:autoscan-t42' %}">AutoScan-T42 3D</a>
+                    </li>
+                  </ul>
+                </li>
 
-    </div>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Escáner a Color &raquo;
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:Ireal_it3d' %}">IT3D</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:scantech_ireal_m3' %}">iReal M3</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:Ireal_ze' %}">iReal ZE</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Escáner potátil &raquo;
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:home' %}">Simscan</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:home' %}">KSCAN 20</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:mscan_l15' %}">MSCAN L15</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:home' %}">Kscan Magic</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'home_app:home' %}">TrackScan P42</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nowrap  texto-azul-indart" href="{% url 'home_app:blog_list' %}">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Material</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home_app:pellet' %}">Pellet</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:filamento' %}">Filamento</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:materiales_validados' %}">Materiales validados</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Servicios 3D</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Servocios  &raquo;</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:servicio_validacion' %}">Servicio de Validación e <br> impresión 3D con Pellet  &raquo;</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nowrap" href="{% url 'home_app:duet3D' %}">Duet 3D</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Soporte</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home_app:soporte_tecnico' %}">Soporte Técnico</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:soporte_manual' %}">Manual y Configuración</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Nosotros' %}</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'home_app:contacto' %}">{% trans 'Contacto' %}</a></li>
+                    <!-- Hazitek como desplegable -->
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        {% trans 'Subvenciones' %} &raquo;
+                      </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="{% url 'home_app:hazitek_2024' %}">2024</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="{% url 'home_app:hazitek_2023' %}">2023</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="{% url 'home_app:hazitek_2022' %}">2022</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="{% url 'home_app:hazitek_2021' %}">2021</a>
+                        </li>
+                      </ul>
+                    </li>
+              
+                    <li><a class="dropdown-item" href="{% url 'home_app:sobre_nosotros' %}">Quiénes somos</a></li>
+                </ul>
+            </li>
+            <!-- boton para cambiar de idioma -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+                style="text-transform:uppercase; background-color: #0f4c64; color:white; border-radius:50px; 
+                href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ CURRENT_LANGUAGE }}
+              </a>
+              <ul class="dropdown-menu" style="z-index:500;">
+                  {% for language in languages %}
+                  <li>
+                      <a class="dropdown-item" style="text-transform:uppercase; color: #12beb5;" 
+                        href="/{{ language.code }}/{{ request.get_full_path|slice:'4:' }}">
+                          {{ language.code }}
+                      </a>
+                  </li>
+                  {% endfor %}
+              </ul>
+          </li>
+            
+              <!--<button type="button" class="btn btn-sm fondo-azul-indart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                IndartBot
+              </button>-->
+            </ul>
+            <!--<div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn btn-primary">Button</button>
+            </div>-->
+          </div>
+        </div>
+      </nav>
+    </main>
+  </div>
 </header>
 
 
@@ -342,8 +461,8 @@
      <!-- Logo principal centrado -->
      <div class="row pt-5 text-center">
       <div class="col-12">
-        <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="Logo Principal" class="img-fluid mb-3" style="max-width: 150px;">
-        <p class="text-white">Innovación y Desarrollo 3D</p>
+        <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="Logo Principal" class="img-fluid mb-3" style="max-width: 150px;"><br>
+        <spam class="text-white text-center" style="font-family:MiFuentePersonalizada;">Innovación y Desarrollo 3D</spam>
       </div>
     </div>
     <hr class="text-white">
@@ -351,7 +470,7 @@
   <div class="row py-5 text-white text-center text-md-start">
     <!-- Columna 1: Creadores de Tumaker -->
     <div class="col-lg-3 col-md-6 mb-4">
-      <h5 class="mb-4 texto-azul-indart">Creadores de</h5>
+      <h5 class="mb-4 texto-azul-indart text-uppercase">Creadores de</h5>
       <img src="{% static 'img/logo/Logo-tumaker-white-trasparente.png.webp' %}" alt="Logo Secundario" class="img-fluid mb-2" style="max-width: 150px;">
       <p class="text-muted">Web creada por Indart3D</p>
     </div>
@@ -374,7 +493,7 @@
         </li>
       </ul>
       <div class="mt-3">
-        <button style="width:200px;" class="btn fondo-azul-indart rounded-4 text-white px-4 py-2">Contactar</button>
+        <a href="{% url 'home_app:contacto' %}"><button style="width:200px;" class="btn fondo-azul-indart rounded-4 text-white px-4 py-2">Contactar</button></a>
       </div>
     </div>
 
@@ -382,35 +501,181 @@
     <!-- Columna 3: Horario general -->
     <div class="col-lg-3 col-md-6 mb-4">
       <h5 class="fw-bold mb-2 text-uppercase texto-azul-indart">Horario</h5>
-      <p class="text-white mb-2">Lunes - Jueves: 8:30 a 13:30 y 14:30 a 17:30</p>
-      <p class="text-white mb-2">Viernes: 8:00 a 15:00</p>
+      <span class="text-white mb-2">Lunes - Jueves: 8:30 a 13:30 <br> y 14:30 a 17:30</span>
+      <span class="text-white mb-2">Viernes: 8:00 a 15:00</span>
     </div>
 
     <!-- Columna 4: Horario de Verano -->
     <div class="col-lg-3 col-md-6 mb-5">
       <h5 class="fw-bold  mb-2 text-uppercase texto-azul-indart">Horario de Verano</h5>
-      <p class="text-white">Lunes - Viernes: 8:00 a 14:30</p>
+      <span class="text-white">Lunes - Viernes: 8:00 a 14:30</span>
     </div>
 
     <div class="text-center mt-5">
-      <a href="#" class="text-white text-decoration-none me-2"><b>Aviso legal</b></a>
+      <a href="{% url 'home_app:aviso_legal' %}" class="text-white text-decoration-none me-2"><b>Aviso legal</b></a>
       <span class="text-white">|</span>
-      <a href="#" class="text-white text-decoration-none ms-2"><b>Cookies</b></a>
+      <a href="{% url 'home_app:cookies' %}" class="text-white text-decoration-none ms-2"><b>Cookies</b></a>
       <span class="text-white">|</span>
-      <a href="#" class="text-white text-decoration-none mx-2"><b>Políticas de Privacidad</b></a>
+      <a href="{% url 'home_app:politica_de_privacidad' %}" class="text-white text-decoration-none mx-2"><b>Políticas de Privacidad</b></a>
     </div>
     <hr class="text-white mt-4">
-    <div class="text-center"><p class="mb-0">© Copyright <strong>Company</strong>. All Rights Reserved</p></div>
+    <div class="text-center"><span class="mb-0">© Copyright <strong>Company</strong>. All Rights Reserved</span></div>
   </div>
 </div>
 
 
 </footer>
 
+<!--codigo html para el assistente vistual-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- Icono del bot -->
+      <video class="w-50 mx-auto d-block mt-3 scaled-video" autoplay loop muted playsinline>
+        <source src="{% static 'media/minibootIndart.mp4' %}" type="video/mp4">
+      </video>
+    
+    
 
+      <!-- Encabezado del modal -->
+      <div class="modal-header text-center w-100">
+        <h5 class="modal-title text-center w-100" id="exampleModalLabel">indartBot!</h5>
+      </div>
 
+      <!-- Contenedor del chat -->
+      <div id="chat-container" class="bg-white px-3 py-2" style="max-height: 40vh; overflow-y: auto;">
+        <div id="chat-box" style="min-height: 20vh;">
+          <!-- Los mensajes del chat se mostrarán aquí -->
+        </div>
+      </div>
+
+      <!-- Zona de entrada fija -->
+      <div id="input-container" class="px-3 py-2 bg-light">
+        <form id="message-form" method="post">
+          <input type="text" id="user-message" class="form-control mb-2" placeholder="¿Cómo Puedo Ayudarte?">
+          <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+          <button type="button" id="send-button" class="btn fondo-azul-indart w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+<!-- estaes la prueba para agregar el assistente bvirtual a indart-->
+<!--OpenAI-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+      // Función para enviar mensaje
+      function sendMessage() {
+          let userMessage = $('#user-message').val();
+          if (userMessage.trim() !== '') {
+              // Limpiar el chat-box antes de agregar nuevos mensajes
+              $('#chat-box').empty();
+
+              $('#chat-box').append(`<p class="user-message"><strong>Tú:</strong> ${userMessage}</p>`);
+              $('#user-message').val('');
+
+              // Desplazarse automáticamente al final del chat
+              $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+
+              $.ajax({
+                  type: 'POST',
+                  url: '/assistant/api/get_response/',
+                  data: {
+                      'message': userMessage,
+                      'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+                  },
+                  success: function (response) {
+                      if (response.reply) {
+                          $('#chat-box').append(`<p class="bot-message"><strong>Bot:</strong> ${response.reply}</p>`);
+                          $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+                      } else {
+                          $('#chat-box').append('<p class="bot-message"><strong>Error:</strong> Algo salió mal.</p>');
+                      }
+                  },
+                  error: function () {
+                      $('#chat-box').append('<p class="bot-message"><strong>Error:</strong> No se pudo conectar con el servidor.</p>');
+                  }
+              });
+          }
+      }
+
+      // Enviar mensaje al hacer clic en el botón
+      $('#send-button').click(function () {
+          sendMessage();
+      });
+
+      // Enviar mensaje al presionar Enter
+      $('#user-message').keypress(function (e) {
+          if (e.which === 13) {
+              e.preventDefault();
+              sendMessage();
+          }
+      });
+  });
+</script>
+
+<!--Para openai mantere el scrol del modal-->
+<script>
+    // Función para desplazarse automáticamente al final del chat
+    function scrollToBottom() {
+    const chatContainer = document.getElementById('chat-container');
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    // Desplazar al final al abrir el modal
+    const modal = document.getElementById('exampleModal');
+    modal.addEventListener('shown.bs.modal', function () {
+    scrollToBottom();
+    });
+
+    // Desplazar al final al enviar un mensaje
+    document.getElementById('send-button').addEventListener('click', function () {
+    setTimeout(scrollToBottom, 100); // Espera un momento para asegurar que el mensaje ya se agregó
+    });
+</script>
+
+<!--efecto de rebote para el logo del header de indart-->
+<script>
+  // Seleccionar el logo
+  const logo = document.getElementById('logoRebote');
+
+  // Función para el efecto rebote
+  function iniciarRebote() {
+      logo.style.animation = "rebote 1.5s ease infinite";
+  }
+
+  // Agregar la animación al cargar la página
+  window.addEventListener('load', iniciarRebote);
+
+  // Agregar los estilos de la animación
+  const estiloAnimacion = document.createElement("style");
+  estiloAnimacion.textContent = `
+      @keyframes rebote {
+          0%, 25%, 55%, 85%, 100% {
+              transform: translateY(0);
+          }
+          40% {
+              transform: translateY(-30px);
+          }
+          60% {
+              transform: translateY(-15px);
+          }
+      }
+  `;
+  document.head.appendChild(estiloAnimacion);
+</script>
+
 
 </html>
