@@ -28,7 +28,6 @@
         <div class="col-md-6 definicion">
             <h1>{{ datos.name }}</h1>
             <hr>
-            <h3>Categoría :</h3>
             <br>
             <h3>Otro Ángulo:</h3>
             <div class="miniaturas d-flex gap-2">
@@ -52,29 +51,20 @@
                     <img class="img-thumbnail" src="{{ datos.image5.url }}" alt="Camiseta Negra">
                     {% endif %}
                 </a>
-            </div>          
+            </div> 
+            <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
+                <strong><h4>Resumen:</h4></strong><br> {{ datos.summary|safe }}
+            </div>        
     </div>
 </div>
 
 <div class="container description-section py-5">
     <h2 style="text-align: center;">Descripción</h2>
     <!-- Campo de descripción del modelo -->
-    <p>{{ datos.description }}</p>
-
-    <!-- Características -->
-    <h3 class="mt-4">Características</h3>
-    <ul class="features-list">
-        <li><strong>Procesador:</strong> Potente microcontrolador Atmel ATSAME70 de 32 bits: ARM Cortex-M7 funcionando a hasta 300MHz.</li>
-        <li><strong>Expansión:</strong> BUS CAN-FD para conectar múltiples placas de expansión y herramientas.</li>
-        <li><strong>Conectividad:</strong> Bus SPI dedicado a una computadora de placa única (SBC) o conexión por Ethernet.</li>
-        <li><strong>Soporte para controladores externos:</strong> 6 puertos con salidas de paso/dirección/habilitación.</li>
-        <li><strong>Salidas de alta corriente:</strong> 3 salidas de alta corriente (hasta 6A cada una).</li>
-        <li><strong>Salidas de corriente media:</strong> 6 salidas de corriente media para ventiladores PWM y dispositivos similares.</li>
-        <li><strong>Medición de temperatura:</strong> 4 entradas para termistores PT1000, compatibles con placas de alta temperatura.</li>
-        <li><strong>Entradas/Salidas:</strong> 9 conectores IO con señal de salida de 3.3V.</li>
-        <li><strong>Monitoreo de potencia:</strong> Monitoreo del voltaje VIN para fallos de energía.</li>
-        <li><strong>Firmware:</strong> Ejecuta RepRapFirmware 3.4 o posterior.</li>
-    </ul>
+     <!-- ✅ Descripción dentro de la lista, pero sin <li> -->
+        <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
+            <strong><h4>Descripción:</h4></strong><br> {{ datos.content|safe }}
+        </div>
 
     <!-- Link de documentación -->
     <a href="https://link-to-documentation.com" target="_blank" class="documentation-link">
