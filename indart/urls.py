@@ -24,6 +24,7 @@ urlpatterns += i18n_patterns(
     path('i18n/', include('django.conf.urls.i18n')),
     path('', include('applications.home.urls')),  # Reemplaza 'yourapp' por tu aplicación real
     path('assistant/', include('applications.assistant.urls')),  # Ruta para la aplicación "assistant"
+    path('tinymce/', include('tinymce.urls')),  # ✅ TinyMCE
 )
 
 

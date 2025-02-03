@@ -25,7 +25,7 @@
                 </div>
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">MINI PRO</h5>
-                    <a href="#" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración Mini Pro</a>
+                    <a href="{% static 'doc/00-MINI-PRO.zip' %}" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración Mini Pro</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">GAMA NX PRO</h5>
-                    <a href="#" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración NX Pro</a>
+                    <a href="{% url 'home_app:configuracion_nx_pro' %}" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración NX Pro</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">GAMA BIGFOOT PRO</h5>
-                    <a href="#" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración Bigfoot Pro</a>
+                    <a href="{% url 'home_app:configuracion_bigfoot_pro' %}" class="btn fondo-azul-indart w-100 text-white" onmouseover="cambiarFondo(this)">Configuración Bigfoot Pro</a>
                 </div>
             </div>
         </div>
@@ -83,7 +83,6 @@
         }, 4000);
     }
 </script>
-
 
 
 

@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 from django.contrib.auth.models import User
 # Create your models here.
 
@@ -10,8 +11,8 @@ class Blog(models.Model):
     category = models.CharField(max_length=255,blank=True,null=True)
     image = models.ImageField(upload_to='images/blog', null=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    content = models.TextField( null=True, blank=True)
-    summary = models.TextField( blank=True,null=True)
+    content = HTMLField( null=True, blank=True)
+    summary = HTMLField( blank=True,null=True)
     avatar = models.ImageField(upload_to='images/avatar', null=True, blank=True)
 
 
@@ -35,8 +36,8 @@ class Material(models.Model):
     tipo = models.CharField(
         choices=TIPO_CHOICES,max_length=15
     )
-    summary = models.TextField( blank=True,null=True)
-    description = models.TextField(max_length=255,blank=True,null=True)
+    summary = HTMLField( blank=True,null=True)
+    description = HTMLField(max_length=255,blank=True,null=True)
 
     def __str__(self):
         """Devuelve el título del post como representación en cadena."""
@@ -55,24 +56,29 @@ class Duet(models.Model):
     ]
     """Modelo para entradas de blog."""
 
-    name = models.CharField(max_length=255,blank=True,null=True)
+    name = models.CharField(max_length=255, blank=True, null=True)
+
+    # ✅ Guardamos imágenes en una lista JSON para mayor flexibilidad
+    images = models.JSONField(blank=True, null=True, default=list)  
+
+    # ✅ Si prefieres manejar imágenes como antes, puedes usar estos campos en vez de JSONField
     image1 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image2 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image3 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image4 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image5 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image6 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
-    summary = models.TextField( blank=True,null=True)
-    content = models.TextField( null=True, blank=True)
 
+    summary = HTMLField(blank=True, null=True)
+    content = HTMLField(blank=True, null=True)  # ✅ Editor enriquecido con TinyMCE
 
     def __str__(self):
-        """Devuelve el título del post como representación en cadena."""
-        return self.name
+        """Devuelve el nombre del Duet como representación en cadena."""
+        return self.name if self.name else "Sin Nombre"
 
     def get_summary(self):
-        """Devuelve un resumen del cuerpo del post (primeras 200 palabras)."""
-        return self.content[:200]
+        """Devuelve un resumen del contenido (primeras 200 palabras)."""
+        return self.content[:200] if self.content else "No hay contenido disponible"
 
 
 
@@ -95,7 +101,7 @@ class Soporte(models.Model):
     image = models.ImageField(upload_to='images/soporte', null=True, blank=True, verbose_name="Imagen")
     video_file = models.FileField(upload_to='media/soporte/videos/', null=True, blank=True, verbose_name="Video")  # Carpeta 'videos/' en MEDIA_ROOT
     tipo_soporte = models.CharField(choices=TIPO_CHOICES, max_length=30, verbose_name="Tipo")
-    description = models.TextField(max_length=255, blank=True, null=True, verbose_name="Descripción")
+    description = HTMLField(max_length=255, blank=True, null=True, verbose_name="Descripción")
     urlyoutube = models.URLField(max_length=255,blank=True,null=True,verbose_name="URL de video de YouTube")
 
     def __str__(self):

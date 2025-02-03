@@ -163,11 +163,30 @@ class Politica_de_privacidadView(TemplateView):
 class Aviso_legalView(TemplateView):
     template_name="home/aviso_legal.html"
 
-class Mscan_l15View(TemplateView):
+class SimscanView(TemplateView):
+    template_name="home/portatil_Simscan.html"
+
+class kscan20View(TemplateView):
+    template_name="home/portatil_kscan_20.html"
+
+class Mscanl15View(TemplateView):
     template_name="home/portatil_mscan_l15.html"
 
 class Trackscanp42View(TemplateView):
     template_name="home/portatil_trackScan_p42.html"
+
+class kscanmagicView(TemplateView):
+    template_name="home/portatil_kscan_magic.html"
+
+class Trackscanp42View(TemplateView):
+    template_name="home/portatil_trackScan_p42.html"
+
+
+class Trackscanp42View(TemplateView):
+    template_name="home/portatil_trackScan_p42.html"
+
+    
+""" aqui termina las rls de el apartado de escáner 3d"""
 
 
 class DuetDetailView(DetailView):
@@ -306,3 +325,14 @@ class Solicitud_impresionFormView(FormView):
         )
 
         return super().form_valid(form)
+
+
+
+class configuracion_nx_proView(TemplateView):
+    template_name="home/conf_nx_pro.html"
+
+class configuracion_bigfoot_proView(TemplateView):
+    template_name="home/conf_bogfoot_pro.html"
+
+class configuracion_bigfoot_modelos_anterioresView(TemplateView):
+    template_name="home/conf_bigfoot_modelos_anteriore.html"

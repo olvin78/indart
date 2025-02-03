@@ -1,7 +1,7 @@
 {% extends 'home/base.html' %}
-{% load static %}
 
 {% load i18n %}
+{% load static %}
 {% block head %}
 <title>iReal M3 | Indart3D</title>
 <!--enlaces del carousel-->
@@ -30,13 +30,9 @@
             </div>
         </div>
         <div class="col-md-6">
-            <h2>Escáner 3D a color iReal M3</h2>
+            <h2>{% trans 'Escáner 3D a color iReal M3' %}</h2>
             <p>
-                El escáner 3D a color de la serie iReal M (High SigmMatch Master) es una nueva serie de escáneres 3D profesionales 
-                desarrollados por SCANTECH. Sus modos de láser Infrarrojo y luz estructurada permiten la adquisición de datos 3D en 
-                diferentes aplicaciones, ya sea escaneando personas y objetos, en interiores o exteriores. iReal M ofrece soluciones 
-                profesionales de digitalización 3D a ingenieros 3D, diseñadores 3D e investigadores científicos para satisfacer sus 
-                demandas de diseño industrial, diseño artístico, diseño médico, digitalización del cuerpo humano, etc.
+                {% trans 'El escáner 3D a color de la serie iReal M (High SigmMatch Master) es una nueva serie de escáneres 3D profesionales desarrollados por SCANTECH. Sus modos de láser Infrarrojo y luz estructurada permiten la adquisición de datos 3D en diferentes aplicaciones, ya sea escaneando personas y objetos, en interiores o exteriores. iReal M ofrece soluciones profesionales de digitalización 3D a ingenieros 3D, diseñadores 3D e investigadores científicos para satisfacer sus demandas de diseño industrial, diseño artístico, diseño médico, digitalización del cuerpo humano' %}, etc.
             </p>
         </div>
     </div>
@@ -51,17 +47,12 @@
     <!-- Sección 3: Descripción e imagen -->
     <div class="row align-items-center d-none d-lg-flex py-5">
         <div class="col-md-6">
-            <h2>Escáner 3D profesional con luz dual, seguro y cómodo</h2>
+            <h2>{% trans 'Escáner 3D profesional con luz dual, seguro y cómodo' %}</h2>
             <p>
-                iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples tamaños y materiales en diversos 
-                escenarios gracias a sus láseres infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han pasado 
-                respectivamente los estándares de seguridad, no suponen ningún daño para los ojos humanos. Estas dos fuentes de luz 
-                invisibles pueden proporcionar experiencias de escaneo más adaptables y cómodas.
+                {% trans 'iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples tamaños y materiales en diversos escenarios gracias a sus láseres infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han pasado respectivamente los estándares de seguridad, no suponen ningún daño para los ojos humanos. Estas dos fuentes de luz invisibles pueden proporcionar experiencias de escaneo más adaptables y cómodas' %}.
             </p>
             <p>
-                iReal M3 adopta dos tipos de luces de relleno, que pueden ser controladas individualmente. La luz de relleno infrarroja 
-                invisible puede mejorar el reconocimiento de detalles y la adaptabilidad del material negro mate, mientras que la luz 
-                de relleno LED puede mejorar el brillo de la alineación de colores.
+                {% trans 'iReal M3 adopta dos tipos de luces de relleno, que pueden ser controladas individualmente. La luz de relleno infrarroja invisible puede mejorar el reconocimiento de detalles y la adaptabilidad del material negro mate, mientras que la luz de relleno LED puede mejorar el brillo de la alineación de colores' %}.
             </p>
         </div>
         <div class="col-md-6 text-center">
@@ -78,17 +69,12 @@
             <img src="{% static 'img/irealm3/easy-2.jpg' %}" alt="Escáner 3D" class="img-fluid rounded">
         </div>
         <div class="col-md-6 py-5">
-            <h2>Escáner 3D profesional con luz dual, seguro y cómodo</h2>
+            <h2>{% trans 'Escáner 3D profesional con luz dual, seguro y cómodo' %}</h2>
             <p>
-                iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples tamaños y materiales en diversos 
-                escenarios gracias a sus láseres infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han pasado 
-                respectivamente los estándares de seguridad, no suponen ningún daño para los ojos humanos. Estas dos fuentes de luz 
-                invisibles pueden proporcionar experiencias de escaneo más adaptables y cómodas.
+                {% trans 'iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples tamaños y materiales en diversos escenarios gracias a sus láseres infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han pasado  respectivamente los estándares de seguridad, no suponen ningún daño para los ojos humanos. Estas dos fuentes de luz invisibles pueden proporcionar experiencias de escaneo más adaptables y cómodas' %}.
             </p>
             <p>
-                iReal M3 adopta dos tipos de luces de relleno, que pueden ser controladas individualmente. La luz de relleno infrarroja 
-                invisible puede mejorar el reconocimiento de detalles y la adaptabilidad del material negro mate, mientras que la luz 
-                de relleno LED puede mejorar el brillo de la alineación de colores.
+                {% trans 'iReal M3 adopta dos tipos de luces de relleno, que pueden ser controladas individualmente. La luz de relleno infrarroja invisible puede mejorar el reconocimiento de detalles y la adaptabilidad del material negro mate, mientras que la luz de relleno LED puede mejorar el brillo de la alineación de colores' %}.
             </p>
         </div>
     </div>
@@ -100,18 +86,15 @@
             <img src="{% static 'img/irealm3/easy-3.jpg' %}" alt="Alto rendimiento" class="img-fluid rounded">
         </div>
         <div class="col-md-6">
-            <h3>Alto rendimiento</h3>
+            <h3>{% trans 'Alto rendimiento' %}</h3>
             <p>
-                iReal M3 presenta una precisión básica de hasta 0,1 mm y una precisión volumétrica de hasta 0,25 mm/m. 
-                Puede satisfacer las necesidades de captura de datos 3D en escenarios casi industriales para diversas escenas.
+                {% trans 'iReal M3 presenta una precisión básica de hasta 0,1 mm y una precisión volumétrica de hasta 0,25 mm/m. Puede satisfacer las necesidades de captura de datos 3D en escenarios casi industriales para diversas escenas' %}.
             </p>
             <p>
-                Con una resolución de hasta 0,1 mm, iReal M3 puede reconstruir estructuras geométricas de alta resolución y capturar 
-                detalles finos de los torsos, manejando fácilmente tareas de escaneo de objetos de más de 5 cm.
+                {% trans 'Con una resolución de hasta 0,1 mm, iReal M3 puede reconstruir estructuras geométricas de alta resolución y capturar detalles finos de los torsos, manejando fácilmente tareas de escaneo de objetos de más de 5 cm' %}.
             </p>
             <p>
-                El ritmo de escaneo del iReal M3 alcanza los 15 fps, lo que mejora enormemente la eficiencia del escaneo para que 
-                los ingenieros puedan obtener rápidamente datos 3D de alta calidad.
+                {% trans 'El ritmo de escaneo del iReal M3 alcanza los 15 fps, lo que mejora enormemente la eficiencia del escaneo para que los ingenieros puedan obtener rápidamente datos 3D de alta calidad' %}.
             </p>
         </div>
     </div>
@@ -122,15 +105,12 @@
             <img src="{% static 'img/irealm3/easy-4.jpg' %}" alt="Adaptabilidad" class="img-fluid rounded">
         </div>
         <div class="col-md-6 order-md-1">
-            <h3>Adaptabilidad a colores claros y oscuros</h3>
+            <h3>{% trans 'Adaptabilidad a colores claros y oscuros' %}</h3>
             <p>
-                En comparación con los láseres de color, las fuentes de luz infrarroja (luz invisible) se absorben relativamente 
-                menos cuando se proyectan sobre la superficie de diferentes colores. Por lo tanto, el Nuevo iReal M3, emparejado 
-                con luces infrarrojas, es más adaptable al escaneo 3D de objetos con colores intensos.
+                {% trans 'En comparación con los láseres de color, las fuentes de luz infrarroja (luz invisible) se absorben relativamente menos cuando se proyectan sobre la superficie de diferentes colores. Por lo tanto, el Nuevo iReal M3, emparejado con luces infrarrojas, es más adaptable al escaneo 3D de objetos con colores intensos' %}.
             </p>
             <p>
-                Gracias a su gran adaptabilidad a los materiales, es capaz de escanear en 3D piezas industriales, exteriores de 
-                automóviles e interiores con superficies negras y reflectantes.
+                {% trans 'Gracias a su gran adaptabilidad a los materiales, es capaz de escanear en 3D piezas industriales, exteriores de automóviles e interiores con superficies negras y reflectantes' %}.
             </p>
         </div>
     </div>
@@ -141,40 +121,37 @@
             <img src="{% static 'img/irealm3/easy-5.jpg' %}" alt="Aplicaciones multisectoriales" class="img-fluid rounded">
         </div>
         <div class="col-md-6">
-            <h3>Aplicaciones multisectoriales</h3>
+            <h3>{% trans 'Aplicaciones multisectoriales' %}</h3>
             <p>
-                Los modos de láser infrarrojo y luz estructurada del escáner 3D a color iReal M3 permiten la adquisición de datos 
-                3D sin problemas en múltiples aplicaciones: personas, objetos, interiores, exteriores... iReal M3 ofrece soluciones 
-                de digitalización 3D profesionales y versátiles para satisfacer sus demandas de diseño industrial, diseño artístico, 
-                diseño médico, digitalización del cuerpo humano, etc.
+                {% trans 'Los modos de láser infrarrojo y luz estructurada del escáner 3D a color iReal M3 permiten la adquisición de datos 3D sin problemas en múltiples aplicaciones: personas, objetos, interiores, exteriores... iReal M3 ofrece soluciones de digitalización 3D profesionales y versátiles para satisfacer sus demandas de diseño industrial, diseño artístico, diseño médico, digitalización del cuerpo humano' %}, etc.
             </p>
             <ul>
-                <li>Diseño industrial, diseño de ingeniería</li>
-                <li>Digitalización 3D del cuerpo</li>
-                <li>Arte y diseño</li>
-                <li>Análisis de modelos 3D</li>
-                <li>Investigación científica y educación</li>
+                <li>{% trans 'Diseño industrial, diseño de ingeniería' %}</li>
+                <li>{% trans 'Digitalización 3D del cuerpo' %}</li>
+                <li>{% trans 'Arte y diseño' %}</li>
+                <li>{% trans 'Análisis de modelos 3D' %}</li>
+                <li>{% trans 'Investigación científica y educación' %}</li>
             </ul>
         </div>
     </div>
 
     <div class="row align-items-center d-none d-lg-flex py-5">
         <div class="col-md-6">
-            <h3>Software de mapeado iReal 3D</h3>
+            <h3>{% trans 'Software de mapeado iReal 3D' %}</h3>
             <p>
-                Solución de mapeo de texturas 3D de alta precisión y color real.
+                {% trans 'Solución de mapeo de texturas 3D de alta precisión y color real' %}.
             </p>
             <p>
-                iReal 3D ofrece un software completo que soporta soluciones en tres aplicaciones principales: 
-                adquisición de datos 3D de alta precisión y color real, diseño de ingeniería inversa y análisis de mediciones 3D.
+                {% trans 'iReal 3D ofrece un software completo que soporta soluciones en tres aplicaciones principales: 
+                adquisición de datos 3D de alta precisión y color real, diseño de ingeniería inversa y análisis de mediciones 3D' %}.
             </p>
             <p>
-                iReal 3D Mapping se utiliza para mapear las fotos multilinguo tomadas por teléfonos móviles/SLR al modelo escaneado, 
-                mediante un proceso inteligente y semiautomático para obtener un modelo 3D de alta precisión, alta definición y color real.
+                {% trans 'iReal 3D Mapping se utiliza para mapear las fotos multilinguo tomadas por teléfonos móviles/SLR al modelo escaneado, 
+                mediante un proceso inteligente y semiautomático para obtener un modelo 3D de alta precisión, alta definición y color real' %}.
             </p>
             <ul>
-                <li><strong>Ingeniería inversa:</strong> Software complementario Geomagic Design X, QUICKSURFACE, complementos Mesh2Surface.</li>
-                <li><strong>Mediciones y análisis 3D:</strong> Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X.</li>
+                <li><strong>{% trans 'Ingeniería inversa' %}:</strong>{% trans ' Software complementario Geomagic Design X, QUICKSURFACE, complementos Mesh2Surface' %}.</li>
+                <li><strong>{% trans 'Mediciones y análisis 3D' %}:</strong>{% trans ' Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X' %}.</li>
             </ul>
         </div>
         <!-- Imagen -->
@@ -186,36 +163,40 @@
                 este es un codigo aadaptado con bootstrap para moviles 
         ==================================================-->
        
-        <div class="row align-items-center d-flex d-lg-none py-5">
-             <!-- Imagen -->
-             <div class="col-md-6 text-center">
-                <img src="{% static 'img/irealm3/easy-6.jpg' %}" alt="Software de mapeado iReal 3D" class="img-fluid rounded">
+        <div class="row align-items-center g-4 d-lg-none py-5">
+            <!-- Imagen -->
+            <div class="col-12 text-center">
+                <img src="{% static 'img/irealm3/easy-6.jpg' %}" 
+                     alt="{% trans 'Visual del software de mapeado iReal 3D con colores reales' %}" 
+                     class="img-fluid rounded">
             </div>
-            <div class="col-md-6">
-                <h3>Software de mapeado iReal 3D</h3>
-                <p>
-                    Solución de mapeo de texturas 3D de alta precisión y color real.
+            <!-- Texto -->
+            <div class="col-12">
+                <h3 class="fw-bold mb-3">{% trans 'Software de mapeado iReal 3D' %}</h3>
+                <p class="text-muted">{% trans 'Solución de mapeo de texturas 3D de alta precisión y color real' %}.</p>
+                <p class="text-muted">
+                    {% trans 'iReal 3D ofrece un software completo que soporta soluciones en tres aplicaciones principales: adquisición de datos 3D de alta precisión y color real, diseño de ingeniería inversa y análisis de mediciones 3D' %}.
                 </p>
-                <p>
-                    iReal 3D ofrece un software completo que soporta soluciones en tres aplicaciones principales: 
-                    adquisición de datos 3D de alta precisión y color real, diseño de ingeniería inversa y análisis de mediciones 3D.
+                <p class="text-muted">
+                    {% trans 'iReal 3D Mapping se utiliza para mapear las fotos multilinguo tomadas por teléfonos móviles/SLR al modelo escaneado, mediante un proceso inteligente y semiautomático para obtener un modelo 3D de alta precisión, alta definición y color real' %}.
                 </p>
-                <p>
-                    iReal 3D Mapping se utiliza para mapear las fotos multilinguo tomadas por teléfonos móviles/SLR al modelo escaneado, 
-                    mediante un proceso inteligente y semiautomático para obtener un modelo 3D de alta precisión, alta definición y color real.
-                </p>
-                <ul>
-                    <li><strong>Ingeniería inversa:</strong> Software complementario Geomagic Design X, QUICKSURFACE, complementos Mesh2Surface.</li>
-                    <li><strong>Mediciones y análisis 3D:</strong> Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X.</li>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2">
+                        <strong>{% trans 'Ingeniería inversa:' %}</strong> 
+                        {% trans 'Software complementario Geomagic Design X, QUICKSURFACE, complementos Mesh2Surface' %}.
+                    </li>
+                    <li class="mb-2">
+                        <strong>{% trans 'Mediciones y análisis 3D:' %}</strong> 
+                        {% trans 'Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X' %}.
+                    </li>
                 </ul>
             </div>
-           
         </div>
-</div>
+    </div>
 
 
 <div class="container my-5">
-    <h3 class="text-center mb-4">Características</h3>
+    <h3 class="text-center mb-4">{% trans 'Características' %}</h3>
     
     <!-- Tabla para escritorio -->
     <div class="table-responsive d-none d-md-block">

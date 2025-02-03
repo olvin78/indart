@@ -1,4 +1,5 @@
 {% extends 'home/base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block head %}
@@ -82,7 +83,7 @@
     <!-- Encabezado -->
     <div class="text-center mb-5">
       <h2 class="fw-bold">TUMAKER BF MODULAR</h2>
-      <spam class="text-muted">(Pellets / Filamento)<br>Sistema de Cabezales Independientes, Modulares e Intercambiables.</spam>
+      <spam class="text-muted">(Pellets / Filamento)<br>{% trans 'Sistema de Cabezales Independientes, Modulares e Intercambiables' %}.</spam>
     </div>
 
     <div class="row align-items-center">
@@ -96,13 +97,13 @@
       <div class="col-lg-6 col-md-7 order-2 order-lg-1 py-5">
         <h2 class="fw-bold mb-4 texto-azul-indart">Tumaker BF Modular</h2>
         <p class="text-muted">
-          La Tumaker BigFoot Modular es una impresora 3D diseñada para redefinir la fabricación aditiva a gran escala. Gracias a su sistema modular de cabezales intercambiables e independientes, esta impresora combina flexibilidad y rendimiento, adaptándose a las necesidades de los usuarios más exigentes.
+          {% trans 'La Tumaker BigFoot Modular es una impresora 3D diseñada para redefinir la fabricación aditiva a gran escala. Gracias a su sistema modular de cabezales intercambiables e independientes, esta impresora combina flexibilidad y rendimiento, adaptándose a las necesidades de los usuarios más exigentes' %}.
         </p>
         <p class="text-muted">
-          Con capacidad para integrar hasta dos cabezales, la BigFoot Modular ofrece la posibilidad de trabajar con tecnología de Pellets o Filamento, permitiendo personalizar cada equipo según las demandas específicas de cada proyecto. Este enfoque modular, combinado con su amplio volumen de impresión de 500 x 500 x 500 mm, la convierte en la herramienta ideal para producir piezas funcionales y complejas con una precisión sobresaliente.
+          {% trans 'Con capacidad para integrar hasta dos cabezales, la BigFoot Modular ofrece la posibilidad de trabajar con tecnología de Pellets o Filamento, permitiendo personalizar cada equipo según las demandas específicas de cada proyecto. Este enfoque modular, combinado con su amplio volumen de impresión de 500 x 500 x 500 mm, la convierte en la herramienta ideal para producir piezas funcionales y complejas con una precisión sobresaliente' %}.
         </p>
         <p class="text-muted mb-0">
-          Su estructura completamente cerrada, equipada con filtros, asegura un entorno de trabajo seguro y limpio, mientras que su diseño robusto garantiza fiabilidad incluso en los entornos industriales más exigentes.
+          {% trans 'Su estructura completamente cerrada, equipada con filtros, asegura un entorno de trabajo seguro y limpio, mientras que su diseño robusto garantiza fiabilidad incluso en los entornos industriales más exigentes' %}.
         </p>
       </div>
     </div>
@@ -123,19 +124,12 @@
   
         <!-- Texto -->
         <div class="col-lg-8 col-md-7 py-3">
-          <h2 class="fw-bold mb-4 texto-azul-indart">Extrusor de Pellets: Rendimiento y Materiales Avanzados</h2>
+          <h2 class="fw-bold mb-4 texto-azul-indart">{% trans 'Extrusor de Pellets: Rendimiento y Materiales Avanzados' %}</h2>
           <p class="text-muted">
-            El extrusor de pellets Modular está diseñado para ofrecer un rendimiento excepcional con
-una amplia variedad de materiales. Al utilizar pellets como materia prima, este sistema
-permite a los usuarios explorar nuevas posibilidades en fabricación aditiva, desde polímeros
-reciclados hasta compuestos técnicos de alta resistencia.
-</p>
+            {% trans 'El extrusor de pellets Modular está diseñado para ofrecer un rendimiento excepcional con una amplia variedad de materiales. Al utilizar pellets como materia prima, este sistema permite a los usuarios explorar nuevas posibilidades en fabricación aditiva, desde polímeros reciclados hasta compuestos técnicos de alta resistencia' %}.
+            </p>
           <p class="text-muted">
-            Esta tecnología ofrece la capacidad de producir piezas grandes y detalladas a alta
-            velocidad, optimizando tanto el flujo de trabajo como el control sobre las propiedades finales
-            de los materiales. Ideal para aplicaciones en sectores como la investigación, el diseño
-            industrial, la arquitectura y la educación, el extrusor de pellets se destaca por su versatilidad
-            y capacidad para abordar los proyectos más ambiciosos.
+            {% trans 'Esta tecnología ofrece la capacidad de producir piezas grandes y detalladas a alta velocidad, optimizando tanto el flujo de trabajo como el control sobre las propiedades finales de los materiales. Ideal para aplicaciones en sectores como la investigación, el diseño industrial, la arquitectura y la educación, el extrusor de pellets se destaca por su versatilidad y capacidad para abordar los proyectos más ambiciosos' %}.
           </p>
         </div>
       </div>
@@ -216,17 +210,12 @@ reciclados hasta compuestos técnicos de alta resistencia.
 
       <!-- Texto -->
       <div class="col-lg-8 col-md-7 py-3">
-        <h2 class="fw-bold mb-4 texto-azul-indart">Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle</h2>
+        <h2 class="fw-bold mb-4 texto-azul-indart">{% trans 'Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle' %}</h2>
         <p class="text-muted">
-          El cabezal de filamento Direct Drive HR de la BigFoot Modular está diseñado para aquellos
-          que buscan precisión y consistencia en sus proyectos. Capaz de trabajar con bobinas de
-          hasta 8 kg, este sistema es compatible con una amplia gama de materiales, desde plásticos
-          estándar como PLA y ABS, hasta polímeros técnicos como NYLON o TPU.
+          {% trans 'El cabezal de filamento Direct Drive HR de la BigFoot Modular está diseñado para aquellos que buscan precisión y consistencia en sus proyectos. Capaz de trabajar con bobinas de hasta 8 kg, este sistema es compatible con una amplia gama de materiales, desde plásticos estándar como PLA y ABS, hasta polímeros técnicos como NYLON o TPU' %}.
         </p>
         <p class="text-muted">
-          Con su capacidad para ofrecer resultados fiables en condiciones de alta demanda, este
-extrusor es una herramienta clave para sectores industriales, educativos y creativos, donde
-la precisión y la versatilidad son fundamentales.
+          {% trans 'Con su capacidad para ofrecer resultados fiables en condiciones de alta demanda, este extrusor es una herramienta clave para sectores industriales, educativos y creativos, donde a precisión y la versatilidad son fundamentales' %}.
         </p>
       </div>
     </div>
@@ -244,8 +233,8 @@ la precisión y la versatilidad son fundamentales.
       <!-- Columna derecha: Características (móviles primero) -->
       <div class="col-lg-6 order-2 order-lg-1">
         <div class="text-center text-lg-start">
-          <h2 class="fw-bold texto-azul-indart">Características clave del extrusor de filamento Direct Drive HR:</h2>
-          <p class="text-muted">Optimizado para ofrecer precisión y versatilidad en impresión 3D.</p>
+          <h2 class="fw-bold texto-azul-indart">{% trans 'Características clave del extrusor de filamento Direct Drive HR' %}:</h2>
+          <p class="text-muted">{% trans 'Optimizado para ofrecer precisión y versatilidad en impresión 3D' %}.</p>
         </div>
         <div class="row g-4">
           <!-- Tarjeta 1 -->
@@ -254,8 +243,8 @@ la precisión y la versatilidad son fundamentales.
               <div class="mb-3">
                 <i class="bi bi-archive text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Capacidad</h5>
-              <p class="text-muted mb-0">Capacidad de impresión con bobinas de hasta 8 kg.</p>
+              <h5 class="fw-bold">{% trans 'Capacidad' %}</h5>
+              <p class="text-muted mb-0">{% trans 'Capacidad de impresión con bobinas de hasta 8 kg' %}.</p>
             </div>
           </div>
 
@@ -265,8 +254,8 @@ la precisión y la versatilidad son fundamentales.
               <div class="mb-3">
                 <i class="bi bi-thermometer-half text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Temperatura</h5>
-              <p class="text-muted mb-0">Temperatura máxima: hasta 300 ºC.</p>
+              <h5 class="fw-bold">{% trans 'Temperatura' %}</h5>
+              <p class="text-muted mb-0">{% trans 'Temperatura máxima: hasta' %} 300 ºC.</p>
             </div>
           </div>
 
@@ -276,9 +265,9 @@ la precisión y la versatilidad son fundamentales.
               <div class="mb-3">
                 <i class="bi bi-tools text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Boquillas intercambiables</h5>
+              <h5 class="fw-bold">{% trans 'Boquillas intercambiables' %}</h5>
               <p class="text-muted mb-0">
-                Boquillas: 0,15 mm | 0,25 mm | 0,4 mm (incluida) | 0,6 mm | 0,8 mm.
+                {% trans 'Boquillas' %}: 0,15 mm | 0,25 mm | 0,4 mm (incluida) | 0,6 mm | 0,8 mm.
               </p>
             </div>
           </div>
@@ -289,8 +278,8 @@ la precisión y la versatilidad son fundamentales.
               <div class="mb-3">
                 <i class="bi bi-droplet text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Materiales optimizados</h5>
-              <p class="text-muted mb-0">ABS, ASA, PLA, NYLON, PET-G, PP, TPU, entre otros.</p>
+              <h5 class="fw-bold">{% trans 'Materiales optimizados' %}</h5>
+              <p class="text-muted mb-0">ABS, ASA, PLA, NYLON, PET-G, PP, TPU, {% trans 'entre otros' %}.</p>
             </div>
           </div>
         </div>
@@ -312,8 +301,8 @@ la precisión y la versatilidad son fundamentales.
   <div class="container">
     <!-- Encabezado -->
     <div class="text-center mb-5">
-      <h2 class="fw-bold texto-azul-indart">Diseño Optimizado para Proyectos Profesionales</h2>
-      <spam class="text-muted">La Tumaker BigFoot Modular está diseñada para ofrecer precisión, conectividad y facilidad de uso en la fabricación aditiva.</spam>
+      <h2 class="fw-bold texto-azul-indart">{% trans 'Diseño Optimizado para Proyectos Profesionales' %}</h2>
+      <spam class="text-muted">{% trans 'La Tumaker BigFoot Modular está diseñada para ofrecer precisión, conectividad y facilidad de uso en la fabricación aditiva' %}.</spam>
     </div>
 
     <!-- Contenido principal -->
@@ -328,26 +317,23 @@ la precisión y la versatilidad son fundamentales.
         <ul class="list-unstyled">
           <li class="mb-4">
             <i class="bi bi-check-circle text-primary"></i>
-            <span class="fw-bold">Calibración automática</span>: Garantiza resultados precisos y consistentes en cada impresión.
+            <span class="fw-bold">{% trans 'Calibración automática' %}</span>: {% trans 'Garantiza resultados precisos y consistentes en cada impresión' %}.
           </li>
           <li class="mb-4">
             <i class="bi bi-wifi text-primary"></i>
-            <span class="fw-bold">Conectividad avanzada</span>: Wi-Fi, Ethernet y Micro SD para un manejo remoto eficiente.
+            <span class="fw-bold">{% trans 'Conectividad avanzada' %}</span>: {% trans 'Wi-Fi, Ethernet y Micro SD para un manejo remoto eficiente' %}.
           </li>
           <li class="mb-4">
             <i class="bi bi-display text-primary"></i>
-            <span class="fw-bold">Pantalla táctil de 7”</span>: Interfaz a color para una navegación sencilla e intuitiva.
+            <span class="fw-bold">{% trans 'Pantalla táctil de 7' %}”</span>: {% trans 'Interfaz a color para una navegación sencilla e intuitiva' %}.
           </li>
           <li class="mb-4">
             <i class="bi bi-file-earmark-code text-primary"></i>
-            <span class="fw-bold">Compatibilidad con software</span>: Simplify 3D, CURA, SuperSlicer y soporte para formatos estándar como STL, OBJ y Gcode.
+            <span class="fw-bold">{% trans 'Compatibilidad con software' %}</span>: {% trans 'Simplify 3D, CURA, SuperSlicer y soporte para formatos estándar como STL, OBJ y Gcode' %}.
           </li>
         </ul>
         <p class="text-muted">
-          Con un diseño cerrado y niveles de ruido reducidos (44 dB en funcionamiento, 40 dB con la
-          puerta cerrada), esta impresora es ideal tanto para entornos industriales como de
-          investigación. Su estructura robusta y el enfoque modular aseguran máxima eficiencia y
-          fiabilidad en una amplia gama de aplicaciones.
+          {% trans 'Con un diseño cerrado y niveles de ruido reducidos (44 dB en funcionamiento, 40 dB con la puerta cerrada), esta impresora es ideal tanto para entornos industriales como de investigación. Su estructura robusta y el enfoque modular aseguran máxima eficiencia y fiabilidad en una amplia gama de aplicaciones' %}.
         </p>
       </div>
     </div>
@@ -359,12 +345,12 @@ la precisión y la versatilidad son fundamentales.
                 Esta es la sección de la tabla en el footer 
 ===================================================================-->
 <div class="container my-5">
-    <h3 class="text-center texto-azul-indart mb-4">Características</h3>
+    <h3 class="text-center texto-azul-indart mb-4">{% trans 'Características' %}</h3>
     <div class="table-responsive d-none d-md-block">
         <table class="table table-bordered text-center">
             <thead class="table-light">
                 <tr>
-                    <th scope="col">Especificación</th>
+                    <th scope="col">{% trans 'Especificación' %}</th>
                     <th scope="col">NX Modular</th>
                     <th scope="col">NX Modular (Pellet)</th>
                     <th scope="col">NX Modular Dual</th>
@@ -374,7 +360,7 @@ la precisión y la versatilidad son fundamentales.
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Número de cabezales</th>
+                    <th scope="row">{% trans 'Número de cabezales' %}</th>
                     <td>1 (Direct Drive HR)</td>
                     <td>2 (Pellets)</td>
                     <td>3 (Direct Drive HR – Direct Drive HR)</td>
@@ -382,7 +368,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>5 (Pellets – Pellets)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Boquillas compatibles</th>
+                    <th scope="row">{% trans 'Boquillas compatibles' %}</th>
                     <td>0.15, 0.25, 0.4, 0.6, 0.8 mm</td>
                     <td>0.4, 0.6, 0.8, 2.0, 4.0, 5.0 mm</td>
                     <td>0.15, 0.25, 0.4, 0.6, 0.8 mm</td>
@@ -390,7 +376,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>0.4, 0.6, 0.8, 2.0, 4.0, 5.0 mm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Boquillas incluidas</th>
+                    <th scope="row">{% trans 'Boquillas incluidas' %}</th>
                     <td>0.4 mm</td>
                     <td>0.8 mm</td>
                     <td>0.4 mm (2 uds)</td>
@@ -398,7 +384,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>0.8 mm (2 uds)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Materiales</th>
+                    <th scope="row">{% trans 'Materiales' %}</th>
                     <td>ABS, ASA, NYLON, PET-G, PLA, PP, TPU</td>
                     <td>Pellets (Circular de 3-5 mm)</td>
                     <td>ABS, ASA, NYLON, PET-G, PLA, PP, TPU</td>
@@ -406,7 +392,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Pellets (Circular de 3-5 mm)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Área de trabajo</th>
+                    <th scope="row">{% trans 'Área de trabajo' %}</th>
                     <td>300 x 300 x 250 mm</td>
                     <td>300 x 300 x 250 mm</td>
                     <td>300 x 300 x 250 mm</td>
@@ -414,7 +400,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>300 x 300 x 250 mm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Peso de la impresora</th>
+                    <th scope="row">{% trans 'Peso de la impresora' %}</th>
                     <td>56 kg</td>
                     <td>56 kg</td>
                     <td>56 kg</td>
@@ -422,7 +408,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>56 kg</td>
                 </tr>
                 <tr>
-                    <th scope="row">Dimensiones de la impresora</th>
+                    <th scope="row">{% trans 'Dimensiones de la impresora' %}</th>
                     <td>840 x 635 x 805 mm</td>
                     <td>840 x 635 x 805 mm</td>
                     <td>840 x 635 x 805 mm</td>
@@ -430,7 +416,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>840 x 635 x 805 mm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Temperatura de la cama caliente</th>
+                    <th scope="row">{% trans 'Temperatura de la cama caliente' %}</th>
                     <td>Hasta 100 °C</td>
                     <td>Hasta 100 °C</td>
                     <td>Hasta 100 °C</td>
@@ -438,7 +424,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Hasta 100 °C</td>
                 </tr>
                 <tr>
-                    <th scope="row">Temperatura del cabezal</th>
+                    <th scope="row">{% trans 'Temperatura del cabezal' %}</th>
                     <td>Hasta 300 °C</td>
                     <td>Hasta 300 °C</td>
                     <td>Hasta 300 °C</td>
@@ -446,7 +432,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Hasta 300 °C</td>
                 </tr>
                 <tr>
-                    <th scope="row">Calibración</th>
+                    <th scope="row">{% trans 'Calibración' %}</th>
                     <td>Automática</td>
                     <td>Automática</td>
                     <td>Automática</td>
@@ -454,7 +440,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Automática</td>
                 </tr>
                 <tr>
-                    <th scope="row">Estructura</th>
+                    <th scope="row">{% trans 'Estructura' %}</th>
                     <td>Cerrada con filtros</td>
                     <td>Cerrada con filtros</td>
                     <td>Cerrada con filtros</td>
@@ -462,7 +448,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Cerrada con filtros</td>
                 </tr>
                 <tr>
-                    <th scope="row">Conectividad</th>
+                    <th scope="row">{% trans 'Conectividad' %}</th>
                     <td>Wi-Fi, Ethernet, Micro SD</td>
                     <td>Wi-Fi, Ethernet, Micro SD</td>
                     <td>Wi-Fi, Ethernet, Micro SD</td>
@@ -470,7 +456,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Wi-Fi, Ethernet, Micro SD</td>
                 </tr>
                 <tr>
-                    <th scope="row">Emisión de ruido</th>
+                    <th scope="row">{% trans 'Emisión de ruido' %}</th>
                     <td>44 dB (40 dB con la puerta cerrada)</td>
                     <td>44 dB (40 dB con la puerta cerrada)</td>
                     <td>44 dB (40 dB con la puerta cerrada)</td>
@@ -478,7 +464,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>44 dB (40 dB con la puerta cerrada)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Pantalla</th>
+                    <th scope="row">{% trans 'Pantalla' %}</th>
                     <td>7" táctil a color</td>
                     <td>7" táctil a color</td>
                     <td>7" táctil a color</td>
@@ -486,7 +472,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>7" táctil a color</td>
                 </tr>
                 <tr>
-                    <th scope="row">Software compatible</th>
+                    <th scope="row">{% trans 'Software compatible' %}</th>
                     <td>MacOS, Windows, Linux</td>
                     <td>MacOS, Windows, Linux</td>
                     <td>MacOS, Windows, Linux</td>
@@ -494,7 +480,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>MacOS, Windows, Linux</td>
                 </tr>
                 <tr>
-                    <th scope="row">Nivel de potencia</th>
+                    <th scope="row">{% trans 'Nivel de potencia' %}</th>
                     <td>120W, 600W, 1350W</td>
                     <td>120W, 600W, 1350W</td>
                     <td>120W, 600W, 1350W</td>
@@ -502,7 +488,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>120W, 600W, 1350W</td>
                 </tr>
                 <tr>
-                    <th scope="row">Software de corte compatible</th>
+                    <th scope="row">{% trans 'Software de corte compatible' %}</th>
                     <td>Simplify 3D, CURA, SuperSlicer</td>
                     <td>Simplify 3D, CURA, SuperSlicer</td>
                     <td>Simplify 3D, CURA, SuperSlicer</td>
@@ -510,7 +496,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>Simplify 3D, CURA, SuperSlicer</td>
                 </tr>
                 <tr>
-                    <th scope="row">Formato de archivos</th>
+                    <th scope="row">{% trans 'Formato de archivos' %}</th>
                     <td>STL, OBJ, Gcode</td>
                     <td>STL, OBJ, Gcode</td>
                     <td>STL, OBJ, Gcode</td>
@@ -518,7 +504,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>STL, OBJ, Gcode</td>
                 </tr>
                 <tr>
-                    <th scope="row">Garantía</th>
+                    <th scope="row">{% trans 'Garantía' %}</th>
                     <td>1 año</td>
                     <td>1 año</td>
                     <td>1 año</td>
@@ -526,7 +512,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>1 año</td>
                 </tr>
                 <tr>
-                    <th scope="row">Peso del paquete</th>
+                    <th scope="row">{% trans 'Peso del paquete' %}</th>
                     <td>114 kg</td>
                     <td>114 kg</td>
                     <td>114 kg</td>
@@ -534,7 +520,7 @@ la precisión y la versatilidad son fundamentales.
                     <td>114 kg</td>
                 </tr>
                 <tr>
-                    <th scope="row texto">Dimensiones del paquete</th>
+                    <th scope="row texto">{% trans 'Dimensiones del paquete' %}</th>
                     <td>953 x 800 x 957 mm</td>
                     <td>953 x 800 x 957 mm</td>
                     <td>953 x 800 x 957 mm</td>

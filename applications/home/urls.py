@@ -91,6 +91,46 @@ urlpatterns = [
         views.InformacionView.as_view(),
         name='informacion',
     ),
+
+
+#url para el apartado de scaners 3D
+
+    path('simscan',
+        views.SimscanView.as_view(),
+        name='simscan',
+    ),
+
+    path('kscan_20',
+        views.kscan20View.as_view(),
+        name='kscan_20',
+    ),
+
+    path('mscanl15',
+        views.Mscanl15View.as_view(),
+        name='mscanl15',
+    ),
+
+    path('trackscanp42',
+        views.Trackscanp42View.as_view(),
+        name='trackscanp42',
+    ),
+
+    path('kscan_magic',
+        views.kscanmagicView.as_view(),
+        name='kscan_magic',
+    ),
+
+    path('aviso_legal',
+        views.Aviso_legalView.as_view(),
+        name='aviso_legal',
+    ),
+
+    path('aviso_legal',
+        views.Aviso_legalView.as_view(),
+        name='aviso_legal',
+    ),
+
+
 #apartado de urls para el blog y las publicasiones
 
     path('blog/',
@@ -156,32 +196,6 @@ urlpatterns = [
         name='aviso_legal',
     ),
 
-#url para el apartado de scaners 3D
-
-    path('mscan_l15',
-        views.Mscan_l15View.as_view(),
-        name='mscan_l15',
-    ),
-
-    path('trackscanp42',
-        views.Trackscanp42View.as_view(),
-        name='trackscanp42',
-    ),
-
-    path('aviso_legal',
-        views.Aviso_legalView.as_view(),
-        name='aviso_legal',
-    ),
-
-    path('aviso_legal',
-        views.Aviso_legalView.as_view(),
-        name='aviso_legal',
-    ),
-
-    path('aviso_legal',
-        views.Aviso_legalView.as_view(),
-        name='aviso_legal',
-    ),
 
 #apartado de urls para la seccino de DUET
 
@@ -224,6 +238,21 @@ urlpatterns = [
     path('pedido_impresion',
         views.Solicitud_impresionFormView.as_view(),
         name='pedido_impresion',
+    ),
+
+    path('configuracion_nx_pro',
+        views.configuracion_nx_proView.as_view(),
+        name='configuracion_nx_pro',
+    ),
+
+    path('configuracion_bigfoot_pro',
+        views.configuracion_bigfoot_proView.as_view(),
+        name='configuracion_bigfoot_pro',
+    ),
+
+    path('configuracion_bigfoot_modelos_anteriores',
+        views.configuracion_bigfoot_modelos_anterioresView.as_view(),
+        name='configuracion_bigfoot_modelos_anteriores',
     ),
 
 ]

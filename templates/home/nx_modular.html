@@ -1,4 +1,5 @@
 {% extends 'home/base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block head %}
@@ -74,6 +75,8 @@
       </div>
   </div>
 </section>
+
+
 <!--====================================================
         seccion sobre el producto
 ========================================================-->
@@ -83,7 +86,7 @@
     <div class="text-center mb-5">
       <h2 class="fw-bold">NX MODULAR</h2>
       <spam class="text-muted">(Pellets / Filamento)​<br>
-        Sistema de Cabezales Modulares e Intercambiables. </spam>
+        {% trans 'Sistema de Cabezales Modulares e Intercambiables' %}. </spam>
     </div>
 
     <!-- Contenido principal -->
@@ -100,17 +103,9 @@
       <div class="col-lg-6 col-md-12">
         <h3 class="fw-bold texto-azul-indart">Tumaker NX Modular</h3>
         <p class="text-muted">
-          La impresora 3D modular NX de Indart3D marca un nuevo estándar en fabricación aditiva.
-          Su diseño modular con cabezales intercambiables permite configurarla con uno o dos
-          extrusores, ya sea para trabajar con pellets o filamento, brindando máxima flexibilidad. Cada
-          equipo está diseñado para alojar dos cabezales que pueden ser configurados a medida con
-          la ayuda de nuestros especialistas, asegurando una solución óptima para cada proyecto.
+          {% trans 'La impresora 3D modular NX de Indart3D marca un nuevo estándar en fabricación aditiva. Su diseño modular con cabezales intercambiables permite configurarla con uno o dos extrusores, ya sea para trabajar con pellets o filamento, brindando máxima flexibilidad. Cada equipo está diseñado para alojar dos cabezales que pueden ser configurados a medida con la ayuda de nuestros especialistas, asegurando una solución óptima para cada proyecto' %}.
         </p>
-        <p class="text-muted mb-0">Con un área de trabajo de 300 x 300 x 250 mm, la NX Modular combina un volumen de
-          impresión ideal con un enfoque adaptable, ofreciendo a empresas y profesionales la
-          herramienta perfecta para aplicaciones avanzadas, desde prototipado hasta producción de
-          piezas funcionales. Su diseño cerrado con filtros integrados garantiza un entorno de trabajo
-          seguro, limpio y eficiente.</p>
+        <p class="text-muted mb-0">{% trans 'Con un área de trabajo de 300 x 300 x 250 mm, la NX Modular combina un volumen de impresión ideal con un enfoque adaptable, ofreciendo a empresas y profesionales la herramienta perfecta para aplicaciones avanzadas, desde prototipado hasta producción de piezas funcionales. Su diseño cerrado con filtros integrados garantiza un entorno de trabajo seguro, limpio y eficiente' %}.</p>
       </div>
     </div>
   </div>
@@ -127,30 +122,16 @@
          <div class="col-lg-2"></div>
         <div class="col-lg-4 col-md-12">
           <h2 class="fw-bold texto-azul-indart mb-4">
-            Extrusor de Pellets: Versatilidad y Alto Rendimiento en Fabricación Aditiva
+            {% trans 'Extrusor de Pellets: Versatilidad y Alto Rendimiento en Fabricación Aditiva' %}
           </h2>
           <p class="text-muted mb-3">
-            El extrusor de pellets Modular de Indart3D redefine la impresión 3D al permitir trabajar
-            directamente con materia prima en forma de pellets, una solución que amplía las
-            posibilidades técnicas y creativas en fabricación aditiva. Este sistema avanzado es capaz de
-            procesar una amplia variedad de polímeros, incluidos materiales reciclados y compuestos
-            de alto rendimiento, ofreciendo a los usuarios profesionales una herramienta potente y
-            adaptable para abordar proyectos complejos.
+            {% trans 'El extrusor de pellets Modular de Indart3D redefine la impresión 3D al permitir trabajar directamente con materia prima en forma de pellets, una solución que amplía las posibilidades técnicas y creativas en fabricación aditiva. Este sistema avanzado es capaz de procesar una amplia variedad de polímeros, incluidos materiales reciclados y compuestos de alto rendimiento, ofreciendo a los usuarios profesionales una herramienta potente y adaptable para abordar proyectos complejos' %}.
           </p>
           <p class="text-muted mb-3">
-            Gracias a su capacidad para manejar geometrías exigentes y materiales técnicos, el
-            extrusor de pellets es ideal para aplicaciones que van desde el desarrollo de prototipos
-            hasta la producción de piezas funcionales para sectores como la industria, el diseño de
-            productos y la investigación avanzada. Su diseño optimizado garantiza una extrusión
-            consistente y precisa, incluso con materiales de mayor viscosidad, lo que lo convierte en
-            una opción destacada para proyectos de gran escala y alta demanda.
+            {% trans 'Gracias a su capacidad para manejar geometrías exigentes y materiales técnicos, el extrusor de pellets es ideal para aplicaciones que van desde el desarrollo de prototipos hasta la producción de piezas funcionales para sectores como la industria, el diseño de productos y la investigación avanzada. Su diseño optimizado garantiza una extrusión consistente y precisa, incluso con materiales de mayor viscosidad, lo que lo convierte en una opción destacada para proyectos de gran escala y alta demanda' %}.
           </p>
           <p class="text-muted mb-3">
-            Además, este sistema aprovecha la simplicidad de los pellets para incrementar la eficiencia
-            del proceso de impresión, eliminando pasos intermedios y ofreciendo mayor control sobre
-            las propiedades finales del material. Su enfoque técnico no solo abre nuevas oportunidades
-            en la impresión 3D, sino que también promueve una fabricación más sostenible y
-            personalizada.
+            {% trans 'Además, este sistema aprovecha la simplicidad de los pellets para incrementar la eficiencia del proceso de impresión, eliminando pasos intermedios y ofreciendo mayor control sobre las propiedades finales del material. Su enfoque técnico no solo abre nuevas oportunidades en la impresión 3D, sino que también promueve una fabricación más sostenible y personalizada' %}.
           </p>
           
         </div>
@@ -174,8 +155,8 @@
     <div class="container position-relative" style="z-index: 2;">
       <!-- Encabezado -->
       <div class="text-center mb-5">
-        <h2 class="fw-bold texto-azul-indart text-white">Características clave del extrusor de pellets:</h2>
-        <spam class="text-white">Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets.</spam>
+        <h2 class="fw-bold texto-azul-indart text-white">{% trans 'Características clave del extrusor de pellets' %}:</h2>
+        <spam class="text-white">{% trans 'Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets' %}.</spam>
       </div>
   
       <!-- Contenido principal -->
@@ -197,8 +178,8 @@
                 <div class="mb-3">
                   <i class="bi bi-activity text-primary fs-1"></i>
                 </div>
-                <h5 class="fw-bold texto-azul-indart">Tamaño</h5>
-                <p class="text-muted mb-0">Tamaño de pellet recomendado: 3-5 mm de diámetro.</p>
+                <h5 class="fw-bold texto-azul-indart">{% trans 'Tamaño' %}</h5>
+                <p class="text-muted mb-0">{% trans 'Tamaño de pellet recomendado: 3-5 mm de diámetro' %}.</p>
               </div>
             </div>
   
@@ -208,8 +189,8 @@
                 <div class="mb-3">
                   <i class="bi bi-broadcast text-primary fs-1"></i>
                 </div>
-                <h5 class="fw-bold texto-azul-indart">Compatibilidad</h5>
-                <p class="text-muted mb-0">Compatible con el Alimentador de Pellets para un flujo constante y uniforme.</p>
+                <h5 class="fw-bold texto-azul-indart">{% trans 'Compatibilidad' %}</h5>
+                <p class="text-muted mb-0">{% trans 'Compatible con el Alimentador de Pellets para un flujo constante y uniforme' %}.</p>
               </div>
             </div>
   
@@ -219,8 +200,8 @@
                 <div class="mb-3">
                   <i class="bi bi-thermometer-half text-primary fs-1"></i>
                 </div>
-                <h5 class="fw-bold texto-azul-indart">Temperatura</h5>
-                <p class="text-muted mb-0">Temperatura máxima del cabezal: hasta 300 ºC, ideal para materiales técnicos.</p>
+                <h5 class="fw-bold texto-azul-indart">{% trans 'Temperatura' %}</h5>
+                <p class="text-muted mb-0">{% trans 'Temperatura máxima del cabezal: hasta 300 ºC, ideal para materiales técnicos' %}.</p>
               </div>
             </div>
   
@@ -230,9 +211,9 @@
                 <div class="mb-3">
                   <i class="bi bi-tools text-primary fs-1"></i>
                 </div>
-                <h5 class="fw-bold texto-azul-indart">Boquillas ajustables</h5>
+                <h5 class="fw-bold texto-azul-indart">{% trans 'Boquillas ajustables' %}</h5>
                 <p class="text-muted mb-0">
-                  Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm | 5.0 mm.
+                  {% trans 'Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm | 5.0 mm.' %}'
                 </p>
               </div>
             </div>
@@ -261,13 +242,13 @@
 
       <!-- Texto -->
       <div class="col-lg-8 col-md-7 py-3">
-        <h2 class="fw-bold mb-4 texto-azul-indart">Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle</h2>
+        <h2 class="fw-bold mb-4 texto-azul-indart">{% trans 'Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle' %}</h2>
         <p class="text-muted">
-          El cabezal Direct Drive HR de filamento de Indart3D está diseñado para usuarios que valoran la precisión y versatilidad en sus proyectos. 
-          Ideal para una amplia gama de materiales, este sistema permite trabajar con filamentos optimizados para diferentes aplicaciones, desde piezas resistentes hasta componentes flexibles.
+          {% trans 'El cabezal Direct Drive HR de filamento de Indart3D está diseñado para usuarios que valoran la precisión y versatilidad en sus proyectos. 
+          Ideal para una amplia gama de materiales, este sistema permite trabajar con filamentos optimizados para diferentes aplicaciones, desde piezas resistentes hasta componentes flexibles' %}.
         </p>
         <p class="text-muted">
-          Gracias a su diseño robusto y su fiabilidad operativa, este cabezal es perfecto para entornos industriales, educativos y creativos, ofreciendo resultados consistentes y de alta calidad.
+          {% trans 'Gracias a su diseño robusto y su fiabilidad operativa, este cabezal es perfecto para entornos industriales, educativos y creativos, ofreciendo resultados consistentes y de alta calidad' %}.
         </p>
       </div>
     </div>
@@ -284,8 +265,8 @@
       <!-- Columna derecha: Características (móviles primero) -->
       <div class="col-lg-6 order-2 order-lg-1">
         <div class="text-center text-lg-start">
-          <h2 class="fw-bold texto-azul-indart">Características clave del extrusor de filamento Direct Drive HR:</h2>
-          <p class="text-muted">Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D.</p>
+          <h2 class="fw-bold texto-azul-indart">{% trans 'Características clave del extrusor de filamento Direct Drive HR' %}:</h2>
+          <p class="text-muted">{% trans 'Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D' %}.</p>
         </div>
         <div class="row g-4">
           <!-- Tarjeta 1 -->
@@ -294,8 +275,8 @@
               <div class="mb-3">
                 <i class="bi bi-archive text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Compatibilidad</h5>
-              <p class="text-muted mb-0">Compatible con bobinas de hasta 8 kg, ideal para proyectos grandes.</p>
+              <h5 class="fw-bold">{% trans 'Compatibilidad' %}</h5>
+              <p class="text-muted mb-0">{% trans 'Compatible con bobinas de hasta 8 kg, ideal para proyectos grandes' %}.</p>
             </div>
           </div>
 
@@ -305,8 +286,8 @@
               <div class="mb-3">
                 <i class="bi bi-droplet text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Materiales soportados</h5>
-              <p class="text-muted mb-0">ABS, ASA, NYLON, PET-G, PLA, PP, TPU Hardness, entre otros.</p>
+              <h5 class="fw-bold">{% trans 'Materiales soportados'% }</h5>
+              <p class="text-muted mb-0">{% trans 'ABS, ASA, NYLON, PET-G, PLA, PP, TPU Hardness, entre otros' %}.</p>
             </div>
           </div>
 
@@ -316,8 +297,8 @@
               <div class="mb-3">
                 <i class="bi bi-thermometer-half text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Temperatura</h5>
-              <p class="text-muted mb-0">Temperatura máxima: 300 ºC, ideal para materiales avanzados.</p>
+              <h5 class="fw-bold">{% trans 'Temperatura' %}</h5>
+              <p class="text-muted mb-0">{% trans 'Temperatura máxima: 300 ºC, ideal para materiales avanzados' %}.</p>
             </div>
           </div>
 
@@ -327,9 +308,9 @@
               <div class="mb-3">
                 <i class="bi bi-tools text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">Boquillas intercambiables</h5>
+              <h5 class="fw-bold">{% trans 'Boquillas intercambiables' %}</h5>
               <p class="text-muted mb-0">
-                Boquillas compatibles: 0.15 mm | 0.25 mm | 0.4 mm (incluida) | 0.6 mm | 0.8 mm.
+                {% trans 'Boquillas compatibles: 0.15 mm | 0.25 mm | 0.4 mm (incluida) | 0.6 mm | 0.8 mm' %}.
               </p>
             </div>
           </div>
@@ -338,9 +319,9 @@
 
       <!-- Columna izquierda: Imagen -->
       <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center align-items-center">
-        <div style="max-width: 90%; height: auto; text-align: center;">
+        <div style="max-width: 100%; height: auto; text-align: center;">
           <img src="{% static 'img/nx_modular/Hemera_V2.png' %}" alt="Imagen del extrusor de filamento"
-            class="img-fluid rounded shadow" style="width: 100%; max-height: 400px; object-fit: contain;">
+            class="img-fluid" style="width: 100%; max-height: 500px; object-fit: contain;">
         </div>
       </div>
     </div>
@@ -355,18 +336,18 @@
   <div class="container">
     <!-- Encabezado -->
     <div class="text-center mb-5">
-      <h2 class="fw-bold texto-azul-indart">Solución Profesional y Accesible</h2>
-      <spam class="text-muted">Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos de impresión 3D.</spam>
+      <h2 class="fw-bold texto-azul-indart">{% trans 'Solución Profesional y Accesible' %}</h2>
+      <spam class="text-muted">{% trans 'Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos de impresión 3D' %}.</spam>
     </div>
 
     <!-- Contenido -->
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <p class="text-muted mb-4">
-          La NX Modular no solo es una impresora versátil, sino que también está diseñada para facilitar el trabajo diario. Su área de impresión y estructura robusta garantizan estabilidad y precisión. Con opciones de conectividad como <strong>Wi-Fi, Ethernet y Micro SD</strong>, es sencilla de usar y se adapta a cualquier flujo de trabajo.
+          {% trans 'La NX Modular no solo es una impresora versátil, sino que también está diseñada para facilitar el trabajo diario. Su área de impresión y estructura robusta garantizan estabilidad y precisión. Con opciones de conectividad como' %} <strong>{% trans 'Wi-Fi, Ethernet y Micro SD' %}</strong>,{% trans ' es sencilla de usar y se adapta a cualquier flujo de trabajo' %}.
         </p>
         <p class="text-muted mb-4">
-          Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 dB</strong>) y pantalla táctil de <strong>7”</strong> hacen de esta impresora una opción ideal para quienes buscan eficiencia, seguridad y comodidad. Compatible con los principales softwares de corte (<strong>Simplify 3D, CURA, SuperSlicer</strong>) y formatos de archivo (<strong>STL, OBJ, Gcode</strong>), la NX Modular es una herramienta indispensable para quienes buscan calidad y adaptabilidad en impresión 3D.
+          {% trans 'Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 dB</strong>) y pantalla táctil de <strong>7”</strong> hacen de esta impresora una opción ideal para quienes buscan eficiencia, seguridad y comodidad. Compatible con los principales softwares de corte ' %}(<strong>{% trans 'Simplify 3D, CURA, SuperSlicer' %}</strong>){% trans ' y formatos de archivo '%}(<strong>{% trans 'STL, OBJ, Gcode'%}</strong>),{% trans ' la NX Modular es una herramienta indispensable para quienes buscan calidad y adaptabilidad en impresión 3D' %}.
         </p>
       </div>
     </div>
@@ -378,12 +359,12 @@
                 Esta es la sección de la tabla en el footer 
 ===================================================================-->
 <div class="container my-5">
-    <h3 class="text-center texto-azul-indart mb-4">Características</h3>
+    <h3 class="text-center texto-azul-indart mb-4">{% trans 'Características' %}</h3>
     <div class="table-responsive d-none d-md-block">
         <table class="table table-bordered text-center">
             <thead class="table-light">
                 <tr>
-                    <th scope="col">Especificación</th>
+                    <th scope="col">{% trans 'Especificación' %}</th>
                     <th scope="col">NX Modular</th>
                     <th scope="col">NX Modular (Pellet)</th>
                     <th scope="col">NX Modular Dual</th>
@@ -393,7 +374,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Número de cabezales</th>
+                    <th scope="row">{% trans 'Número de cabezales' %}</th>
                     <td>1 (Direct Drive HR)</td>
                     <td>2 (Pellets)</td>
                     <td>3 (Direct Drive HR – Direct Drive HR)</td>
@@ -401,7 +382,7 @@
                     <td>5 (Pellets – Pellets)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Boquillas compatibles</th>
+                    <th scope="row">{% trans 'Boquillas compatibles' %}</th>
                     <td>0.15, 0.25, 0.4, 0.6, 0.8 mm</td>
                     <td>0.4, 0.6, 0.8, 2.0, 4.0, 5.0 mm</td>
                     <td>0.15, 0.25, 0.4, 0.6, 0.8 mm</td>
@@ -409,7 +390,7 @@
                     <td>0.4, 0.6, 0.8, 2.0, 4.0, 5.0 mm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Boquillas incluidas</th>
+                    <th scope="row">{% trans 'Boquillas incluidas' %}</th>
                     <td>0.4 mm</td>
                     <td>0.8 mm</td>
                     <td>0.4 mm (2 uds)</td>
@@ -417,7 +398,7 @@
                     <td>0.8 mm (2 uds)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Materiales</th>
+                    <th scope="row">{% trans 'Materiales' %}</th>
                     <td>ABS, ASA, NYLON, PET-G, PLA, PP, TPU</td>
                     <td>Pellets (Circular de 3-5 mm)</td>
                     <td>ABS, ASA, NYLON, PET-G, PLA, PP, TPU</td>
@@ -425,7 +406,7 @@
                     <td>Pellets (Circular de 3-5 mm)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Área de trabajo</th>
+                    <th scope="row">{% trans 'Área de trabajo' %}</th>
                     <td>300 x 300 x 250 mm</td>
                     <td>300 x 300 x 250 mm</td>
                     <td>300 x 300 x 250 mm</td>
@@ -433,7 +414,7 @@
                     <td>300 x 300 x 250 mm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Peso de la impresora</th>
+                    <th scope="row">{% trans 'Peso de la impresora' %}</th>
                     <td>56 kg</td>
                     <td>56 kg</td>
                     <td>56 kg</td>
@@ -441,7 +422,7 @@
                     <td>56 kg</td>
                 </tr>
                 <tr>
-                    <th scope="row">Dimensiones de la impresora</th>
+                    <th scope="row">{% trans 'Dimensiones de la impresora' %}</th>
                     <td>840 x 635 x 805 mm</td>
                     <td>840 x 635 x 805 mm</td>
                     <td>840 x 635 x 805 mm</td>
@@ -449,7 +430,7 @@
                     <td>840 x 635 x 805 mm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Temperatura de la cama caliente</th>
+                    <th scope="row">{% trans 'Temperatura de la cama caliente' %}</th>
                     <td>Hasta 100 °C</td>
                     <td>Hasta 100 °C</td>
                     <td>Hasta 100 °C</td>
@@ -457,7 +438,7 @@
                     <td>Hasta 100 °C</td>
                 </tr>
                 <tr>
-                    <th scope="row">Temperatura del cabezal</th>
+                    <th scope="row">{% trans 'Temperatura del cabezal' %}</th>
                     <td>Hasta 300 °C</td>
                     <td>Hasta 300 °C</td>
                     <td>Hasta 300 °C</td>
@@ -465,7 +446,7 @@
                     <td>Hasta 300 °C</td>
                 </tr>
                 <tr>
-                    <th scope="row">Calibración</th>
+                    <th scope="row">{% trans 'Calibración' %}</th>
                     <td>Automática</td>
                     <td>Automática</td>
                     <td>Automática</td>
@@ -473,7 +454,7 @@
                     <td>Automática</td>
                 </tr>
                 <tr>
-                    <th scope="row">Estructura</th>
+                    <th scope="row">{% trans 'Estructura' %}</th>
                     <td>Cerrada con filtros</td>
                     <td>Cerrada con filtros</td>
                     <td>Cerrada con filtros</td>
@@ -481,7 +462,7 @@
                     <td>Cerrada con filtros</td>
                 </tr>
                 <tr>
-                    <th scope="row">Conectividad</th>
+                    <th scope="row">{% trans 'Conectividad' %}</th>
                     <td>Wi-Fi, Ethernet, Micro SD</td>
                     <td>Wi-Fi, Ethernet, Micro SD</td>
                     <td>Wi-Fi, Ethernet, Micro SD</td>
@@ -489,7 +470,7 @@
                     <td>Wi-Fi, Ethernet, Micro SD</td>
                 </tr>
                 <tr>
-                    <th scope="row">Emisión de ruido</th>
+                    <th scope="row">{% trans 'Emisión de ruido' %}</th>
                     <td>44 dB (40 dB con la puerta cerrada)</td>
                     <td>44 dB (40 dB con la puerta cerrada)</td>
                     <td>44 dB (40 dB con la puerta cerrada)</td>
@@ -497,7 +478,7 @@
                     <td>44 dB (40 dB con la puerta cerrada)</td>
                 </tr>
                 <tr>
-                    <th scope="row">Pantalla</th>
+                    <th scope="row">{% trans 'Pantalla' %}</th>
                     <td>7" táctil a color</td>
                     <td>7" táctil a color</td>
                     <td>7" táctil a color</td>
@@ -505,7 +486,7 @@
                     <td>7" táctil a color</td>
                 </tr>
                 <tr>
-                    <th scope="row">Software compatible</th>
+                    <th scope="row">{% trans 'Software compatible' %}</th>
                     <td>MacOS, Windows, Linux</td>
                     <td>MacOS, Windows, Linux</td>
                     <td>MacOS, Windows, Linux</td>
@@ -513,7 +494,7 @@
                     <td>MacOS, Windows, Linux</td>
                 </tr>
                 <tr>
-                    <th scope="row">Nivel de potencia</th>
+                    <th scope="row">{% trans 'Nivel de potencia' %}</th>
                     <td>120W, 600W, 1350W</td>
                     <td>120W, 600W, 1350W</td>
                     <td>120W, 600W, 1350W</td>
@@ -521,7 +502,7 @@
                     <td>120W, 600W, 1350W</td>
                 </tr>
                 <tr>
-                    <th scope="row">Software de corte compatible</th>
+                    <th scope="row">{% trans 'Software de corte compatible' %}</th>
                     <td>Simplify 3D, CURA, SuperSlicer</td>
                     <td>Simplify 3D, CURA, SuperSlicer</td>
                     <td>Simplify 3D, CURA, SuperSlicer</td>
@@ -529,7 +510,7 @@
                     <td>Simplify 3D, CURA, SuperSlicer</td>
                 </tr>
                 <tr>
-                    <th scope="row">Formato de archivos</th>
+                    <th scope="row">{% trans 'Formato de archivos' %}</th>
                     <td>STL, OBJ, Gcode</td>
                     <td>STL, OBJ, Gcode</td>
                     <td>STL, OBJ, Gcode</td>
@@ -537,7 +518,7 @@
                     <td>STL, OBJ, Gcode</td>
                 </tr>
                 <tr>
-                    <th scope="row">Garantía</th>
+                    <th scope="row">{% trans 'Garantía' %}</th>
                     <td>1 año</td>
                     <td>1 año</td>
                     <td>1 año</td>
@@ -545,7 +526,7 @@
                     <td>1 año</td>
                 </tr>
                 <tr>
-                    <th scope="row">Peso del paquete</th>
+                    <th scope="row">{% trans 'Peso del paquete' %}</th>
                     <td>114 kg</td>
                     <td>114 kg</td>
                     <td>114 kg</td>
@@ -553,7 +534,7 @@
                     <td>114 kg</td>
                 </tr>
                 <tr>
-                    <th scope="row texto">Dimensiones del paquete</th>
+                    <th scope="row texto">{% trans 'Dimensiones del paquete' %}</th>
                     <td>953 x 800 x 957 mm</td>
                     <td>953 x 800 x 957 mm</td>
                     <td>953 x 800 x 957 mm</td>

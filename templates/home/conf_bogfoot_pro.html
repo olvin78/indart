@@ -1,0 +1,200 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Información | Indart3D</title>
+<style>
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center texto-azul-indart mb-4">Descargar Configuración Gama NX Pro</h2>
+        <div class="row g-3">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a style="text-decoration: none;"  href="{% static 'doc/06-BF-PRO-HR.zip' %}">
+                    <div class="card text-center border-0 shadow-lg h-100 card-hover" style="background-color: #4bb5c1; color: #fff; border-radius: 10px; width: 280px; margin: auto;">
+                    <div class="card-body">
+                        <h6>Click Para Descargar</h6>
+                    </div>
+                    <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Bigfoot Pro Direct Drive HR" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5>Bigfoot Pro Direct Drive HR</h5>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a style="text-decoration: none;"  href="{% static 'doc/07-BF-PRO-PL.zip' %}">
+                <div class="card text-center border-0 shadow-lg h-100 card-hover" style="background-color: #4bb5c1; color: #fff; border-radius: 10px; width: 280px; margin: auto;">
+                    <div class="card-body">
+                        <h6>Click Para Descargar</h6>
+                    </div>
+                    <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Bigfoot Pro Pellet" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5>Bigfoot Pro Pellet</h5>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a style="text-decoration: none;"  href="{% static 'doc/10-BF-PRO-PL-PL.zip' %}">
+                <div class="card text-center border-0 shadow-lg h-100 card-hover" style="background-color: #4bb5c1; color: #fff; border-radius: 10px; width: 280px; margin: auto;">
+                    <div class="card-body">
+                        <h6>Click Para Descargar</h6>
+                    </div>
+                    <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Bigfoot Pro Pellet - Pellet" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5>Bigfoot Pro Pellet - Pellet</h5>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <!-- Segunda Fila -->
+        <div class="row g-3 mt-4">
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a style="text-decoration: none;" href="{% static 'doc/09-BF-PRO-HR-PL.zip' %}">
+                <div class="card text-center border-0 shadow-lg h-100 card-hover" style="background-color: #4bb5c1; color: #fff; border-radius: 10px; width: 280px; margin: auto;">
+                    <div class="card-body">
+                        <h6>Click Para Descargar</h6>
+                    </div>
+                    <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Bigfoot Pro Direct Drive HR - Pellet" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5>Bigfoot Pro Direct Drive HR - Pellet</h5>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a style="text-decoration: none;"  href="{% static 'doc/08-BF-PRO-HR-HR.zip' %}">
+                <div class="card text-center border-0 shadow-lg h-100 card-hover" style="background-color: #4bb5c1; color: #fff; border-radius: 10px; width: 280px; margin: auto;">
+                    <div class="card-body">
+                        <h6>Click Para Descargar</h6>
+                    </div>
+                    <img src="{% static 'img/nx_modular/NX_Frente_SinFondo_1.png' %}" alt="Bigfoot Pro Direct Drive HR - Direct Drive HR" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5>Bigfoot Pro Direct Drive HR - Direct Drive HR</h5>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Card Anteriores -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a style="text-decoration: none;"  href="">
+                    <div class="card text-center border-0 shadow-lg h-100 card-hover fondo-azul-indart" style="color: #fff; border-radius: 10px; width: 280px; margin: auto;">
+                        <div class="card-body">
+                            <h6>Regresar a Otros Modelos</h6>
+                        </div>
+                        <img src="{% static 'img/processed-image.png' %}" alt="Anteriores" class="card-img-top img-fluid" style="height: 290px; object-fit: cover;padding-top: 3px;">
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex justify-content-center py-5">
+                <a href="{% url 'home_app:configuracion_bigfoot_modelos_anteriores' %}">
+                    <button class="btn fondo-azul-indart text-white boton " style="width: 100%; max-width: 600px; margin-top: 15px;padding: 10px;">
+                        Ver modelos anteriores a estos
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="fondo-azul-indart" style="color: white; padding: 60px 0; text-align: center;">
+    <div class="container py-5" style="height: 400px;">
+        <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="">
+        <!-- Mensaje principal -->
+        <p style="font-size: 20px; font-weight: 500; margin: 0 auto 30px auto; max-width: 800px; line-height: 1.8; padding-top: 20px;">
+            <b>Si no encuentras el archivo que necesitas, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</b>
+        </p>
+
+        <!-- Botón de contacto -->
+        <div style="margin: 20px 0;">
+            <a class="boton" href="{% url 'home_app:contacto' %}" style="
+                text-decoration: none;
+                font-size: 18px;
+                color: #4bb5c1;
+                background: white;
+                border-radius: 30px;
+                padding: 10px 30px;
+                font-weight: bold;
+                display: inline-block;
+                border: 2px solid white;">
+                Contacto
+            </a>
+        </div>
+
+        <!-- Información del contacto -->
+        <div class="contact-info" style="margin-top: 40px;">
+            <!-- Nombre -->
+            <h4 style="margin-top: 10px; font-weight: bold; font-size: 22px;">INDART-3D</h4>
+        </div>
+    </div>
+</section>
+
+<!--script de estilos para los contenedores "card"-->
+
+<script>
+    // Agrega efectos de hover a las tarjetas
+    document.querySelectorAll('.card-hover').forEach((card) => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'scale(1.08)'; // Agranda la tarjeta ligeramente
+            card.style.boxShadow = '0px 15px 30px rgba(243, 156, 18, 0.5)'; // Sombra con color
+            card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease'; // Suaviza el efecto
+        });
+
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)'; // Vuelve a su tamaño original
+            card.style.boxShadow = '0px 5px 15px rgba(0, 0, 0, 0.3)'; // Sombra inicial
+        });
+    });
+</script>
+
+<!--===========================================================
+                el javascript de lalos botones
+===============================================================-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleccionamos todos los botones y enlaces
+        let elementos = document.querySelectorAll(".boton, .enlace");
+
+        elementos.forEach(elemento => {
+            // Guardamos los estilos originales
+            let colorTextoOriginal = window.getComputedStyle(elemento).color;
+            let colorFondoOriginal = window.getComputedStyle(elemento).backgroundColor;
+
+            // Efecto hover (acercar y cambiar color)
+            elemento.addEventListener("mouseenter", function () {
+                elemento.style.backgroundColor = "#4bb5c1"; // Color en hover
+                elemento.style.color = "#ffffff"; // Mantiene el texto visible
+                elemento.style.transform = "scale(1.1)"; // Acercar un 10%
+                elemento.style.transition = "all 0.3s ease"; // Suaviza el efecto
+            });
+
+            // Cuando el mouse sale (alejar y volver al color original)
+            elemento.addEventListener("mouseleave", function () {
+                elemento.style.backgroundColor = colorFondoOriginal; // Regresa el fondo original
+                elemento.style.color = colorTextoOriginal; // Regresa el color original del texto
+                elemento.style.transform = "scale(1)"; // Vuelve a su tamaño normal
+            });
+        });
+    });
+</script>
+  
+{% endblock %}
