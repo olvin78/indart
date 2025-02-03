@@ -1,4 +1,5 @@
 {% extends 'home/base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block head %}
@@ -38,17 +39,20 @@
     <!--==============================================
                 Duet producto numero 1s
     =================================================-->
-{% for dato in datos %}
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-           <a style="text-decoration: none;" href="{% url 'home_app:pellet_detail' dato.id %}"><div class="card border-0">
-                <img src="{{ dato.image }}" class="card-img-top w-75" alt="Producto 1">
-                <div class="card-body text-center">
-                    <h6 class="card-title texto-azul-indart">{{ dato.name }}</h6>
-                </div>
-            </div></a>
+    {% for dato in datos %}
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <a class="text-decoration-none" href="{% url 'home_app:pellet_detail' dato.id %}">
+                    <div class="card border-0">
+                        <img src="{{ dato.image.url }}" class="card-img-top img-fluid w-75" alt="Producto 1">
+                        <div class="card-body text-center">
+                            <h6 class="card-title texto-azul-indart" style="display: flex;align-items: center center;margin: auto;">{{ dato.name }}</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
+
     {% endfor %}
 </div>
 

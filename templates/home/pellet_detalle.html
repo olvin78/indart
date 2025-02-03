@@ -1,4 +1,5 @@
 {% extends 'home/base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block head %}
@@ -23,11 +24,11 @@
   <!-- Contenido del pellet -->
   <div class="row align-items-center">
       <!-- Imagen del pellet como fondo -->
-      <div class="col-md-6 text-center">
-          <div 
-              class="rounded"
-              style="width: 100%; height: 450px; background-image: url('{{ datos.image.url }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-          </div>
+        <div class="col-md-6 text-center">
+            <div 
+            class="rounded"
+            style="width: 100%; height: 450px; background-image: url('{{ datos.image.url }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        </div>
       </div>
       <!-- Descripción del pellet -->
       <div class="col-md-6">

@@ -42,7 +42,7 @@
     <div class="row g-4">
         <div class="col-md-3 col-6">
            <a style="text-decoration: none;" href="{% url 'home_app:filamento_detail' dato.id %}"><div class="card border-0">
-                <img src="{{ dato.image }}" class="card-img-top w-100" alt="Producto 1">
+                <img src="{{ dato.image.url }}" class="card-img-top w-100" alt="Producto 1">
                 <div class="card-body text-center">
                     <h6 class="card-title texto-azul-indart">{{ dato.name }}</h6>
                 </div>
