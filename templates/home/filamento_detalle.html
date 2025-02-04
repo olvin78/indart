@@ -12,25 +12,31 @@
 <section class="container my-5">
     <!-- Título principal -->
     <div class="text-center mb-5">
-        <h2 class="fw-bold text-uppercase">Filamentos para Impresión 3D</h2>
+        <h2 class="fw-bold text-uppercase texto-azul-indart">Filamentos para Impresión 3D</h2>
         <span class="text-muted">Descubre los mejores materiales para tus proyectos de impresión 3D.</span>
     </div>
+    
     <!-- Contenido del filamento -->
     <div class="row align-items-center">
-        <!-- Imagen del filamento como fondo -->
-        <div class="col-md-6 text-center">
-            <div 
-                class="rounded"
-                style="width: 100%; height: 450px;background-image: url('{{ datoS.image.url }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            </div>
+        <!-- Imagen del filamento -->
+        <div class="col-md-6 text-center py-5">
+            <img src="{{ datos.image.url }}" alt="{{ datos.name }}" 
+                class="rounded img-fluid" style="max-height: 450px; object-fit: contain;">
         </div>
+        
         <!-- Descripción del filamento -->
         <div class="col-md-6">
-            <h3 class="fw-bold">{{ datos.name }}</h3>
+            <h3 class="fw-bold texto-azul-indart">{{ datos.name }}</h3>
             <p class="text-muted">
-               {{ datos.summary }}
+                {{ datos.summary|safe }}
             </p>
         </div>
+        <div class="col-md-8">
+        <p class="text-muted">
+            {{ datos.description|safe }}
+        </p>
+    </div>
     </div>
 </section>
+
 {% endblock %}

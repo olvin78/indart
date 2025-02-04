@@ -19,26 +19,34 @@
   <!-- Título principal -->
   <div class="text-center mb-5">
       <h2 class="fw-bold text-uppercase texto-azul-indart">Pellets para Impresión 3D</h2>
-      <p class="text-muted">Descubre los mejores pellets para la fabricación e impresión 3D.</p>
+      <span class="text-muted">Descubre los mejores pellets para la fabricación e impresión 3D.</span>
   </div>
+  
   <!-- Contenido del pellet -->
   <div class="row align-items-center">
-      <!-- Imagen del pellet como fondo -->
-        <div class="col-md-6 text-center">
-            <div 
-            class="rounded"
-            style="width: 100%; height: 450px; background-image: url('{{ datos.image.url }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        </div>
+      <!-- Imagen del pellet grande -->
+      <div class="col-md-6 text-center py-5">
+          <img src="{{ datos.image.url }}" alt="{{ datos.name }}" 
+              class="rounded img-fluid" style="max-height: 650px; object-fit: contain;">
       </div>
+      
       <!-- Descripción del pellet -->
       <div class="col-md-6">
-          <h3 class="fw-bold texto-azul-indart">PELLETSMART® FLEX 93A</h3>
+          <h3 class="fw-bold texto-azul-indart">{{ datos.name }}</h3>
           <p class="text-muted">
-              Pellets de FLEX para fabricación de filamentos para impresión 3D mediante extrusor.
+              {{ datos.summary|safe }} <!-- Resumen breve -->
+          </p>
+      </div>
+
+      <!-- Descripción completa -->
+      <div class="col-md-8">
+          <p class="text-muted">
+              {{ datos.description|safe }} <!-- Descripción extendida -->
           </p>
       </div>
   </div>
 </section>
+
 
 <div class="bg-light py-5" style="height:auto">
   <section class="container my-5 py-5">
@@ -48,21 +56,21 @@
       <div class="col-lg-3 col-md-4">
         <div class="p-4 border rounded shadow bg-light hover-shadow" style="transition: all 0.3s ease-in-out; cursor: pointer;">
           <h2 class="fw-bold">1 Kg</h2>
-          <p class="text-muted">Un Kilo</p>
+          <span class="text-muted">Un Kilo</span>
         </div>
       </div>
       <!-- Segundo bloque -->
       <div class="col-lg-3 col-md-4">
         <div class="p-4 border rounded shadow bg-light hover-shadow" style="transition: all 0.3s ease-in-out; cursor: pointer;">
           <h2 class="fw-bold">5 Kg</h2>
-          <p class="text-muted">Cinco Kilos</p>
+          <span class="text-muted">Cinco Kilos</span>
         </div>
       </div>
       <!-- Tercer bloque -->
       <div class="col-lg-3 col-md-4">
         <div class="p-4 border rounded shadow bg-light hover-shadow" style="transition: all 0.3s ease-in-out; cursor: pointer;">
           <h2 class="fw-bold">15 Kg</h2>
-          <p class="text-muted">Quince Kilos</p>
+          <span class="text-muted">Quince Kilos</span>
         </div>
       </div>
     </div>

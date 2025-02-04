@@ -39,21 +39,22 @@
     <!--==============================================
                 Duet producto numero 1s
     =================================================-->
-    {% for dato in datos %}
-        <div class="row g-4">
-            <div class="col-md-3 col-6">
-                <a class="text-decoration-none" href="{% url 'home_app:pellet_detail' dato.id %}">
-                    <div class="card border-0">
-                        <img src="{{ dato.image.url }}" class="card-img-top img-fluid w-75" alt="Producto 1">
+    <div class="row g-4 py-2">
+        {% for dato in datos %}
+            <div class="col-lg-3 col-md-4 col-sm-6"> <!-- Se ajusta a 4 elementos por fila en pantallas grandes -->
+                <a href="{% url 'home_app:pellet_detail' dato.id %}" style="text-decoration: none;">
+                    <div class="card border-0 shadow-lg h-100"> <!-- Tarjeta con sombra y altura consistente -->
+                        <img src="{{ dato.image.url }}" class="card-img-top w-100" alt="Producto {{ dato.name }}">
                         <div class="card-body text-center">
-                            <h6 class="card-title texto-azul-indart" style="display: flex;align-items: center center;margin: auto;">{{ dato.name }}</h6>
+                            <h6 class="card-title texto-azul-indart">{{ dato.name }}</h6>
                         </div>
                     </div>
                 </a>
             </div>
-        </div>
-
-    {% endfor %}
+        {% endfor %}
+    </div>
+    
+    
 </div>
 
 {% endblock %}

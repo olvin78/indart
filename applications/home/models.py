@@ -37,7 +37,7 @@ class Material(models.Model):
         choices=TIPO_CHOICES,max_length=15
     )
     summary = HTMLField( blank=True,null=True)
-    description = HTMLField(max_length=255,blank=True,null=True)
+    description = HTMLField(max_length=9999,blank=True,null=True)
 
     def __str__(self):
         """Devuelve el título del post como representación en cadena."""

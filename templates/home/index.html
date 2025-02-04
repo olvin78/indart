@@ -142,7 +142,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold">{% trans 'Servicio de escaneado' %}</h5>
                         <p class="card-text flex-grow-1">{% trans '¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro servicio de escaneado te ayudaremos a replicarlo cuando lo necesites' %}.</p>
-                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2 text-uppercase boton">Más información</a>
+                        <a href="{% url 'home_app:pedido_impresion' %}" class="btn text-white fondo-azul-indart rounded-3 mt-2 text-uppercase boton">Más información</a>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-bold">{% trans 'Formación 3D' %}</h5>
                         <p class="card-text flex-grow-1">{% trans '¿Quieres aprender sobre la fabricación aditiva? Podemos ofrecer cursos a medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a lo que necesites' %}.</p>
-                        <a href="#" class="btn text-white fondo-azul-indart rounded-3 mt-2 text-uppercase boton">{% trans 'Más información' %}</a>
+                        <a href="{% url 'home_app:pedido_impresion' %}" class="btn text-white fondo-azul-indart rounded-3 mt-2 text-uppercase boton">{% trans 'Más información' %}</a>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@
                     {% trans 'La innovación forma parte de nuestra filosofía. El desarrollo continuo también. Son los dos pilaresde la nueva era en tecnología que estamos viviendo y de la que somos parte. Y la formación es la base. la formación que va a impulsar tu empresa' %}.
                 </p>
                 <div class="d-flex justify-content-center py-3">
-                    <a href="#" class="btn fondo-azul-indart rounded-3 text-white px-4 py-2 text-uppercase boton">
+                    <a href="{% url 'home_app:contacto' %}" class="btn fondo-azul-indart rounded-3 text-white px-4 py-2 text-uppercase boton">
                         {% trans 'Cursos & Talleres' %}
                     </a>
                 </div>
@@ -304,7 +304,7 @@
     </div>
     <!-- Botón de contacto -->
     <div class="mb-5">
-        <a href="#" class="btn boton fondo-azul-indart py-3 rounded-pill fw-bold">{% trans 'Contáctanos' %}</a>
+        <a href="{% url 'home_app:contacto' %}" class="btn boton fondo-azul-indart py-3 rounded-pill fw-bold">{% trans 'Contáctanos' %}</a>
     </div>
 </div>
 
