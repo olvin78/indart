@@ -8,68 +8,68 @@
 
 {% block content %}
 <div class="container">
-    <div class="row py-5">
-        <!-- Imagen principal con efecto de zoom -->
-        <div 
-            class="col-md-6" 
-            style="
-                background-image: url('{{ datos.image1.url }}'); 
-                background-size: 95%; 
-                background-position: center; 
-                background-repeat: no-repeat; 
-                height: 450px; 
-                overflow: hidden; 
-                transition: background-size 0.3s ease;"
-            onmouseover="this.style.backgroundSize='105%';" 
-            onmouseout="this.style.backgroundSize='95%';"
-        ></div>
+        <div class="row py-5">
+            <!-- Imagen principal con efecto de zoom -->
+            <div 
+                class="col-md-6" 
+                style="
+                    background-image: url('{{ datos.image1.url }}'); 
+                    background-size: 95%; 
+                    background-position: center; 
+                    background-repeat: no-repeat; 
+                    height: 450px; 
+                    overflow: hidden; 
+                    transition: background-size 0.3s ease;"
+                onmouseover="this.style.backgroundSize='105%';" 
+                onmouseout="this.style.backgroundSize='95%';"
+            ></div>
 
-        <!-- Información del producto -->
-        <div class="col-md-6 definicion">
-            <h1>{{ datos.name }}</h1>
-            <hr>
-            <br>
-            <h3>Otro Ángulo:</h3>
-            <div class="miniaturas d-flex gap-2">
-                <a href="#">
-                    {% if datos.image2 %}
-                    <img class="img-thumbnail" src="{{ datos.image2.url }}" alt="Camiseta Roja">
-                    {% endif %}
-                </a>
-                <a href="#">
-                    {% if datos.image3 %}
-                    <img class="img-thumbnail" src="{{ datos.image3.url }}" alt="Camiseta Verde">
-                    {% endif %}
-                </a>
-                <a href="#">
-                    {% if datos.image4 %}
-                    <img class="img-thumbnail" src="{{ datos.image4.url }}" alt="Camiseta Amarilla">
-                    {% endif %}
-                </a>
-                <a href="#">
-                    {% if datos.image5%}
-                    <img class="img-thumbnail" src="{{ datos.image5.url }}" alt="Camiseta Negra">
-                    {% endif %}
-                </a>
-            </div> 
-            <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
-                <strong><h4>{% trans 'Resumen' %}:</h4></strong><br> {{ datos.summary|safe }}
-            </div>        
-    </div>
-</div>
-
-<div class="container description-section py-5">
-    <h2 style="text-align: center;">{% trans 'Descripción' %}</h2>
-    <!-- Campo de descripción del modelo -->
-     <!-- ✅ Descripción dentro de la lista, pero sin <li> -->
-        <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
-            <strong><h4>{% trans 'Descripción' %}:</h4></strong><br> {{ datos.content|safe }}
+            <!-- Información del producto -->
+            <div class="col-md-6 definicion">
+                <h1>{{ datos.name }}</h1>
+                <hr>
+                <br>
+                <h3>Otro Ángulo:</h3>
+                <div class="miniaturas d-flex gap-2">
+                    <a href="#">
+                        {% if datos.image2 %}
+                        <img class="img-thumbnail" src="{{ datos.image2.url }}" alt="Camiseta Roja">
+                        {% endif %}
+                    </a>
+                    <a href="#">
+                        {% if datos.image3 %}
+                        <img class="img-thumbnail" src="{{ datos.image3.url }}" alt="Camiseta Verde">
+                        {% endif %}
+                    </a>
+                    <a href="#">
+                        {% if datos.image4 %}
+                        <img class="img-thumbnail" src="{{ datos.image4.url }}" alt="Camiseta Amarilla">
+                        {% endif %}
+                    </a>
+                    <a href="#">
+                        {% if datos.image5%}
+                        <img class="img-thumbnail" src="{{ datos.image5.url }}" alt="Camiseta Negra">
+                        {% endif %}
+                    </a>
+                </div> 
+                <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
+                    <strong><h4>{% trans 'Resumen' %}:</h4></strong><br> {{ datos.summary|safe }}
+                </div>        
         </div>
+    </div>
 
-    <!-- Link de documentación 
-    <a href="https://link-to-documentation.com" target="_blank" class="documentation-link">
-        Ver documentación completa del hardware
-    </a>-->
-</div>
+    <div class="container description-section py-5">
+        <h2 style="text-align: center;">{% trans 'Descripción' %}</h2>
+        <!-- Campo de descripción del modelo -->
+        <!-- ✅ Descripción dentro de la lista, pero sin <li> -->
+            <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
+                <strong><h4>{% trans 'Descripción' %}:</h4></strong><br> {{ datos.content|safe }}
+            </div>
+
+        <!-- Link de documentación 
+        <a href="https://link-to-documentation.com" target="_blank" class="documentation-link">
+            Ver documentación completa del hardware
+        </a>-->
+    </div>
 </div>
 {% endblock %}
