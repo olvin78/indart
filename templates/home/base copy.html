@@ -299,15 +299,15 @@
                   <li><a class="dropdown-item" href="{% url 'home_app:nx_modular' %}">NX MODULAR</a></li>
                   <li><a class="dropdown-item" href="{% url 'home_app:bf_modular' %}">BF MODULAR</a></li>
                   <li><a class="dropdown-item" href="{% url 'home_app:mini_pro' %}">MINI PRO</a></li>
-                  <li><a class="dropdown-item" href="{% url 'home_app:alimentador_pellet' %}">ALIMENTADOR DE PELLET</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:alimentador_pellet' %}">{% trans 'ALIMENTADOR DE PELLET' %}</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{% url 'home_app:nx_modular' %}" data-bs-toggle="dropdown" aria-expanded="false">Escáner 3D</a>
+                <a class="nav-link dropdown-toggle" href="{% url 'home_app:nx_modular' %}" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Escáner 3D' %}</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
                   <a class="dropdown-item" href="#">
-                    Escáner<br> Automatizado &raquo;
+                    {% trans 'Escáner' %}<br> {% trans 'Automatizado' %} &raquo;
                   </a>
                   <ul class="dropdown-menu dropdown-submenu">
                     <li>
@@ -322,7 +322,7 @@
 
                 <li>
                   <a class="dropdown-item" href="#">
-                    Escáner a Color &raquo;
+                    {% trans 'Escáner a Color &raquo;
                   </a>
                   <ul class="dropdown-menu dropdown-submenu">
                     <li>
@@ -340,7 +340,7 @@
 
                 <li>
                   <a class="dropdown-item" href="#">
-                    Escáner potátil &raquo;
+                    {% trans 'Escáner potátil &raquo;
                   </a>
                   <ul class="dropdown-menu dropdown-submenu">
                     <li>
@@ -366,28 +366,28 @@
                 <a class="nav-link text-nowrap  texto-azul-indart" href="{% url 'home_app:blog_list' %}">Blog</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Material</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Material' %}</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="{% url 'home_app:pellet' %}">Pellet</a></li>
                   <li><a class="dropdown-item" href="{% url 'home_app:filamento' %}">Filamento</a></li>
-                  <li><a class="dropdown-item" href="{% url 'home_app:materiales_validados' %}">Materiales validados</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:materiales_validados' %}">{% trans 'Materiales validados' %}</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Servicios 3D</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Servicios 3D' %}</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">Servocios  &raquo;</a></li>
-                  <li><a class="dropdown-item" href="{% url 'home_app:servicio_validacion' %}">Servicio de Validación e <br> impresión 3D con Pellet  &raquo;</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:servicios' %}">{% trans 'Servocios' %}  &raquo;</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:servicio_validacion' %}">{% trans 'Servicio de Validación e' %} <br> {% trans 'impresión 3D con Pellet' %}  &raquo;</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-nowrap" href="{% url 'home_app:duet3D' %}">Duet 3D</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Soporte</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Soporte' %}</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'home_app:soporte_tecnico' %}">Soporte Técnico</a></li>
-                  <li><a class="dropdown-item" href="{% url 'home_app:soporte_manual' %}">Manual y Configuración</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:soporte_tecnico' %}">{% trans 'Soporte Técnico' %}</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home_app:soporte_manual' %}">{% trans 'Manual y Configuración' %}</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -415,7 +415,7 @@
                       </ul>
                     </li>
               
-                    <li><a class="dropdown-item" href="{% url 'home_app:sobre_nosotros' %}">Quiénes somos</a></li>
+                    <li><a class="dropdown-item" href="{% url 'home_app:sobre_nosotros' %}">{% trans 'Quiénes somos' %}</a></li>
                 </ul>
             </li>
             <!-- boton para cambiar de idioma -->
@@ -462,7 +462,7 @@
      <div class="row pt-5 text-center">
       <div class="col-12">
         <img src="{% static 'img/logo/Logo-indart3d-white-1.png.webp' %}" alt="Logo Principal" class="img-fluid mb-3" style="max-width: 150px;"><br>
-        <spam class="text-white text-center" style="font-family:MiFuentePersonalizada;">Innovación y Desarrollo 3D</spam>
+        <spam class="text-white text-center" style="font-family:MiFuentePersonalizada;">{% trans 'Innovación y Desarrollo 3D' %}</spam>
       </div>
     </div>
     <hr class="text-white">
@@ -470,14 +470,14 @@
   <div class="row py-5 text-white text-center text-md-start">
     <!-- Columna 1: Creadores de Tumaker -->
     <div class="col-lg-3 col-md-6 mb-4">
-      <h5 class="mb-4 texto-azul-indart text-uppercase">Creadores de</h5>
+      <h5 class="mb-4 texto-azul-indart text-uppercase">{% trans 'Creadores de' %}</h5>
       <img src="{% static 'img/logo/Logo-tumaker-white-trasparente.png.webp' %}" alt="Logo Secundario" class="img-fluid mb-2" style="max-width: 150px;">
-      <p class="text-muted">Web creada por Indart3D</p>
+      <p class="text-muted">{% trans 'Web creada por Indart3D</p>
     </div>
 
    <!-- Columna 2: Contacto -->
     <div class="col-lg-3 col-md-6 mb-4">
-      <h5 class="fw-bold mb-3 text-uppercase texto-azul-indart">Contacto</h5>
+      <h5 class="fw-bold mb-3 text-uppercase texto-azul-indart">{% trans 'Contacto' %}</h5>
       <ul class="list-unstyled">
         <li class="mb-2">
           <i class="bi bi-telephone-fill text-primary me-2"></i>
@@ -493,14 +493,14 @@
         </li>
       </ul>
       <div class="mt-3">
-        <a href="{% url 'home_app:contacto' %}"><button style="width:200px;" class="btn fondo-azul-indart rounded-4 text-white px-4 py-2">Contactar</button></a>
+        <a href="{% url 'home_app:contacto' %}"><button style="width:200px;" class="btn fondo-azul-indart rounded-4 text-white px-4 py-2">{% trans 'Contactar' %}</button></a>
       </div>
     </div>
 
 
     <!-- Columna 3: Horario general -->
     <div class="col-lg-3 col-md-6 mb-4">
-      <h5 class="fw-bold mb-2 text-uppercase texto-azul-indart">Horario</h5>
+      <h5 class="fw-bold mb-2 text-uppercase texto-azul-indart">{% trans 'Horario' %}</h5>
       <span class="text-white mb-2">Lunes - Jueves: 8:30 a 13:30 <br> y 14:30 a 17:30</span>
       <span class="text-white mb-2">Viernes: 8:00 a 15:00</span>
     </div>
@@ -512,11 +512,11 @@
     </div>
 
     <div class="text-center mt-5">
-      <a href="{% url 'home_app:aviso_legal' %}" class="text-white text-decoration-none me-2"><b>Aviso legal</b></a>
+      <a href="{% url 'home_app:aviso_legal' %}" class="text-white text-decoration-none me-2"><b>{% trans 'Aviso legal' %}</b></a>
       <span class="text-white">|</span>
-      <a href="{% url 'home_app:cookies' %}" class="text-white text-decoration-none ms-2"><b>Cookies</b></a>
+      <a href="{% url 'home_app:cookies' %}" class="text-white text-decoration-none ms-2"><b>{% trans 'Cookies' %}</b></a>
       <span class="text-white">|</span>
-      <a href="{% url 'home_app:politica_de_privacidad' %}" class="text-white text-decoration-none mx-2"><b>Políticas de Privacidad</b></a>
+      <a href="{% url 'home_app:politica_de_privacidad' %}" class="text-white text-decoration-none mx-2"><b>{% trans 'Políticas de Privacidad' %}</b></a>
     </div>
     <hr class="text-white mt-4">
     <div class="text-center"><span class="mb-0">© Copyright <strong>Company</strong>. All Rights Reserved</span></div>
@@ -555,13 +555,13 @@
         <form id="message-form" method="post">
           <input type="text" id="user-message" class="form-control mb-2" placeholder="¿Cómo Puedo Ayudarte?">
           <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-          <button type="button" id="send-button" class="btn fondo-azul-indart w-100">Enviar</button>
+          <button type="button" id="send-button" class="btn fondo-azul-indart w-100">{% trans 'Enviar' %}</button>
         </form>
       </div>
 
       <!-- Pie del modal -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans 'Cerrar' %}</button>
       </div>
     </div>
   </div>

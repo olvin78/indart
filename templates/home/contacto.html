@@ -26,15 +26,15 @@ crossorigin=""/>
         <div class="row align-items-center">
             <!-- Columna de texto -->
             <div class="col-md-6 px-5 text-white">
-                <h2 class="display-4">Contacta con nosotros</h2>
+                <h2 class="display-4">{% trans 'Contacta con nosotros' %}</h2>
                 <p class="mt-3 fs-5">
-                   <b>Puedes ponerte en contacto con nosotros para lo que necesites:</b>
+                   <b>{% trans 'Puedes ponerte en contacto con nosotros para lo que necesites:' %}</b>
                 </p>
                 <ul class="fs-5">
-                    <li>¿Quieres hacer un pedido o pedir un presupuesto?</li>
-                    <li>¿Dudas técnicas?</li>
-                    <li>¿Quieres proponernos una idea o sugerencia?</li>
-                    <li>¿Quieres enviarnos tu currículum o demostrarnos tu talento?</li>
+                    <li>{% trans '¿Quieres hacer un pedido o pedir un presupuesto?' %}</li>
+                    <li>{% trans '¿Dudas técnicas?' %}</li>
+                    <li>{% trans '¿Quieres proponernos una idea o sugerencia?' %}</li>
+                    <li>{% trans '¿Quieres enviarnos tu currículum o demostrarnos tu talento?' %}</li>
                     <li>...</li>
                 </ul>
             </div>
@@ -48,11 +48,11 @@ crossorigin=""/>
                         <!-- Nombre y Empresa -->
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="nombre" class="form-label text-white">Nombre*</label>
+                                <label for="nombre" class="form-label text-white">{% trans 'Nombre*' %}</label>
                                 {{ form.name }}
                             </div>
                             <div class="col-md-6">
-                                <label for="empresa" class="form-label text-white">Empresa</label>
+                                <label for="empresa" class="form-label text-white">{% trans 'Empresa' %}</label>
                                 {{ form.company }}
                             </div>
                         </div>
@@ -60,18 +60,18 @@ crossorigin=""/>
                         <!-- Email y País -->
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="email" class="form-label text-white">Email*</label>
+                                <label for="email" class="form-label text-white">{% trans 'Email' %}*</label>
                                 {{ form.email }}
                             </div>
                             <div class="col-md-6">
-                                <label for="pais" class="form-label text-white">País*</label>
+                                <label for="pais" class="form-label text-white">{% trans 'País' %}*</label>
                                 {{ form.country }}
                             </div>
                         </div>
                     
                             <!-- Teléfono con Prefijo -->
                         <div class="mb-3">
-                            <label for="telefono" class="form-label text-white">Teléfono*</label>
+                            <label for="telefono" class="form-label text-white">{% trans 'Teléfono' %}*</label>
                             <div class="input-group">
                                 <span class="input-group-text">+</span>  <!-- Muestra siempre el "+" -->
                                 {{ form.prefix }}  <!-- Input para el prefijo editable -->
@@ -81,7 +81,7 @@ crossorigin=""/>
                     
                         <!-- Mensaje -->
                         <div class="mb-3">
-                            <label for="mensaje" class="form-label text-white">¿En qué te podemos ayudar?</label>
+                            <label for="mensaje" class="form-label text-white">{% trans '¿En qué te podemos ayudar?' %}</label>
                             {{ form.message }}
                         </div>
                     
@@ -89,14 +89,14 @@ crossorigin=""/>
                         <div class="form-check mb-3">
                             {{ form.privacy_policy }}
                             <label class="form-check-label text-white" for="politicaPrivacidad">
-                                He leído y acepto la <a href="#" class="text-white text-decoration-underline">política de privacidad</a>
-                                y el <a href="#" class="text-white text-decoration-underline">aviso legal</a>
+                                He leído y acepto la <a href="#" class="text-white text-decoration-underline">{% trans 'política de privacidad' %}</a>
+                                y el <a href="#" class="text-white text-decoration-underline">{% trans 'aviso legal' %}</a>
                             </label>
                         </div>
                     
                         <!-- Botón Enviar -->
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn bg-light w-auto px-4">Enviar</button>
+                            <button type="submit" class="btn bg-light w-auto px-4">{% trans 'Enviar' %}</button>
                         </div>
                     </form>
                     
@@ -116,7 +116,7 @@ crossorigin=""/>
                     <div class="mb-3">
                         <img src="{% static 'img/iconos/phone_23732.webp' %}" alt="Teléfono" style="width: 50px;">
                     </div>
-                    <h5 class="card-title">Teléfono</h5>
+                    <h5 class="card-title">{% trans 'Teléfono' %}</h5>
                     <p class="card-text text-center">+34 943 943 855</p>
                 </div>
             </div>
@@ -128,7 +128,7 @@ crossorigin=""/>
                     <div class="mb-3">
                         <img src="{% static 'img/iconos/18315446.png' %}" alt="Dirección" style="width: 50px;">
                     </div>
-                    <h5 class="card-title">Dirección</h5>
+                    <h5 class="card-title">{% trans 'Dirección' %}</h5>
                     <p class="card-text text-center">Calle Gabiria, 88<br>20305 Irun, Gipuzkoa</p>
                 </div>
             </div>
@@ -141,7 +141,7 @@ crossorigin=""/>
                     <div class="mb-3">
                         <img src="{% static 'img/iconos/mail_23797.webp' %}" alt="Email" style="width: 50px;">
                     </div>
-                    <h5 class="card-title">Email</h5>
+                    <h5 class="card-title">{% trans 'Email' %}</h5>
                     <p class="card-text text-center">info@indart3d.com</p>
                 </div>
             </div>
@@ -156,8 +156,8 @@ crossorigin=""/>
     <div class="row align-items-center">
         <!-- Información -->
         <div class="col-md-6">
-            <h2 class="mb-4 texto-azul-indart">Visítanos</h2>
-            <p>Si necesitas soporte presencial, o simplemente quieres ver dónde fabricamos y desarrollamos nuestros productos, puedes visitarnos, estamos en:</p>
+            <h2 class="mb-4 texto-azul-indart">{% trans 'Visítanos' %}</h2>
+            <p>{% trans 'Si necesitas soporte presencial, o simplemente quieres ver dónde fabricamos y desarrollamos nuestros productos, puedes visitarnos, estamos en:' %}</p>
             <p><strong>Calle Gabiria, 88, 20305 Irun, Gipuzkoa</strong></p>
         </div>
 
@@ -178,7 +178,7 @@ crossorigin=""/>
             <!-- Texto -->
             <div class="col-md-6">
                 <h2 class="fw-bold" style="font-size: 2.5rem;">
-                    No es <span style="color: #d52d3e;">tarde</span>, tampoco <span style="color: #f3c938;">temprano</span>. Es el <span style="color: #8a959d;">momento</span>.
+                    {% trans 'No es' %} <span style="color: #d52d3e;">{% trans 'tarde' %}</span>, {% trans 'tampoco' %} <span style="color: #f3c938;">{% trans 'temprano' %}</span>. {% trans 'Es el' %} <span style="color: #8a959d;">{% trans 'momento' %}</span>.
                 </h2>
                 <div class="mt-4 mb-4">
                    <!-- <a href="#contacto" class="btn btn-primary" style="background: #4bb5c1; border:1px solid grey; padding: 10px 20px; border-radius: 5px;">

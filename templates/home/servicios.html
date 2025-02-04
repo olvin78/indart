@@ -20,10 +20,9 @@
         <!-- Contenido de texto -->
          <div class="col-lg-2"></div>
         <div class="col-md-4 text-center text-md-start px-5">
-            <h1 class="display-4 fw-bold text-white">Servicios 3D</h1>
+            <h1 class="display-4 fw-bold text-white">{% trans 'Servicios 3D' %}</h1>
             <p class="mt-4 fs-5 text-white">
-                Desde INDART 3D te ofrecemos servicios 3D de la máxima calidad, desde impresiones 3D, escaneado de piezas o formación. 
-                También fabricamos impresoras a medida y testeamos nuevos materiales, todo ello para garantizar la satisfacción de nuestros clientes.
+                {% trans 'Desde INDART 3D te ofrecemos servicios 3D de la máxima calidad, desde impresiones 3D, escaneado de piezas o formación. También fabricamos impresoras a medida y testeamos nuevos materiales, todo ello para garantizar la satisfacción de nuestros clientes' %}.
             </p>
         </div>
         <!-- Imagen -->
@@ -47,15 +46,15 @@
         </div>
         <!-- Texto -->
         <div class="col-md-6">
-            <h6 class="text-uppercase texto-azul-indart fw-bold">Servicios 3D</h6>
-            <h2 class="fw-bold">Te ofrecemos</h2>
+            <h6 class="text-uppercase texto-azul-indart fw-bold">{% trans 'Servicios 3D' %}</h6>
+            <h2 class="fw-bold">{% trans 'Te ofrecemos' %}</h2>
             <p class="text-muted">
-                Nuestros servicios con garantía de satisfacción y un precio competitivo:
+                {% trans 'Nuestros servicios con garantía de satisfacción y un precio competitivo' %}:
             </p>
             <ul class="list-unstyled">
-                <li><img style="height: 30px;" src="{% static 'img/servicios/ic_check_128_28312.png' %}" alt="">Servicio de impresión</li>
-                <li><img style="height: 30px;" src="{% static 'img/servicios/ic_check_128_28312.png' %}" alt="">Servicio de escaneado</li>
-                <li><img style="height: 30px;" src="{% static 'img/servicios/ic_check_128_28312.png' %}" alt=""></i>Formación</li>
+                <li><img style="height: 30px;" src="{% static 'img/servicios/ic_check_128_28312.png' %}" alt="">{% trans 'Servicio de impresión' %}</li>
+                <li><img style="height: 30px;" src="{% static 'img/servicios/ic_check_128_28312.png' %}" alt="">{% trans 'Servicio de escaneado' %}</li>
+                <li><img style="height: 30px;" src="{% static 'img/servicios/ic_check_128_28312.png' %}" alt=""></i>{% trans 'Formación' %}</li>
             </ul>
         </div>
     </div>
@@ -66,13 +65,13 @@
         <div class="col-md-4 mb-4">
             <div class="card shadow-lg border-0">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Impresión 3D</h5>
+                    <h5 class="card-title fw-bold">{% trans 'Impresión 3D' %}</h5>
                     <img style="height: 70px; margin-bottom: 15px;" src="{% static 'img/servicios/impresora-3d.png' %}" alt="">
                     <p class="card-text text-muted">
-                        Solicita la impresión de la pieza que necesites. El procedimiento es rápido y sencillo, al mejor precio.
+                        {% trans 'Solicita la impresión de la pieza que necesites. El procedimiento es rápido y sencillo, al mejor precio' %}.
                     </p>
                     <a href="{% url 'home_app:pedido_impresion' %}">
-                        <button class="btn fondo-azul-indart boton text-white">Imprimir</button>
+                        <button class="btn fondo-azul-indart boton text-white">{% trans 'Imprimir' %}</button>
                     </a>
                 </div>
             </div>
@@ -81,13 +80,13 @@
         <div class="col-md-4 mb-4">
             <div class="card shadow-lg border-0">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Escaneado 3D</h5>
+                    <h5 class="card-title fw-bold">{% trans 'Escaneado 3D' %}</h5>
                     <img style="height: 70px; margin-bottom: 15px;" src="{% static 'img/servicios/escaner-3d.png' %}" alt="">
                     <p class="card-text text-muted">
-                        Podemos escanear cualquier pieza para su diseño y tratamiento. Garantizamos resultados de alta calidad.
+                        {% trans 'Podemos escanear cualquier pieza para su diseño y tratamiento. Garantizamos resultados de alta calidad' %}.
                     </p>
                     <a href="{% url 'home_app:pedido_impresion' %}">
-                        <button class="btn fondo-azul-indart boton text-white">Escanear</button>
+                        <button class="btn fondo-azul-indart boton text-white">{% trans 'Escanear' %}</button>
                     </a>
                 </div>
             </div>
@@ -96,13 +95,13 @@
         <div class="col-md-4 mb-4">
             <div class="card shadow-lg border-0">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Formación 3D</h5>
+                    <h5 class="card-title fw-bold">{% trans 'Formación 3D' %}</h5>
                     <img style="height: 70px; margin-bottom: 15px;" style="height: 30px;" src="{% static 'img/servicios/formacion.png' %}" alt="">
                     <p class="card-text text-muted">
-                        Impartimos formación tanto a empresas como a particulares. Aprende con los mejores expertos.
+                        {% trans 'Impartimos formación tanto a empresas como a particulares. Aprende con los mejores expertos' %}.
                     </p>
                     <a href="{% url 'home_app:formulario_pedidos' %}">
-                        <button class="btn fondo-azul-indart boton text-white">Formación</button>
+                        <button class="btn fondo-azul-indart boton text-white">{% trans 'Formación' %}</button>
                     </a>
                 </div>
             </div>
@@ -115,12 +114,12 @@
             <!-- Texto -->
             <div class="col-md-6 py-5">
                 <h2 class="fw-bold">
-                    No es <span style="color: #E63946;">tarde</span>, tampoco 
-                    <span style="color: #F4A261;">temprano</span>. Es el 
-                    <span style="color: #6D6875;">momento</span>.
+                    No es <span style="color: #E63946;">{% trans 'tarde' %}</span>, {% trans 'tampoco' %} 
+                    <span style="color: #F4A261;">{% trans 'temprano' %}</span>. {% trans 'Es el' %}
+                    <span style="color: #6D6875;">{% trans 'momento' %}</span>.
                 </h2>
                 <a href="{% url 'home_app:contacto' %}" class="btn fondo-azul-indart mt-4 px-4 py-2 text-white boton" style="border: none;">
-                    Contacta con Nosotros
+                    {% trans 'Contacta con Nosotros' %}
                 </a>
             </div>
             <!-- Logo -->

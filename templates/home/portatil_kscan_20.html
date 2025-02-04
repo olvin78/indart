@@ -10,27 +10,230 @@
 {% endblock %}
 
 {% block content %}
-<div class="text-center" style="height: 600px;padding-top: 50px;">
-    <!-- Icono del bot -->
-    <video class="mx-auto d-block scaled-video" autoplay loop muted playsinline style="height: 150px;">
-        <source src="{% static 'media/minibootIndart.mp4' %}" type="video/mp4">
-      </video>
-      <br>
-    <h3 style="margin-top: 70px;">Hola, aún estoy en desarrollo, ¡no podrás ver el contenido!</h3>
-    <br>
-    <img src="{% static 'img/logo/logo-indart-removebg-preview.png' %}" alt="">
-</div>
 
 <!--=============================================
         Contenido principal
 ==================================================-->
 
+<div class="bg-light">
+  <section class="container my-5">
+    <!-- Título principal -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold" style="font-size: 2rem;">{% trans 'KSCAN20' %}</h1>
+    </div>
+
+    <!-- Primera fila: Video a la izquierda, texto a la derecha -->
+    <div class="row align-items-center mb-5 py-5">
+      <!-- Video -->
+      <div class="col-md-6 text-center">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/iogofjm28IA?si=axlu8UD3pw70CYPD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- Texto -->
+      <div class="col-md-6">
+        <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Redefine el concepto de escáner 3D portátil' %}</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'El escáner KSCAN20 3D es un escáner 3D profesional con las más amplias aplicaciones' %}.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'KSCAN20 se encuentra en la vanguardia de la iniciativa tecnológica mundial al integrar en un mismo dispositivo un sistema de fotogrametría y un modo de escáner láser dual' %}.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'Gracias a que el escáner cuenta con modo de luz Infrarroja y de luz azul, el KSCAN20 ofrece la máxima eficiencia con sus 650,000 mediciones/s, capturando detalles de alta precisión con una resolución de 10 μm y 0,020 mm de precisión. El sistema de fotogrametría incorporado expande el área de escaneo a una superficie de 2500 mm × 3000 mm y mejora la precisión volumétrica a una precisión de 0,035 mm/m' %}.
+        </p>
+      </div>
+    </div>
+
+    <!-- Segunda fila: Texto a la izquierda, imagen a la derecha -->
+    <div class="row align-items-center  py-5">
+      <!-- Texto -->
+      <div class="col-md-6">
+        <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Tecnología de medición' %}</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'KSCAN20 es capaz de adquirir correctamente la datos 3D de superficies planas, ahuecadas, agujeros, bordes, etc. También puede usarse junto con ScanViewer para llevar a cabo distintas funciones de inspección tales como inspecciones de tuberías, detección de deformaciones y GD&T, lo que lo convierte en una tecnología de medición efectiva, fiable y de gran escala 3D para el diseño de productos e inspecciones profesionales' %}.
+        </p>
+      </div>
+      <!-- Imagen -->
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/kscan20/kscan-1.png' %}" alt="Tecnología de medición" class="img-fluid">
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--=================================================
+            segunda seccion 
+=====================================================-->
+
+<div class="">
+  <section class="container my-5">
+    <!-- Fila 1: Imagen a la izquierda, texto a la derecha -->
+    <div class="row align-items-center mb-5 py-5">
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/kscan20/kscan-2.jpg' %}" alt="Rango de medición sin límites" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Rango de medición sin límites' %}</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'Excelente rendimiento tanto para escanear objetos de gran tamaño así como también pequeñas piezas. Captura la información 3D de plano e incluso de una moneda de manera realista' %}.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Fila 2: Texto a la izquierda, imagen a la derecha -->
+    <div class="row align-items-center py-5">
+      <div class="col-md-6">
+        <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Fotogrametría incorporada' %}</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'La precisión volumétrica es de hasta 0,035 mm/m brindando mayor facilidad al escanear objetos grandes' %}.
+        </p>
+        <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Escaneo rápido' %}</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'KSCAN optimiza cada proceso de escaneo y reduce en gran medida el coste del dispositivo, el tiempo y el trabajo' %}.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/kscan20/kscan-3.jpg' %}" alt="Fotogrametría incorporada" class="img-fluid ">
+      </div>
+    </div>
+  
+    <!-- Fila 3: Imagen a la izquierda, texto a la derecha -->
+    <div class="row align-items-center py-5">
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/kscan20/kscan-4.jpg' %}" alt="Función de exploración" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Función de exploración' %}</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          {% trans 'La CMM portátil funciona con distintos modos de trabajo, lo que permite un mayor rendimiento al momento de medir cavidades, puntos ocultos, características, detección de ensamblaje, etc' %}.
+        </p>
+      </div>
+    </div>
+    
+  </section>
+</div>
+
+<section class="container my-5">
+  <div class="row align-items-center py-5">
+    <!-- Texto -->
+    <div class="col-md-6">
+      <h2 class="fw-bold" style="font-size: 1.5rem;">{% trans 'Dos láser en un único escáner' %}</h2>
+      <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+        {% trans 'Los modos de escáner de luz azul y de luz Infrarroja integran gran flexibilidad y eficiencia' %}.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+        {% trans 'La función láser de luz azul captura fácilmente los detalles mínimos con una resolución de 10 μm' %}.
+      </p>
+    </div>
+    <!-- Imagen -->
+    <div class="col-md-6 text-center">
+      <img src="{% static 'img/kscan20/kscan20-5.jpg' %}" alt="Dos láser en un único escáner" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+
+<section class="container my-5">
+  <!-- Título -->
+  <div class="text-center mb-5">
+    <h2 class="fw-bold" style="font-size: 2rem;">{% trans 'Características' %}</h2>
+  </div>
+
+  <div class="row align-items-center">
+    <!-- Imagen -->
+    <div class="col-md-6 text-center">
+      <img src="{% static 'img/kscan20/kscan-6.png' %}" alt="Escáner" class="img-fluid">
+    </div>
+
+    <!-- Detalles -->
+    <div class="col-md-6">
+      <ul style="list-style-type: none; padding: 0; font-size: 1rem; line-height: 1.8; color: #555;">
+        <li><strong>Escaneado:</strong> Tecnología: Láser azul y láser rojo</li>
+        <li><strong>Modos de escaneado:</strong>
+          <ul>
+            <li>Modo estándar R / 7 cruces de láser rojo + 1 línea roja extra</li>
+            <li>Modo extrafino B / 5 líneas de láser azul paralelas</li>
+          </ul>
+        </li>
+        <li><strong>Precisión (Single point):</strong> 0.020 mm</li>
+        <li><strong>Precisión Volumétrica:</strong>
+          <ul>
+            <li>0.020 mm + 0.015 mm/m (Modo estándar R)</li>
+            <li>0.010 mm + 0.015 mm/m (Modo extrafino B)</li>
+          </ul>
+        </li>
+        <li><strong>Resolución:</strong>
+          <ul>
+            <li>Modo estándar R / 0.050 mm</li>
+            <li>Modo extrafino B / 0.010 mm</li>
+          </ul>
+        </li>
+        <li><strong>Distancia de trabajo:</strong> 300 mm</li>
+        <li><strong>Área de escaneado:</strong> 550 mm × 600 mm</li>
+        <li><strong>Volumen de escaneado:</strong>
+          <ul>
+            <li>Min: 10×10×10 mm</li>
+            <li>Max: 10000×10000×10000 mm</li>
+          </ul>
+        </li>
+        <li><strong>Captura de textura:</strong> No</li>
+        <li><strong>Formato de exportación de ficheros:</strong> STL, PLY, OBJ, IGS, WRL, XYZ, DAE, FBX, MA, ASC</li>
+        <li><strong>Software & Hardware:</strong>
+          <ul>
+            <li>Software: ScanViewer</li>
+            <li>Sistema operativo: Windows 10 de 64-bit</li>
+            <li>Conectividad: USB 3.0</li>
+          </ul>
+        </li>
+        <li><strong>Requisitos mínimos:</strong>
+          <ul>
+            <li>Tarjeta gráfica: NVIDIA Quadro T1000</li>
+            <li>Memoria de video: 4 Gb</li>
+            <li>Procesador: Intel Core i7 o superior</li>
+            <li>RAM: 32GB</li>
+            <li>Conectividad: USB 3.0</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
 
 
+ <!--==============================================================
+        este es el apartado del Carrusel pequeño y centrado
+    =============================================================== -->
+    <div class="bg-light">
+      <div class="container d-flex justify-content-center my-4 py-5">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 700px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="{% static 'doc/KSCAN-20-ESP.pdf' %}" target="_blank">
+                        <img src="{% static 'img/kscan20/kscan-carousel-1.png' %}" class="d-block w-100" alt="Vista detallada de las especificaciones técnicas del escáner 3D IT3D Scan ONE">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="{% static 'doc/KSCAN-20-ESP.pdf' %}" target="_blank">
+                        <img src="{% static 'img/kscan20/kscan-carousel-2.png' %}" class="d-block w-100" alt="Presentación del diseño compacto y ergonómico del escáner 3D IT3D Scan ONE">
+                    </a>
+                </div>
+            </div>
 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
 
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+  </div>
 
   
 {% endblock %}

@@ -18,7 +18,7 @@
    
         <!-- Sección del formulario -->
         <div class="col-md-6">
-            <h3 class="fw-bold text-center mb-4">Hacer Pedido</h3>
+            <h3 class="fw-bold text-center mb-4">{% trans 'Hacer Pedido' %}</h3>
             
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -73,13 +73,13 @@
                     <div class="col-md-12 form-check">
                         {{ form.privacy_policy }}
                         <label for="politicaPrivacidad" class="form-check-label">
-                            He leído y acepto la política de privacidad y el <a style="text-decoration: none;color: #4bb5c1;" href="{% url 'home_app:aviso_legal' %}">aviso legal</a>
+                            {% trans 'He leído y acepto la política de privacidad y el' %} <a style="text-decoration: none;color: #4bb5c1;" href="{% url 'home_app:aviso_legal' %}">{% trans 'aviso legal' %}</a>
                         </label>
                     </div>
             
                     <!-- Botón de Envío -->
                     <div class="col-md-12">
-                        <button type="submit" class="btn fondo-azul-indart w-100 mt-3">Enviar Solicitud</button>
+                        <button type="submit" class="btn fondo-azul-indart w-100 mt-3">{% trans 'Enviar Solicitud' %}</button>
                     </div>
             
                 </div>
@@ -92,7 +92,7 @@
 
           <!-- Sección de la imagen -->
           <div class="col-md-6 position-relative text-center py-5">
-            <h6 style="font-size: 18px;">Me encargaré de poner a mi equipo en contacto <br> lo más pronto.</h6>
+            <h6 style="font-size: 18px;">{% trans 'Me encargaré de poner a mi equipo en contacto' %} <br> {% trans 'lo más pronto' %}.</h6>
             
             <div
                 id="dynamic-image"
