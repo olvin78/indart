@@ -71,7 +71,9 @@
                     <p class="card-text text-muted">
                         Solicita la impresión de la pieza que necesites. El procedimiento es rápido y sencillo, al mejor precio.
                     </p>
-                    <button class="btn fondo-azul-indart boton text-white">Imprimir</button>
+                    <a href="{% url 'home_app:pedido_impresion' %}">
+                        <button class="btn fondo-azul-indart boton text-white">Imprimir</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,7 +86,9 @@
                     <p class="card-text text-muted">
                         Podemos escanear cualquier pieza para su diseño y tratamiento. Garantizamos resultados de alta calidad.
                     </p>
-                    <button class="btn fondo-azul-indart boton text-white">Escanear</button>
+                    <a href="{% url 'home_app:pedido_impresion' %}">
+                        <button class="btn fondo-azul-indart boton text-white">Escanear</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -97,7 +101,9 @@
                     <p class="card-text text-muted">
                         Impartimos formación tanto a empresas como a particulares. Aprende con los mejores expertos.
                     </p>
-                    <button class="btn fondo-azul-indart boton text-white">Formación</button>
+                    <a href="{% url 'home_app:formulario_pedidos' %}">
+                        <button class="btn fondo-azul-indart boton text-white">Formación</button>
+                    </a>
                 </div>
             </div>
         </div>

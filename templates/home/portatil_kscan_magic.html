@@ -10,20 +10,250 @@
 {% endblock %}
 
 {% block content %}
-<div class="text-center" style="height: 600px;padding-top: 50px;">
-    <!-- Icono del bot -->
-    <video class="mx-auto d-block scaled-video" autoplay loop muted playsinline style="height: 150px;">
-        <source src="{% static 'media/minibootIndart.mp4' %}" type="video/mp4">
-      </video>
-      <br>
-    <h3 style="margin-top: 70px;">Hola, aún estoy en desarrollo, ¡no podrás ver el contenido!</h3>
-    <br>
-    <img src="{% static 'img/logo/logo-indart-removebg-preview.png' %}" alt="">
-</div>
+
 
 <!--=============================================
         Contenido principal
 ==================================================-->
+<div class="bg-light p-3">
+  <section class="container my-5">
+    <h2 class="text-center py-5 texto-azul-indart">KSCAN-MAGIC </h2>
+    <!-- Primera sección -->
+    <div class="row align-items-center mb-5">
+        <!-- Video de YouTube -->
+        <div class="col-md-6 text-center">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QiPNjndycC8?si=FJ70vv4KpE61iT7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+        </div>
+        <!-- Texto explicativo -->
+        <div class="col-md-6">
+            <h2 class="fw-bold texto-azul-indart">Tecnología láser infrarrojo y azul</h2>
+            <p>
+                El escáner 3D integrado KSCAN-Magic introduce por primera vez la tecnología de 
+                láser infrarrojo y láser azul con cinco modos de trabajo estándar: escaneo de 
+                superficie paralela amplia por láser infrarrojo de iniciativa global, escaneo rápido de 
+                cruces de luz azul, escaneo azul fino de paralelos, escaneo de agujeros profundos de 
+                láser azul simple, sistema de fotogrametría integrado.
+            </p>
+        </div>
+    </div>
+
+    <!-- Segunda sección -->
+    <div class="row align-items-center">
+        <!-- Imagen -->
+        <div class="col-md-6 text-center order-md-2">
+            <img src="{% static 'img/kscan-magic/kscan-magic1.jpg' %}" alt="Escaneo ultra rápido" class="img-fluid">
+        </div>
+        <!-- Texto explicativo -->
+        <div class="col-md-6 order-md-1">
+            <h2 class="fw-bold texto-azul-indart">Escaneo ultra rápido</h2>
+            <p>
+                KSCAN-Magic representa un avance revolucionario en cuanto al rendimiento. Su 
+                inigualable velocidad de escaneo, precisión, detalle, área de escaneo y profundidad 
+                de campo optimiza el flujo de trabajo de las mediciones 3D y hace que el producto 
+                salga más rápido al mercado. Para poder obtener datos de superficies complejas o 
+                de difícil acceso, se puede equipar al KSCAN-Magic con un CMM K-Probe portátil que 
+                proporciona una solución digital 3D integral para la precisión de las mediciones.
+            </p>
+        </div>
+    </div>
+  </section>
+</div>
+
+
+
+<section class="container my-5">
+    <!-- Título -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold texto-azul-indart py-4" style="font-size: 1.8rem; font-weight: bold;">Galería</h2>
+    </div>
+    
+    <!-- Galería de imágenes -->
+    <div class="row g-4">
+        <!-- Imagen 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="{% static 'img/kscan-magic/kscan-magic-2.png' %}" alt="Producto 1" class="img-fluid img-clickable" 
+                    style="width: 100%; height: 300px; object-fit: cover; cursor: pointer;">
+            </div>
+        </div>
+        <!-- Imagen 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="{% static 'img/kscan-magic/kscan-magic-3.png' %}" alt="Producto 2" class="img-fluid img-clickable" 
+                    style="width: 100%; height: 300px; object-fit: cover; cursor: pointer;">
+            </div>
+        </div>
+        <!-- Imagen 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="{% static 'img/kscan-magic/kscan-magic-4.png' %}" alt="Producto 3" class="img-fluid img-clickable" 
+                    style="width: 100%; height: 300px; object-fit: cover; cursor: pointer;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para imagen ampliada -->
+<div id="imageModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1050; justify-content: center; align-items: center;">
+    <span style="position: absolute; top: 20px; right: 20px; font-size: 2rem; color: white; cursor: pointer;" id="closeModal">&times;</span>
+    <img id="modalImage" src="" alt="Imagen ampliada" style="max-width: 90%; max-height: 90%; border-radius: 10px;">
+</div>
+
+
+
+<section class="container my-5">
+  <!-- Título -->
+  <div class="text-center mb-5 py-5">
+    <h2 class="fw-bold texto-azul-indart">Características</h2>
+  </div>
+  
+  <div class="row align-items-start">
+    <!-- Imagen -->
+    <div class="col-md-4 text-center">
+      <img src="{% static 'img/kscan-magic/kscan-magic-5.png' %}" alt="Producto" class="img-fluid">
+    </div>
+
+    <!-- Lista de características -->
+    <div class="col-md-8">
+      <div class="card border-0  p-4">
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>Escaneado:</strong><br>
+            Tecnología: Láser azul y láser infrarrojo<br>
+            Modos de escaneado:
+            <ul>
+              <li>Modo ultra rápido / 11 cruces de láser azul</li>
+              <li>Modo extrafino / 7 líneas de láser azul paralelas</li>
+              <li>Escaneo de área grande / 1 paralela Láser Infrarrojo</li>
+            </ul>
+          </li>
+          <li class="mb-3">
+            <strong>Precisión (Single point):</strong> 0.020 mm<br>
+            <strong>Precisión Volumétrica:</strong>
+            <ul>
+              <li>0.020 mm + 0.015 mm/m (Modo estándar R)</li>
+              <li>0.010 mm + 0.015 mm/m (Modo extrafino B)</li>
+              <li>0.010 mm + 0.015 mm/m (Con MSCAN-L15)</li>
+            </ul>
+          </li>
+          <li class="mb-3">
+            <strong>Resolución:</strong> 0.010 mm<br>
+            <strong>Modo extrafino B:</strong> 0.010 mm
+          </li>
+          <li class="mb-3">
+            <strong>Distancia de trabajo:</strong> 300 mm<br>
+            <strong>Área de escaneado:</strong> 1440 mm × 860 mm<br>
+            <strong>Volumen de escaneado:</strong>
+            <ul>
+              <li>Mín: 10×10×10 mm</li>
+              <li>Máx: 10000×10000×10000 mm</li>
+            </ul>
+          </li>
+          <li class="mb-3">
+            <strong>Captura de textura:</strong> No<br>
+            <strong>Formato de exportación de ficheros:</strong> STL, PLY, OBJ, IGS, WRL, XYZ, DAE, FBX, MA, ASC
+          </li>
+          <li class="mb-3">
+            <strong>Software & Hardware:</strong><br>
+            <strong>Software:</strong> ScanViewer<br>
+            <strong>Sistema operativo:</strong> Windows 10 de 64-bit<br>
+            <strong>Conectividad:</strong> USB 3.0
+          </li>
+          <li class="mb-3">
+            <strong>Requisitos mínimos:</strong>
+            <ul>
+              <li>Tarjeta gráfica: NVIDIA Quadro RTX 3000</li>
+              <li>Memoria de vídeo: 4 Gb</li>
+              <li>Procesador: Intel Core i7 o superior</li>
+              <li>RAM: 32GB</li>
+              <li>Conectividad: USB 3.0</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!--=======================================================
+        este es el apartado del Carrusel pequeño y centrado
+    ========================================================== -->
+    <div class="bg-light">
+    <div class="container d-flex justify-content-center my-4 py-5">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 700px;">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                      <img src="{% static 'img/kscan-magic/kscan-magic-carousel-1.png' %}" class="d-block w-100" alt="Vista detallada de las especificaciones técnicas del escáner 3D IT3D Scan ONE">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                      <img src="{% static 'img/kscan-magic/kscan-magic-carousel-2.png' %}" class="d-block w-100" alt="Presentación del diseño compacto y ergonómico del escáner 3D IT3D Scan ONE">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                      <img src="{% static 'img/kscan-magic/kscan-magic-carousel-3.png' %}" class="d-block w-100" alt="Ejemplo de escaneo 3D realizado con el IT3D Scan ONE, mostrando precisión y detalle">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                      <img src="{% static '/img/kscan-magic/kscan-magic-carousel-4.png' %}" class="d-block w-100" alt="Escaneo 3D de objetos industriales utilizando el escáner IT3D Scan ONE">
+                  </a>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+</div>
+
+
+
+<!--==================================================================
+          este es el script para el efecto de las imagenes de la galera
+          para que se vean en grande al hacer cllick
+=====================================================================-->
+
+<script>
+  // Seleccionamos todas las imágenes clicables
+  const images = document.querySelectorAll('.img-clickable');
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const closeModal = document.getElementById('closeModal');
+
+  // Añadimos evento de clic a cada imagen
+  images.forEach(image => {
+      image.addEventListener('click', () => {
+          modalImage.src = image.src; // Cambiamos la imagen del modal
+          modal.style.display = 'flex'; // Mostramos el modal
+      });
+  });
+
+  // Cerramos el modal al hacer clic en el botón de cerrar
+  closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+  });
+
+  // Cerramos el modal al hacer clic fuera de la imagen
+  modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+</script>
 
 
 

@@ -1,4 +1,5 @@
 {% extends 'home/base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block head %}
@@ -46,34 +47,36 @@
 
         <!-- Sección del formulario -->
         <div class="col-md-6">
-            <h3 class="fw-bold text-center mb-4">Hacer Pedido</h3>
+            <h3 class="fw-bold text-center mb-4">{% trans "Solicita Información" %}</h3>
             <form>
                 <div class="mb-3">
-                    <input type="text" class="form-control rounded-pill shadow-sm" placeholder="Escriba su Nombre" required>
+                    <input type="text" class="form-control rounded-pill shadow-sm" placeholder="{% trans 'Escriba su Nombre' %}" required>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control rounded-pill shadow-sm" placeholder="Escriba su Correo" required>
+                    <input type="email" class="form-control rounded-pill shadow-sm" placeholder="{% trans 'Escriba su Correo' %}" required>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control rounded-pill shadow-sm" placeholder="Nombre de la Empresa">
+                    <input type="text" class="form-control rounded-pill shadow-sm" placeholder="{% trans 'Nombre de la Empresa' %}">
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control rounded shadow-sm" rows="4" placeholder="Escriba el Mensaje" required></textarea>
+                    <textarea class="form-control rounded shadow-sm" rows="4" placeholder="{% trans 'Escriba el Mensaje' %}" required></textarea>
                 </div>
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" id="politicaPrivacidad">
                     <label class="form-check-label" for="politicaPrivacidad">
-                        He leído y acepto la <a href="#" class="texto-azul-indart text-decoration-underline">política de privacidad</a>
+                        {% trans "He leído y acepto la" %}
+                        <a href="#" class="texto-azul-indart text-decoration-underline">{% trans "política de privacidad" %}</a>
                     </label>
                 </div>
                  <!-- Botón de envío -->
                 <div class="text-center">
                     <button type="submit" id="send-button" class="btn fondo-azul-indart rounded-pill shadow-sm px-5">
-                        Envia Pedido →
+                        {% trans "Envia Pedido" %} →
                     </button>
                 </div>
             </form>
         </div>
+        
     </div>
 </section>
 

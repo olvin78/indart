@@ -10,27 +10,392 @@
 {% endblock %}
 
 {% block content %}
-<div class="text-center" style="height: 600px;padding-top: 50px;">
-    <!-- Icono del bot -->
-    <video class="mx-auto d-block scaled-video" autoplay loop muted playsinline style="height: 150px;">
-        <source src="{% static 'media/minibootIndart.mp4' %}" type="video/mp4">
-      </video>
-      <br>
-    <h3 style="margin-top: 70px;">Hola, aún estoy en desarrollo, ¡no podrás ver el contenido!</h3>
-    <br>
-    <img src="{% static 'img/logo/logo-indart-removebg-preview.png' %}" alt="">
-</div>
+
 
 <!--=============================================
         Contenido principal
 ==================================================-->
-
-
-
-
-
-
-
-
+<div class="bg-light py-5">
+<section class="container my-5">
+  <!-- Título -->
+  <div class="text-center mb-5">
+      <h1 class="fw-bold texto-azul-indart" style="font-size: 2rem;">Simscan</h1>
+  </div>
   
+  <!-- Contenido -->
+  <div class="row align-items-center">
+      <!-- Video -->
+      <div class="col-md-6 text-center">
+          <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C0G85knXoSQ?si=-cSESSd2u-lRDXrK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+      
+      <!-- Texto -->
+      <div class="col-md-6">
+          <h3 class="fw-bol texto-azul-indart" style="font-size: 1.5rem;">El único escáner 3D del tamaño de una mano</h3>
+          <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+              SIMSCAN, un escáner 3D portátil del tamaño de la palma de la mano, está especialmente diseñado para escanear en 3D zonas estrechas y de difícil acceso. 
+              Con una carcasa totalmente metálica, es increíblemente robusto y fiable. SIMSCAN se ha convertido en una innovación disruptiva entre los escáneres 3D profesionales gracias a su tamaño compacto, su sencillez y su sólido rendimiento. 
+              Su diseño vanguardista también se ha ganado el premio Red Dot alemán y el premio China Design Silver.
+          </p>
+          <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+              SIMSCAN realiza escaneos 3D de alta calidad independientemente de las restricciones del entorno de trabajo. 
+              Es ideal para escanear en 3D tanto espacios estrechos como piezas a gran escala. 
+              Los usuarios pueden capturar con precisión cada detalle de los objetos y construir modelos 3D en muy poco tiempo con la ayuda de este instrumento de medición 3D de grado metrológico.
+          </p>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--=================================================
+    segunda seccion del contenido con iconos
+======================================================-->
+<div class="container py-5">
+  <!-- Primera fila -->
+  <div class="row text-center g-4">
+    <div class="col-md-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 100px; height: 100px;">
+          <img src="{% static 'img/simscan/pixelcut-export(1).png' %}" alt="Escaneo 3D sin objetivos" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Premio de plata al diseño en China</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 100px; height: 100px;">
+          <img src="{% static 'img/simscan/iso(1).png' %}" alt="Medición ultrarrápida" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">ISO 17025</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 100px; height: 100px;">
+          <img src="{% static 'img/simscan/la-medida.png' %}" alt="Detección de bordes" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Distancia de la Cámara 130 mm</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Segunda fila -->
+  <div class="row text-center g-4 mt-4">
+    <div class="col-md-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 100px; height: 100px;">
+          <img src="{% static 'img/simscan/precision.png' %}" alt="Precisión 0.020 mm" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Precisión 0.020 mm</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 100px; height: 100px;">
+          <img src="{% static 'img/iconos/velocimetro.png' %}" alt="Velocidad de exploración" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Velocidad de exploración de hasta 2.800.000 mediciones/s</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center shadow" style="width: 100px; height: 100px;">
+          <img src="{% static 'img/simscan/bar.png' %}" alt="Peso Neto 570g" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+        <p class="fw-bold mt-3">Peso Neto 570g</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!--=============================================================
+                  tercera seccion
+=================================================================-->
+<section class="container my-5">
+  <!-- Fila 1: Texto a la izquierda, imagen a la derecha -->
+  <div class="row align-items-center mb-5 py-5">
+    <div class="col-md-6">
+      <h2 class="fw-bold texto-azul-indart" style="font-size: 1.8rem;">Control con una sola mano</h2>
+      <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+        La carcasa totalmente metálica de SIMSCAN proporciona una sólida protección y garantiza una extraordinaria durabilidad. 
+        Con un peso de sólo 570 g y un tamaño de 203 × 80 × 44 mm, el escáner 3D portátil de SIMSCAN aporta una simplicidad sin igual para escanear cualquier cosa con una sola mano.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+        Gracias a su estructura hueca, disipa el calor con mayor eficacia. El escáner 3D es eficiente a la hora de realizar mediciones con un bajo consumo de energía. 
+        Gracias a su versatilidad, puede satisfacer una amplia gama de necesidades de mediciones 3D.
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="{% static 'img/simscan/Simscan-1.jpg' %}" alt="Control con una sola mano" class="img-fluid rounded shadow">
+    </div>
+  </div>
+
+  <!-- Fila 2: Imagen a la izquierda, texto a la derecha -->
+  <div class="row align-items-center py-5">
+    <div class="col-md-6 text-center">
+      <img src="{% static 'img/simscan/Simscan-2.jpg' %}" alt="Refuerzo de medición" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h2 class="fw-bold texto-azul-indart" style="font-size: 1.8rem;">Refuerzo de medición en espacio estrecho</h2>
+      <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+        En comparación con sus competidores, SIMSCAN tiene una distancia de cámara mucho más corta de 130 mm, que forma un ángulo de visión más pronunciado para escanear en 3D espacios estrechos. 
+        Por tanto, SIMSCAN es más capaz de capturar datos precisos y completos en zonas de difícil acceso, como ranuras profundas, y garantiza a los usuarios la captura de datos de campo completo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--=============================================================
+                   cuarta seccion
+=================================================================-->
+<div class="bg-light py-5">
+  <section class="container my-5">
+    <!-- Fila 1: Texto a la izquierda, imagen a la derecha -->
+    <div class="row align-items-center mb-5 py-5">
+      <div class="col-md-6">
+        <h2 class="fw-bold texto-azul-indart" style="font-size: 1.8rem;">Grandes detalles en cada rincón</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          Con sus cámaras HD incorporadas y sus tres modos de escaneo, realiza un escaneo de alta precisión con una exactitud de hasta 0,020 mm. 
+          Puede capturar con exactitud los datos 3D de objetos con superficies complejas o en zonas reducidas.
+        </p>
+        <h3 class="fw-bold texto-azul-indart" style="font-size: 1.5rem;">Experiencia 3D fluida</h3>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          SIMSCAN puede escanear objetos 3D con una velocidad de hasta 2,8 millones de mediciones/s gracias a su sofisticado algoritmo. 
+          Está diseñado para ofrecer a los usuarios una experiencia de escaneado 3D fluida y eficaz.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/simscan/Simscan-3.jpg' %}" alt="Grandes detalles en cada rincón" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <!-- Fila 2: Imagen a la izquierda, texto a la derecha -->
+    <div class="row align-items-center py-5">
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/simscan/Simscan-4.jpg' %}" alt="Gran portabilidad" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold texto-azul-indart" style="font-size: 1.8rem;">Gran portabilidad</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          SIMSCAN tiene un tamaño compacto y una excelente portabilidad. No importa si se encuentra en espacios estrechos o bajo objetos enormes, 
+          el escáner 3D portátil SIMSCAN puede realizar mediciones 3D en cualquier momento y lugar. 
+          Cuando se combina con el enlace de comunicación inalámbrica AirGo Pro, admite la exploración 3D móvil y la visualización de datos para lograr experiencias de medición realmente flexibles, fiables y eficaces.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+          Gracias a sus botones multifuncionales, los usuarios pueden cambiar de modo en cualquier momento. Su funcionamiento con una sola mano permite una medición flexible y su diseño ergonómico hace que sea cómodo de usar. 
+          Diseñado con una carcasa antideslizante y una correa, es seguro para que los usuarios exploren en todas las direcciones libremente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+<section class="container my-5 py-5">
+  <div class="row align-items-center">
+    <!-- Texto a la izquierda -->
+    <div class="col-md-6">
+      <h2 class="fw-bold texto-azul-indart" style="font-size: 1.8rem;">Medición automatizada en 3D</h2>
+      <p style="font-size: 1rem; line-height: 1.6; color: #555;">
+        Puede emparejarse con el sistema de medición 3D automatizado de Scantech para lograr mediciones ininterrumpidas. 
+        La medición automatizada de lotes altos supera la limitación de los métodos tradicionales y mejora significativamente la eficiencia de todas las etapas de fabricación.
+      </p>
+    </div>
+    <!-- Imagen a la derecha -->
+    <div class="col-md-6 text-center">
+      <img src="{% static 'img/simscan/Simscan-5.jpg' %}" alt="Medición automatizada en 3D" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
+
+<!--=======================================================
+          este es el apartado de la tabla 
+============================================================-->
+
+<section class="container my-5 py-5">
+  <!-- Título -->
+  <div class="text-center mb-4 py-5">
+      <h2 class="fw-bold texto-azul-indart">Características</h2>
+  </div>
+
+  <!-- Tabla de características -->
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th>Tipo</th>
+          <th>SIMSCAN 42</th>
+          <th>SIMSCAN 30</th>
+          <th>SIMSCAN 22</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Modo de escaneo</td>
+          <td>Escaneado ultrarrápido<br>17 cruces láser azules</td>
+          <td>Escaneado ultrarrápido<br>11 cruces láser azules</td>
+          <td>Escaneado ultrarrápido<br>7 cruces láser azules</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Exploración hiperfina<br>7 líneas láser azules paralelas</td>
+          <td>Exploración hiperfina<br>7 líneas láser azules paralelas</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Exploración de agujeros profundos<br>1 línea láser azul adicional</td>
+          <td>Exploración de agujeros profundos<br>1 línea láser azul adicional</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Precisión<sup>(1)</sup></td>
+          <td>Hasta 0,020 mm</td>
+          <td>Hasta 0,020 mm</td>
+          <td>Hasta 0,020 mm</td>
+        </tr>
+        <tr>
+          <td>Velocidad de escaneo</td>
+          <td>Hasta 2.800.000 mediciones/s</td>
+          <td>Hasta 2.020.000 mediciones/s</td>
+          <td>Hasta 1.250.000 mediciones/s</td>
+        </tr>
+        <tr>
+          <td>Área de escaneo</td>
+          <td>Hasta 700 mm × 600 mm</td>
+          <td>Hasta 650 mm × 550 mm</td>
+          <td>Hasta 650 mm × 550 mm</td>
+        </tr>
+        <tr>
+          <td>Clase láser</td>
+          <td>Clase II (seguro para los ojos)</td>
+          <td>Clase II (seguro para los ojos)</td>
+          <td>Clase II (seguro para los ojos)</td>
+        </tr>
+        <tr>
+          <td>Resolución</td>
+          <td>Hasta 0,020 mm</td>
+          <td>Hasta 0,020 mm</td>
+          <td>Hasta 0,020 mm</td>
+        </tr>
+        <tr>
+          <td>Precisión del volumen<sup>(2)</sup></td>
+          <td>Estándar: 0,015 mm + 0,035 mm/m<br>Emparejado con MSCAN-L15: 0,015 mm + 0,012 mm/m</td>
+          <td>Estándar: 0,015 mm + 0,035 mm/m<br>Emparejado con MSCAN-L15: 0,015 mm + 0,012 mm/m</td>
+          <td>Estándar: 0,015 mm + 0,035 mm/m<br>Emparejado con MSCAN-L15: 0,015 mm + 0,012 mm/m</td>
+        </tr>
+        <tr>
+          <td>Distancia de separación</td>
+          <td>300 mm</td>
+          <td>300 mm</td>
+          <td>300 mm</td>
+        </tr>
+        <tr>
+          <td>Profundidad de campo</td>
+          <td>550 mm</td>
+          <td>550 mm</td>
+          <td>550 mm</td>
+        </tr>
+        <tr>
+          <td>Formatos de salida</td>
+          <td>pj3, asc, igs, txt, mk2, unx, stl, ply, obj</td>
+          <td>pj3, asc, igs, txt, mk2, unx, stl, ply, obj</td>
+          <td>pj3, asc, igs, txt, mk2, unx, stl, ply, obj</td>
+        </tr>
+        <tr>
+          <td>Rango de temperatura de funcionamiento</td>
+          <td>-10°C~40°C</td>
+          <td>-10°C~40°C</td>
+          <td>-10°C~40°C</td>
+        </tr>
+        <tr>
+          <td>Modo de interfaz</td>
+          <td>USB 3.0</td>
+          <td>USB 3.0</td>
+          <td>USB 3.0</td>
+        </tr>
+        <tr>
+          <td>Dimensiones</td>
+          <td>203 mm × 80 mm × 44 mm</td>
+          <td>203 mm × 80 mm × 44 mm</td>
+          <td>203 mm × 80 mm × 44 mm</td>
+        </tr>
+        <tr>
+          <td>Peso</td>
+          <td>570 g</td>
+          <td>570 g</td>
+          <td>570 g</td>
+        </tr>
+        <tr>
+          <td>Patentes</td>
+          <td>CN204329939U, CN1045017480, CN204944431U,<br>CN204907288U, CN105068384B, CN105406948B, CN204902785U,<br>CN106404354B, CN110039468B, CN123002929U,<br>CN211904059U, CN211696287U, CN306351019S,<br>CN212606697U, CN306321502S</td>
+          <td>CN204329939U, CN1045017480, CN204944431U,<br>CN204907288U, CN105068384B, CN105406948B, CN204902785U,<br>CN106404354B, CN110039468B, CN123002929U,<br>CN211904059U, CN211696287U, CN306351019S,<br>CN212606697U, CN306321502S</td>
+          <td>CN204329939U, CN1045017480, CN204944431U,<br>CN204907288U, CN105068384B, CN105406948B, CN204902785U,<br>CN106404354B, CN110039468B, CN123002929U,<br>CN211904059U, CN211696287U, CN306351019S,<br>CN212606697U, CN306321502S</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+
+ <!--==============================================================
+        este es el apartado del Carrusel pequeño y centrado
+    =============================================================== -->
+    <div class="bg-light">
+      <div class="container d-flex justify-content-center my-4 py-5">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 700px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                        <img src="{% static 'img/simscan/Simscan-carousel-1.png' %}" class="d-block w-100" alt="Vista detallada de las especificaciones técnicas del escáner 3D IT3D Scan ONE">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                        <img src="{% static 'img/simscan/Simscan-carousel-2.png' %}" class="d-block w-100" alt="Presentación del diseño compacto y ergonómico del escáner 3D IT3D Scan ONE">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                        <img src="{% static 'img/simscan/Simscan-carousel-3.png' %}" class="d-block w-100" alt="Ejemplo de escaneo 3D realizado con el IT3D Scan ONE, mostrando precisión y detalle">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                        <img src="{% static 'img/simscan/Simscan-carousel-4.png' %}" class="d-block w-100" alt="Escaneo 3D de objetos industriales utilizando el escáner IT3D Scan ONE">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="{% static 'doc/KSCAN-MAGIC-ESP-1.pdf' %}" target="_blank">
+                      <img src="{% static 'img/simscan/Simscan-5.jpg' %}" class="d-block w-100" alt="Escaneo 3D de objetos industriales utilizando el escáner IT3D Scan ONE">
+                  </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  
+
 {% endblock %}
