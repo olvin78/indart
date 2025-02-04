@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-29 00:22+0100\n"
+"POT-Creation-Date: 2025-02-04 09:07+0000\n"
 "PO-Revision-Date: 2025-02-03 14:54+0000\n"
 "Last-Translator:   <olvind78@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,1574 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
-#: indart/settings.py:145
+#: indart/settings.py:147
 #, fuzzy
 msgid "Spanish"
 msgstr "español"
 
 #: indart/settings.py:148
-msgid "Basque"
+msgid "English"
 msgstr ""
 
-#: templates/home/base.html:366
+#: templates/home/acanerAcolo-ireal_m3.html:33
+msgid "Escáner 3D a color iReal M3"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:35
+msgid ""
+"El escáner 3D a color de la serie iReal M (High SigmMatch Master) es una "
+"nueva serie de escáneres 3D profesionales desarrollados por SCANTECH. Sus "
+"modos de láser Infrarrojo y luz estructurada permiten la adquisición de "
+"datos 3D en diferentes aplicaciones, ya sea escaneando personas y objetos, "
+"en interiores o exteriores. iReal M ofrece soluciones profesionales de "
+"digitalización 3D a ingenieros 3D, diseñadores 3D e investigadores "
+"científicos para satisfacer sus demandas de diseño industrial, diseño "
+"artístico, diseño médico, digitalización del cuerpo humano"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:50
+#: templates/home/acanerAcolo-ireal_m3.html:72
+msgid "Escáner 3D profesional con luz dual, seguro y cómodo"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:52
+msgid ""
+"iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples "
+"tamaños y materiales en diversos escenarios gracias a sus láseres "
+"infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han "
+"pasado respectivamente los estándares de seguridad, no suponen ningún daño "
+"para los ojos humanos. Estas dos fuentes de luz invisibles pueden "
+"proporcionar experiencias de escaneo más adaptables y cómodas"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:55
+#: templates/home/acanerAcolo-ireal_m3.html:77
+msgid ""
+"iReal M3 adopta dos tipos de luces de relleno, que pueden ser controladas "
+"individualmente. La luz de relleno infrarroja invisible puede mejorar el "
+"reconocimiento de detalles y la adaptabilidad del material negro mate, "
+"mientras que la luz de relleno LED puede mejorar el brillo de la alineación "
+"de colores"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:74
+msgid ""
+"iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples "
+"tamaños y materiales en diversos escenarios gracias a sus láseres "
+"infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han "
+"pasado  respectivamente los estándares de seguridad, no suponen ningún daño "
+"para los ojos humanos. Estas dos fuentes de luz invisibles pueden "
+"proporcionar experiencias de escaneo más adaptables y cómodas"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:89
+msgid "Alto rendimiento"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:91
+msgid ""
+"iReal M3 presenta una precisión básica de hasta 0,1 mm y una precisión "
+"volumétrica de hasta 0,25 mm/m. Puede satisfacer las necesidades de captura "
+"de datos 3D en escenarios casi industriales para diversas escenas"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:94
+msgid ""
+"Con una resolución de hasta 0,1 mm, iReal M3 puede reconstruir estructuras "
+"geométricas de alta resolución y capturar detalles finos de los torsos, "
+"manejando fácilmente tareas de escaneo de objetos de más de 5 cm"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:97
+msgid ""
+"El ritmo de escaneo del iReal M3 alcanza los 15 fps, lo que mejora "
+"enormemente la eficiencia del escaneo para que los ingenieros puedan obtener "
+"rápidamente datos 3D de alta calidad"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:108
+msgid "Adaptabilidad a colores claros y oscuros"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:110
+msgid ""
+"En comparación con los láseres de color, las fuentes de luz infrarroja (luz "
+"invisible) se absorben relativamente menos cuando se proyectan sobre la "
+"superficie de diferentes colores. Por lo tanto, el Nuevo iReal M3, "
+"emparejado con luces infrarrojas, es más adaptable al escaneo 3D de objetos "
+"con colores intensos"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:113
+msgid ""
+"Gracias a su gran adaptabilidad a los materiales, es capaz de escanear en 3D "
+"piezas industriales, exteriores de automóviles e interiores con superficies "
+"negras y reflectantes"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:124
+msgid "Aplicaciones multisectoriales"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:126
+msgid ""
+"Los modos de láser infrarrojo y luz estructurada del escáner 3D a color "
+"iReal M3 permiten la adquisición de datos 3D sin problemas en múltiples "
+"aplicaciones: personas, objetos, interiores, exteriores... iReal M3 ofrece "
+"soluciones de digitalización 3D profesionales y versátiles para satisfacer "
+"sus demandas de diseño industrial, diseño artístico, diseño médico, "
+"digitalización del cuerpo humano"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:129
+msgid "Diseño industrial, diseño de ingeniería"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:130
+msgid "Digitalización 3D del cuerpo"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:131
+msgid "Arte y diseño"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:132
+msgid "Análisis de modelos 3D"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:133
+msgid "Investigación científica y educación"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:140
+#: templates/home/acanerAcolo-ireal_m3.html:175
+msgid "Software de mapeado iReal 3D"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:142
+#: templates/home/acanerAcolo-ireal_m3.html:176
+msgid "Solución de mapeo de texturas 3D de alta precisión y color real"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:153
+msgid "Ingeniería inversa"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:153
+msgid ""
+" Software complementario Geomagic Design X, QUICKSURFACE, complementos "
+"Mesh2Surface"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:154
+msgid "Mediciones y análisis 3D"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:154
+msgid ""
+" Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:170
+msgid "Visual del software de mapeado iReal 3D con colores reales"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:178
+msgid ""
+"iReal 3D ofrece un software completo que soporta soluciones en tres "
+"aplicaciones principales: adquisición de datos 3D de alta precisión y color "
+"real, diseño de ingeniería inversa y análisis de mediciones 3D"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:181
+msgid ""
+"iReal 3D Mapping se utiliza para mapear las fotos multilinguo tomadas por "
+"teléfonos móviles/SLR al modelo escaneado, mediante un proceso inteligente y "
+"semiautomático para obtener un modelo 3D de alta precisión, alta definición "
+"y color real"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:185
+msgid "Ingeniería inversa:"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:186
+msgid ""
+"Software complementario Geomagic Design X, QUICKSURFACE, complementos "
+"Mesh2Surface"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:189
+msgid "Mediciones y análisis 3D:"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:190
+msgid ""
+"Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X"
+msgstr ""
+
+#: templates/home/acanerAcolo-ireal_m3.html:199
+#: templates/home/autoScan-t42.html:170 templates/home/bf_modular.html:348
+#: templates/home/irealze.html:152 templates/home/mini_pro.html:28
+#: templates/home/nx_modular.html:362 templates/home/scanerAcolor_it3d.html:189
+msgid "Características"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:20
+msgid "ALIMENTADOR MODULAR DE PELLET"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:32
+msgid "Alimentador Automático de Pellets"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:34
+msgid ""
+"Optimiza tu experiencia con la impresión 3D de gran formato. El Alimentador "
+"Automático de Pellets es el accesorio ideal para tu impresora 3D equipada "
+"con tecnología de pellets. Este sistema autónomo alimenta directamente la "
+"tolva del cabezal, eliminando la necesidad de realizar esta tarea de forma "
+"manual y permitiéndote centrarte en lo realmente importante: tus proyectos"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:37
+msgid ""
+"Al combinar en una sola máquina la capacidad de trabajar con pellets y la "
+"automatización que ofrece este alimentador, se logra un equipo innovador que "
+"destaca en el sector de la fabricación aditiva"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:47
+msgid "Características del Alimentador"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:58
+msgid ""
+"El dispositivo incluye un depósito de 40 cm de altura con capacidad para "
+"7,06 dm³ de pellets, asegurando un suministro continuo. Además, incorpora un "
+"sensor de fin de material en la salida para gestionar automáticamente la "
+"reposición"
+msgstr ""
+
+#: templates/home/alimetador_de_pellet.html:61
+msgid ""
+"También cuenta con sensores de temperatura y humedad en su base, que "
+"monitorizan estas variables para mantener las condiciones óptimas de "
+"funcionamiento"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:31
+msgid "Sistema AutoScan-K 3D"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:33
+msgid ""
+"La serie AutoScan-K es un sistema de inspección 3D automático, que permite "
+"realizar la inspección sin contacto y no destructiva, aprovechando la "
+"tecnología de visión de máquina. Puede llevar a cabo eficazmente el escaneo "
+"e inspección por lotes en línea mientras garantiza una precisión ultra alta"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:36
+msgid ""
+"Con operación constante por 24 horas, el sistema AutoScan-K 3D ayuda a las "
+"empresas a reducir los costos de fabricación, acelerar el lanzamiento al "
+"mercado e incrementar el retorno de inversión"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:39
+msgid ""
+"Equipado con múltiples modos de trabajo, el sistema AutoScan-K 3D puede "
+"adaptarse a la medición en varias escenas industriales. Además, controla con "
+"precisión los movimientos del robot basados en algoritmos avanzados, "
+"realizando la inspección eficiente y automática"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:54
+msgid "Inspección automática durante todo el proceso"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:56 templates/home/autoScan-k-3D.html:82
+msgid ""
+"El AutoScan-K puede llevar a cabo automáticamente, sin la intervención "
+"humana, el escaneado e inspección en 3D por lotes para la comparación de "
+"datos y generar informes de inspección después de configurar rutas de "
+"escaneado y procesos de medición para diferentes productos"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:101
+msgid "Operación personalizada"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:103
+msgid ""
+"Se ofrecen múltiples modos de medición de acuerdo con las características de "
+"diferentes piezas. Para satisfacer los diferentes requisitos de inspección, "
+"las piezas se pueden sujetar desde múltiples ángulos para configurar las "
+"rutas de inspección"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:116 templates/home/autoScan-k-3D.html:140
+msgid "NDT seguro y confiable"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:118 templates/home/autoScan-k-3D.html:142
+msgid ""
+"El AutoScan-K logra realmente la prueba inteligente sin contacto y no "
+"destructiva basada en la tecnología de medición óptica automatizada, que es "
+"segura, confiable y aplicable a diferentes entornos de taller. Sus mesas "
+"giratorias inteligentes industriales hacen posible la inspección eficiente "
+"sin ángulos ciegos"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:161
+msgid "Medición precisa y efectiva"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:162
+msgid ""
+"El AutoScan-K puede inspeccionar piezas de diferentes tamaños y pesos y las "
+"hechas de diferentes materiales. Puede generar hasta 45 líneas láser para el "
+"escaneado de datos de alta densidad, con la velocidad de hasta 1,650,000 por "
+"segundo. Permite una inspección precisa 3D en ambiente hostil industrial con "
+"resolución de hasta 0,010 mm y precisión de hasta 0,030 mm/m"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:165
+msgid "Desarrollo Secundario"
+msgstr ""
+
+#: templates/home/autoScan-k-3D.html:165
+msgid ""
+"El desarrollo secundario permite a los operadores controlar el sistema "
+"llamando a la interfaz SDK"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:34
+msgid "Sistema AutoScan-T42 3D"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:36
+msgid ""
+"El sistema automatizado AutoScan-T42 3D es una nueva actualización para la "
+"inspección automática inteligente. Está diseñado especialmente para el "
+"control de calidad automatizado en los talleres, facilitando a las empresas "
+"alcanzar la coincidencia óptima entre costo y eficiencia"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:39
+msgid ""
+"El AutoScan-T42 conduce el escaneado no destructivo sin adjuntar marcadores. "
+"Su conexión perfecta con la línea de producción contribuye considerablemente "
+"a reducir el volumen del trabajo. La calidad de fabricación del grado "
+"militar cuenta con fuerte anti-interferencia y alta adaptación al entorno de "
+"taller complejo y hostil"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:51 templates/home/autoScan-t42.html:74
+msgid "Funciona perfectamente con línea de producción"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:53 templates/home/autoScan-t42.html:76
+msgid ""
+"Basado en el seguimiento óptico automático e integrado perfectamente en la "
+"línea de producción, está diseñado para la inspección por lotes online y "
+"mejora en gran medida la eficiencia iterativa del proceso de producción"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:91
+msgid "Múltiples configuraciones"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:93
+msgid ""
+"En combinación con el escáner de mano 3D, CMM portátil, sistema de "
+"fotogrametría MSCAN, plataformas giratorias y rieles-guía, realizando "
+"simultáneo seguimiento óptico y escaneado y soluciones personalizadas"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:106 templates/home/autoScan-t42.html:118
+msgid "Acelerar la inspección precisa"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:108
+msgid ""
+"Adoptando láser azul y tecnologías de seguimiento simultáneo, alcanza hasta "
+"1,900,000 mediciones/s y una precisión de 0,025 mm. La fabricación "
+"automatizada eficiente y flexible puede lograrse sin verse afectada por "
+"factores externos"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:120
+msgid ""
+"Adoptando láser azul y tecnologías de seguimiento simultáneo, alcanza hasta "
+"1,900,000 mediciones/s y una precisión de 0,025 mm. La fabricación "
+"automatizada eficiente y flexible puede lograrse sin verse afectada por "
+"factores externos¡"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:136 templates/home/autoScan-t42.html:152
+msgid "Calidad de grado militar"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:138
+msgid ""
+"El diseño del grado militar presenta una adaptabilidad excelente en entornos "
+"hostiles industriales sin ser insensible a la temperatura, la vibración, el "
+"polvo"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:140 templates/home/autoScan-t42.html:156
+msgid "Operación Simple"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:142 templates/home/autoScan-t42.html:158
+msgid ""
+"Gracias al arranque con un clic, programación offline y generación "
+"automática de inspección, los usuarios operen y completan la medición "
+"fácilmente sin importar su experiencia"
+msgstr ""
+
+#: templates/home/autoScan-t42.html:154
+msgid ""
+"El diseño del grado militar presenta una adaptabilidad excelente en entornos "
+"hostiles industriales sin ser insensible a la temperatura, la vibración, el "
+"polvo, etc"
+msgstr ""
+
+#: templates/home/base copy.html:394 templates/home/base.html:261
 msgid "Nosotros"
+msgstr ""
+
+#: templates/home/base copy.html:396 templates/home/base.html:263
+#: templates/home/base.html:347
+msgid "Contacto"
+msgstr ""
+
+#: templates/home/base copy.html:400 templates/home/base.html:267
+msgid "Subvenciones"
+msgstr ""
+
+#: templates/home/base.html:236
+msgid "Material"
+msgstr ""
+
+#: templates/home/base.html:238
+msgid "Pellet"
+msgstr ""
+
+#: templates/home/base.html:239
+msgid "Filamento"
+msgstr ""
+
+#: templates/home/base.html:240
+msgid "Materiales validados"
+msgstr ""
+
+#: templates/home/base.html:244 templates/home/index.html:84
+msgid "Servicios 3D"
+msgstr ""
+
+#: templates/home/base.html:246
+msgid "Servocios"
+msgstr ""
+
+#: templates/home/base.html:247
+msgid "Servicio de Validación e <br> impresión 3D con Pellet"
+msgstr ""
+
+#: templates/home/base.html:254
+msgid "Soporte"
+msgstr ""
+
+#: templates/home/base.html:256
+msgid "Soporte Técnico"
+msgstr ""
+
+#: templates/home/base.html:257
+msgid "Manual y Configuración"
+msgstr ""
+
+#: templates/home/base.html:285
+msgid "Quiénes somos"
+msgstr ""
+
+#: templates/home/base.html:332
+msgid "Innovación y Desarrollo 3D"
+msgstr ""
+
+#: templates/home/base.html:340
+msgid "Creadores de"
+msgstr ""
+
+#: templates/home/base.html:342
+msgid "Web creada por Indart3D"
+msgstr ""
+
+#: templates/home/base.html:363
+msgid "Contactar"
+msgstr ""
+
+#: templates/home/base.html:370
+msgid "Horario"
+msgstr ""
+
+#: templates/home/base.html:371 templates/home/base.html:378
+msgid "Lunes"
+msgstr ""
+
+#: templates/home/base.html:371
+msgid "Jueves"
+msgstr ""
+
+#: templates/home/base.html:377
+msgid "Horario de Verano"
+msgstr ""
+
+#: templates/home/base.html:378
+msgid "Viernes"
+msgstr ""
+
+#: templates/home/base.html:382
+msgid "Aviso legal"
+msgstr ""
+
+#: templates/home/base.html:384
+msgid "Cookies"
+msgstr ""
+
+#: templates/home/base.html:386
+msgid "Políticas de Privacidad"
+msgstr ""
+
+#: templates/home/bf_modular.html:86
+msgid "Sistema de Cabezales Independientes, Modulares e Intercambiables"
+msgstr ""
+
+#: templates/home/bf_modular.html:100
+msgid ""
+"La Tumaker BigFoot Modular es una impresora 3D diseñada para redefinir la "
+"fabricación aditiva a gran escala. Gracias a su sistema modular de cabezales "
+"intercambiables e independientes, esta impresora combina flexibilidad y "
+"rendimiento, adaptándose a las necesidades de los usuarios más exigentes"
+msgstr ""
+
+#: templates/home/bf_modular.html:103
+msgid ""
+"Con capacidad para integrar hasta dos cabezales, la BigFoot Modular ofrece "
+"la posibilidad de trabajar con tecnología de Pellets o Filamento, "
+"permitiendo personalizar cada equipo según las demandas específicas de cada "
+"proyecto. Este enfoque modular, combinado con su amplio volumen de impresión "
+"de 500 x 500 x 500 mm, la convierte en la herramienta ideal para producir "
+"piezas funcionales y complejas con una precisión sobresaliente"
+msgstr ""
+
+#: templates/home/bf_modular.html:106
+msgid ""
+"Su estructura completamente cerrada, equipada con filtros, asegura un "
+"entorno de trabajo seguro y limpio, mientras que su diseño robusto garantiza "
+"fiabilidad incluso en los entornos industriales más exigentes"
+msgstr ""
+
+#: templates/home/bf_modular.html:127
+msgid "Extrusor de Pellets: Rendimiento y Materiales Avanzados"
+msgstr ""
+
+#: templates/home/bf_modular.html:129
+msgid ""
+"El extrusor de pellets Modular está diseñado para ofrecer un rendimiento "
+"excepcional con una amplia variedad de materiales. Al utilizar pellets como "
+"materia prima, este sistema permite a los usuarios explorar nuevas "
+"posibilidades en fabricación aditiva, desde polímeros reciclados hasta "
+"compuestos técnicos de alta resistencia"
+msgstr ""
+
+#: templates/home/bf_modular.html:132
+msgid ""
+"Esta tecnología ofrece la capacidad de producir piezas grandes y detalladas "
+"a alta velocidad, optimizando tanto el flujo de trabajo como el control "
+"sobre las propiedades finales de los materiales. Ideal para aplicaciones en "
+"sectores como la investigación, el diseño industrial, la arquitectura y la "
+"educación, el extrusor de pellets se destaca por su versatilidad y capacidad "
+"para abordar los proyectos más ambiciosos"
+msgstr ""
+
+#: templates/home/bf_modular.html:213 templates/home/nx_modular.html:245
+msgid "Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle"
+msgstr ""
+
+#: templates/home/bf_modular.html:215
+msgid ""
+"El cabezal de filamento Direct Drive HR de la BigFoot Modular está diseñado "
+"para aquellos que buscan precisión y consistencia en sus proyectos. Capaz de "
+"trabajar con bobinas de hasta 8 kg, este sistema es compatible con una "
+"amplia gama de materiales, desde plásticos estándar como PLA y ABS, hasta "
+"polímeros técnicos como NYLON o TPU"
+msgstr ""
+
+#: templates/home/bf_modular.html:218
+msgid ""
+"Con su capacidad para ofrecer resultados fiables en condiciones de alta "
+"demanda, este extrusor es una herramienta clave para sectores industriales, "
+"educativos y creativos, donde a precisión y la versatilidad son fundamentales"
+msgstr ""
+
+#: templates/home/bf_modular.html:236 templates/home/nx_modular.html:268
+msgid "Características clave del extrusor de filamento Direct Drive HR"
+msgstr ""
+
+#: templates/home/bf_modular.html:237
+msgid "Optimizado para ofrecer precisión y versatilidad en impresión 3D"
+msgstr ""
+
+#: templates/home/bf_modular.html:246
+msgid "Capacidad"
+msgstr ""
+
+#: templates/home/bf_modular.html:247
+msgid "Capacidad de impresión con bobinas de hasta 8 kg"
+msgstr ""
+
+#: templates/home/bf_modular.html:257 templates/home/nx_modular.html:203
+#: templates/home/nx_modular.html:300
+msgid "Temperatura"
+msgstr ""
+
+#: templates/home/bf_modular.html:258
+msgid "Temperatura máxima: hasta"
+msgstr ""
+
+#: templates/home/bf_modular.html:268 templates/home/nx_modular.html:311
+msgid "Boquillas intercambiables"
+msgstr ""
+
+#: templates/home/bf_modular.html:270
+msgid "Boquillas"
+msgstr ""
+
+#: templates/home/bf_modular.html:281
+msgid "Materiales optimizados"
+msgstr ""
+
+#: templates/home/bf_modular.html:282
+msgid "entre otros"
+msgstr ""
+
+#: templates/home/bf_modular.html:304
+msgid "Diseño Optimizado para Proyectos Profesionales"
+msgstr ""
+
+#: templates/home/bf_modular.html:305
+msgid ""
+"La Tumaker BigFoot Modular está diseñada para ofrecer precisión, "
+"conectividad y facilidad de uso en la fabricación aditiva"
+msgstr ""
+
+#: templates/home/bf_modular.html:320 templates/home/scanerAcolor_it3d.html:66
+msgid "Calibración automática"
+msgstr ""
+
+#: templates/home/bf_modular.html:320
+msgid "Garantiza resultados precisos y consistentes en cada impresión"
+msgstr ""
+
+#: templates/home/bf_modular.html:324
+msgid "Conectividad avanzada"
+msgstr ""
+
+#: templates/home/bf_modular.html:324
+msgid "Wi-Fi, Ethernet y Micro SD para un manejo remoto eficiente"
+msgstr ""
+
+#: templates/home/bf_modular.html:328
+msgid "Pantalla táctil de 7"
+msgstr ""
+
+#: templates/home/bf_modular.html:328
+msgid "Interfaz a color para una navegación sencilla e intuitiva"
+msgstr ""
+
+#: templates/home/bf_modular.html:332
+msgid "Compatibilidad con software"
+msgstr ""
+
+#: templates/home/bf_modular.html:332
+msgid ""
+"Simplify 3D, CURA, SuperSlicer y soporte para formatos estándar como STL, "
+"OBJ y Gcode"
+msgstr ""
+
+#: templates/home/bf_modular.html:336
+msgid ""
+"Con un diseño cerrado y niveles de ruido reducidos (44 dB en funcionamiento, "
+"40 dB con la puerta cerrada), esta impresora es ideal tanto para entornos "
+"industriales como de investigación. Su estructura robusta y el enfoque "
+"modular aseguran máxima eficiencia y fiabilidad en una amplia gama de "
+"aplicaciones"
+msgstr ""
+
+#: templates/home/bf_modular.html:353 templates/home/nx_modular.html:367
+msgid "Especificación"
+msgstr ""
+
+#: templates/home/bf_modular.html:363 templates/home/nx_modular.html:377
+msgid "Número de cabezales"
+msgstr ""
+
+#: templates/home/bf_modular.html:371 templates/home/nx_modular.html:385
+msgid "Boquillas compatibles"
+msgstr ""
+
+#: templates/home/bf_modular.html:379 templates/home/nx_modular.html:393
+msgid "Boquillas incluidas"
+msgstr ""
+
+#: templates/home/bf_modular.html:387 templates/home/index.html:75
+#: templates/home/nx_modular.html:401
+msgid "Materiales"
+msgstr ""
+
+#: templates/home/bf_modular.html:395 templates/home/nx_modular.html:409
+msgid "Área de trabajo"
+msgstr ""
+
+#: templates/home/bf_modular.html:403 templates/home/nx_modular.html:417
+msgid "Peso de la impresora"
+msgstr ""
+
+#: templates/home/bf_modular.html:411 templates/home/nx_modular.html:425
+msgid "Dimensiones de la impresora"
+msgstr ""
+
+#: templates/home/bf_modular.html:419 templates/home/nx_modular.html:433
+msgid "Temperatura de la cama caliente"
+msgstr ""
+
+#: templates/home/bf_modular.html:427 templates/home/nx_modular.html:441
+msgid "Temperatura del cabezal"
+msgstr ""
+
+#: templates/home/bf_modular.html:435 templates/home/nx_modular.html:449
+msgid "Calibración"
+msgstr ""
+
+#: templates/home/bf_modular.html:443 templates/home/nx_modular.html:457
+msgid "Estructura"
+msgstr ""
+
+#: templates/home/bf_modular.html:451 templates/home/nx_modular.html:465
+msgid "Conectividad"
+msgstr ""
+
+#: templates/home/bf_modular.html:459 templates/home/nx_modular.html:473
+msgid "Emisión de ruido"
+msgstr ""
+
+#: templates/home/bf_modular.html:467 templates/home/nx_modular.html:481
+msgid "Pantalla"
+msgstr ""
+
+#: templates/home/bf_modular.html:475 templates/home/nx_modular.html:489
+msgid "Software compatible"
+msgstr ""
+
+#: templates/home/bf_modular.html:483 templates/home/nx_modular.html:497
+msgid "Nivel de potencia"
+msgstr ""
+
+#: templates/home/bf_modular.html:491 templates/home/nx_modular.html:505
+msgid "Software de corte compatible"
+msgstr ""
+
+#: templates/home/bf_modular.html:499 templates/home/nx_modular.html:513
+msgid "Formato de archivos"
+msgstr ""
+
+#: templates/home/bf_modular.html:507 templates/home/nx_modular.html:521
+msgid "Garantía"
+msgstr ""
+
+#: templates/home/bf_modular.html:515 templates/home/nx_modular.html:529
+msgid "Peso del paquete"
+msgstr ""
+
+#: templates/home/bf_modular.html:523 templates/home/nx_modular.html:537
+msgid "Dimensiones del paquete"
 msgstr ""
 
 #: templates/home/index.html:33
 msgid "BIENVENIDOS"
+msgstr ""
+
+#: templates/home/index.html:36
+msgid ""
+"Somos Indart3D, una cooperativa impulsada por jóvenes emprendedores que se "
+"dedica al diseño, fabricación y venta de impresoras 3D de última generación"
+msgstr ""
+
+#: templates/home/index.html:43
+msgid "NUESTROS PRODUCTOS"
+msgstr ""
+
+#: templates/home/index.html:66
+msgid "Impresoras 3D"
+msgstr ""
+
+#: templates/home/index.html:67
+msgid ""
+"Diseñamos y fabricamos impresoras 3D con la última tecnología del mercado"
+msgstr ""
+
+#: templates/home/index.html:76
+msgid ""
+"Disponemos de los materiales necesarios para que tu experiencia de impresión "
+"sea la mejor"
+msgstr ""
+
+#: templates/home/index.html:85
+msgid ""
+"Imprimimos, escaneamos e impartimos formación a medida. Lo que necesites "
+"cuando lo necesites"
+msgstr ""
+
+#: templates/home/index.html:102
+msgid "MISIÓN & VISIÓN"
+msgstr ""
+
+#: templates/home/index.html:109
+msgid "Cambiando el futuro de las impresoras"
+msgstr ""
+
+#: templates/home/index.html:111
+msgid ""
+"La impresión 3D está cambiando el mundo industrial. Dedicamos parte de "
+"nuestro trabajo a investigación y desarrollo para cubrir las necesidades que "
+"las industrias 4.0 están demandando"
+msgstr ""
+
+#: templates/home/index.html:131
+msgid "Servicio de impresión"
+msgstr ""
+
+#: templates/home/index.html:132
+msgid ""
+"¿Quieres enviarnos un diseño y descubrir el potencial y beneficio de nuestra "
+"tecnología para tu empresa? Necesitas un prototipo, un regalo personalizado, "
+"una maqueta"
+msgstr ""
+
+#: templates/home/index.html:143
+msgid "Servicio de escaneado"
+msgstr ""
+
+#: templates/home/index.html:144
+msgid ""
+"¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro "
+"servicio de escaneado te ayudaremos a replicarlo cuando lo necesites"
+msgstr ""
+
+#: templates/home/index.html:155
+msgid "Formación 3D"
+msgstr ""
+
+#: templates/home/index.html:156
+msgid ""
+"¿Quieres aprender sobre la fabricación aditiva? Podemos ofrecer cursos a "
+"medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a "
+"lo que necesites"
+msgstr ""
+
+#: templates/home/index.html:157
+msgid "Más información"
+msgstr ""
+
+#: templates/home/index.html:180
+msgid "Formación"
+msgstr ""
+
+#: templates/home/index.html:181
+msgid "Forma parte de la"
+msgstr ""
+
+#: templates/home/index.html:181
+msgid "industria 4.0"
+msgstr ""
+
+#: templates/home/index.html:183
+msgid ""
+"La innovación forma parte de nuestra filosofía. El desarrollo continuo "
+"también. Son los dos pilaresde la nueva era en tecnología que estamos "
+"viviendo y de la que somos parte. Y la formación es la base. la formación "
+"que va a impulsar tu empresa"
+msgstr ""
+
+#: templates/home/index.html:187
+msgid "Cursos & Talleres"
+msgstr ""
+
+#: templates/home/index.html:203
+msgid "Servicios"
+msgstr ""
+
+#: templates/home/index.html:204
+msgid "¿Qué podemos hacer por ti?"
+msgstr ""
+
+#: templates/home/index.html:215
+msgid "Impresiones 3D"
+msgstr ""
+
+#: templates/home/index.html:216
+msgid ""
+"Imprimimos utilizando los mejores materiales y tecnología de última "
+"generación para que el resultado sea de la máxima calidad"
+msgstr ""
+
+#: templates/home/index.html:226
+msgid "Escaneado 3D"
+msgstr ""
+
+#: templates/home/index.html:227
+msgid ""
+"Escanear una pieza ya no es un problema. Realizamos escaneados de las piezas "
+"que necesites, utilizando un proceso de alta resolución"
+msgstr ""
+
+#: templates/home/index.html:237 templates/home/index.html:286
+msgid "Investigación & Desarrollo"
+msgstr ""
+
+#: templates/home/index.html:238
+msgid ""
+"Colaboramos y realizamos proyectos de I+D. Si necesitas probar nuevos "
+"materiales o piezas, nosotros podemos hacerlo por ti"
+msgstr ""
+
+#: templates/home/index.html:248
+msgid "Impresoras a medida"
+msgstr ""
+
+#: templates/home/index.html:249
+msgid ""
+"Fabricamos impresoras con las especificaciones que necesites. Contamos con "
+"amplia experiencia en el mercado"
+msgstr ""
+
+#: templates/home/index.html:259
+msgid "Formación en Hardware & Software"
+msgstr ""
+
+#: templates/home/index.html:260
+msgid ""
+"Ofrecemos cursos a medida, para todos los niveles, sobre el software de "
+"impresión 3D. Nuestros técnicos te ayudarán encantados"
+msgstr ""
+
+#: templates/home/index.html:270
+msgid "Excelencia en el servicio postventa"
+msgstr ""
+
+#: templates/home/index.html:271
+msgid ""
+"Proporcionamos soporte durante todo el proceso: asesoramiento inicial hasta "
+"resolución de incidencias con la impresora 3D"
+msgstr ""
+
+#: templates/home/index.html:289
+msgid "Colaboramos en proyectos para la industria del mañana"
+msgstr ""
+
+#: templates/home/index.html:295
+msgid " En Indart3D ofrecemos nuestra experiencia en"
+msgstr ""
+
+#: templates/home/index.html:295
+msgid "Investigación y Desarrollo"
+msgstr ""
+
+#: templates/home/index.html:295
+msgid ""
+"para crear soluciones innovadoras en impresión 3D. Ayudamos a empresas a "
+"optimizar sus procesos y a incorporar tecnología avanzada"
+msgstr ""
+
+#: templates/home/index.html:298
+msgid ""
+"Si necesitas materiales específicos o estás buscando una impresora "
+"personalizada para satisfacer tus necesidades industriales, nosotros podemos "
+"ayudarte a explorar todas las posibilidades: tamaño, cabezales, extrusión y "
+"más"
+msgstr ""
+
+#: templates/home/index.html:301
+msgid ""
+"Nuestro equipo de expertos está listo para trabajar contigo en el desarrollo "
+"de soluciones a medida. Juntos, podemos avanzar hacia un futuro más "
+"eficiente y tecnológico"
+msgstr ""
+
+#: templates/home/index.html:307
+msgid "Contáctanos"
+msgstr ""
+
+#: templates/home/index.html:319
+msgid ""
+"INDART3D S.COOP. ha participado en el Programa de Iniciación a la "
+"Exportación ICEX-Next y ha contado con el apoyo de ICEX, así como con la "
+"cofinanciación de Fondos europeos FEDER"
+msgstr ""
+
+#: templates/home/index.html:335
+msgid ""
+"Habiendo contribuido según la medida de los mismos, al crecimiento económico "
+"de esta empresa, su región y de España en su conjunto"
+msgstr ""
+
+#: templates/home/index.html:347
+msgid "Últimas publicaciones"
+msgstr ""
+
+#: templates/home/index.html:348
+msgid "¿Quieres estar al día con nuestras últimas publicaciones?"
+msgstr ""
+
+#: templates/home/index.html:392
+msgid "No es"
+msgstr ""
+
+#: templates/home/index.html:393
+msgid "tarde"
+msgstr ""
+
+#: templates/home/index.html:394
+msgid "tampoco"
+msgstr ""
+
+#: templates/home/index.html:395
+msgid "temprano"
+msgstr ""
+
+#: templates/home/index.html:397
+msgid "Es el momento."
+msgstr ""
+
+#: templates/home/index.html:403
+msgid "Contacta con nosotros"
+msgstr ""
+
+#: templates/home/irealze.html:36
+msgid "Experiencia de escaneo 3D cómoda y segura"
+msgstr ""
+
+#: templates/home/irealze.html:38
+msgid ""
+"El Escáner color 3D iReal 2E maximiza el rendimiento en profundidad de "
+"campo, áreas de escaneo, algoritmos, reproducción de textura y detección de "
+"detalles; especialmente diseñado para objetos medianos o grandes y escaneo "
+"corporal 3D"
+msgstr ""
+
+#: templates/home/irealze.html:41
+msgid ""
+"iReal 2E posee tecnología de luz infrarroja estructurada VCSEL para "
+"brindarle una experiencia de escaneo 3D cómoda y segura. Sin la necesidad de "
+"adjuntar ningún marcador, se puede obtener una captura rápida de la textura "
+"y de la geometría. Los modos de alineamiento mixtos proporcionan una "
+"solución para cada necesidad de escaneo"
+msgstr ""
+
+#: templates/home/irealze.html:53
+msgid "Escaneo eficiente"
+msgstr ""
+
+#: templates/home/irealze.html:56
+msgid ""
+"Con la ventaja de las últimas funciones de algoritmos, un software fácil de "
+"usar, un diseño ergonómico de larga duración y portátil, iReal 2E brinda la "
+"solución para la medición eficiente y exacta de las texturas 3D de color"
+msgstr ""
+
+#: templates/home/irealze.html:77
+msgid "Trabajar sin complicaciones"
+msgstr ""
+
+#: templates/home/irealze.html:79
+msgid ""
+"Escaneo 3D flexible y uniforme de objetos medianos o grandes gracias a su "
+"área de escaneo de 580 mm x 550 mm y su profundidad de campo de 720 mm"
+msgstr ""
+
+#: templates/home/irealze.html:91
+msgid "Experiencia 3D de luz invisible"
+msgstr ""
+
+#: templates/home/irealze.html:94
+msgid ""
+"La luz estructurada VCSEL de infrarrojos le brinda una experiencia de "
+"escaneo 3D cómoda y segura, ya que elimina el problema de las luces "
+"resplandecientes y de la dificultad del escaneo de cabello"
+msgstr ""
+
+#: templates/home/irealze.html:114
+msgid "Captura de textura ultra HD"
+msgstr ""
+
+#: templates/home/irealze.html:116
+msgid ""
+"Con su reproducción de color HD, iReal 2E proporciona una experiencia visual "
+"de captura de textura en varios campos"
+msgstr ""
+
+#: templates/home/irealze.html:118
+msgid "Recopilación de datos ultra rápida"
+msgstr ""
+
+#: templates/home/irealze.html:120
+msgid ""
+"Al utilizar el sensor 3D de último modelo, iReal 2E proporciona una "
+"recopilación de datos eficiente con un volumen y medidas/s de 1.500.000 "
+"puntos"
+msgstr ""
+
+#: templates/home/irealze.html:130
+msgid "Algoritmo Optimizado"
+msgstr ""
+
+#: templates/home/irealze.html:133
+msgid ""
+"La captura rápida de texturas y adquisición de la geometría sin marcadores, "
+"la habilidad de capturar texturas reflexivas mejorada y los modos de "
+"alineación mixtos se adaptan a todas las necesidades de escaneo"
+msgstr ""
+
+#: templates/home/irealze.html:153
+msgid "Conoce las especificaciones más destacadas del escáner iReal 2E"
+msgstr ""
+
+#: templates/home/mini_pro.html:20
+msgid "Impresora 3D Tumaker Mini Pro"
+msgstr ""
+
+#: templates/home/mini_pro.html:30
+msgid "La impresora 3D"
+msgstr ""
+
+#: templates/home/mini_pro.html:30
+msgid "Tumaker Mini Pro"
+msgstr ""
+
+#: templates/home/mini_pro.html:30
+msgid ""
+"con cabezal intercambiable es una realidad. Esta impresora cuenta con la"
+msgstr ""
+
+#: templates/home/mini_pro.html:30
+msgid "fiabilidad y robustez"
+msgstr ""
+
+#: templates/home/mini_pro.html:30
+msgid ""
+"características de la marca Tumaker. Con la Mini Pro se consiguen alcanzar "
+"las mejores prestaciones para ámbitos profesionales, pero en el"
+msgstr ""
+
+#: templates/home/mini_pro.html:30
+msgid "tamaño más reducido de la gama Tumaker"
+msgstr ""
+
+#: templates/home/mini_pro.html:33
+msgid ""
+"La posibilidad de trabajar el sector industrial con una máquina de tamaño "
+"muy inferior al resto de la competencia, la hace muy manejable y fácil de "
+"manipular. Estas características la convierten en una máquina perfecta para "
+"iniciarse en el mundo de la fabricación aditiva"
+msgstr ""
+
+#: templates/home/mini_pro.html:46
+msgid "Versatilidad y Tecnología"
+msgstr ""
+
+#: templates/home/mini_pro.html:48
+msgid "Sólo con la impresión 3D con pellets podrás"
+msgstr ""
+
+#: templates/home/mini_pro.html:48
+msgid ""
+"trabajar con todos aquellos materiales que no existen en forma de filamento"
+msgstr ""
+
+#: templates/home/mini_pro.html:48
+msgid "Con esta impresora, podrás también utilizar el"
+msgstr ""
+
+#: templates/home/mini_pro.html:48
+msgid "cabezal Direct Drive HR"
+msgstr ""
+
+#: templates/home/mini_pro.html:48
+msgid ""
+"para trabajar la extrusión de filamento y poder aprovechar las dos "
+"tecnologías con un único equipo"
+msgstr ""
+
+#: templates/home/mini_pro.html:56
+msgid "Explora la Mini Pro en acción"
+msgstr ""
+
+#: templates/home/nx_modular.html:89
+msgid "Sistema de Cabezales Modulares e Intercambiables"
+msgstr ""
+
+#: templates/home/nx_modular.html:106
+msgid ""
+"La impresora 3D modular NX de Indart3D marca un nuevo estándar en "
+"fabricación aditiva. Su diseño modular con cabezales intercambiables permite "
+"configurarla con uno o dos extrusores, ya sea para trabajar con pellets o "
+"filamento, brindando máxima flexibilidad. Cada equipo está diseñado para "
+"alojar dos cabezales que pueden ser configurados a medida con la ayuda de "
+"nuestros especialistas, asegurando una solución óptima para cada proyecto"
+msgstr ""
+
+#: templates/home/nx_modular.html:108
+msgid ""
+"Con un área de trabajo de 300 x 300 x 250 mm, la NX Modular combina un "
+"volumen de impresión ideal con un enfoque adaptable, ofreciendo a empresas y "
+"profesionales la herramienta perfecta para aplicaciones avanzadas, desde "
+"prototipado hasta producción de piezas funcionales. Su diseño cerrado con "
+"filtros integrados garantiza un entorno de trabajo seguro, limpio y eficiente"
+msgstr ""
+
+#: templates/home/nx_modular.html:125
+msgid ""
+"Extrusor de Pellets: Versatilidad y Alto Rendimiento en Fabricación Aditiva"
+msgstr ""
+
+#: templates/home/nx_modular.html:128
+msgid ""
+"El extrusor de pellets Modular de Indart3D redefine la impresión 3D al "
+"permitir trabajar directamente con materia prima en forma de pellets, una "
+"solución que amplía las posibilidades técnicas y creativas en fabricación "
+"aditiva. Este sistema avanzado es capaz de procesar una amplia variedad de "
+"polímeros, incluidos materiales reciclados y compuestos de alto rendimiento, "
+"ofreciendo a los usuarios profesionales una herramienta potente y adaptable "
+"para abordar proyectos complejos"
+msgstr ""
+
+#: templates/home/nx_modular.html:131
+msgid ""
+"Gracias a su capacidad para manejar geometrías exigentes y materiales "
+"técnicos, el extrusor de pellets es ideal para aplicaciones que van desde el "
+"desarrollo de prototipos hasta la producción de piezas funcionales para "
+"sectores como la industria, el diseño de productos y la investigación "
+"avanzada. Su diseño optimizado garantiza una extrusión consistente y "
+"precisa, incluso con materiales de mayor viscosidad, lo que lo convierte en "
+"una opción destacada para proyectos de gran escala y alta demanda"
+msgstr ""
+
+#: templates/home/nx_modular.html:134
+msgid ""
+"Además, este sistema aprovecha la simplicidad de los pellets para "
+"incrementar la eficiencia del proceso de impresión, eliminando pasos "
+"intermedios y ofreciendo mayor control sobre las propiedades finales del "
+"material. Su enfoque técnico no solo abre nuevas oportunidades en la "
+"impresión 3D, sino que también promueve una fabricación más sostenible y "
+"personalizada"
+msgstr ""
+
+#: templates/home/nx_modular.html:158
+msgid "Características clave del extrusor de pellets"
+msgstr ""
+
+#: templates/home/nx_modular.html:159
+msgid "Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets"
+msgstr ""
+
+#: templates/home/nx_modular.html:181
+msgid "Tamaño"
+msgstr ""
+
+#: templates/home/nx_modular.html:182
+msgid "Tamaño de pellet recomendado: 3-5 mm de diámetro"
+msgstr ""
+
+#: templates/home/nx_modular.html:192 templates/home/nx_modular.html:278
+msgid "Compatibilidad"
+msgstr ""
+
+#: templates/home/nx_modular.html:193
+msgid ""
+"Compatible con el Alimentador de Pellets para un flujo constante y uniforme"
+msgstr ""
+
+#: templates/home/nx_modular.html:204
+msgid ""
+"Temperatura máxima del cabezal: hasta 300 ºC, ideal para materiales técnicos"
+msgstr ""
+
+#: templates/home/nx_modular.html:214
+msgid "Boquillas ajustables"
+msgstr ""
+
+#: templates/home/nx_modular.html:216
+msgid ""
+"Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm "
+"| 5.0 mm."
+msgstr ""
+
+#: templates/home/nx_modular.html:251
+msgid ""
+"Gracias a su diseño robusto y su fiabilidad operativa, este cabezal es "
+"perfecto para entornos industriales, educativos y creativos, ofreciendo "
+"resultados consistentes y de alta calidad"
+msgstr ""
+
+#: templates/home/nx_modular.html:269
+msgid "Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D"
+msgstr ""
+
+#: templates/home/nx_modular.html:279
+msgid "Compatible con bobinas de hasta 8 kg, ideal para proyectos grandes"
+msgstr ""
+
+#: templates/home/nx_modular.html:290
+msgid "ABS, ASA, NYLON, PET-G, PLA, PP, TPU Hardness, entre otros"
+msgstr ""
+
+#: templates/home/nx_modular.html:301
+msgid "Temperatura máxima: 300 ºC, ideal para materiales avanzados"
+msgstr ""
+
+#: templates/home/nx_modular.html:313
+msgid ""
+"Boquillas compatibles: 0.15 mm | 0.25 mm | 0.4 mm (incluida) | 0.6 mm | 0.8 "
+"mm"
+msgstr ""
+
+#: templates/home/nx_modular.html:339
+msgid "Solución Profesional y Accesible"
+msgstr ""
+
+#: templates/home/nx_modular.html:340
+msgid ""
+"Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos "
+"de impresión 3D"
+msgstr ""
+
+#: templates/home/nx_modular.html:347
+msgid ""
+"La NX Modular no solo es una impresora versátil, sino que también está "
+"diseñada para facilitar el trabajo diario. Su área de impresión y estructura "
+"robusta garantizan estabilidad y precisión. Con opciones de conectividad como"
+msgstr ""
+
+#: templates/home/nx_modular.html:347
+msgid "Wi-Fi, Ethernet y Micro SD"
+msgstr ""
+
+#: templates/home/nx_modular.html:347
+msgid " es sencilla de usar y se adapta a cualquier flujo de trabajo"
+msgstr ""
+
+#: templates/home/nx_modular.html:350
+msgid ""
+"Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 dB</"
+"strong>) y pantalla táctil de <strong>7”</strong> hacen de esta impresora "
+"una opción ideal para quienes buscan eficiencia, seguridad y comodidad. "
+"Compatible con los principales softwares de corte "
+msgstr ""
+
+#: templates/home/nx_modular.html:350
+msgid "Simplify 3D, CURA, SuperSlicer"
+msgstr ""
+
+#: templates/home/nx_modular.html:350
+msgid " y formatos de archivo "
+msgstr ""
+
+#: templates/home/nx_modular.html:350
+msgid "STL, OBJ, Gcode"
+msgstr ""
+
+#: templates/home/nx_modular.html:350
+msgid ""
+" la NX Modular es una herramienta indispensable para quienes buscan calidad "
+"y adaptabilidad en impresión 3D"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:27
+msgid "¡El escaneo 3D de alta calidad ya está al alcance de todos!"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:28
+msgid ""
+"Obtén modelos 3D precisos en casa, en el colegio, en la oficina, en el "
+"centro cultural"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:35
+msgid "Modelos 3D de alta calidad"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:37
+msgid "Precisión de hasta 0,05 mm"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:38
+msgid "Resolución 3D de hasta 0,13 mm"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:39
+msgid "Captura de textura"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:40
+msgid "Escaneo 3D de objetos de 3 cm a 1,2 m"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:62
+msgid "Rápido y sencillo"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:64
+msgid "5 minutos para preparar el escaneo"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:65
+msgid "Plug and play"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:67
+msgid "Escaneo con un solo clic"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:68
+msgid "Interfaz de usuario fácil e intuitiva"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:69
+msgid "Alimentación por USB"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:70
+msgid "Solo 1 kg de peso"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:71
+msgid "Incluye maletín de protección"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:78
+msgid "Tres modos de escaneo"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:85
+msgid "Escaneo en una mesa giratoria"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:86
+msgid ""
+"Escaneo 3D de un objeto en la plataforma giratoria. Cuando se gira un "
+"objeto, sus fragmentos de modelo se combinan automáticamente"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:92
+msgid "Escaneo con marcadores"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:93
+msgid ""
+"La alineación automática de los fragmentos del modelo se consigue con dianas "
+"aplicadas a la superficie del objeto. Admite un sistema de fotogrametría "
+"externo"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:99
+msgid "Escaneo por geometría"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:100
+msgid ""
+"Se utiliza para la digitalización de objetos difíciles de escanear de otra "
+"manera, como en exposiciones de museos. Captura detalles complejos y combina "
+"automáticamente los fragmentos"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:112
+#: templates/home/scanerAcolor_it3d.html:132
+msgid "Una amplia gama de capacidades de procesamiento"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:114
+#: templates/home/scanerAcolor_it3d.html:134
+msgid "Alineación automática y manual con dianas y sin dianas"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:115
+#: templates/home/scanerAcolor_it3d.html:135
+msgid "Relleno de agujeros"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:116
+#: templates/home/scanerAcolor_it3d.html:136
+msgid "Suavizado de superficies de objetos"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:117
+#: templates/home/scanerAcolor_it3d.html:137
+msgid "Reducción del número de triángulos"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:118
+#: templates/home/scanerAcolor_it3d.html:138
+msgid "Corrección de los defectos de la malla"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:119
+#: templates/home/scanerAcolor_it3d.html:139
+msgid "Eliminación automática de pequeñas variaciones y ruido"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:120
+#: templates/home/scanerAcolor_it3d.html:140
+msgid "Otras funciones profesionales del software IT3D SCAN ScanCenter NG"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:154
+msgid "Compatible con cualquier impresora 3D"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:156
+msgid "Fácil exportación de datos para la impresión 3D"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:157
+msgid "Ajuste del sistema de coordenadas para la impresión 3D"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:158
+msgid "Construcción automática de mallas con relleno de agujeros"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:159
+msgid "Modelos texturizados listos para la impresión 3D"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:162
+msgid ""
+"Exporta tu modelo 3D a otro software para su posterior procesamiento. IT3D "
+"SCAN ScanCenter NG permite exportar modelos 3D en los formatos más "
+"populares: STL, OBJ, PLY."
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:180
+msgid ""
+"Escáner 3D Homologado por el Ministerio de Educación y Formación Profesional"
+msgstr ""
+
+#: templates/home/scanerAcolor_it3d.html:182
+msgid ""
+"IT3D SCAN ONE es considerado por el gobierno de España como la mejor "
+"solución para el sector educativo. El escáner 3D forma parte del proyecto "
+"Aula del Futuro desarrollado por el INTEF. Esta iniciativa busca impulsar la "
+"educación presente y futura sobre una base de tecnologías actualizadas"
 msgstr ""

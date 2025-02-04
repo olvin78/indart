@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 13:59+0000\n"
+"POT-Creation-Date: 2025-02-04 09:07+0000\n"
 "PO-Revision-Date: 2025-02-03 14:57+0000\n"
 "Last-Translator:   <olvind78@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
 #: indart/settings.py:147
@@ -50,10 +51,10 @@ msgstr ""
 
 #: templates/home/acanerAcolo-ireal_m3.html:52
 msgid ""
-"iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples"
-" tamaños y materiales en diversos escenarios gracias a sus láseres "
-"infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han"
-" pasado respectivamente los estándares de seguridad, no suponen ningún daño "
+"iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples "
+"tamaños y materiales en diversos escenarios gracias a sus láseres "
+"infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han "
+"pasado respectivamente los estándares de seguridad, no suponen ningún daño "
 "para los ojos humanos. Estas dos fuentes de luz invisibles pueden "
 "proporcionar experiencias de escaneo más adaptables y cómodas"
 msgstr ""
@@ -70,11 +71,11 @@ msgstr ""
 
 #: templates/home/acanerAcolo-ireal_m3.html:74
 msgid ""
-"iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples"
-" tamaños y materiales en diversos escenarios gracias a sus láseres "
-"infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han"
-" pasado  respectivamente los estándares de seguridad, no suponen ningún daño"
-" para los ojos humanos. Estas dos fuentes de luz invisibles pueden "
+"iReal M3 puede satisfacer la demanda de adquisición de datos 3D de múltiples "
+"tamaños y materiales en diversos escenarios gracias a sus láseres "
+"infrarrojos duales. Su VSCEL infrarrojo y láser infrarrojo paralelo, que han "
+"pasado  respectivamente los estándares de seguridad, no suponen ningún daño "
+"para los ojos humanos. Estas dos fuentes de luz invisibles pueden "
 "proporcionar experiencias de escaneo más adaptables y cómodas"
 msgstr ""
 
@@ -99,8 +100,8 @@ msgstr ""
 #: templates/home/acanerAcolo-ireal_m3.html:97
 msgid ""
 "El ritmo de escaneo del iReal M3 alcanza los 15 fps, lo que mejora "
-"enormemente la eficiencia del escaneo para que los ingenieros puedan obtener"
-" rápidamente datos 3D de alta calidad"
+"enormemente la eficiencia del escaneo para que los ingenieros puedan obtener "
+"rápidamente datos 3D de alta calidad"
 msgstr ""
 
 #: templates/home/acanerAcolo-ireal_m3.html:108
@@ -118,9 +119,9 @@ msgstr ""
 
 #: templates/home/acanerAcolo-ireal_m3.html:113
 msgid ""
-"Gracias a su gran adaptabilidad a los materiales, es capaz de escanear en 3D"
-" piezas industriales, exteriores de automóviles e interiores con superficies"
-" negras y reflectantes"
+"Gracias a su gran adaptabilidad a los materiales, es capaz de escanear en 3D "
+"piezas industriales, exteriores de automóviles e interiores con superficies "
+"negras y reflectantes"
 msgstr ""
 
 #: templates/home/acanerAcolo-ireal_m3.html:124
@@ -205,9 +206,9 @@ msgstr ""
 #: templates/home/acanerAcolo-ireal_m3.html:181
 msgid ""
 "iReal 3D Mapping se utiliza para mapear las fotos multilinguo tomadas por "
-"teléfonos móviles/SLR al modelo escaneado, mediante un proceso inteligente y"
-" semiautomático para obtener un modelo 3D de alta precisión, alta definición"
-" y color real"
+"teléfonos móviles/SLR al modelo escaneado, mediante un proceso inteligente y "
+"semiautomático para obtener un modelo 3D de alta precisión, alta definición "
+"y color real"
 msgstr ""
 
 #: templates/home/acanerAcolo-ireal_m3.html:185
@@ -229,10 +230,10 @@ msgid ""
 "Software complementario GOM Inspect, GOM Inspect Pro, Geomagic Control X"
 msgstr ""
 
-#: templates/home/acanerAcolo-ireal_m3.html:200
+#: templates/home/acanerAcolo-ireal_m3.html:199
 #: templates/home/autoScan-t42.html:170 templates/home/bf_modular.html:348
-#: templates/home/mini_pro.html:28 templates/home/nx_modular.html:362
-#: templates/home/scanerAcolor_it3d.html:189
+#: templates/home/irealze.html:152 templates/home/mini_pro.html:28
+#: templates/home/nx_modular.html:362 templates/home/scanerAcolor_it3d.html:189
 msgid "Características"
 msgstr ""
 
@@ -256,8 +257,8 @@ msgstr ""
 #: templates/home/alimetador_de_pellet.html:37
 msgid ""
 "Al combinar en una sola máquina la capacidad de trabajar con pellets y la "
-"automatización que ofrece este alimentador, se logra un equipo innovador que"
-" destaca en el sector de la fabricación aditiva"
+"automatización que ofrece este alimentador, se logra un equipo innovador que "
+"destaca en el sector de la fabricación aditiva"
 msgstr ""
 
 #: templates/home/alimetador_de_pellet.html:47
@@ -267,8 +268,8 @@ msgstr ""
 #: templates/home/alimetador_de_pellet.html:58
 msgid ""
 "El dispositivo incluye un depósito de 40 cm de altura con capacidad para "
-"7,06 dm³ de pellets, asegurando un suministro continuo. Además, incorpora un"
-" sensor de fin de material en la salida para gestionar automáticamente la "
+"7,06 dm³ de pellets, asegurando un suministro continuo. Además, incorpora un "
+"sensor de fin de material en la salida para gestionar automáticamente la "
 "reposición"
 msgstr ""
 
@@ -301,8 +302,8 @@ msgstr ""
 #: templates/home/autoScan-k-3D.html:39
 msgid ""
 "Equipado con múltiples modos de trabajo, el sistema AutoScan-K 3D puede "
-"adaptarse a la medición en varias escenas industriales. Además, controla con"
-" precisión los movimientos del robot basados en algoritmos avanzados, "
+"adaptarse a la medición en varias escenas industriales. Además, controla con "
+"precisión los movimientos del robot basados en algoritmos avanzados, "
 "realizando la inspección eficiente y automática"
 msgstr ""
 
@@ -324,9 +325,9 @@ msgstr ""
 
 #: templates/home/autoScan-k-3D.html:103
 msgid ""
-"Se ofrecen múltiples modos de medición de acuerdo con las características de"
-" diferentes piezas. Para satisfacer los diferentes requisitos de inspección,"
-" las piezas se pueden sujetar desde múltiples ángulos para configurar las "
+"Se ofrecen múltiples modos de medición de acuerdo con las características de "
+"diferentes piezas. Para satisfacer los diferentes requisitos de inspección, "
+"las piezas se pueden sujetar desde múltiples ángulos para configurar las "
 "rutas de inspección"
 msgstr ""
 
@@ -350,10 +351,10 @@ msgstr ""
 #: templates/home/autoScan-k-3D.html:162
 msgid ""
 "El AutoScan-K puede inspeccionar piezas de diferentes tamaños y pesos y las "
-"hechas de diferentes materiales. Puede generar hasta 45 líneas láser para el"
-" escaneado de datos de alta densidad, con la velocidad de hasta 1,650,000 "
-"por segundo. Permite una inspección precisa 3D en ambiente hostil industrial"
-" con resolución de hasta 0,010 mm y precisión de hasta 0,030 mm/m"
+"hechas de diferentes materiales. Puede generar hasta 45 líneas láser para el "
+"escaneado de datos de alta densidad, con la velocidad de hasta 1,650,000 por "
+"segundo. Permite una inspección precisa 3D en ambiente hostil industrial con "
+"resolución de hasta 0,010 mm y precisión de hasta 0,030 mm/m"
 msgstr ""
 
 #: templates/home/autoScan-k-3D.html:165
@@ -380,11 +381,11 @@ msgstr ""
 
 #: templates/home/autoScan-t42.html:39
 msgid ""
-"El AutoScan-T42 conduce el escaneado no destructivo sin adjuntar marcadores."
-" Su conexión perfecta con la línea de producción contribuye "
-"considerablemente a reducir el volumen del trabajo. La calidad de "
-"fabricación del grado militar cuenta con fuerte anti-interferencia y alta "
-"adaptación al entorno de taller complejo y hostil"
+"El AutoScan-T42 conduce el escaneado no destructivo sin adjuntar marcadores. "
+"Su conexión perfecta con la línea de producción contribuye considerablemente "
+"a reducir el volumen del trabajo. La calidad de fabricación del grado "
+"militar cuenta con fuerte anti-interferencia y alta adaptación al entorno de "
+"taller complejo y hostil"
 msgstr ""
 
 #: templates/home/autoScan-t42.html:51 templates/home/autoScan-t42.html:74
@@ -435,9 +436,9 @@ msgstr ""
 
 #: templates/home/autoScan-t42.html:138
 msgid ""
-"El diseño del grado militar presenta una adaptabilidad excelente en entornos"
-" hostiles industriales sin ser insensible a la temperatura, la vibración, el"
-" polvo"
+"El diseño del grado militar presenta una adaptabilidad excelente en entornos "
+"hostiles industriales sin ser insensible a la temperatura, la vibración, el "
+"polvo"
 msgstr ""
 
 #: templates/home/autoScan-t42.html:140 templates/home/autoScan-t42.html:156
@@ -456,9 +457,9 @@ msgstr ""
 
 #: templates/home/autoScan-t42.html:154
 msgid ""
-"El diseño del grado militar presenta una adaptabilidad excelente en entornos"
-" hostiles industriales sin ser insensible a la temperatura, la vibración, el"
-" polvo, etc"
+"El diseño del grado militar presenta una adaptabilidad excelente en entornos "
+"hostiles industriales sin ser insensible a la temperatura, la vibración, el "
+"polvo, etc"
 msgstr ""
 "The military-grade design offers excellent adaptability in harsh industrial "
 "environments without being insensitive to temperature, vibration, dust, etc."
@@ -575,13 +576,13 @@ msgstr "System of Independent, Modular, and Interchangeable Printheads"
 #: templates/home/bf_modular.html:100
 msgid ""
 "La Tumaker BigFoot Modular es una impresora 3D diseñada para redefinir la "
-"fabricación aditiva a gran escala. Gracias a su sistema modular de cabezales"
-" intercambiables e independientes, esta impresora combina flexibilidad y "
+"fabricación aditiva a gran escala. Gracias a su sistema modular de cabezales "
+"intercambiables e independientes, esta impresora combina flexibilidad y "
 "rendimiento, adaptándose a las necesidades de los usuarios más exigentes"
 msgstr ""
-"The Tumaker BigFoot Modular is a 3D printer designed to redefine large-scale"
-" additive manufacturing. Thanks to its modular system of interchangeable and"
-" independent printheads, this printer combines flexibility and performance, "
+"The Tumaker BigFoot Modular is a 3D printer designed to redefine large-scale "
+"additive manufacturing. Thanks to its modular system of interchangeable and "
+"independent printheads, this printer combines flexibility and performance, "
 "adapting to the needs of the most demanding users"
 
 #: templates/home/bf_modular.html:103
@@ -589,22 +590,22 @@ msgid ""
 "Con capacidad para integrar hasta dos cabezales, la BigFoot Modular ofrece "
 "la posibilidad de trabajar con tecnología de Pellets o Filamento, "
 "permitiendo personalizar cada equipo según las demandas específicas de cada "
-"proyecto. Este enfoque modular, combinado con su amplio volumen de impresión"
-" de 500 x 500 x 500 mm, la convierte en la herramienta ideal para producir "
+"proyecto. Este enfoque modular, combinado con su amplio volumen de impresión "
+"de 500 x 500 x 500 mm, la convierte en la herramienta ideal para producir "
 "piezas funcionales y complejas con una precisión sobresaliente"
 msgstr ""
 "With the capacity to integrate up to two printheads, the BigFoot Modular "
 "offers the possibility of working with Pellet or Filament technology, "
 "allowing each machine to be customized according to the specific demands of "
-"each project. This modular approach, combined with its large printing volume"
-" of 500 x 500 x 500 mm, makes it the ideal tool for producing functional and"
-" complex parts with outstanding precision"
+"each project. This modular approach, combined with its large printing volume "
+"of 500 x 500 x 500 mm, makes it the ideal tool for producing functional and "
+"complex parts with outstanding precision"
 
 #: templates/home/bf_modular.html:106
 msgid ""
 "Su estructura completamente cerrada, equipada con filtros, asegura un "
-"entorno de trabajo seguro y limpio, mientras que su diseño robusto garantiza"
-" fiabilidad incluso en los entornos industriales más exigentes"
+"entorno de trabajo seguro y limpio, mientras que su diseño robusto garantiza "
+"fiabilidad incluso en los entornos industriales más exigentes"
 msgstr ""
 "Its fully enclosed structure, equipped with filters, ensures a safe and "
 "clean working environment, while its robust design guarantees reliability "
@@ -633,8 +634,8 @@ msgid ""
 "a alta velocidad, optimizando tanto el flujo de trabajo como el control "
 "sobre las propiedades finales de los materiales. Ideal para aplicaciones en "
 "sectores como la investigación, el diseño industrial, la arquitectura y la "
-"educación, el extrusor de pellets se destaca por su versatilidad y capacidad"
-" para abordar los proyectos más ambiciosos"
+"educación, el extrusor de pellets se destaca por su versatilidad y capacidad "
+"para abordar los proyectos más ambiciosos"
 msgstr ""
 "This technology provides the ability to produce large and detailed parts at "
 "high speed, optimizing both workflow and control over the final material "
@@ -649,8 +650,8 @@ msgstr "Filament Extruder: Precision and Flexibility in Every Deta"
 #: templates/home/bf_modular.html:215
 msgid ""
 "El cabezal de filamento Direct Drive HR de la BigFoot Modular está diseñado "
-"para aquellos que buscan precisión y consistencia en sus proyectos. Capaz de"
-" trabajar con bobinas de hasta 8 kg, este sistema es compatible con una "
+"para aquellos que buscan precisión y consistencia en sus proyectos. Capaz de "
+"trabajar con bobinas de hasta 8 kg, este sistema es compatible con una "
 "amplia gama de materiales, desde plásticos estándar como PLA y ABS, hasta "
 "polímeros técnicos como NYLON o TPU"
 msgstr ""
@@ -664,8 +665,7 @@ msgstr ""
 msgid ""
 "Con su capacidad para ofrecer resultados fiables en condiciones de alta "
 "demanda, este extrusor es una herramienta clave para sectores industriales, "
-"educativos y creativos, donde a precisión y la versatilidad son "
-"fundamentales"
+"educativos y creativos, donde a precisión y la versatilidad son fundamentales"
 msgstr ""
 "With its ability to deliver reliable results under high-demand conditions, "
 "this extruder is a key tool for industrial, educational, and creative "
@@ -758,8 +758,8 @@ msgstr ""
 
 #: templates/home/bf_modular.html:336
 msgid ""
-"Con un diseño cerrado y niveles de ruido reducidos (44 dB en funcionamiento,"
-" 40 dB con la puerta cerrada), esta impresora es ideal tanto para entornos "
+"Con un diseño cerrado y niveles de ruido reducidos (44 dB en funcionamiento, "
+"40 dB con la puerta cerrada), esta impresora es ideal tanto para entornos "
 "industriales como de investigación. Su estructura robusta y el enfoque "
 "modular aseguran máxima eficiencia y fiabilidad en una amplia gama de "
 "aplicaciones"
@@ -883,8 +883,8 @@ msgstr ""
 
 #: templates/home/index.html:76
 msgid ""
-"Disponemos de los materiales necesarios para que tu experiencia de impresión"
-" sea la mejor"
+"Disponemos de los materiales necesarios para que tu experiencia de impresión "
+"sea la mejor"
 msgstr ""
 "We provide the necessary materials to ensure the best 3D printing experience"
 
@@ -893,8 +893,8 @@ msgid ""
 "Imprimimos, escaneamos e impartimos formación a medida. Lo que necesites "
 "cuando lo necesites"
 msgstr ""
-"We print, scan, and provide customized training. Whatever you need, whenever"
-" you need it"
+"We print, scan, and provide customized training. Whatever you need, whenever "
+"you need it"
 
 #: templates/home/index.html:102
 msgid "MISIÓN & VISIÓN"
@@ -907,8 +907,8 @@ msgstr "Changing the future of printers"
 #: templates/home/index.html:111
 msgid ""
 "La impresión 3D está cambiando el mundo industrial. Dedicamos parte de "
-"nuestro trabajo a investigación y desarrollo para cubrir las necesidades que"
-" las industrias 4.0 están demandando"
+"nuestro trabajo a investigación y desarrollo para cubrir las necesidades que "
+"las industrias 4.0 están demandando"
 msgstr ""
 "3D printing is changing the industrial world. We dedicate part of our work "
 "to research and development to meet the needs demanded by Industry 4.0"
@@ -919,9 +919,9 @@ msgstr "Printing Service"
 
 #: templates/home/index.html:132
 msgid ""
-"¿Quieres enviarnos un diseño y descubrir el potencial y beneficio de nuestra"
-" tecnología para tu empresa? Necesitas un prototipo, un regalo "
-"personalizado, una maqueta"
+"¿Quieres enviarnos un diseño y descubrir el potencial y beneficio de nuestra "
+"tecnología para tu empresa? Necesitas un prototipo, un regalo personalizado, "
+"una maqueta"
 msgstr ""
 "Do you want to send us a design and discover the potential and benefits of "
 "our technology for your company? Do you need a prototype, a personalized "
@@ -933,8 +933,8 @@ msgstr ""
 
 #: templates/home/index.html:144
 msgid ""
-"¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro"
-" servicio de escaneado te ayudaremos a replicarlo cuando lo necesites"
+"¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro "
+"servicio de escaneado te ayudaremos a replicarlo cuando lo necesites"
 msgstr ""
 
 #: templates/home/index.html:155
@@ -944,8 +944,8 @@ msgstr ""
 #: templates/home/index.html:156
 msgid ""
 "¿Quieres aprender sobre la fabricación aditiva? Podemos ofrecer cursos a "
-"medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a"
-" lo que necesites"
+"medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a "
+"lo que necesites"
 msgstr ""
 
 #: templates/home/index.html:157
@@ -1006,8 +1006,8 @@ msgstr "3D scanning"
 
 #: templates/home/index.html:227
 msgid ""
-"Escanear una pieza ya no es un problema. Realizamos escaneados de las piezas"
-" que necesites, utilizando un proceso de alta resolución"
+"Escanear una pieza ya no es un problema. Realizamos escaneados de las piezas "
+"que necesites, utilizando un proceso de alta resolución"
 msgstr ""
 "Scanning a piece is no longer a problem. We perform scans of the pieces you "
 "need, using a high-resolution process"
@@ -1021,8 +1021,8 @@ msgid ""
 "Colaboramos y realizamos proyectos de I+D. Si necesitas probar nuevos "
 "materiales o piezas, nosotros podemos hacerlo por ti"
 msgstr ""
-"We collaborate and carry out R&D projects. If you need to test new materials"
-" or parts, we can do it for you"
+"We collaborate and carry out R&D projects. If you need to test new materials "
+"or parts, we can do it for you"
 
 #: templates/home/index.html:248
 msgid "Impresoras a medida"
@@ -1081,15 +1081,15 @@ msgstr ""
 #: templates/home/index.html:298
 msgid ""
 "Si necesitas materiales específicos o estás buscando una impresora "
-"personalizada para satisfacer tus necesidades industriales, nosotros podemos"
-" ayudarte a explorar todas las posibilidades: tamaño, cabezales, extrusión y"
-" más"
+"personalizada para satisfacer tus necesidades industriales, nosotros podemos "
+"ayudarte a explorar todas las posibilidades: tamaño, cabezales, extrusión y "
+"más"
 msgstr ""
 
 #: templates/home/index.html:301
 msgid ""
-"Nuestro equipo de expertos está listo para trabajar contigo en el desarrollo"
-" de soluciones a medida. Juntos, podemos avanzar hacia un futuro más "
+"Nuestro equipo de expertos está listo para trabajar contigo en el desarrollo "
+"de soluciones a medida. Juntos, podemos avanzar hacia un futuro más "
 "eficiente y tecnológico"
 msgstr ""
 
@@ -1106,8 +1106,8 @@ msgstr ""
 
 #: templates/home/index.html:335
 msgid ""
-"Habiendo contribuido según la medida de los mismos, al crecimiento económico"
-" de esta empresa, su región y de España en su conjunto"
+"Habiendo contribuido según la medida de los mismos, al crecimiento económico "
+"de esta empresa, su región y de España en su conjunto"
 msgstr ""
 
 #: templates/home/index.html:347
@@ -1116,6 +1116,121 @@ msgstr ""
 
 #: templates/home/index.html:348
 msgid "¿Quieres estar al día con nuestras últimas publicaciones?"
+msgstr ""
+
+#: templates/home/index.html:392
+msgid "No es"
+msgstr ""
+
+#: templates/home/index.html:393
+msgid "tarde"
+msgstr ""
+
+#: templates/home/index.html:394
+msgid "tampoco"
+msgstr ""
+
+#: templates/home/index.html:395
+msgid "temprano"
+msgstr ""
+
+#: templates/home/index.html:397
+msgid "Es el momento."
+msgstr ""
+
+#: templates/home/index.html:403
+#, fuzzy
+#| msgid "Contactar"
+msgid "Contacta con nosotros"
+msgstr "Contact"
+
+#: templates/home/irealze.html:36
+msgid "Experiencia de escaneo 3D cómoda y segura"
+msgstr ""
+
+#: templates/home/irealze.html:38
+msgid ""
+"El Escáner color 3D iReal 2E maximiza el rendimiento en profundidad de "
+"campo, áreas de escaneo, algoritmos, reproducción de textura y detección de "
+"detalles; especialmente diseñado para objetos medianos o grandes y escaneo "
+"corporal 3D"
+msgstr ""
+
+#: templates/home/irealze.html:41
+msgid ""
+"iReal 2E posee tecnología de luz infrarroja estructurada VCSEL para "
+"brindarle una experiencia de escaneo 3D cómoda y segura. Sin la necesidad de "
+"adjuntar ningún marcador, se puede obtener una captura rápida de la textura "
+"y de la geometría. Los modos de alineamiento mixtos proporcionan una "
+"solución para cada necesidad de escaneo"
+msgstr ""
+
+#: templates/home/irealze.html:53
+msgid "Escaneo eficiente"
+msgstr ""
+
+#: templates/home/irealze.html:56
+msgid ""
+"Con la ventaja de las últimas funciones de algoritmos, un software fácil de "
+"usar, un diseño ergonómico de larga duración y portátil, iReal 2E brinda la "
+"solución para la medición eficiente y exacta de las texturas 3D de color"
+msgstr ""
+
+#: templates/home/irealze.html:77
+msgid "Trabajar sin complicaciones"
+msgstr ""
+
+#: templates/home/irealze.html:79
+msgid ""
+"Escaneo 3D flexible y uniforme de objetos medianos o grandes gracias a su "
+"área de escaneo de 580 mm x 550 mm y su profundidad de campo de 720 mm"
+msgstr ""
+
+#: templates/home/irealze.html:91
+msgid "Experiencia 3D de luz invisible"
+msgstr ""
+
+#: templates/home/irealze.html:94
+msgid ""
+"La luz estructurada VCSEL de infrarrojos le brinda una experiencia de "
+"escaneo 3D cómoda y segura, ya que elimina el problema de las luces "
+"resplandecientes y de la dificultad del escaneo de cabello"
+msgstr ""
+
+#: templates/home/irealze.html:114
+msgid "Captura de textura ultra HD"
+msgstr ""
+
+#: templates/home/irealze.html:116
+msgid ""
+"Con su reproducción de color HD, iReal 2E proporciona una experiencia visual "
+"de captura de textura en varios campos"
+msgstr ""
+
+#: templates/home/irealze.html:118
+msgid "Recopilación de datos ultra rápida"
+msgstr ""
+
+#: templates/home/irealze.html:120
+msgid ""
+"Al utilizar el sensor 3D de último modelo, iReal 2E proporciona una "
+"recopilación de datos eficiente con un volumen y medidas/s de 1.500.000 "
+"puntos"
+msgstr ""
+
+#: templates/home/irealze.html:130
+msgid "Algoritmo Optimizado"
+msgstr ""
+
+#: templates/home/irealze.html:133
+msgid ""
+"La captura rápida de texturas y adquisición de la geometría sin marcadores, "
+"la habilidad de capturar texturas reflexivas mejorada y los modos de "
+"alineación mixtos se adaptan a todas las necesidades de escaneo"
+msgstr ""
+
+#: templates/home/irealze.html:153
+msgid "Conoce las especificaciones más destacadas del escáner iReal 2E"
 msgstr ""
 
 #: templates/home/mini_pro.html:20
@@ -1195,8 +1310,8 @@ msgstr ""
 #: templates/home/nx_modular.html:106
 msgid ""
 "La impresora 3D modular NX de Indart3D marca un nuevo estándar en "
-"fabricación aditiva. Su diseño modular con cabezales intercambiables permite"
-" configurarla con uno o dos extrusores, ya sea para trabajar con pellets o "
+"fabricación aditiva. Su diseño modular con cabezales intercambiables permite "
+"configurarla con uno o dos extrusores, ya sea para trabajar con pellets o "
 "filamento, brindando máxima flexibilidad. Cada equipo está diseñado para "
 "alojar dos cabezales que pueden ser configurados a medida con la ayuda de "
 "nuestros especialistas, asegurando una solución óptima para cada proyecto"
@@ -1205,11 +1320,10 @@ msgstr ""
 #: templates/home/nx_modular.html:108
 msgid ""
 "Con un área de trabajo de 300 x 300 x 250 mm, la NX Modular combina un "
-"volumen de impresión ideal con un enfoque adaptable, ofreciendo a empresas y"
-" profesionales la herramienta perfecta para aplicaciones avanzadas, desde "
+"volumen de impresión ideal con un enfoque adaptable, ofreciendo a empresas y "
+"profesionales la herramienta perfecta para aplicaciones avanzadas, desde "
 "prototipado hasta producción de piezas funcionales. Su diseño cerrado con "
-"filtros integrados garantiza un entorno de trabajo seguro, limpio y "
-"eficiente"
+"filtros integrados garantiza un entorno de trabajo seguro, limpio y eficiente"
 msgstr ""
 
 #: templates/home/nx_modular.html:125
@@ -1223,16 +1337,16 @@ msgid ""
 "permitir trabajar directamente con materia prima en forma de pellets, una "
 "solución que amplía las posibilidades técnicas y creativas en fabricación "
 "aditiva. Este sistema avanzado es capaz de procesar una amplia variedad de "
-"polímeros, incluidos materiales reciclados y compuestos de alto rendimiento,"
-" ofreciendo a los usuarios profesionales una herramienta potente y adaptable"
-" para abordar proyectos complejos"
+"polímeros, incluidos materiales reciclados y compuestos de alto rendimiento, "
+"ofreciendo a los usuarios profesionales una herramienta potente y adaptable "
+"para abordar proyectos complejos"
 msgstr ""
 
 #: templates/home/nx_modular.html:131
 msgid ""
 "Gracias a su capacidad para manejar geometrías exigentes y materiales "
-"técnicos, el extrusor de pellets es ideal para aplicaciones que van desde el"
-" desarrollo de prototipos hasta la producción de piezas funcionales para "
+"técnicos, el extrusor de pellets es ideal para aplicaciones que van desde el "
+"desarrollo de prototipos hasta la producción de piezas funcionales para "
 "sectores como la industria, el diseño de productos y la investigación "
 "avanzada. Su diseño optimizado garantiza una extrusión consistente y "
 "precisa, incluso con materiales de mayor viscosidad, lo que lo convierte en "
@@ -1254,8 +1368,7 @@ msgid "Características clave del extrusor de pellets"
 msgstr ""
 
 #: templates/home/nx_modular.html:159
-msgid ""
-"Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets"
+msgid "Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets"
 msgstr ""
 
 #: templates/home/nx_modular.html:181
@@ -1286,8 +1399,8 @@ msgstr ""
 
 #: templates/home/nx_modular.html:216
 msgid ""
-"Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm"
-" | 5.0 mm."
+"Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm "
+"| 5.0 mm."
 msgstr ""
 
 #: templates/home/nx_modular.html:251
@@ -1298,8 +1411,7 @@ msgid ""
 msgstr ""
 
 #: templates/home/nx_modular.html:269
-msgid ""
-"Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D"
+msgid "Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D"
 msgstr ""
 
 #: templates/home/nx_modular.html:279
@@ -1326,16 +1438,15 @@ msgstr ""
 
 #: templates/home/nx_modular.html:340
 msgid ""
-"Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos"
-" de impresión 3D"
+"Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos "
+"de impresión 3D"
 msgstr ""
 
 #: templates/home/nx_modular.html:347
 msgid ""
 "La NX Modular no solo es una impresora versátil, sino que también está "
-"diseñada para facilitar el trabajo diario. Su área de impresión y estructura"
-" robusta garantizan estabilidad y precisión. Con opciones de conectividad "
-"como"
+"diseñada para facilitar el trabajo diario. Su área de impresión y estructura "
+"robusta garantizan estabilidad y precisión. Con opciones de conectividad como"
 msgstr ""
 
 #: templates/home/nx_modular.html:347
@@ -1348,10 +1459,10 @@ msgstr ""
 
 #: templates/home/nx_modular.html:350
 msgid ""
-"Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 "
-"dB</strong>) y pantalla táctil de <strong>7”</strong> hacen de esta "
-"impresora una opción ideal para quienes buscan eficiencia, seguridad y "
-"comodidad. Compatible con los principales softwares de corte "
+"Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 dB</"
+"strong>) y pantalla táctil de <strong>7”</strong> hacen de esta impresora "
+"una opción ideal para quienes buscan eficiencia, seguridad y comodidad. "
+"Compatible con los principales softwares de corte "
 msgstr ""
 
 #: templates/home/nx_modular.html:350
@@ -1454,8 +1565,8 @@ msgstr ""
 
 #: templates/home/scanerAcolor_it3d.html:93
 msgid ""
-"La alineación automática de los fragmentos del modelo se consigue con dianas"
-" aplicadas a la superficie del objeto. Admite un sistema de fotogrametría "
+"La alineación automática de los fragmentos del modelo se consigue con dianas "
+"aplicadas a la superficie del objeto. Admite un sistema de fotogrametría "
 "externo"
 msgstr ""
 
@@ -1466,8 +1577,8 @@ msgstr ""
 #: templates/home/scanerAcolor_it3d.html:100
 msgid ""
 "Se utiliza para la digitalización de objetos difíciles de escanear de otra "
-"manera, como en exposiciones de museos. Captura detalles complejos y combina"
-" automáticamente los fragmentos"
+"manera, como en exposiciones de museos. Captura detalles complejos y combina "
+"automáticamente los fragmentos"
 msgstr ""
 
 #: templates/home/scanerAcolor_it3d.html:112
@@ -1546,8 +1657,8 @@ msgstr ""
 msgid ""
 "IT3D SCAN ONE es considerado por el gobierno de España como la mejor "
 "solución para el sector educativo. El escáner 3D forma parte del proyecto "
-"Aula del Futuro desarrollado por el INTEF. Esta iniciativa busca impulsar la"
-" educación presente y futura sobre una base de tecnologías actualizadas"
+"Aula del Futuro desarrollado por el INTEF. Esta iniciativa busca impulsar la "
+"educación presente y futura sobre una base de tecnologías actualizadas"
 msgstr ""
 
 #~ msgid "Basque"
