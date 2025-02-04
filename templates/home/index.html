@@ -389,14 +389,18 @@
     <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center" style="z-index: 2; position: relative;">
         <!-- Texto principal -->
         <h2 class="text-white fw-bold display-5 mb-4">
-            No es <span class="text-danger">tarde</span>, tampoco <span class="text-warning">temprano</span>.
+            {% trans "No es" %} 
+            <span class="text-danger">{% trans "tarde" %}</span>, 
+            {% trans "tampoco" %}
+            <span class="text-warning">{% trans "temprano" %}</span>.
             <br>
-            <span class="text-white">Es el momento.</span>
+            <span class="text-white">{% trans "Es el momento." %}</span>
         </h2>
+        
 
         <!-- Botón de llamada a la acción -->
         <a href="{% url 'home_app:contacto' %}" class="btn text-white boton" style="background-color: #6ec1e4; border-radius: 50px; padding: 10px 30px; font-size: 1.2rem;">
-            Contacta con nosotros
+            {% trans 'Contacta con nosotros' %}
         </a>
     </div>
 
