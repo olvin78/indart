@@ -5,33 +5,7 @@
 {% block head %}
 <title>NX_MODULAR | Indart3D</title>
 
-<style>
-    table {
-        font-size: 14px;
-        border-collapse: collapse;
-    }
-    table th {
-        background-color: #f8f9fa;
-        font-weight: bold;
-        text-align: center;
-    }
-    table th, table td {
-        border: 1px solid #dee2e6;
-        padding: 10px;
-        vertical-align: middle;
-    }
-    table tbody tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    table tbody tr:hover {
-        background-color: #e9ecef;
-    }
-    @media (max-width: 768px) {
-        table {
-            font-size: 12px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="{% static 'indart/static/css/caracteristicas.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -244,8 +218,7 @@
       <div class="col-lg-8 col-md-7 py-3">
         <h2 class="fw-bold mb-4 texto-azul-indart">{% trans 'Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle' %}</h2>
         <p class="text-muted">
-          {% trans 'El cabezal Direct Drive HR de filamento de Indart3D está diseñado para usuarios que valoran la precisión y versatilidad en sus proyectos. 
-          Ideal para una amplia gama de materiales, este sistema permite trabajar con filamentos optimizados para diferentes aplicaciones, desde piezas resistentes hasta componentes flexibles' %}.
+          {% trans 'El cabezal Direct Drive HR de filamento de Indart3D está diseñado para usuarios que valoran la precisión y versatilidad en sus proyectos. Ideal para una amplia gama de materiales, este sistema permite trabajar con filamentos optimizados para diferentes aplicaciones, desde piezas resistentes hasta componentes flexibles' %}.
         </p>
         <p class="text-muted">
           {% trans 'Gracias a su diseño robusto y su fiabilidad operativa, este cabezal es perfecto para entornos industriales, educativos y creativos, ofreciendo resultados consistentes y de alta calidad' %}.
@@ -286,7 +259,7 @@
               <div class="mb-3">
                 <i class="bi bi-droplet text-primary fs-1"></i>
               </div>
-              <h5 class="fw-bold">{% trans 'Materiales soportados'% }</h5>
+              <h5 class="fw-bold">{% trans 'Materiales soportados' %}</h5>
               <p class="text-muted mb-0">{% trans 'ABS, ASA, NYLON, PET-G, PLA, PP, TPU Hardness, entre otros' %}.</p>
             </div>
           </div>

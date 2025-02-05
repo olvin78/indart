@@ -255,4 +255,9 @@ urlpatterns = [
         name='configuracion_bigfoot_modelos_anteriores',
     ),
 
+    path('nuestros_productos',
+        views.Nuestros_productosView.as_view(),
+        name='nuestros_productos',
+    ),
+
 ]

@@ -1,0 +1,159 @@
+{% extends 'home/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+
+<style>
+  .fw-bold {
+    font-weight: 700;
+  }
+  .text-primary {
+    color: #4bb5c1;
+  }
+  img {
+    border-radius: 10px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+</style>
+
+
+
+<style>
+  .video-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .img-fluid {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+  }
+  .texto-azul-indart {
+    color: #0056b3;
+    font-size: 1.5rem;
+  }
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+</style>
+
+
+{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+  <div class="container">
+    <!-- Sección de Video Centrado -->
+    <div class="row mb-5 justify-content-center py-5">
+      <div class="col-lg-10">
+        <div class="video-container" style="position: relative; overflow: hidden; padding-top: 56.25%; border-radius: 15px;">
+          <iframe src="{% static 'media/Video-TUMAKER-espanol.mp4' %}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Imagen Centrada -->
+    <div class="row justify-content-center py-5">
+      <div class="col-12 text-center mb-4">
+        <h2 class="fw-bold texto-azul-indart">{% trans 'Especificaciones Genéricas de las Impresoras 3D Tumaker' %}</h2>
+      </div>
+      <div class="col-lg-8 text-center">
+        <img src="{% static 'img/EspecificacionesImpresoras.png' %}" alt="Especificaciones Impresoras Tumaker" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="fw-bold texto-azul-indart text-center">{% trans 'PRINCIPALES ATRIBUTOS' %}</h2>
+      </div>
+    </div>
+    
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h4 class="fw-bold text-secondary">{% trans 'Robustas' %}</h4>
+        <ul>
+          <li>{% trans 'Capaces de imprimir con múltiples materiales' %}</li>
+          <li>{% trans 'Trabajo durante miles de horas sin apenas mantenimiento incluso en entornos hostiles' %}</li>
+          <li>{% trans 'Construidas en España con elementos y procesos de alta calidad' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h4 class="fw-bold text-secondary">{% trans 'Conectadas' %}</h4>
+        <ul>
+          <li>{% trans 'Si no está conectada, no es industria 4.0.' %}</li>
+          <li>{% trans 'Mejora de procesos' %}</li>
+          <li>{% trans 'Fabricación distribuida, remota y transporte de objetos en tiempo real' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h4 class="fw-bold text-secondary">{% trans 'Modulares' %}</h4>
+        <ul>
+          <li>{% trans 'Capacidad de creación de diferentes soluciones para dar respuesta a múltiples necesidades' %}</li>
+          <li>{% trans 'Módulos de respuesta' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h4 class="fw-bold text-secondary">{% trans 'Asequibles' %}</h4>
+        <ul>
+          <li>{% trans 'Prescindimos de lo accesorio y nos centramos en lo esencial' %}</li>
+          <li>{% trans 'Productos competitivos y asequibles' %}</li>
+          <li>{% trans 'Posibilidad de enriquecer la oferta ampliando las funcionalidades' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h4 class="fw-bold text-secondary">{% trans 'Productivas' %}</h4>
+        <ul>
+          <li>{% trans 'Con Tumaker haces más, y haces mejor' %}</li>
+          <li>{% trans 'Todas las características anteriores tienen como consecuencia una mayor productividad' %}</li>
+          <li>{% trans 'Buscamos que la empresa cliente saque el máximo provecho a nuestra tecnología' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h4 class="fw-bold text-secondary">{% trans 'A la carta' %}</h4>
+        <ul>
+          <li>{% trans 'Además de la opción estándar, ofrecemos la primera solución de impresoras 3D profesionales a la carta' %}</li>
+          <li>{% trans 'Con el concepto modular, podrás definir cómo quieres tu plataforma de fabricación aditiva y dar respuesta a los futuros retos' %}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <img src="{% static 'img/nx_modular/simplify3d_logo.webp' %}" alt="Simplify3D Logo" class="img-fluid mb-4">
+        <p>{% trans 'Las impresoras incluyen licencia del software de impresión 3D más avanzado.' %}</p>
+        <p>{% trans 'Indart3D pone a disposición de los clientes un perfil específico para cada uno de sus modelos de impresoras 3D.' %}</p>
+        <p>{% trans 'Con el mejor software conseguirás los mejores resultados. Fácil, sencillo e intuitivo.' %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  
+{% endblock %}

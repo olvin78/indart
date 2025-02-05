@@ -1,0 +1,64 @@
+/*este es el codigo para las paginas de nx modular o las otra como bf modulas
+que tieienen caracteristicas de una forma diferente*/
+.texto-azul-indart {
+    color: #00aaff;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-dark {
+    color: #343a40 !important;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.fs-4 {
+    font-size: 1.25rem;
+}
+
+ul.list-unstyled li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* este es el diseño de las tablas de las pagina ya mecionadas*/
+
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: center;
+}
+
+table th,
+table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}

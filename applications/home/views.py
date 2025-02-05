@@ -336,3 +336,7 @@ class configuracion_bigfoot_proView(TemplateView):
 
 class configuracion_bigfoot_modelos_anterioresView(TemplateView):
     template_name="home/conf_bigfoot_modelos_anteriore.html"
+
+
+class Nuestros_productosView(TemplateView):
+    template_name="home/nuestros_productos.html"

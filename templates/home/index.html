@@ -36,13 +36,15 @@
                 <b>{% trans 'Somos Indart3D, una cooperativa impulsada por jóvenes emprendedores que se dedica al diseño, fabricación y venta de impresoras 3D de última generación' %}.
                 </b>
             </p>
-            <button class="btn btn-light fw-bold" 
-            style="color:#4bb5c1; background:#fdfdfd; border:2px solid #4bb5c1; padding:10px 20px; transition:0.3s;"
-            onmouseover="this.style.background='#ffff'; this.style.color='#4bb5c1'; this.style.transform='scale(1.1)';"
-            onmouseout="this.style.background='#ffff'; this.style.color='#4bb5c1'; this.style.transform='scale(1)';">
-            {% trans 'NUESTROS PRODUCTOS' %}
-            </button>
-        
+            
+            <a href="{% url 'home_app:nuestros_productos' %}">
+                <button class="btn btn-light fw-bold" 
+                style="color:#4bb5c1; background:#fdfdfd; border:2px solid #4bb5c1; padding:10px 20px; transition:0.3s;"
+                onmouseover="this.style.background='#ffff'; this.style.color='#4bb5c1'; this.style.transform='scale(1.1)';"
+                onmouseout="this.style.background='#ffff'; this.style.color='#4bb5c1'; this.style.transform='scale(1)';">
+                {% trans 'NUESTROS PRODUCTOS' %}
+                </button>
+            </a>
         </div>
 
         <!-- Imagen de portada -->
