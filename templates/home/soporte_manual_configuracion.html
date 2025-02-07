@@ -15,7 +15,7 @@
 
 
 <div class="container my-5">
-    <h2 class="text-center texto-azul-indart mb-4">Nuestras Impresoras</h2>
+    <h2 class="text-center texto-azul-indart mb-4">{% trans 'Nuestras Impresoras' %}</h2>
     <hr>
     <div class="row gy-4 py-5">
         <!-- Tarjeta Mini Pro -->
@@ -26,7 +26,7 @@
                 </div>
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">MINI PRO</h5>
-                    <a href="{% static 'doc/00-MINI-PRO.zip' %}" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración Mini Pro</a>
+                    <a href="{% static 'doc/00-MINI-PRO.zip' %}" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">{% trans 'Configuración Mini Pro' %}</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">GAMA NX PRO</h5>
-                    <a href="{% url 'home_app:configuracion_nx_pro' %}" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">Configuración NX Pro</a>
+                    <a href="{% url 'home_app:configuracion_nx_pro' %}" class="btn fondo-azul-indart w-100 text-white"onmouseover="cambiarFondo(this)">{% trans 'Configuración NX Pro' %}</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">GAMA BIGFOOT PRO</h5>
-                    <a href="{% url 'home_app:configuracion_bigfoot_pro' %}" class="btn fondo-azul-indart w-100 text-white" onmouseover="cambiarFondo(this)">Configuración Bigfoot Pro</a>
+                    <a href="{% url 'home_app:configuracion_bigfoot_pro' %}" class="btn fondo-azul-indart w-100 text-white" onmouseover="cambiarFondo(this)">{% trans 'Configuración Bigfoot Pro' %}</a>
                 </div>
             </div>
         </div>
@@ -59,12 +59,12 @@
         <a href="{% static 'doc/MANUAL_IMPRESORAS-1.pdf' %}" 
            class="btn fondo-azul-indart text-white px-4 py-2" 
            onmouseover="cambiarFondo(this)">
-           Manual Impresora
+           {% trans 'Manual Impresora' %}
         </a>
         <a href="{% static 'doc/Manual_Kit-close_ES.pdf' %}" 
            class="btn fondo-azul-indart text-white px-4 py-2" 
            onmouseover="cambiarFondo(this)">
-           Manual Kit Close
+           {% trans 'Manual Kit Close' %}
         </a>
     </div>
     

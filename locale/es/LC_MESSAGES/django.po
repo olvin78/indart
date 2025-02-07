@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 09:07+0000\n"
+"POT-Creation-Date: 2025-02-07 11:14+0100\n"
 "PO-Revision-Date: 2025-02-03 14:57+0000\n"
 "Last-Translator:   <olvind78@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,7 +233,12 @@ msgstr ""
 #: templates/home/acanerAcolo-ireal_m3.html:199
 #: templates/home/autoScan-t42.html:170 templates/home/bf_modular.html:348
 #: templates/home/irealze.html:152 templates/home/mini_pro.html:28
-#: templates/home/nx_modular.html:362 templates/home/scanerAcolor_it3d.html:189
+#: templates/home/nx_modular.html:335 templates/home/portatil_Simscan.html:214
+#: templates/home/portatil_kscan_20.html:140
+#: templates/home/portatil_kscan_magic.html:101
+#: templates/home/portatil_mscan_l15.html:54
+#: templates/home/portatil_trackScan_p42.html:136
+#: templates/home/scanerAcolor_it3d.html:189
 msgid "Características"
 msgstr ""
 
@@ -307,7 +312,7 @@ msgid ""
 "realizando la inspección eficiente y automática"
 msgstr ""
 
-#: templates/home/autoScan-k-3D.html:54
+#: templates/home/autoScan-k-3D.html:54 templates/home/autoScan-k-3D.html:80
 msgid "Inspección automática durante todo el proceso"
 msgstr ""
 
@@ -464,12 +469,80 @@ msgstr ""
 "The military-grade design offers excellent adaptability in harsh industrial "
 "environments without being insensitive to temperature, vibration, dust, etc."
 
+#: templates/home/base copy.html:302
+msgid "ALIMENTADOR DE PELLET"
+msgstr ""
+
+#: templates/home/base copy.html:306
+msgid "Escáner 3D"
+msgstr ""
+
+#: templates/home/base copy.html:310
+msgid "Escáner"
+msgstr ""
+
+#: templates/home/base copy.html:310
+msgid "Automatizado"
+msgstr ""
+
+#: templates/home/base copy.html:369 templates/home/base.html:236
+msgid "Material"
+msgstr "Material"
+
+#: templates/home/base copy.html:373 templates/home/base.html:240
+#: templates/home/materiales_validados.html:51
+msgid "Materiales validados"
+msgstr "Validated materials"
+
+#: templates/home/base copy.html:377 templates/home/base.html:244
+#: templates/home/index.html:85 templates/home/servicios.html:23
+#: templates/home/servicios.html:49
+msgid "Servicios 3D"
+msgstr "3D services"
+
+#: templates/home/base copy.html:379 templates/home/base.html:246
+msgid "Servocios"
+msgstr "Services"
+
+#: templates/home/base copy.html:380
+#, fuzzy
+#| msgid "Servicio de impresión"
+msgid "Servicio de Validación e"
+msgstr "Printing Service"
+
+#: templates/home/base copy.html:380
+#, fuzzy
+#| msgid "Servicio de Validación e <br> impresión 3D con Pellet"
+msgid "impresión 3D con Pellet"
+msgstr "Validation and 3D Printing Service with Pellet"
+
+#: templates/home/base copy.html:387 templates/home/base.html:254
+msgid "Soporte"
+msgstr "Support"
+
+#: templates/home/base copy.html:389 templates/home/base.html:256
+msgid "Soporte Técnico"
+msgstr "Technical Support"
+
+#: templates/home/base copy.html:390 templates/home/base.html:257
+msgid "Manual y Configuración"
+msgstr "Manual and Configuration"
+
 #: templates/home/base copy.html:394 templates/home/base.html:261
 msgid "Nosotros"
 msgstr "About us"
 
-#: templates/home/base copy.html:396 templates/home/base.html:263
+#: templates/home/base copy.html:396 copy.html:480 templates/home/base.html:263
 #: templates/home/base.html:347
+#: templates/home/conf_bigfoot_modelos_anteriore.html:196
+#: templates/home/conf_bogfoot_pro.html:140 templates/home/conf_nx_pro.html:148
+#: templates/home/soporte_tecnico.html:62
+#: templates/home/soporte_tecnico.html:127
+#: templates/home/soporte_tecnico.html:166
+#: templates/home/soporte_tecnico.html:203
+#: templates/home/soporte_tecnico.html:240
+#: templates/home/soporte_tecnico.html:278
+#: templates/home/soporte_tecnico.html:315
 msgid "Contacto"
 msgstr "Contact"
 
@@ -477,9 +550,45 @@ msgstr "Contact"
 msgid "Subvenciones"
 msgstr "Grants"
 
-#: templates/home/base.html:236
-msgid "Material"
-msgstr "Material"
+#: templates/home/base copy.html:418 templates/home/base.html:285
+msgid "Quiénes somos"
+msgstr "About Us"
+
+#: templates/home/base copy.html:465 templates/home/base.html:332
+msgid "Innovación y Desarrollo 3D"
+msgstr "3D Innovation and Development"
+
+#: templates/home/base copy.html:473 templates/home/base.html:340
+msgid "Creadores de"
+msgstr "Creators of"
+
+#: templates/home/base copy.html:496 templates/home/base.html:363
+msgid "Contactar"
+msgstr "Contact"
+
+#: templates/home/base copy.html:503 templates/home/base.html:370
+msgid "Horario"
+msgstr "Schedule"
+
+#: templates/home/base copy.html:515 templates/home/base.html:382
+msgid "Aviso legal"
+msgstr "Legal Notice"
+
+#: templates/home/base copy.html:517 templates/home/base.html:384
+msgid "Cookies"
+msgstr "Cookies"
+
+#: templates/home/base copy.html:519 templates/home/base.html:386
+msgid "Políticas de Privacidad"
+msgstr "Privacy Policies"
+
+#: templates/home/base copy.html:558 templates/home/contacto.html:99
+msgid "Enviar"
+msgstr ""
+
+#: templates/home/base copy.html:564
+msgid "Cerrar"
+msgstr ""
 
 #: templates/home/base.html:238
 msgid "Pellet"
@@ -489,57 +598,13 @@ msgstr "Pellet"
 msgid "Filamento"
 msgstr "Filament"
 
-#: templates/home/base.html:240
-msgid "Materiales validados"
-msgstr "Validated materials"
-
-#: templates/home/base.html:244 templates/home/index.html:84
-msgid "Servicios 3D"
-msgstr "3D services"
-
-#: templates/home/base.html:246
-msgid "Servocios"
-msgstr "Services"
-
 #: templates/home/base.html:247
 msgid "Servicio de Validación e <br> impresión 3D con Pellet"
 msgstr "Validation and 3D Printing Service with Pellet"
 
-#: templates/home/base.html:254
-msgid "Soporte"
-msgstr "Support"
-
-#: templates/home/base.html:256
-msgid "Soporte Técnico"
-msgstr "Technical Support"
-
-#: templates/home/base.html:257
-msgid "Manual y Configuración"
-msgstr "Manual and Configuration"
-
-#: templates/home/base.html:285
-msgid "Quiénes somos"
-msgstr "About Us"
-
-#: templates/home/base.html:332
-msgid "Innovación y Desarrollo 3D"
-msgstr "3D Innovation and Development"
-
-#: templates/home/base.html:340
-msgid "Creadores de"
-msgstr "Creators of"
-
 #: templates/home/base.html:342
 msgid "Web creada por Indart3D"
 msgstr "Website created by Indart3D"
-
-#: templates/home/base.html:363
-msgid "Contactar"
-msgstr "Contact"
-
-#: templates/home/base.html:370
-msgid "Horario"
-msgstr "Schedule"
 
 #: templates/home/base.html:371 templates/home/base.html:378
 msgid "Lunes"
@@ -549,25 +614,13 @@ msgstr "Monday"
 msgid "Jueves"
 msgstr "hursday"
 
-#: templates/home/base.html:377
-msgid "Horario de Verano"
-msgstr " Summer Schedule"
-
-#: templates/home/base.html:378
+#: templates/home/base.html:372 templates/home/base.html:378
 msgid "Viernes"
 msgstr "Friday"
 
-#: templates/home/base.html:382
-msgid "Aviso legal"
-msgstr "Legal Notice"
-
-#: templates/home/base.html:384
-msgid "Cookies"
-msgstr "Cookies"
-
-#: templates/home/base.html:386
-msgid "Políticas de Privacidad"
-msgstr "Privacy Policies"
+#: templates/home/base.html:377
+msgid "Horario de Verano"
+msgstr " Summer Schedule"
 
 #: templates/home/bf_modular.html:86
 msgid "Sistema de Cabezales Independientes, Modulares e Intercambiables"
@@ -643,7 +696,57 @@ msgstr ""
 "design, architecture, and education, the pellet extruder stands out for its "
 "versatility and ability to tackle the most ambitious projects"
 
-#: templates/home/bf_modular.html:213 templates/home/nx_modular.html:245
+#: templates/home/bf_modular.html:146 templates/home/nx_modular.html:132
+msgid "Características clave del extrusor de pellets"
+msgstr ""
+
+#: templates/home/bf_modular.html:147
+msgid ""
+"Diseñado para ofrecer un rendimiento excepcional con materiales avanzados"
+msgstr ""
+
+#: templates/home/bf_modular.html:158 templates/home/nx_modular.html:166
+#: templates/home/nx_modular.html:251
+msgid "Compatibilidad"
+msgstr ""
+
+#: templates/home/bf_modular.html:159
+msgid ""
+"Compatibilidad con el Alimentador de Pellets para un flujo de material "
+"constante"
+msgstr ""
+
+#: templates/home/bf_modular.html:165 templates/home/nx_modular.html:155
+msgid "Tamaño"
+msgstr ""
+
+#: templates/home/bf_modular.html:166 templates/home/nx_modular.html:156
+msgid "Tamaño de pellet recomendado: 3-5 mm de diámetro"
+msgstr ""
+
+#: templates/home/bf_modular.html:172 templates/home/bf_modular.html:257
+#: templates/home/nx_modular.html:177 templates/home/nx_modular.html:273
+msgid "Temperatura"
+msgstr ""
+
+#: templates/home/bf_modular.html:173
+msgid ""
+"Temperatura máxima del cabezal: hasta 300 ºC para materiales técnicos "
+"avanzados"
+msgstr ""
+
+#: templates/home/bf_modular.html:179 templates/home/bf_modular.html:268
+#: templates/home/nx_modular.html:284
+msgid "Boquillas intercambiables"
+msgstr ""
+
+#: templates/home/bf_modular.html:180
+msgid ""
+"Boquillas compatibles: 0,4 mm | 0,6 mm | 0,8 mm (incluida) | 2,0 mm | 4,0 mm "
+"| 5,0 mm, ajustadas a diferentes aplicaciones"
+msgstr ""
+
+#: templates/home/bf_modular.html:213 templates/home/nx_modular.html:219
 msgid "Extrusor de Filamento: Precisión y Flexibilidad en Cada Detalle"
 msgstr "Filament Extruder: Precision and Flexibility in Every Deta"
 
@@ -671,7 +774,7 @@ msgstr ""
 "this extruder is a key tool for industrial, educational, and creative "
 "sectors, where precision and versatility are essential"
 
-#: templates/home/bf_modular.html:236 templates/home/nx_modular.html:268
+#: templates/home/bf_modular.html:236 templates/home/nx_modular.html:241
 msgid "Características clave del extrusor de filamento Direct Drive HR"
 msgstr "Key Features of the Direct Drive HR Filament Extrude"
 
@@ -687,17 +790,8 @@ msgstr ""
 msgid "Capacidad de impresión con bobinas de hasta 8 kg"
 msgstr ""
 
-#: templates/home/bf_modular.html:257 templates/home/nx_modular.html:203
-#: templates/home/nx_modular.html:300
-msgid "Temperatura"
-msgstr ""
-
 #: templates/home/bf_modular.html:258
 msgid "Temperatura máxima: hasta"
-msgstr ""
-
-#: templates/home/bf_modular.html:268 templates/home/nx_modular.html:311
-msgid "Boquillas intercambiables"
 msgstr ""
 
 #: templates/home/bf_modular.html:270
@@ -765,100 +859,438 @@ msgid ""
 "aplicaciones"
 msgstr ""
 
-#: templates/home/bf_modular.html:353 templates/home/nx_modular.html:367
+#: templates/home/bf_modular.html:353 templates/home/nx_modular.html:340
 msgid "Especificación"
 msgstr ""
 
-#: templates/home/bf_modular.html:363 templates/home/nx_modular.html:377
+#: templates/home/bf_modular.html:363 templates/home/nx_modular.html:350
 msgid "Número de cabezales"
 msgstr ""
 
-#: templates/home/bf_modular.html:371 templates/home/nx_modular.html:385
+#: templates/home/bf_modular.html:371 templates/home/nx_modular.html:358
 msgid "Boquillas compatibles"
 msgstr ""
 
-#: templates/home/bf_modular.html:379 templates/home/nx_modular.html:393
+#: templates/home/bf_modular.html:379 templates/home/nx_modular.html:366
 msgid "Boquillas incluidas"
 msgstr ""
 
-#: templates/home/bf_modular.html:387 templates/home/index.html:75
-#: templates/home/nx_modular.html:401
+#: templates/home/bf_modular.html:387 templates/home/index.html:76
+#: templates/home/materiales_validados.html:16
+#: templates/home/nx_modular.html:374
 msgid "Materiales"
 msgstr ""
 
-#: templates/home/bf_modular.html:395 templates/home/nx_modular.html:409
+#: templates/home/bf_modular.html:395 templates/home/nx_modular.html:382
 msgid "Área de trabajo"
 msgstr ""
 
-#: templates/home/bf_modular.html:403 templates/home/nx_modular.html:417
+#: templates/home/bf_modular.html:403 templates/home/nx_modular.html:390
 msgid "Peso de la impresora"
 msgstr ""
 
-#: templates/home/bf_modular.html:411 templates/home/nx_modular.html:425
+#: templates/home/bf_modular.html:411 templates/home/nx_modular.html:398
 msgid "Dimensiones de la impresora"
 msgstr ""
 
-#: templates/home/bf_modular.html:419 templates/home/nx_modular.html:433
+#: templates/home/bf_modular.html:419 templates/home/nx_modular.html:406
 msgid "Temperatura de la cama caliente"
 msgstr ""
 
-#: templates/home/bf_modular.html:427 templates/home/nx_modular.html:441
+#: templates/home/bf_modular.html:427 templates/home/nx_modular.html:414
 msgid "Temperatura del cabezal"
 msgstr ""
 
-#: templates/home/bf_modular.html:435 templates/home/nx_modular.html:449
+#: templates/home/bf_modular.html:435 templates/home/nx_modular.html:422
 msgid "Calibración"
 msgstr ""
 
-#: templates/home/bf_modular.html:443 templates/home/nx_modular.html:457
+#: templates/home/bf_modular.html:443 templates/home/nx_modular.html:430
 msgid "Estructura"
 msgstr ""
 
-#: templates/home/bf_modular.html:451 templates/home/nx_modular.html:465
+#: templates/home/bf_modular.html:451 templates/home/nx_modular.html:438
 msgid "Conectividad"
 msgstr ""
 
-#: templates/home/bf_modular.html:459 templates/home/nx_modular.html:473
+#: templates/home/bf_modular.html:459 templates/home/nx_modular.html:446
 msgid "Emisión de ruido"
 msgstr ""
 
-#: templates/home/bf_modular.html:467 templates/home/nx_modular.html:481
+#: templates/home/bf_modular.html:467 templates/home/nx_modular.html:454
 msgid "Pantalla"
 msgstr ""
 
-#: templates/home/bf_modular.html:475 templates/home/nx_modular.html:489
+#: templates/home/bf_modular.html:475 templates/home/nx_modular.html:462
 msgid "Software compatible"
 msgstr ""
 
-#: templates/home/bf_modular.html:483 templates/home/nx_modular.html:497
+#: templates/home/bf_modular.html:483 templates/home/nx_modular.html:470
 msgid "Nivel de potencia"
 msgstr ""
 
-#: templates/home/bf_modular.html:491 templates/home/nx_modular.html:505
+#: templates/home/bf_modular.html:491 templates/home/nx_modular.html:478
 msgid "Software de corte compatible"
 msgstr ""
 
-#: templates/home/bf_modular.html:499 templates/home/nx_modular.html:513
+#: templates/home/bf_modular.html:499 templates/home/nx_modular.html:486
 msgid "Formato de archivos"
 msgstr ""
 
-#: templates/home/bf_modular.html:507 templates/home/nx_modular.html:521
+#: templates/home/bf_modular.html:507 templates/home/nx_modular.html:494
 msgid "Garantía"
 msgstr ""
 
-#: templates/home/bf_modular.html:515 templates/home/nx_modular.html:529
+#: templates/home/bf_modular.html:515 templates/home/nx_modular.html:502
 msgid "Peso del paquete"
 msgstr ""
 
-#: templates/home/bf_modular.html:523 templates/home/nx_modular.html:537
+#: templates/home/bf_modular.html:523 templates/home/nx_modular.html:510
 msgid "Dimensiones del paquete"
 msgstr "Package dimensions"
 
-#: templates/home/index.html:33
+#: templates/home/conf_bigfoot_modelos_anteriore.html:17
+#: templates/home/conf_nx_pro.html:18
+msgid "Descargar Configuración Gama BIG_FOOT"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:24
+#: templates/home/conf_bigfoot_modelos_anteriore.html:39
+#: templates/home/conf_bigfoot_modelos_anteriore.html:54
+#: templates/home/conf_bigfoot_modelos_anteriore.html:73
+#: templates/home/conf_bigfoot_modelos_anteriore.html:88
+#: templates/home/conf_bigfoot_modelos_anteriore.html:103
+#: templates/home/conf_bigfoot_modelos_anteriore.html:120
+#: templates/home/conf_bigfoot_modelos_anteriore.html:135
+#: templates/home/conf_bogfoot_pro.html:24
+#: templates/home/conf_bogfoot_pro.html:39
+#: templates/home/conf_bogfoot_pro.html:54
+#: templates/home/conf_bogfoot_pro.html:72
+#: templates/home/conf_bogfoot_pro.html:87 templates/home/conf_nx_pro.html:27
+#: templates/home/conf_nx_pro.html:44 templates/home/conf_nx_pro.html:61
+#: templates/home/conf_nx_pro.html:81 templates/home/conf_nx_pro.html:98
+msgid "Click Para Descargar"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:28
+msgid "Bigfoot Pro Bowden"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:43
+msgid "Bigfoot Pro Direct Drive"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:58
+#: templates/home/conf_bogfoot_pro.html:43
+msgid "Bigfoot Pro Pellet"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:77
+msgid "Bigfoot Pro Bowden - Bowden"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:92
+msgid "Bigfoot Pro Bowden - Direct Drive"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:107
+msgid "Bigfoot Pro Bowden - Pellet"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:124
+msgid "Bigfoot Pro Direct Drive - Direct Drive"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:139
+msgid "Bigfoot Pro Direct Drive - Pellet"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:154
+#: templates/home/conf_bogfoot_pro.html:58
+msgid "Bigfoot Pro Pellet - Pellet"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:165
+#: templates/home/conf_bogfoot_pro.html:102 templates/home/conf_nx_pro.html:115
+msgid "Regresar a Otros Modelos"
+msgstr ""
+
+#: templates/home/conf_bigfoot_modelos_anteriore.html:181
+#: templates/home/conf_bogfoot_pro.html:125 templates/home/conf_nx_pro.html:133
+msgid ""
+"Si no encuentras el archivo que necesitas, no dudes en ponerte en contacto "
+"con nosotros. Estamos aquí para ayudarte"
+msgstr ""
+
+#: templates/home/conf_bogfoot_pro.html:17
+msgid "Descargar Configuración Gama NX Pro"
+msgstr ""
+
+#: templates/home/conf_bogfoot_pro.html:28
+msgid "Bigfoot Pro Direct Drive HR"
+msgstr ""
+
+#: templates/home/conf_bogfoot_pro.html:76
+msgid "Bigfoot Pro Direct Drive HR - Pellet"
+msgstr ""
+
+#: templates/home/conf_bogfoot_pro.html:91
+msgid "Bigfoot Pro Direct Drive HR - Direct Drive HR"
+msgstr ""
+
+#: templates/home/conf_bogfoot_pro.html:111
+msgid "Ver modelos anteriores a estos"
+msgstr ""
+
+#: templates/home/conf_nx_pro.html:33
+msgid "NX Pro Direct Drive HR"
+msgstr ""
+
+#: templates/home/conf_nx_pro.html:50
+#, fuzzy
+#| msgid "Pellet"
+msgid "NX Pro Pellet"
+msgstr "Pellet"
+
+#: templates/home/conf_nx_pro.html:67
+msgid "NX Pro Pellet - Pellet"
+msgstr ""
+
+#: templates/home/conf_nx_pro.html:87
+msgid "NX Pro Direct Drive HR - Pellet"
+msgstr ""
+
+#: templates/home/conf_nx_pro.html:104
+msgid "NX Pro Direct Drive HR - Direct Drive HR"
+msgstr ""
+
+#: templates/home/contacto.html:29 templates/home/index.html:404
+#, fuzzy
+#| msgid "Contactar"
+msgid "Contacta con nosotros"
+msgstr "Contact"
+
+#: templates/home/contacto.html:31
+msgid "Puedes ponerte en contacto con nosotros para lo que necesites:"
+msgstr ""
+
+#: templates/home/contacto.html:34
+msgid "¿Quieres hacer un pedido o pedir un presupuesto?"
+msgstr ""
+
+#: templates/home/contacto.html:35
+msgid "¿Dudas técnicas?"
+msgstr ""
+
+#: templates/home/contacto.html:36
+msgid "¿Quieres proponernos una idea o sugerencia?"
+msgstr ""
+
+#: templates/home/contacto.html:37
+msgid "¿Quieres enviarnos tu currículum o demostrarnos tu talento?"
+msgstr ""
+
+#: templates/home/contacto.html:51
+msgid "Nombre*"
+msgstr ""
+
+#: templates/home/contacto.html:55
+#, fuzzy
+#| msgid "Impresoras 3D"
+msgid "Empresa"
+msgstr "3D Printers"
+
+#: templates/home/contacto.html:63 templates/home/contacto.html:144
+msgid "Email"
+msgstr ""
+
+#: templates/home/contacto.html:67
+msgid "País"
+msgstr ""
+
+#: templates/home/contacto.html:74 templates/home/contacto.html:119
+msgid "Teléfono"
+msgstr ""
+
+#: templates/home/contacto.html:84
+#, fuzzy
+#| msgid "¿Qué podemos hacer por ti?"
+msgid "¿En qué te podemos ayudar?"
+msgstr "How can we help you?"
+
+#: templates/home/contacto.html:92 templates/home/form_pedidos.html:68
+#, fuzzy
+#| msgid "Políticas de Privacidad"
+msgid "política de privacidad"
+msgstr "Privacy Policies"
+
+#: templates/home/contacto.html:93 templates/home/form_impresion.html:77
+#, fuzzy
+#| msgid "Aviso legal"
+msgid "aviso legal"
+msgstr "Legal Notice"
+
+#: templates/home/contacto.html:131
+msgid "Dirección"
+msgstr ""
+
+#: templates/home/contacto.html:159
+msgid "Visítanos"
+msgstr ""
+
+#: templates/home/contacto.html:160
+msgid ""
+"Si necesitas soporte presencial, o simplemente quieres ver dónde fabricamos "
+"y desarrollamos nuestros productos, puedes visitarnos, estamos en:"
+msgstr ""
+
+#: templates/home/contacto.html:181 templates/home/index.html:393
+msgid "No es"
+msgstr ""
+
+#: templates/home/contacto.html:181 templates/home/index.html:394
+#: templates/home/servicios.html:117 templates/home/sobre_nosotros.html:249
+msgid "tarde"
+msgstr ""
+
+#: templates/home/contacto.html:181 templates/home/index.html:395
+#: templates/home/servicios.html:117
+msgid "tampoco"
+msgstr ""
+
+#: templates/home/contacto.html:181 templates/home/index.html:396
+#: templates/home/servicios.html:118 templates/home/sobre_nosotros.html:249
+msgid "temprano"
+msgstr ""
+
+#: templates/home/contacto.html:181 templates/home/servicios.html:118
+msgid "Es el"
+msgstr ""
+
+#: templates/home/contacto.html:181 templates/home/servicios.html:119
+#: templates/home/sobre_nosotros.html:249
+#, fuzzy
+#| msgid "Filamento"
+msgid "momento"
+msgstr "Filament"
+
+#: templates/home/duet_detalle.html:56
+msgid "Resumen"
+msgstr ""
+
+#: templates/home/duet_detalle.html:62 templates/home/duet_detalle.html:66
+msgid "Descripción"
+msgstr ""
+
+#: templates/home/filamento_detalle.html:16
+msgid "Filamentos para Impresión 3D"
+msgstr ""
+
+#: templates/home/filamento_detalle.html:17
+#, fuzzy
+#| msgid ""
+#| "Disponemos de los materiales necesarios para que tu experiencia de "
+#| "impresión sea la mejor"
+msgid "Descubre los mejores materiales para tus proyectos de impresión 3D"
+msgstr ""
+"We provide the necessary materials to ensure the best 3D printing experience"
+
+#: templates/home/form_impresion.html:22
+msgid "Hacer Pedido"
+msgstr ""
+
+#: templates/home/form_impresion.html:77
+msgid "He leído y acepto la política de privacidad y el"
+msgstr ""
+
+#: templates/home/form_impresion.html:83
+msgid "Enviar Solicitud"
+msgstr ""
+
+#: templates/home/form_impresion.html:96 templates/home/form_pedidos.html:21
+msgid "Me encargaré de poner a mi equipo en contacto"
+msgstr ""
+
+#: templates/home/form_impresion.html:96 templates/home/form_pedidos.html:21
+msgid "lo más pronto"
+msgstr ""
+
+#: templates/home/form_pedidos.html:50
+msgid "Solicita Información"
+msgstr ""
+
+#: templates/home/form_pedidos.html:53
+msgid "Escriba su Nombre"
+msgstr ""
+
+#: templates/home/form_pedidos.html:56
+msgid "Escriba su Correo"
+msgstr ""
+
+#: templates/home/form_pedidos.html:59
+msgid "Nombre de la Empresa"
+msgstr ""
+
+#: templates/home/form_pedidos.html:62
+msgid "Escriba el Mensaje"
+msgstr ""
+
+#: templates/home/form_pedidos.html:67
+msgid "He leído y acepto la"
+msgstr ""
+
+#: templates/home/form_pedidos.html:74
+msgid "Envia Pedido"
+msgstr ""
+
+#: templates/home/hazitek_2021.html:22 templates/home/hazitek_2022.html:21
+#: templates/home/hazitek_2023.html:21
+msgid "PROGRAMA DE AYUDAS DE APOYO A LA I+D EMPRESARIAL – HAZITEK"
+msgstr ""
+
+#: templates/home/hazitek_2021.html:26 templates/home/hazitek_2022.html:25
+msgid ""
+"ACTUACIÓN COFINANCIADA POR EL GOBIERNO VASCO Y LA UNIÓN EUROPEA A TRAVÉS DEL "
+"FONDO EUROPEO DE DESARROLLO REGIONAL 2021-2027 (FEDER)"
+msgstr ""
+
+#: templates/home/hazitek_2021.html:30
+msgid "Proyecto ZL – 2021/00714 – PelletPR proiektua"
+msgstr ""
+
+#: templates/home/hazitek_2022.html:29
+msgid "Proyecto ZL – 2022/00063 – PelletPR proiektua"
+msgstr ""
+
+#: templates/home/hazitek_2023.html:25
+msgid ""
+" ACTUACIÓN COFINANCIADA POR EL GOBIERNO VASCO Y LA UNIÓN EUROPEA A TRAVÉS "
+"DEL FONDO EUROPEO DE DESARROLLO REGIONAL 2021-2027 (FEDER)"
+msgstr ""
+
+#: templates/home/hazitek_2023.html:29
+msgid "Proyecto ZL – 2023/00905 – BIOPRINT proiektua"
+msgstr ""
+
+#: templates/home/hazitek_2024.html:33
+msgid "SUBVENCIÓN 2024"
+msgstr ""
+
+#: templates/home/hazitek_2024.html:34
+#, fuzzy
+#| msgid "Investigación & Desarrollo"
+msgid "Investigación, desarrollo e innovación"
+msgstr "Research & Development,"
+
+#: templates/home/hazitek_2024.html:51
+msgid "PROGRAMA DE AYUDAS INDART"
+msgstr ""
+
+#: templates/home/index.html:32
 msgid "BIENVENIDOS"
 msgstr "WELCOME"
 
-#: templates/home/index.html:36
+#: templates/home/index.html:35
 msgid ""
 "Somos Indart3D, una cooperativa impulsada por jóvenes emprendedores que se "
 "dedica al diseño, fabricación y venta de impresoras 3D de última generación"
@@ -866,29 +1298,29 @@ msgstr ""
 "We are Indart3D, a cooperative driven by young entrepreneurs dedicated to "
 "the design, manufacturing, and sale of next-generation 3D printers"
 
-#: templates/home/index.html:43
+#: templates/home/index.html:44
 msgid "NUESTROS PRODUCTOS"
 msgstr "OUR PRODUCTS"
 
-#: templates/home/index.html:66
+#: templates/home/index.html:67
 msgid "Impresoras 3D"
 msgstr "3D Printers"
 
-#: templates/home/index.html:67
+#: templates/home/index.html:68
 msgid ""
 "Diseñamos y fabricamos impresoras 3D con la última tecnología del mercado"
 msgstr ""
 "We design and manufacture 3D printers with the latest technology on the "
 "market"
 
-#: templates/home/index.html:76
+#: templates/home/index.html:77
 msgid ""
 "Disponemos de los materiales necesarios para que tu experiencia de impresión "
 "sea la mejor"
 msgstr ""
 "We provide the necessary materials to ensure the best 3D printing experience"
 
-#: templates/home/index.html:85
+#: templates/home/index.html:86
 msgid ""
 "Imprimimos, escaneamos e impartimos formación a medida. Lo que necesites "
 "cuando lo necesites"
@@ -896,15 +1328,15 @@ msgstr ""
 "We print, scan, and provide customized training. Whatever you need, whenever "
 "you need it"
 
-#: templates/home/index.html:102
+#: templates/home/index.html:103
 msgid "MISIÓN & VISIÓN"
 msgstr "MISSION & VISION"
 
-#: templates/home/index.html:109
+#: templates/home/index.html:110
 msgid "Cambiando el futuro de las impresoras"
 msgstr "Changing the future of printers"
 
-#: templates/home/index.html:111
+#: templates/home/index.html:112
 msgid ""
 "La impresión 3D está cambiando el mundo industrial. Dedicamos parte de "
 "nuestro trabajo a investigación y desarrollo para cubrir las necesidades que "
@@ -913,11 +1345,11 @@ msgstr ""
 "3D printing is changing the industrial world. We dedicate part of our work "
 "to research and development to meet the needs demanded by Industry 4.0"
 
-#: templates/home/index.html:131
+#: templates/home/index.html:132 templates/home/servicios.html:55
 msgid "Servicio de impresión"
 msgstr "Printing Service"
 
-#: templates/home/index.html:132
+#: templates/home/index.html:133
 msgid ""
 "¿Quieres enviarnos un diseño y descubrir el potencial y beneficio de nuestra "
 "tecnología para tu empresa? Necesitas un prototipo, un regalo personalizado, "
@@ -927,44 +1359,46 @@ msgstr ""
 "our technology for your company? Do you need a prototype, a personalized "
 "gift, or a model?"
 
-#: templates/home/index.html:143
+#: templates/home/index.html:134 templates/home/index.html:146
+#: templates/home/index.html:158
+msgid "Más información"
+msgstr ""
+
+#: templates/home/index.html:144 templates/home/servicios.html:56
 msgid "Servicio de escaneado"
 msgstr ""
 
-#: templates/home/index.html:144
+#: templates/home/index.html:145
 msgid ""
 "¿Necesitas obtener el diseño digitalizado en 3D de algún objeto? Con nuestro "
 "servicio de escaneado te ayudaremos a replicarlo cuando lo necesites"
 msgstr ""
 
-#: templates/home/index.html:155
+#: templates/home/index.html:156 templates/home/servicios.html:98
 msgid "Formación 3D"
 msgstr ""
 
-#: templates/home/index.html:156
+#: templates/home/index.html:157
 msgid ""
 "¿Quieres aprender sobre la fabricación aditiva? Podemos ofrecer cursos a "
 "medida, para todo tipo de niveles y con diferentes opciones, nos amoldamos a "
 "lo que necesites"
 msgstr ""
 
-#: templates/home/index.html:157
-msgid "Más información"
-msgstr ""
-
-#: templates/home/index.html:180
+#: templates/home/index.html:181 templates/home/servicios.html:57
+#: templates/home/servicios.html:104 templates/home/sobre_nosotros.html:232
 msgid "Formación"
 msgstr ""
 
-#: templates/home/index.html:181
+#: templates/home/index.html:182
 msgid "Forma parte de la"
 msgstr ""
 
-#: templates/home/index.html:181
+#: templates/home/index.html:182
 msgid "industria 4.0"
 msgstr ""
 
-#: templates/home/index.html:183
+#: templates/home/index.html:184
 msgid ""
 "La innovación forma parte de nuestra filosofía. El desarrollo continuo "
 "también. Son los dos pilaresde la nueva era en tecnología que estamos "
@@ -976,23 +1410,23 @@ msgstr ""
 "of which we are a part. And training is the foundation. The training that "
 "will drive your company forward"
 
-#: templates/home/index.html:187
+#: templates/home/index.html:188
 msgid "Cursos & Talleres"
 msgstr "Courses & Workshops"
 
-#: templates/home/index.html:203
+#: templates/home/index.html:204
 msgid "Servicios"
 msgstr "Services"
 
-#: templates/home/index.html:204
+#: templates/home/index.html:205
 msgid "¿Qué podemos hacer por ti?"
 msgstr "How can we help you?"
 
-#: templates/home/index.html:215
+#: templates/home/index.html:216
 msgid "Impresiones 3D"
 msgstr "3D printing"
 
-#: templates/home/index.html:216
+#: templates/home/index.html:217
 msgid ""
 "Imprimimos utilizando los mejores materiales y tecnología de última "
 "generación para que el resultado sea de la máxima calidad"
@@ -1000,11 +1434,11 @@ msgstr ""
 "We print using the best materials and state-of-the-art technology to ensure "
 "the highest quality results"
 
-#: templates/home/index.html:226
+#: templates/home/index.html:227 templates/home/servicios.html:83
 msgid "Escaneado 3D"
 msgstr "3D scanning"
 
-#: templates/home/index.html:227
+#: templates/home/index.html:228
 msgid ""
 "Escanear una pieza ya no es un problema. Realizamos escaneados de las piezas "
 "que necesites, utilizando un proceso de alta resolución"
@@ -1012,11 +1446,11 @@ msgstr ""
 "Scanning a piece is no longer a problem. We perform scans of the pieces you "
 "need, using a high-resolution process"
 
-#: templates/home/index.html:237 templates/home/index.html:286
+#: templates/home/index.html:238 templates/home/index.html:287
 msgid "Investigación & Desarrollo"
 msgstr "Research & Development,"
 
-#: templates/home/index.html:238
+#: templates/home/index.html:239
 msgid ""
 "Colaboramos y realizamos proyectos de I+D. Si necesitas probar nuevos "
 "materiales o piezas, nosotros podemos hacerlo por ti"
@@ -1024,11 +1458,11 @@ msgstr ""
 "We collaborate and carry out R&D projects. If you need to test new materials "
 "or parts, we can do it for you"
 
-#: templates/home/index.html:248
+#: templates/home/index.html:249
 msgid "Impresoras a medida"
 msgstr "Custom Printers"
 
-#: templates/home/index.html:249
+#: templates/home/index.html:250
 msgid ""
 "Fabricamos impresoras con las especificaciones que necesites. Contamos con "
 "amplia experiencia en el mercado"
@@ -1036,11 +1470,11 @@ msgstr ""
 "We manufacture printers with the specifications you need. We have extensive "
 "experience in the market"
 
-#: templates/home/index.html:259
+#: templates/home/index.html:260
 msgid "Formación en Hardware & Software"
 msgstr "Training in Hardware & Software"
 
-#: templates/home/index.html:260
+#: templates/home/index.html:261
 msgid ""
 "Ofrecemos cursos a medida, para todos los niveles, sobre el software de "
 "impresión 3D. Nuestros técnicos te ayudarán encantados"
@@ -1048,11 +1482,11 @@ msgstr ""
 "We offer customized courses for all levels on 3D printing software. Our "
 "technicians will be happy to assist you"
 
-#: templates/home/index.html:270
+#: templates/home/index.html:271
 msgid "Excelencia en el servicio postventa"
 msgstr "Excellence in after-sales service"
 
-#: templates/home/index.html:271
+#: templates/home/index.html:272
 msgid ""
 "Proporcionamos soporte durante todo el proceso: asesoramiento inicial hasta "
 "resolución de incidencias con la impresora 3D"
@@ -1060,25 +1494,25 @@ msgstr ""
 "We provide support throughout the entire process: from initial advice to "
 "troubleshooting with the 3D printer"
 
-#: templates/home/index.html:289
+#: templates/home/index.html:290
 msgid "Colaboramos en proyectos para la industria del mañana"
 msgstr "We collaborate on projects for the industry of tomorrow"
 
-#: templates/home/index.html:295
+#: templates/home/index.html:296
 msgid " En Indart3D ofrecemos nuestra experiencia en"
 msgstr "At Indart3D, we offer our expertise in"
 
-#: templates/home/index.html:295
+#: templates/home/index.html:296
 msgid "Investigación y Desarrollo"
 msgstr "Research and Development"
 
-#: templates/home/index.html:295
+#: templates/home/index.html:296
 msgid ""
 "para crear soluciones innovadoras en impresión 3D. Ayudamos a empresas a "
 "optimizar sus procesos y a incorporar tecnología avanzada"
 msgstr ""
 
-#: templates/home/index.html:298
+#: templates/home/index.html:299
 msgid ""
 "Si necesitas materiales específicos o estás buscando una impresora "
 "personalizada para satisfacer tus necesidades industriales, nosotros podemos "
@@ -1086,63 +1520,45 @@ msgid ""
 "más"
 msgstr ""
 
-#: templates/home/index.html:301
+#: templates/home/index.html:302
 msgid ""
 "Nuestro equipo de expertos está listo para trabajar contigo en el desarrollo "
 "de soluciones a medida. Juntos, podemos avanzar hacia un futuro más "
 "eficiente y tecnológico"
 msgstr ""
 
-#: templates/home/index.html:307
+#: templates/home/index.html:308 templates/home/servicio_validacion.html:64
 msgid "Contáctanos"
 msgstr ""
 
-#: templates/home/index.html:319
+#: templates/home/index.html:320
 msgid ""
 "INDART3D S.COOP. ha participado en el Programa de Iniciación a la "
 "Exportación ICEX-Next y ha contado con el apoyo de ICEX, así como con la "
 "cofinanciación de Fondos europeos FEDER"
 msgstr ""
 
-#: templates/home/index.html:335
+#: templates/home/index.html:336
 msgid ""
 "Habiendo contribuido según la medida de los mismos, al crecimiento económico "
 "de esta empresa, su región y de España en su conjunto"
 msgstr ""
 
-#: templates/home/index.html:347
+#: templates/home/index.html:348
 msgid "Últimas publicaciones"
 msgstr ""
 
-#: templates/home/index.html:348
+#: templates/home/index.html:349
 msgid "¿Quieres estar al día con nuestras últimas publicaciones?"
 msgstr ""
 
-#: templates/home/index.html:392
-msgid "No es"
-msgstr ""
-
-#: templates/home/index.html:393
-msgid "tarde"
-msgstr ""
-
-#: templates/home/index.html:394
-msgid "tampoco"
-msgstr ""
-
-#: templates/home/index.html:395
-msgid "temprano"
-msgstr ""
-
-#: templates/home/index.html:397
+#: templates/home/index.html:398
 msgid "Es el momento."
 msgstr ""
 
-#: templates/home/index.html:403
-#, fuzzy
-#| msgid "Contactar"
-msgid "Contacta con nosotros"
-msgstr "Contact"
+#: templates/home/informacion.html:20
+msgid "Hola, aún estoy en desarrollo, ¡no podrás ver el contenido!"
+msgstr ""
 
 #: templates/home/irealze.html:36
 msgid "Experiencia de escaneo 3D cómoda y segura"
@@ -1233,6 +1649,38 @@ msgstr ""
 msgid "Conoce las especificaciones más destacadas del escáner iReal 2E"
 msgstr ""
 
+#: templates/home/materiales_validados.html:27
+msgid "Reciclable"
+msgstr ""
+
+#: templates/home/materiales_validados.html:32
+msgid "Biodegradable"
+msgstr ""
+
+#: templates/home/materiales_validados.html:37
+msgid "Aprobada por la FDA"
+msgstr ""
+
+#: templates/home/materiales_validados.html:61
+msgid "Metal"
+msgstr ""
+
+#: templates/home/materiales_validados.html:66
+msgid "Polymer"
+msgstr ""
+
+#: templates/home/materiales_validados.html:71
+msgid "Functionalised Polymer"
+msgstr ""
+
+#: templates/home/materiales_validados.html:76
+msgid "Elastomer Polymer"
+msgstr ""
+
+#: templates/home/materiales_validados.html:81
+msgid "Ceramic"
+msgstr ""
+
 #: templates/home/mini_pro.html:20
 msgid "Impresora 3D Tumaker Mini Pro"
 msgstr ""
@@ -1303,11 +1751,135 @@ msgstr ""
 msgid "Explora la Mini Pro en acción"
 msgstr ""
 
-#: templates/home/nx_modular.html:89
+#: templates/home/nuestros_productos.html:62
+msgid "Especificaciones Genéricas de las Impresoras 3D Tumaker"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:75
+msgid "PRINCIPALES ATRIBUTOS"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:81
+msgid "Robustas"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:83
+msgid "Capaces de imprimir con múltiples materiales"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:84
+msgid ""
+"Trabajo durante miles de horas sin apenas mantenimiento incluso en entornos "
+"hostiles"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:85
+msgid "Construidas en España con elementos y procesos de alta calidad"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:92
+msgid "Conectadas"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:94
+msgid "Si no está conectada, no es industria 4.0."
+msgstr ""
+
+#: templates/home/nuestros_productos.html:95
+msgid "Mejora de procesos"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:96
+msgid "Fabricación distribuida, remota y transporte de objetos en tiempo real"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:103
+msgid "Modulares"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:105
+msgid ""
+"Capacidad de creación de diferentes soluciones para dar respuesta a "
+"múltiples necesidades"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:106
+msgid "Módulos de respuesta"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:113
+msgid "Asequibles"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:115
+msgid "Prescindimos de lo accesorio y nos centramos en lo esencial"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:116
+msgid "Productos competitivos y asequibles"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:117
+msgid "Posibilidad de enriquecer la oferta ampliando las funcionalidades"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:124
+msgid "Productivas"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:126
+msgid "Con Tumaker haces más, y haces mejor"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:127
+msgid ""
+"Todas las características anteriores tienen como consecuencia una mayor "
+"productividad"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:128
+msgid ""
+"Buscamos que la empresa cliente saque el máximo provecho a nuestra tecnología"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:135
+msgid "A la carta"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:137
+msgid ""
+"Además de la opción estándar, ofrecemos la primera solución de impresoras 3D "
+"profesionales a la carta"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:138
+msgid ""
+"Con el concepto modular, podrás definir cómo quieres tu plataforma de "
+"fabricación aditiva y dar respuesta a los futuros retos"
+msgstr ""
+
+#: templates/home/nuestros_productos.html:146
+msgid ""
+"Las impresoras incluyen licencia del software de impresión 3D más avanzado."
+msgstr ""
+
+#: templates/home/nuestros_productos.html:147
+msgid ""
+"Indart3D pone a disposición de los clientes un perfil específico para cada "
+"uno de sus modelos de impresoras 3D."
+msgstr ""
+
+#: templates/home/nuestros_productos.html:148
+msgid ""
+"Con el mejor software conseguirás los mejores resultados. Fácil, sencillo e "
+"intuitivo."
+msgstr ""
+
+#: templates/home/nx_modular.html:63
 msgid "Sistema de Cabezales Modulares e Intercambiables"
 msgstr ""
 
-#: templates/home/nx_modular.html:106
+#: templates/home/nx_modular.html:80
 msgid ""
 "La impresora 3D modular NX de Indart3D marca un nuevo estándar en "
 "fabricación aditiva. Su diseño modular con cabezales intercambiables permite "
@@ -1317,7 +1889,7 @@ msgid ""
 "nuestros especialistas, asegurando una solución óptima para cada proyecto"
 msgstr ""
 
-#: templates/home/nx_modular.html:108
+#: templates/home/nx_modular.html:82
 msgid ""
 "Con un área de trabajo de 300 x 300 x 250 mm, la NX Modular combina un "
 "volumen de impresión ideal con un enfoque adaptable, ofreciendo a empresas y "
@@ -1326,12 +1898,12 @@ msgid ""
 "filtros integrados garantiza un entorno de trabajo seguro, limpio y eficiente"
 msgstr ""
 
-#: templates/home/nx_modular.html:125
+#: templates/home/nx_modular.html:99
 msgid ""
 "Extrusor de Pellets: Versatilidad y Alto Rendimiento en Fabricación Aditiva"
 msgstr ""
 
-#: templates/home/nx_modular.html:128
+#: templates/home/nx_modular.html:102
 msgid ""
 "El extrusor de pellets Modular de Indart3D redefine la impresión 3D al "
 "permitir trabajar directamente con materia prima en forma de pellets, una "
@@ -1342,7 +1914,7 @@ msgid ""
 "para abordar proyectos complejos"
 msgstr ""
 
-#: templates/home/nx_modular.html:131
+#: templates/home/nx_modular.html:105
 msgid ""
 "Gracias a su capacidad para manejar geometrías exigentes y materiales "
 "técnicos, el extrusor de pellets es ideal para aplicaciones que van desde el "
@@ -1353,7 +1925,7 @@ msgid ""
 "una opción destacada para proyectos de gran escala y alta demanda"
 msgstr ""
 
-#: templates/home/nx_modular.html:134
+#: templates/home/nx_modular.html:108
 msgid ""
 "Además, este sistema aprovecha la simplicidad de los pellets para "
 "incrementar la eficiencia del proceso de impresión, eliminando pasos "
@@ -1363,101 +1935,100 @@ msgid ""
 "personalizada"
 msgstr ""
 
-#: templates/home/nx_modular.html:158
-msgid "Características clave del extrusor de pellets"
-msgstr ""
-
-#: templates/home/nx_modular.html:159
+#: templates/home/nx_modular.html:133
 msgid "Diseñado para ofrecer un rendimiento óptimo en impresión 3D con pellets"
 msgstr ""
 
-#: templates/home/nx_modular.html:181
-msgid "Tamaño"
-msgstr ""
-
-#: templates/home/nx_modular.html:182
-msgid "Tamaño de pellet recomendado: 3-5 mm de diámetro"
-msgstr ""
-
-#: templates/home/nx_modular.html:192 templates/home/nx_modular.html:278
-msgid "Compatibilidad"
-msgstr ""
-
-#: templates/home/nx_modular.html:193
+#: templates/home/nx_modular.html:167
 msgid ""
 "Compatible con el Alimentador de Pellets para un flujo constante y uniforme"
 msgstr ""
 
-#: templates/home/nx_modular.html:204
+#: templates/home/nx_modular.html:178
 msgid ""
 "Temperatura máxima del cabezal: hasta 300 ºC, ideal para materiales técnicos"
 msgstr ""
 
-#: templates/home/nx_modular.html:214
+#: templates/home/nx_modular.html:188
 msgid "Boquillas ajustables"
 msgstr ""
 
-#: templates/home/nx_modular.html:216
+#: templates/home/nx_modular.html:190
 msgid ""
 "Boquillas compatibles: 0.4 mm | 0.6 mm | 0.8 mm (incluida) | 2.0 mm | 4.0 mm "
 "| 5.0 mm."
 msgstr ""
 
-#: templates/home/nx_modular.html:251
+#: templates/home/nx_modular.html:221
+msgid ""
+"El cabezal Direct Drive HR de filamento de Indart3D está diseñado para "
+"usuarios que valoran la precisión y versatilidad en sus proyectos. Ideal "
+"para una amplia gama de materiales, este sistema permite trabajar con "
+"filamentos optimizados para diferentes aplicaciones, desde piezas "
+"resistentes hasta componentes flexibles"
+msgstr ""
+
+#: templates/home/nx_modular.html:224
 msgid ""
 "Gracias a su diseño robusto y su fiabilidad operativa, este cabezal es "
 "perfecto para entornos industriales, educativos y creativos, ofreciendo "
 "resultados consistentes y de alta calidad"
 msgstr ""
 
-#: templates/home/nx_modular.html:269
+#: templates/home/nx_modular.html:242
 msgid "Diseñado para ofrecer máxima compatibilidad y precisión en impresión 3D"
 msgstr ""
 
-#: templates/home/nx_modular.html:279
+#: templates/home/nx_modular.html:252
 msgid "Compatible con bobinas de hasta 8 kg, ideal para proyectos grandes"
 msgstr ""
 
-#: templates/home/nx_modular.html:290
+#: templates/home/nx_modular.html:262
+#, fuzzy
+#| msgid "Materiales validados"
+msgid "Materiales soportados"
+msgstr "Validated materials"
+
+#: templates/home/nx_modular.html:263
 msgid "ABS, ASA, NYLON, PET-G, PLA, PP, TPU Hardness, entre otros"
 msgstr ""
 
-#: templates/home/nx_modular.html:301
+#: templates/home/nx_modular.html:274
 msgid "Temperatura máxima: 300 ºC, ideal para materiales avanzados"
 msgstr ""
 
-#: templates/home/nx_modular.html:313
+#: templates/home/nx_modular.html:286
 msgid ""
 "Boquillas compatibles: 0.15 mm | 0.25 mm | 0.4 mm (incluida) | 0.6 mm | 0.8 "
 "mm"
 msgstr ""
 
-#: templates/home/nx_modular.html:339
+#: templates/home/nx_modular.html:312
 msgid "Solución Profesional y Accesible"
 msgstr ""
 
-#: templates/home/nx_modular.html:340
+#: templates/home/nx_modular.html:313
 msgid ""
 "Descubre por qué la NX Modular es la herramienta perfecta para tus proyectos "
 "de impresión 3D"
 msgstr ""
 
-#: templates/home/nx_modular.html:347
+#: templates/home/nx_modular.html:320
 msgid ""
 "La NX Modular no solo es una impresora versátil, sino que también está "
 "diseñada para facilitar el trabajo diario. Su área de impresión y estructura "
 "robusta garantizan estabilidad y precisión. Con opciones de conectividad como"
 msgstr ""
 
-#: templates/home/nx_modular.html:347
+#: templates/home/nx_modular.html:320
 msgid "Wi-Fi, Ethernet y Micro SD"
 msgstr ""
 
-#: templates/home/nx_modular.html:347
+#: templates/home/nx_modular.html:320
 msgid " es sencilla de usar y se adapta a cualquier flujo de trabajo"
 msgstr ""
 
-#: templates/home/nx_modular.html:350
+#: templates/home/nx_modular.html:323
 msgid ""
 "Además, su diseño cerrado con filtros, bajo nivel de ruido (<strong>44 dB</"
 "strong>) y pantalla táctil de <strong>7”</strong> hacen de esta impresora "
@@ -1465,22 +2036,449 @@ msgid ""
 "Compatible con los principales softwares de corte "
 msgstr ""
 
-#: templates/home/nx_modular.html:350
+#: templates/home/nx_modular.html:323
 msgid "Simplify 3D, CURA, SuperSlicer"
 msgstr ""
 
-#: templates/home/nx_modular.html:350
+#: templates/home/nx_modular.html:323
 msgid " y formatos de archivo "
 msgstr ""
 
-#: templates/home/nx_modular.html:350
+#: templates/home/nx_modular.html:323
 msgid "STL, OBJ, Gcode"
 msgstr ""
 
-#: templates/home/nx_modular.html:350
+#: templates/home/nx_modular.html:323
 msgid ""
 " la NX Modular es una herramienta indispensable para quienes buscan calidad "
 "y adaptabilidad en impresión 3D"
+msgstr ""
+
+#: templates/home/pellet_detalle.html:21
+#, fuzzy
+#| msgid "Impresiones 3D"
+msgid "Pellets para Impresión 3D"
+msgstr "3D printing"
+
+#: templates/home/pellet_detalle.html:22
+#, fuzzy
+#| msgid ""
+#| "Disponemos de los materiales necesarios para que tu experiencia de "
+#| "impresión sea la mejor"
+msgid "Descubre los mejores pellets para la fabricación e impresión 3D"
+msgstr ""
+"We provide the necessary materials to ensure the best 3D printing experience"
+
+#: templates/home/pellet_detalle.html:53
+msgid "Tamaños Disponibles"
+msgstr ""
+
+#: templates/home/pellet_detalle.html:59
+msgid "Un Kilo"
+msgstr ""
+
+#: templates/home/pellet_detalle.html:66
+msgid "Cinco Kilos"
+msgstr ""
+
+#: templates/home/pellet_detalle.html:73
+msgid "Quince Kilos"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:22
+msgid "Simscan"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:36
+msgid "El único escáner 3D del tamaño de una mano"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:38
+msgid ""
+"SIMSCAN, un escáner 3D portátil del tamaño de la palma de la mano, está "
+"especialmente diseñado para escanear en 3D zonas estrechas y de difícil "
+"acceso. Con una carcasa totalmente metálica, es increíblemente robusto y "
+"fiable. SIMSCAN se ha convertido en una innovación disruptiva entre los "
+"escáneres 3D profesionales gracias a su tamaño compacto, su sencillez y su "
+"sólido rendimiento. Su diseño vanguardista también se ha ganado el premio "
+"Red Dot alemán y el premio China Design Silver"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:41
+msgid ""
+"SIMSCAN realiza escaneos 3D de alta calidad independientemente de las "
+"restricciones del entorno de trabajo. Es ideal para escanear en 3D tanto "
+"espacios estrechos como piezas a gran escala. Los usuarios pueden capturar "
+"con precisión cada detalle de los objetos y construir modelos 3D en muy poco "
+"tiempo con la ayuda de este instrumento de medición 3D de grado metrológico"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:63
+msgid "Premio de plata al diseño en China"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:79
+msgid "Distancia de la Cámara 130 mm"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:91
+msgid "Precisión 0.020 mm"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:99
+msgid "Velocidad de exploración de hasta 2.800.000 mediciones/s"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:107
+msgid "Peso Neto 570g"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:121
+msgid "Control con una sola mano"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:123
+msgid ""
+"La carcasa totalmente metálica de SIMSCAN proporciona una sólida protección "
+"y garantiza una extraordinaria durabilidad. Con un peso de sólo 570 g y un "
+"tamaño de 203 × 80 × 44 mm, el escáner 3D portátil de SIMSCAN aporta una "
+"simplicidad sin igual para escanear cualquier cosa con una sola mano"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:126
+msgid ""
+"Gracias a su estructura hueca, disipa el calor con mayor eficacia. El "
+"escáner 3D es eficiente a la hora de realizar mediciones con un bajo consumo "
+"de energía. Gracias a su versatilidad, puede satisfacer una amplia gama de "
+"necesidades de mediciones 3D"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:140
+msgid "Refuerzo de medición en espacio estrecho"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:142
+msgid ""
+"En comparación con sus competidores, SIMSCAN tiene una distancia de cámara "
+"mucho más corta de 130 mm, que forma un ángulo de visión más pronunciado "
+"para escanear en 3D espacios estrechos. Por tanto, SIMSCAN es más capaz de "
+"capturar datos precisos y completos en zonas de difícil acceso, como ranuras "
+"profundas, y garantiza a los usuarios la captura de datos de campo completo"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:156
+msgid "Grandes detalles en cada rincón"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:158
+msgid ""
+"Con sus cámaras HD incorporadas y sus tres modos de escaneo, realiza un "
+"escaneo de alta precisión con una exactitud de hasta 0,020 mm. Puede "
+"capturar con exactitud los datos 3D de objetos con superficies complejas o "
+"en zonas reducidas"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:160
+msgid "Experiencia 3D fluida"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:178
+msgid ""
+"SIMSCAN tiene un tamaño compacto y una excelente portabilidad. No importa si "
+"se encuentra en espacios Cuando se combina con el enlace de comunicación "
+"inalámbrica AirGo Pro, admite la exploración 3D móvil y la visualización de "
+"datos para lograr experiencias de medición realmente flexibles, fiables y "
+"eficaces"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:181
+msgid ""
+"Gracias a sus botones multifuncionales, los usuarios pueden cambiar de modo "
+"en cualquier momento. Su funcionamiento con una sola mano permite una "
+"medición flexible y su diseño ergonómico hace que sea cómodo de usar. "
+"Diseñado con una carcasa antideslizante y una correa, es seguro para que los "
+"usuarios exploren en todas las direcciones libremente"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:195
+msgid "Medición automatizada en 3D"
+msgstr ""
+
+#: templates/home/portatil_Simscan.html:197
+msgid ""
+"Puede emparejarse con el sistema de medición 3D automatizado de Scantech "
+"para lograr mediciones ininterrumpidas. La medición automatizada de lotes "
+"altos supera la limitación de los métodos tradicionales y mejora "
+"significativamente la eficiencia de todas las etapas de fabricación"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:22
+msgid "KSCAN20"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:35
+msgid "Redefine el concepto de escáner 3D portátil"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:37
+msgid ""
+"El escáner KSCAN20 3D es un escáner 3D profesional con las más amplias "
+"aplicaciones"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:40
+msgid ""
+"KSCAN20 se encuentra en la vanguardia de la iniciativa tecnológica mundial "
+"al integrar en un mismo dispositivo un sistema de fotogrametría y un modo de "
+"escáner láser dual"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:43
+msgid ""
+"Gracias a que el escáner cuenta con modo de luz Infrarroja y de luz azul, el "
+"KSCAN20 ofrece la máxima eficiencia con sus 650,000 mediciones/s, capturando "
+"detalles de alta precisión con una resolución de 10 μm y 0,020 mm de "
+"precisión. El sistema de fotogrametría incorporado expande el área de "
+"escaneo a una superficie de 2500 mm × 3000 mm y mejora la precisión "
+"volumétrica a una precisión de 0,035 mm/m"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:52
+msgid "Tecnología de medición"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:54
+msgid ""
+"KSCAN20 es capaz de adquirir correctamente la datos 3D de superficies "
+"planas, ahuecadas, agujeros, bordes, etc. También puede usarse junto con "
+"ScanViewer para llevar a cabo distintas funciones de inspección tales como "
+"inspecciones de tuberías, detección de deformaciones y GD&T, lo que lo "
+"convierte en una tecnología de medición efectiva, fiable y de gran escala 3D "
+"para el diseño de productos e inspecciones profesionales"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:77
+msgid "Rango de medición sin límites"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:79
+msgid ""
+"Excelente rendimiento tanto para escanear objetos de gran tamaño así como "
+"también pequeñas piezas. Captura la información 3D de plano e incluso de una "
+"moneda de manera realista"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:87
+msgid "Fotogrametría incorporada"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:89
+msgid ""
+"La precisión volumétrica es de hasta 0,035 mm/m brindando mayor facilidad al "
+"escanear objetos grandes"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:91
+msgid "Escaneo rápido"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:93
+msgid ""
+"KSCAN optimiza cada proceso de escaneo y reduce en gran medida el coste del "
+"dispositivo, el tiempo y el trabajo"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:107
+msgid "Función de exploración"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:109
+msgid ""
+"La CMM portátil funciona con distintos modos de trabajo, lo que permite un "
+"mayor rendimiento al momento de medir cavidades, puntos ocultos, "
+"características, detección de ensamblaje, etc"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:121
+msgid "Dos láser en un único escáner"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:123
+msgid ""
+"Los modos de escáner de luz azul y de luz Infrarroja integran gran "
+"flexibilidad y eficiencia"
+msgstr ""
+
+#: templates/home/portatil_kscan_20.html:126
+msgid ""
+"La función láser de luz azul captura fácilmente los detalles mínimos con una "
+"resolución de 10 μm"
+msgstr ""
+
+#: templates/home/portatil_kscan_magic.html:32
+msgid "Tecnología láser infrarrojo y azul"
+msgstr ""
+
+#: templates/home/portatil_kscan_magic.html:34
+msgid ""
+"El escáner 3D integrado KSCAN-Magic introduce por primera vez la tecnología "
+"de láser infrarrojo y láser azul con cinco modos de trabajo estándar: "
+"escaneo de superficie paralela amplia por láser infrarrojo de iniciativa "
+"global, escaneo rápido de cruces de luz azul, escaneo azul fino de "
+"paralelos, escaneo de agujeros profundos de  láser azul simple, sistema de "
+"fotogrametría integrado"
+msgstr ""
+
+#: templates/home/portatil_kscan_magic.html:47
+msgid "Escaneo ultra rápido"
+msgstr ""
+
+#: templates/home/portatil_kscan_magic.html:49
+msgid ""
+" KSCAN-Magic representa un avance revolucionario en cuanto al rendimiento. "
+"Su inigualable velocidad de escaneo, precisión, detalle, área de escaneo y "
+"profundidad  de campo optimiza el flujo de trabajo de las mediciones 3D y "
+"hace que el producto  salga más rápido al mercado. Para poder obtener datos "
+"de superficies complejas o  de difícil acceso, se puede equipar al KSCAN-"
+"Magic con un CMM K-Probe portátil que  proporciona una solución digital 3D "
+"integral para la precisión de las mediciones"
+msgstr ""
+
+#: templates/home/portatil_mscan_l15.html:56
+msgid ""
+"El sistema de fotogrametría MSCAN-L15 está diseñado para proporcionar "
+"mediciones de gran precisión en piezas de trabajo de gran escala. Con un "
+"área de disparo de gran tamaño y un campo de amplia profundidad, MSCAN-L15 "
+"proporciona precisión volumétrica de ±0.015 mm/m para piezas de gran escala "
+"y partes de 2 m hasta 10 m"
+msgstr ""
+
+#: templates/home/portatil_mscan_l15.html:59
+msgid ""
+"Compatible con dispositivos de inspección 3D, el MSCAN-L15 puede llevar a "
+"cabo mediciones más estrictas con todos los requerimientos de precisión. El "
+"excepcional modo HDR proporciona una fuerte adaptabilidad al ambiente. "
+"Gracias a su diseño ergonómico, es totalmente portátil y puede usarse "
+"fácilmente por largos períodos de tiempo"
+msgstr ""
+
+#: templates/home/portatil_mscan_l15.html:62
+msgid ""
+"El MSCAN-L15 garantiza soluciones 3D precisas, eficientes y fáciles de "
+"utilizar para la inspección 3D, desarrollo de producto, control de calidad, "
+"etc"
+msgstr ""
+
+#: templates/home/portatil_mscan_l15.html:71
+#, fuzzy
+#| msgid "Servicio de impresión"
+msgid "Mediciones de gran precisión"
+msgstr "Printing Service"
+
+#: templates/home/portatil_trackScan_p42.html:27
+msgid "TrackScan-P Sistema de medición óptica 3D"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:29
+msgid ""
+"Diseñado con medición de seguimiento óptico inteligente y cámaras de alta "
+"resolución, TrackScan-P puede medir con precisión las piezas sin tener que "
+"pegar objetivos de referencia. Este sistema óptico de medición 3D, que "
+"consta de un escáner 3D portátil y un rastreador óptico E-Track, es idóneo "
+"para escanear en 3D objetos de gran tamaño. Puede aplicarse ampliamente para "
+"el control de calidad, el desarrollo de productos, la ingeniería inversa, "
+"etc., en sectores como el aeroespacial, la automoción, el transporte "
+"ferroviario y el molde"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:32
+msgid ""
+"Al combinarlo con módulos adicionales, puede permitir aplicaciones "
+"ampliables. Puede emparejarse con un módulo de luz auxiliar para "
+"inspeccionar círculos, ranuras y agujeros mecanizados de piezas de "
+"estampación. Con un T-Probe portátil, realiza mediciones de contacto "
+"precisas de bordes, círculos y ranuras. Cuando se monta en un brazo "
+"robótico, es una opción óptima para la inspección 3D inteligente y "
+"automatizada"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:45
+msgid "Escaneo 3D sin objetivos"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:53
+msgid "Medición ultrarrápida"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:61
+msgid "Detección de bordes"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:69
+msgid "Volumen de medición ampliable"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:82
+msgid "Detección precisa de los bordes"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:84
+msgid ""
+"TrackScan cuenta con una función destacada de detección instantánea de "
+"bordes. Los usuarios pueden inspeccionar los círculos, las ranuras y los "
+"agujeros mecanizados de las piezas de estampación en varios acabados en el "
+"sitio sin tener que importar los modelos CAD originales"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:87
+msgid ""
+"La detección eficaz de los bordes es posible gracias a su medición del valor "
+"de gris y al módulo de luz auxiliar opcional.  Las buenas mediciones están "
+"garantizadas al ofrecer posiciones y diámetros de agujeros precisos y "
+"repetibles"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:98
+msgid "Sin rival-rápido y detallista"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:100
+msgid ""
+"Al cambiar libremente entre varios modos de trabajo, el TrackScan se adapta "
+"a diferentes situaciones de exploración con una precisión de hasta 0,025 mm "
+"y una velocidad de medición ultrarrápida de hasta 2.600.000 mediciones/s. "
+"Sus 7 líneas láser azules paralelas tienen un buen rendimiento para captar "
+"detalles"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:103
+msgid ""
+"Una sola línea láser azul tiene como objetivo recoger datos 3D de agujeros "
+"profundos y zonas de difícil acceso de forma eficiente"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:113
+msgid "Seguimiento óptico para una exploración 3D instantánea"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:115
+msgid ""
+"El seguimiento óptico del sistema TrackScan-P 3D permite a los usuarios "
+"empezar a escanear al instante sin tener que pegar los objetivos, lo que "
+"mejora significativamente la eficiencia y disminuye los costes"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:126
+msgid "Gran adaptabilidad"
+msgstr ""
+
+#: templates/home/portatil_trackScan_p42.html:128
+msgid ""
+"Fabricado con materiales de calidad aeroespacial, es robusto y fiable. "
+"También cuenta con una gran capacidad antinterferente para funcionar sin "
+"problemas independientemente de las vibraciones o las variaciones térmicas. "
+"Gracias a su avanzado algoritmo, TrackScan es robusto en la captura de datos "
+"3D de superficies reflectantes y oscuras"
 msgstr ""
 
 #: templates/home/scanerAcolor_it3d.html:27
@@ -1659,6 +2657,384 @@ msgid ""
 "solución para el sector educativo. El escáner 3D forma parte del proyecto "
 "Aula del Futuro desarrollado por el INTEF. Esta iniciativa busca impulsar la "
 "educación presente y futura sobre una base de tecnologías actualizadas"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:17
+#, fuzzy
+#| msgid "Servicio de Validación e <br> impresión 3D con Pellet"
+msgid "Validación de Impresión 3D con Pellet"
+msgstr "Validation and 3D Printing Service with Pellet"
+
+#: templates/home/servicio_validacion.html:19
+msgid ""
+"En Indart3D, ofrecemos un servicio especializado de validación de impresión "
+"3D con pellet para garantizar que los materiales y parámetros utilizados "
+"sean los más adecuados para cada aplicación"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:34
+msgid "¿Cómo funciona?"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:36
+msgid ""
+"Nuestra metodología permite evaluar la viabilidad de imprimir con pellet en "
+"función de las características del material, la geometría de la pieza y los "
+"requisitos específicos de cada cliente. A través de pruebas y ajustes, "
+"optimizamos el proceso para asegurar una calidad de impresión óptima, "
+"reduciendo tiempos y costes de producción"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:40
+msgid "Análisis del material y requisitos del cliente:"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:40
+msgid "Estudiamos el tipo de pellet y las necesidades del proyecto"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:43
+#, fuzzy
+#| msgid "Servicio de impresión"
+msgid "Pruebas de impresión:"
+msgstr "Printing Service"
+
+#: templates/home/servicio_validacion.html:43
+msgid ""
+"Realizamos pruebas con diferentes configuraciones para optimizar parámetros"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:46
+msgid "Evaluación de resultados:"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:46
+msgid "Analizamos calidad, adherencia y resistencia de la impresión"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:49
+#, fuzzy
+#| msgid "Soporte Técnico"
+msgid "Informe técnico:"
+msgstr "Technical Support"
+
+#: templates/home/servicio_validacion.html:49
+msgid ""
+"Entregamos un informe con recomendaciones y ajustes óptimos para la "
+"producción"
+msgstr ""
+
+#: templates/home/servicio_validacion.html:60
+#, fuzzy
+#| msgid "Servicio de Validación e <br> impresión 3D con Pellet"
+msgid "Optimiza tu producción con impresión 3D en pellet"
+msgstr "Validation and 3D Printing Service with Pellet"
+
+#: templates/home/servicio_validacion.html:62
+msgid ""
+"Este servicio está dirigido a empresas y profesionales que buscan integrar "
+"la impresión 3D con pellet en sus procesos productivos y necesitan validar "
+"la viabilidad de sus materiales o diseños antes de la fabricación final"
+msgstr ""
+
+#: templates/home/servicios.html:25
+msgid ""
+"Desde INDART 3D te ofrecemos servicios 3D de la máxima calidad, desde "
+"impresiones 3D, escaneado de piezas o formación. También fabricamos "
+"impresoras a medida y testeamos nuevos materiales, todo ello para garantizar "
+"la satisfacción de nuestros clientes"
+msgstr ""
+
+#: templates/home/servicios.html:50
+msgid "Te ofrecemos"
+msgstr ""
+
+#: templates/home/servicios.html:52
+msgid "Nuestros servicios con garantía de satisfacción y un precio competitivo"
+msgstr ""
+
+#: templates/home/servicios.html:68
+#, fuzzy
+#| msgid "Impresiones 3D"
+msgid "Impresión 3D"
+msgstr "3D printing"
+
+#: templates/home/servicios.html:71
+msgid ""
+"Solicita la impresión de la pieza que necesites. El procedimiento es rápido "
+"y sencillo, al mejor precio"
+msgstr ""
+
+#: templates/home/servicios.html:74
+msgid "Imprimir"
+msgstr ""
+
+#: templates/home/servicios.html:86
+msgid ""
+"Podemos escanear cualquier pieza para su diseño y tratamiento. Garantizamos "
+"resultados de alta calidad"
+msgstr ""
+
+#: templates/home/servicios.html:89
+#, fuzzy
+#| msgid "Escaneado 3D"
+msgid "Escanear"
+msgstr "3D scanning"
+
+#: templates/home/servicios.html:101
+msgid ""
+"Impartimos formación tanto a empresas como a particulares. Aprende con los "
+"mejores expertos"
+msgstr ""
+
+#: templates/home/servicios.html:122 templates/home/sobre_nosotros.html:253
+#, fuzzy
+#| msgid "Contactar"
+msgid "Contacta con Nosotros"
+msgstr "Contact"
+
+#: templates/home/sobre_nosotros.html:19
+#, fuzzy
+#| msgid "Nosotros"
+msgid "Sobre Nosotros"
+msgstr "About us"
+
+#: templates/home/sobre_nosotros.html:20
+msgid ""
+"Descubre más sobre nuestra misión, visión y lo que hacemos en nuestra empresa"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:34
+msgid "Nuestra Historia"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:35
+msgid ""
+"Indart 3D es una cooperativa fundada por dos jóvenes emprendedores, dedicada "
+"al diseño, fabricación y venta de impresoras 3D de última generación. Desde "
+"nuestros inicios en 2020 en Irún, hemos trabajado con universidades, centros "
+"de investigación y empresas de diversos sectores, incluyendo la medicina, "
+"textil y automotriz. Nuestra experiencia nos ha permitido ser pioneros en la "
+"introducción de tecnologías de fabricación aditiva, ofreciendo soluciones "
+"personalizadas y profesionales que nos diferencian en el mercado"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:37 templates/home/sobre_nosotros.html:53
+#: templates/home/sobre_nosotros.html:88 templates/home/sobre_nosotros.html:131
+#: templates/home/sobre_nosotros.html:166
+msgid "Saber Más"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:46 templates/home/sobre_nosotros.html:81
+msgid "Nuestra Visión"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:48 templates/home/sobre_nosotros.html:83
+msgid ""
+"Liderar la revolución de la fabricación aditiva mediante la innovación "
+"constante"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:49 templates/home/sobre_nosotros.html:84
+msgid ""
+"Adaptarnos a las necesidades específicas de cada proyecto, integrando "
+"tecnologías y materiales avanzados"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:50 templates/home/sobre_nosotros.html:85
+msgid ""
+"Ofrecer soluciones de impresión 3D personalizadas que impacten positivamente "
+"en la industria y la sociedad"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:102
+msgid "¿Qué Hacemos?"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:103
+msgid "Descubre quiénes y cómo estamos revolucionando la fabricación 3D"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:117
+#: templates/home/sobre_nosotros.html:152
+#, fuzzy
+#| msgid "Impresoras 3D"
+msgid "Fabricantes de Impresoras 3D"
+msgstr "3D Printers"
+
+#: templates/home/sobre_nosotros.html:119
+#: templates/home/sobre_nosotros.html:154
+msgid "Nuestro valor añadido: La experiencia"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:122
+#: templates/home/sobre_nosotros.html:157
+msgid ""
+"Damos soluciones en fabricación aditiva desde 2012. Hemos sido pioneros del "
+"complicado proceso de dar a conocer una tecnología que hasta hace poco era "
+"desconocida. Dimos a conocer las ventajas y el potencial de la fabricación "
+"aditiva a un tejido empresarial completamente ajeno. Ahora, diez años "
+"después, este recorrido nos avala y nos permite ir por delante de cualquier "
+"competidor gracias a nuestro recorrido y experiencia"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:125
+#: templates/home/sobre_nosotros.html:160
+msgid ""
+"En nuestra anterior experiencia profesional, fuimos partícipes de la puesta "
+"en marcha de una Start Up guipuzcoana que se convirtió en una de las "
+"empresas vascas con mayor recorrido en el ámbito de la fabricación en 3D. "
+"Una empresa clave que lideró la revolución industrial 4.0 en nuestro entorno"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:128
+#: templates/home/sobre_nosotros.html:163
+msgid ""
+"De igual manera, fuimos co-creadores de la primera impresora 3D profesional, "
+"diseñada y manufacturada en España. Tras la buena acogida que obtuvo y con "
+"el objetivo de cubrir la demanda de impresoras 3D de gran formato, "
+"participamos en el desarrollo de la impresora 3D BigFoot cuya irrupción en "
+"el mercado supuso un pequeño terremoto convirtiéndola en muy poco tiempo en "
+"la impresora 3D de gran formato más vendida en nuestro país"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:171
+msgid "Nuestros Valores Clave"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:172
+msgid ""
+"En Indart 3D, nos comprometemos a liderar la industria mediante la "
+"innovación, el compromiso y la calidad en cada proyecto"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:180
+msgid "Innovación"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:181
+msgid "Impulsamos la innovación constante en fabricación 3D"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:190
+msgid "Compromiso"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:191
+msgid "Ofrecemos soluciones que se adaptan a tus necesidades"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:200
+msgid "Calidad"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:201
+msgid "Productos diseñados para brindar resultados excepcionales"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:224
+msgid "Sevicios que Oferecemos"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:225
+msgid ""
+"Porque cada proyecto merece tecnología de vanguardia y soporte especializado"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:227
+msgid "Venta de Impresoras marca Tumaker"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:228
+#, fuzzy
+#| msgid "Servicio de impresión"
+msgid "Servicio de mantenimiento"
+msgstr "Printing Service"
+
+#: templates/home/sobre_nosotros.html:229
+msgid "Venta de Filamentos y consumibles"
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:230
+#, fuzzy
+#| msgid "Servicio de impresión"
+msgid "Servicio de impresión 3D"
+msgstr "Printing Service"
+
+#: templates/home/sobre_nosotros.html:231
+#, fuzzy
+#| msgid "Servicio de impresión"
+msgid "Servicio de digitalización 3D"
+msgstr "Printing Service"
+
+#: templates/home/sobre_nosotros.html:249
+msgid "No es "
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:249
+msgid "tampoco "
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:249
+msgid " Es el "
+msgstr ""
+
+#: templates/home/sobre_nosotros.html:250
+msgid ""
+"Descubre cómo podemos ayudarte a revolucionar tus proyectos con soluciones "
+"avanzadas en impresión 3D"
+msgstr ""
+
+#: templates/home/soporte_manual_configuracion.html:18
+#, fuzzy
+#| msgid "Impresoras 3D"
+msgid "Nuestras Impresoras"
+msgstr "3D Printers"
+
+#: templates/home/soporte_manual_configuracion.html:29
+#, fuzzy
+#| msgid "Manual y Configuración"
+msgid "Configuración Mini Pro"
+msgstr "Manual and Configuration"
+
+#: templates/home/soporte_manual_configuracion.html:41
+#, fuzzy
+#| msgid "Manual y Configuración"
+msgid "Configuración NX Pro"
+msgstr "Manual and Configuration"
+
+#: templates/home/soporte_manual_configuracion.html:53
+msgid "Configuración Bigfoot Pro"
+msgstr ""
+
+#: templates/home/soporte_manual_configuracion.html:62
+#, fuzzy
+#| msgid "Impresoras 3D"
+msgid "Manual Impresora"
+msgstr "3D Printers"
+
+#: templates/home/soporte_manual_configuracion.html:67
+msgid "Manual Kit Close"
+msgstr ""
+
+#: templates/home/soporte_tecnico.html:29
+#: templates/home/soporte_tecnico.html:91
+#: templates/home/soporte_tecnico.html:146
+#: templates/home/soporte_tecnico.html:296
+msgid "Sección de Soporte"
+msgstr ""
+
+#: templates/home/soporte_tecnico.html:34
+msgid "INTERFAZ WEB"
+msgstr ""
+
+#: templates/home/soporte_tecnico.html:46
+msgid "MANEJO DE IMPRESORAS"
+msgstr ""
+
+#: templates/home/soporte_tecnico.html:147
+#: templates/home/soporte_tecnico.html:151
+msgid "CABEZAL DART"
 msgstr ""
 
 #~ msgid "Basque"

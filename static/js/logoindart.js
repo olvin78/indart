@@ -26,3 +26,25 @@ estiloAnimacion.textContent = `
      }
  `;
 document.head.appendChild(estiloAnimacion);
+
+
+/*esta es la prueba para probar hacer un efecto en las imagenes al hacer click */
+
+// Selecciona todas las imágenes con la clase 'vibration-image'
+const images = document.querySelectorAll('.vibration-image');
+
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        navigator.vibrate(50); // Vibración breve
+        image.style.transition = 'transform 0.05s ease';
+        image.style.transform = 'translateX(-2px)';
+
+        setTimeout(() => {
+            image.style.transform = 'translateX(2px)';
+        }, 50);
+
+        setTimeout(() => {
+            image.style.transform = 'translateX(0)';
+        }, 100);
+    });
+});

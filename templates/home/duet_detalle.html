@@ -24,38 +24,39 @@
                 onmouseout="this.style.backgroundSize='95%';"
             ></div>
 
-            <!-- Información del producto -->
-            <div class="col-md-6 definicion">
-                <h1>{{ datos.name }}</h1>
-                <hr>
-                <br>
-                <h3>Otro Ángulo:</h3>
-                <div class="miniaturas d-flex gap-2">
-                    <a href="#">
-                        {% if datos.image2 %}
-                        <img class="img-thumbnail" src="{{ datos.image2.url }}" alt="Camiseta Roja">
-                        {% endif %}
-                    </a>
-                    <a href="#">
-                        {% if datos.image3 %}
-                        <img class="img-thumbnail" src="{{ datos.image3.url }}" alt="Camiseta Verde">
-                        {% endif %}
-                    </a>
-                    <a href="#">
-                        {% if datos.image4 %}
-                        <img class="img-thumbnail" src="{{ datos.image4.url }}" alt="Camiseta Amarilla">
-                        {% endif %}
-                    </a>
-                    <a href="#">
-                        {% if datos.image5%}
-                        <img class="img-thumbnail" src="{{ datos.image5.url }}" alt="Camiseta Negra">
-                        {% endif %}
-                    </a>
-                </div> 
-                <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
-                    <strong><h4>{% trans 'Resumen' %}:</h4></strong><br> {{ datos.summary|safe }}
-                </div>        
+           <!-- Información del producto -->
+        <div class="col-md-6 definicion">
+            <h1>{{ datos.name }}</h1>
+            <hr>
+            <br>
+            <h3>Otro Ángulo:</h3>
+            <div class="miniaturas d-flex gap-2">
+                <a href="#">
+                    {% if datos.image2 %}
+                    <img class="img-thumbnail" style="max-width: 150px; height: 150px; object-fit: cover;" src="{{ datos.image2.url }}" alt="Imagen 2">
+                    {% endif %}
+                </a>
+                <a href="#">
+                    {% if datos.image3 %}
+                    <img class="img-thumbnail" style="max-width: 150px; height: 150px; object-fit: cover;" src="{{ datos.image3.url }}" alt="Imagen 3">
+                    {% endif %}
+                </a>
+                <a href="#">
+                    {% if datos.image4 %}
+                    <img class="img-thumbnail" style="max-width: 150px; height: 150px; object-fit: cover;" src="{{ datos.image4.url }}" alt="Imagen 4">
+                    {% endif %}
+                </a>
+                <a href="#">
+                    {% if datos.image5 %}
+                    <img class="img-thumbnail" style="max-width: 150px; height: 150px; object-fit: cover;" src="{{ datos.image5.url }}" alt="Imagen 5">
+                    {% endif %}
+                </a>
+            </div> 
+            <div style="font-size: 16px; color: #444; padding: 10px; background-color: #eef8f9; border-radius: 5px; margin-top: 10px;">
+                <strong><h4>{% trans 'Resumen' %}:</h4></strong><br> {{ datos.summary|safe }}
+            </div>        
         </div>
+
     </div>
 
     <div class="container description-section py-5">

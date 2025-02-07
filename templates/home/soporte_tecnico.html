@@ -26,12 +26,12 @@
                     
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
-                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
+                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">{% trans 'Sección de Soporte' %}</h5>
                         <h6 class="text-muted text-center">GAMA PRO</h6>
                         
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            <h5 class="text-center text-muted mt-5">INTERFAZ WEB</h5>
+                            <h5 class="text-center text-muted mt-5">{% trans 'INTERFAZ WEB' %}</h5>
                             <ol class="list-unstyled mt-3">
                                 {% for dato in Interfaz_Web %}
                                     <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
@@ -43,7 +43,7 @@
                                     {% endfor %}
                             </ol>
                             
-                            <h5 class="text-center text-muted mt-5">MANEJO DE IMPRESORAS</h5>
+                            <h5 class="text-center text-muted mt-5">{% trans 'MANEJO DE IMPRESORAS' %}</h5>
                                 <ol class="list-unstyled mt-3">
                                     {% for dato in Manejo_de_impresoras %}
                                     <a style="text-decoration: none; color: #4198ad;"  href="{% url 'home_app:soporte_detail' dato.id %}">
@@ -59,7 +59,7 @@
                         
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                     
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
-                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
+                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">{% trans 'Sección de Soporte' %}</h5>
                         <h6 class="text-muted text-center">SIMPLIFY-3D</h6>
                         
                         <!-- Contenedor con scroll -->
@@ -124,7 +124,7 @@
                         
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>
@@ -143,12 +143,12 @@
                     
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
-                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
-                        <h6 class="text-muted text-center">CABEZAL DART</h6>
+                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">{% trans 'Sección de Soporte' %}</h5>
+                        <h6 class="text-muted text-center">{% trans 'CABEZAL DART' %}</h6>
                         
                         <!-- Contenedor con scroll -->
                         <div style="height: 300px; overflow-y: auto; padding-right: 10px; border-top: 1px solid #dee2e6; margin-top: 10px;">
-                            <h5 class="text-center text-muted mt-5">CABEZAL DART</h5>
+                            <h5 class="text-center text-muted mt-5">{% trans 'CABEZAL DART' %}</h5>
                             <ol class="list-unstyled mt-3">
                                 {% for dato in Cabezal_DART %}
                                 <a style="text-decoration: none; color: #4198ad;" href="{% url 'home_app:soporte_detail' dato.id %}">
@@ -163,7 +163,7 @@
                         
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
                         
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@
                         </div>
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                         
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>
@@ -293,7 +293,7 @@
                     
                     <!-- Contenido de la tarjeta -->
                     <div class="card-body">
-                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">Sección de Soporte</h5>
+                        <h5 class="card-title text-center" style="font-weight: bold; color: #333;">{% trans 'Sección de Soporte' %}</h5>
                         <h6 class="text-muted text-center">FIRMWARE</h6>
                         
                         <!-- Contenedor con scroll -->
@@ -312,7 +312,7 @@
                         </div>
                         <!-- Botones -->
                         <div class="text-center mt-3">
-                            <a href="#" class="btn btn-outline-secondary btn-sm">Contacto</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">{% trans 'Contacto' %}</a>
                         </div>
                     </div>
                 </div>

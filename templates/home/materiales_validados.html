@@ -13,7 +13,7 @@
 <section style="background-image: url('{% static "img/logo/pellet_fondo.png" %}'); background-size: cover; background-position: center; color: white; padding: 60px 0;height:400px;">
     <div class="container text-center">
         <!-- Encabezado -->
-        <h2 class="py-5" style="font-size: 2.5rem; font-weight: bold;">Materiales</h2>
+        <h2 class="py-5" style="font-size: 2.5rem; font-weight: bold;">{% trans 'Materiales' %}</h2>
     </div>
 </section>
 
@@ -24,17 +24,17 @@
             <!-- Reciclable -->
             <div class="col-md-4 col-12 mb-4 text-center py-3">
                 <img src="{% static 'img/iconos/reciclable.png.webp' %}" alt="Reciclable" class="img-fluid mb-3" style="max-width: 80px;">
-                <h6>Reciclable</h6>
+                <h6>{% trans 'Reciclable' %}</h6>
             </div>
             <!-- Biodegradable -->
             <div class="col-md-4 col-12 mb-4 text-center py-3">
                 <img src="{% static 'img/logo/reciclaje.png' %}" alt="Biodegradable" class="img-fluid mb-3" style="max-width: 80px;">
-                <h6>Biodegradable</h6>
+                <h6>{% trans 'Biodegradable' %}</h6>
             </div>
             <!-- Aprobada por la FDA -->
             <div class="col-md-4 col-12 mb-4 text-center py-3">
                 <img src="{% static 'img/iconos/fda.png.webp' %}" alt="Aprobada por la FDA" class="img-fluid mb-3" style="max-width: 80px;">
-                <h6>Aprobada por la FDA</h6>
+                <h6>{% trans 'Aprobada por la FDA' %}</h6>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
 <!-- Tabla de Materiales Validados -->
 <section style="background: white; color: black; padding: 40px 0;">
     <div class="container">
-        <h2 class="text-center mb-4">Materiales validados</h2>
+        <h2 class="text-center mb-4">{% trans 'Materiales validados' %}</h2>
 
 
 
@@ -58,27 +58,27 @@
             <!-- Metal -->
             <div style="display: flex; align-items: center;">
                 <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color:rgb(138, 138, 138); border: 1px solid #ddd;"></span>
-                <span style="margin-left: 8px; font-size: 14px; color: black;">Metal</span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">{% trans 'Metal' %}</span>
             </div>
             <!-- Polymer -->
             <div style="display: flex; align-items: center;">
                 <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightblue; border: 1px solid #ddd;"></span>
-                <span style="margin-left: 8px; font-size: 14px; color: black;">Polymer</span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">{% trans 'Polymer' %}</span>
             </div>
             <!-- Functionalised Polymer -->
             <div style="display: flex; align-items: center;">
                 <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: pink; border: 1px solid #ddd;"></span>
-                <span style="margin-left: 8px; font-size: 14px; color: black;">Functionalised Polymer</span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">{% trans 'Functionalised Polymer' %}</span>
             </div>
             <!-- Elastomer Polymer -->
             <div style="display: flex; align-items: center;">
                 <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: yellow; border: 1px solid #ddd;"></span>
-                <span style="margin-left: 8px; font-size: 14px; color: black;">Elastomer Polymer</span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">{% trans 'Elastomer Polymer' %}</span>
             </div>
             <!-- Ceramic -->
             <div style="display: flex; align-items: center;">
                 <span style="display: inline-block; width: 16px; height: 16px; border-radius: 50%; background-color: lightgreen; border: 1px solid #ddd;"></span>
-                <span style="margin-left: 8px; font-size: 14px; color: black;">Ceramic</span>
+                <span style="margin-left: 8px; font-size: 14px; color: black;">{% trans 'Ceramic' %}</span>
             </div>
         </div>
 
