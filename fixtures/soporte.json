@@ -1,0 +1,613 @@
+[
+{
+    "model": "home.soporte",
+    "pk": 14,
+    "fields": {
+        "name": "CÓMO CONECTAR LA IMPRESORA A UNA RED WIFI",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Interfaz_Web",
+        "description": "",
+        "urlyoutube": "https://youtu.be/cGmGNJWA2Dc"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 15,
+    "fields": {
+        "name": "CÓMO UTILIZAR LA INTERFAZ WEB",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Interfaz_Web",
+        "description": "",
+        "urlyoutube": "https://youtu.be/UpSoX3IQD4Y"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 16,
+    "fields": {
+        "name": "AVISOS INTERFAZ WEB",
+        "number": "3",
+        "image": "images/soporte/Foto-10-980x466.png",
+        "video_file": "",
+        "tipo_soporte": "Interfaz_Web",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 17,
+    "fields": {
+        "name": "CALIBRACIÓN MANUAL EJE Z",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/aNyPjex9r0E"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 18,
+    "fields": {
+        "name": "CALIBRACIÓN DIGITAL EJE Z",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/Jo0YFHynDng"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 19,
+    "fields": {
+        "name": "CALIBRACIÓN OFFSET DUAL",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/odJpRXgxVlY"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 20,
+    "fields": {
+        "name": "CALIBRACIÓN ALTURA CABEZALES",
+        "number": "4",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/0KLt1pg9qEg"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 21,
+    "fields": {
+        "name": "CAMBIO DE FILAMENTO",
+        "number": "5",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/YgRujftF2bg"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 22,
+    "fields": {
+        "name": "FIN DE FILAMENTO",
+        "number": "6",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/49WwEY05wRk"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 23,
+    "fields": {
+        "name": "EXTRUIR Y RETRAER MANUALMENTE",
+        "number": "7",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/_nS8Cy3v0MA"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 24,
+    "fields": {
+        "name": "SELECCIONAR CABEZAL",
+        "number": "8",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/mV906tgZ66w"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 25,
+    "fields": {
+        "name": "SET MATERIALS PARAMETERS",
+        "number": "9",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Manejo_de_impresoras",
+        "description": "",
+        "urlyoutube": "https://youtu.be/wn308b7bRWY"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 26,
+    "fields": {
+        "name": "PRIMEROS PASOS",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": "https://youtu.be/OKUoNsFsZfM"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 27,
+    "fields": {
+        "name": "AVANZADO",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": "https://youtu.be/jq36HCNkhGM"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 28,
+    "fields": {
+        "name": "IMPRESIÓN POR PROCESOS",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": "https://youtu.be/7-lBn0JM1Lw"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 29,
+    "fields": {
+        "name": "IMPRESIÓN DUAL",
+        "number": "4",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": "https://youtu.be/lrtXjwRzLck"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 30,
+    "fields": {
+        "name": "COMPROBAR CONFIGURACIÓN",
+        "number": "5",
+        "image": "images/soporte/Foto-7-980x712.png",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 31,
+    "fields": {
+        "name": "SOPORTE",
+        "number": "6",
+        "image": "images/soporte/Foto-9-980x841.png",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 32,
+    "fields": {
+        "name": "CREAR PERFILES SIMPLIFY3D",
+        "number": "7",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Simpify",
+        "description": "",
+        "urlyoutube": "https://youtu.be/eVcpFboJIZI"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 33,
+    "fields": {
+        "name": "DESCARGAR PROGRAMA Y PERFILES",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 34,
+    "fields": {
+        "name": "PRIMEROS PASOS",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 35,
+    "fields": {
+        "name": "IMPRESIÓN DUAL",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 36,
+    "fields": {
+        "name": "IMPRESIÓN POR PROCESOS",
+        "number": "4",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 37,
+    "fields": {
+        "name": "CAMBIO DE CAPA",
+        "number": "5",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 38,
+    "fields": {
+        "name": "SOPORTES DE IMPRESIÓN",
+        "number": "6",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 39,
+    "fields": {
+        "name": "SELECCIÓN DE BOQUILLAS",
+        "number": "7",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Super_slicer",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 40,
+    "fields": {
+        "name": "CAMBIO DE PUNTA DART",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_DART",
+        "description": "",
+        "urlyoutube": "https://youtu.be/5AHD2XMDDaQ"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 41,
+    "fields": {
+        "name": "DESMONTAJE CABEZAL DART",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_DART",
+        "description": "",
+        "urlyoutube": "https://youtu.be/hJBLj4DsoEI"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 42,
+    "fields": {
+        "name": "ATASCOS CABEZAL DART",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_DART",
+        "description": "",
+        "urlyoutube": "https://youtu.be/4rCWtWJQkh8"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 43,
+    "fields": {
+        "name": "DESMONTAJE Y MONTAJE HR",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_DD_HR",
+        "description": "",
+        "urlyoutube": "https://youtu.be/eOWJ-lyop1Q"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 44,
+    "fields": {
+        "name": "CAMBIO DE FILAMENTO EN HR",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_DD_HR",
+        "description": "",
+        "urlyoutube": "https://youtu.be/9fccWGuGXoo"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 45,
+    "fields": {
+        "name": "CAMBIO DE BOQUILLAS EN HR",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_DD_HR",
+        "description": "",
+        "urlyoutube": "https://youtu.be/j418Bw2uKBI"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 46,
+    "fields": {
+        "name": "CALIBRACIÓN MATERIAL PELLET",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 47,
+    "fields": {
+        "name": "PELLET EXTRUDER",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 48,
+    "fields": {
+        "name": "INSTALAR SENSOR ALTAS TEMPERATURAS",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 49,
+    "fields": {
+        "name": "ALIMENTADOR PELLET",
+        "number": "4",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 50,
+    "fields": {
+        "name": "DESMONTAJE Y MONTAJE PELLET",
+        "number": "5",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 51,
+    "fields": {
+        "name": "CAMBIO DE BOQUILLA",
+        "number": "6",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 52,
+    "fields": {
+        "name": "LIMPIEZA CABEZAL PELLE",
+        "number": "7",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Cabezal_Pellet",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 53,
+    "fields": {
+        "name": "COMPROBAR VENTILADORES",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Mantenimiento",
+        "description": "",
+        "urlyoutube": "https://youtu.be/qVyUdnmGQ1Y"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 54,
+    "fields": {
+        "name": "COMPROBAR TEMPERATURAS",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Mantenimiento",
+        "description": "",
+        "urlyoutube": "https://youtu.be/vJ90Wb2OsaU"
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 55,
+    "fields": {
+        "name": "COMPROBAR EJE Y",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Mantenimiento",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 56,
+    "fields": {
+        "name": "COMPROBAR EJE X",
+        "number": "4",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Mantenimiento",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 57,
+    "fields": {
+        "name": "ACTUALIZAR FIRMWARE",
+        "number": "1",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Firmware",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 58,
+    "fields": {
+        "name": "ACTUALIZAR CONFIGURACIÓN DE LA IMPRESORA",
+        "number": "2",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Firmware",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 59,
+    "fields": {
+        "name": "CONEXIONES DUET",
+        "number": "3",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Firmware",
+        "description": "",
+        "urlyoutube": null
+    }
+},
+{
+    "model": "home.soporte",
+    "pk": 60,
+    "fields": {
+        "name": "CONECTAR PC A LA IMPRESORA TUMAKER CON CABLE ETHERNET",
+        "number": "4",
+        "image": "",
+        "video_file": "",
+        "tipo_soporte": "Firmware",
+        "description": "",
+        "urlyoutube": null
+    }
+}
+]

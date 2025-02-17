@@ -1,38 +1,53 @@
 from django.contrib import admin
-from django.utils.html import format_html  # ✅ Importar format_html correctamente
-from applications.home.models import ( Blog,Material,Duet,Soporte)
+from django.utils.html import format_html
+from parler.admin import TranslatableAdmin
+from applications.home.models import Blog, Material, Duet, Soporte
+from django.utils.translation import gettext_lazy as _
 
-# Register your models here.
+# ✅ Filtro personalizado para Parler (porque list_filter no soporta traducciones directamente)
+class NameFilter(admin.SimpleListFilter):
+    title = _("Nombre")  # Nombre del filtro en el admin
+    parameter_name = "name"
 
-# blog your models here.
-class BlogAdmin(admin.ModelAdmin):
-    list_display = ("title", "category", "image",)
+    def lookups(self, request, model_admin):
+        """ Devuelve una lista de valores disponibles en el filtro. """
+        names = set(model_admin.model.objects.values_list("translations__name", flat=True))
+        return [(name, name) for name in names if name]
 
-admin.site.register(Blog,BlogAdmin )
+    def queryset(self, request, queryset):
+        """ Filtra los resultados en base al valor seleccionado en el filtro. """
+        if self.value():
+            return queryset.filter(translations__name=self.value())
+        return queryset
 
-# material your model here.
-class MaterialAdmin(admin.ModelAdmin):
-    list_display = ("name", "tipo", "image",)
+# ✅ BlogAdmin con soporte para Django-Parler
+@admin.register(Blog)
+class BlogAdmin(TranslatableAdmin, admin.ModelAdmin):
+    list_display = ("title", "category", "image")
+    search_fields = ("translations__title", "translations__category")
 
-admin.site.register(Material,MaterialAdmin )
+# ✅ MaterialAdmin con filtro personalizado
+@admin.register(Material)
+class MaterialAdmin(TranslatableAdmin, admin.ModelAdmin):
+    list_display = ("name", "tipo", "image")
+    search_fields = ("translations__name", "translations__summary")
+    list_filter = (NameFilter,)  # ✅ Usamos el filtro personalizado
 
-# material your model here.
-class DuetAdmin(admin.ModelAdmin):
-    list_display = ("name", "id", "summary", "short_content")  # ✅ Muestra versión corta del contenido
-    search_fields = ("name", "summary")  # ✅ Permite buscar por nombre y resumen
-    list_filter = ("name",)  # ✅ Agrega filtros en la barra lateral
+# ✅ DuetAdmin con filtro personalizado
+@admin.register(Duet)
+class DuetAdmin(TranslatableAdmin, admin.ModelAdmin):
+    list_display = ("name", "id", "summary", "short_content")
+    search_fields = ("translations__name", "translations__summary")
+    list_filter = (NameFilter,)  # ✅ Usamos el filtro personalizado
 
     def short_content(self, obj):
         """ Muestra una versión corta del contenido en el admin """
         return format_html(obj.content[:100] + "...") if obj.content else "No hay contenido"
 
-    short_content.short_description = "Contenido (corto)"  # ✅ Nombre visible en el admin
+    short_content.short_description = "Contenido (corto)"
 
-admin.site.register(Duet, DuetAdmin)
-
-
-# material your model here.
-class SoporteAdmin(admin.ModelAdmin):
-    list_display = ("name","number","image","tipo_soporte")
-
-admin.site.register(Soporte, SoporteAdmin)
+# ✅ SoporteAdmin con soporte para Django-Parler
+@admin.register(Soporte)
+class SoporteAdmin(TranslatableAdmin, admin.ModelAdmin):
+    list_display = ("name", "number", "image", "tipo_soporte")
+    search_fields = ("translations__name", "translations__description")

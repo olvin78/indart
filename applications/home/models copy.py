@@ -1,83 +1,78 @@
 from django.db import models
+from tinymce.models import HTMLField
 from django.contrib.auth.models import User
-# Create your models here.
+from parler.models import TranslatableModel, TranslatedFields
 
-class Blog(models.Model):
+
+class Blog(TranslatableModel):  # ✅ Ahora es traducible
     """Modelo para entradas de blog."""
 
-    date_time = models.DateTimeField(auto_now_add=True,blank=True,null=True)
-    title = models.CharField(max_length=255,blank=True,null=True)
-    category = models.CharField(max_length=255,blank=True,null=True)
+    translations = TranslatedFields(
+        title=models.CharField(max_length=255, blank=True, null=True),
+        category=models.CharField(max_length=255, blank=True, null=True),
+        content=HTMLField(null=True, blank=True),
+        summary=HTMLField(blank=True, null=True),
+    )
+
+    date_time = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     image = models.ImageField(upload_to='images/blog', null=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    content = models.TextField( null=True, blank=True)
-    summary = models.TextField( blank=True,null=True)
     avatar = models.ImageField(upload_to='images/avatar', null=True, blank=True)
 
-
     def __str__(self):
-        """Devuelve el título del post como representación en cadena."""
-        return self.title
-
-    def get_summary(self):
-        """Devuelve un resumen del cuerpo del post (primeras 200 palabras)."""
-        return self.cuerpo[:200]
+        return self.safe_translation_getter('title', any_language=True)
 
 
-class Material(models.Model):
+class Material(TranslatableModel):  # ✅ Ahora es traducible
+    """Modelo para Materiales."""
+
     TIPO_CHOICES = [
-        ('PELLET','PELLET'),
-        ('FILAMENTO','FILAMENTO'),
+        ('PELLET', 'PELLET'),
+        ('FILAMENTO', 'FILAMENTO'),
     ]
-    """Modelo para entradas de blog."""
-    name = models.CharField(max_length=255,blank=True,null=True)
-    image = models.ImageField(upload_to='images/material', null=True, blank=True)
-    tipo = models.CharField(
-        choices=TIPO_CHOICES,max_length=15
+
+    translations = TranslatedFields(
+        name=models.CharField(max_length=255, blank=True, null=True),
+        summary=HTMLField(blank=True, null=True),
+        description=HTMLField(blank=True, null=True),
     )
-    summary = models.TextField( blank=True,null=True)
-    description = models.TextField(max_length=255,blank=True,null=True)
+
+    image = models.ImageField(upload_to='images/material', null=True, blank=True)
+    tipo = models.CharField(choices=TIPO_CHOICES, max_length=15)
 
     def __str__(self):
-        """Devuelve el título del post como representación en cadena."""
-        return self.name
-
-    def get_summary(self):
-        """Devuelve un resumen del cuerpo del post (primeras 200 palabras)."""
-        return self.description[:200]
+        return self.safe_translation_getter('name', any_language=True)
 
 
+class Duet(TranslatableModel):  # ✅ Ahora es traducible
+    """Modelo para Duet."""
 
-class Duet(models.Model):
     TIPO_CHOICES = [
-        ('DUET_3DS','DUET_3DS'),
-        ('OTRO','OTRO'),
+        ('DUET_3DS', 'DUET_3DS'),
+        ('OTRO', 'OTRO'),
     ]
-    """Modelo para entradas de blog."""
 
-    name = models.CharField(max_length=255,blank=True,null=True)
+    translations = TranslatedFields(
+        name=models.CharField(max_length=255, blank=True, null=True),
+        summary=HTMLField(blank=True, null=True),
+        content=HTMLField(blank=True, null=True),
+    )
+
+    images = models.JSONField(blank=True, null=True, default=list)
     image1 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image2 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image3 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image4 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image5 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
     image6 = models.ImageField(upload_to='images/Duet', null=True, blank=True)
-    summary = models.TextField( blank=True,null=True)
-    content = models.TextField( null=True, blank=True)
-
 
     def __str__(self):
-        """Devuelve el título del post como representación en cadena."""
-        return self.name
-
-    def get_summary(self):
-        """Devuelve un resumen del cuerpo del post (primeras 200 palabras)."""
-        return self.content[:200]
+        return self.safe_translation_getter('name', any_language=True)
 
 
+class Soporte(TranslatableModel):  # ✅ Ahora es traducible
+    """Modelo para Soporte."""
 
-
-class Soporte(models.Model):
     TIPO_CHOICES = [
         ('Interfaz_Web', 'Interfaz_Web'),
         ('Simpify', 'Simpify'),
@@ -90,14 +85,16 @@ class Soporte(models.Model):
         ('Super_slicer', 'Super_slicer'),
     ]
 
-    name = models.CharField(max_length=255, blank=True, null=True, verbose_name="Nombre")
-    number = models.CharField(max_length=255, blank=True, null=True, verbose_name="elija un número")
+    translations = TranslatedFields(
+        name=models.CharField(max_length=255, blank=True, null=True, verbose_name="Nombre"),
+        description=HTMLField(max_length=255, blank=True, null=True, verbose_name="Descripción"),
+    )
+
+    number = models.CharField(max_length=255, blank=True, null=True, verbose_name="Elija un número")
     image = models.ImageField(upload_to='images/soporte', null=True, blank=True, verbose_name="Imagen")
-    video_file = models.FileField(upload_to='media/soporte/videos/', null=True, blank=True, verbose_name="Video")  # Carpeta 'videos/' en MEDIA_ROOT
+    video_file = models.FileField(upload_to='media/soporte/videos/', null=True, blank=True, verbose_name="Video")
     tipo_soporte = models.CharField(choices=TIPO_CHOICES, max_length=30, verbose_name="Tipo")
-    description = models.TextField(max_length=255, blank=True, null=True, verbose_name="Descripción")
-    urlyoutube = models.URLField(max_length=255,blank=True,null=True,verbose_name="URL de video de YouTube")
+    urlyoutube = models.URLField(max_length=255, blank=True, null=True, verbose_name="URL de video de YouTube")
 
     def __str__(self):
-        """Devuelve el nombre como representación en cadena."""
-        return self.name or "Sin Nombre"
+        return self.safe_translation_getter('name', any_language=True)
